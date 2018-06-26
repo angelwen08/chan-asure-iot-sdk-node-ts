@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.ConnectionContext.cbsSession
+    name: cbsSession
+    fullName: cbsSession
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'cbsSession?: CbsClient'
+      return:
+        type:
+          - azure-event-hubs.CbsClient
+    module: ConnectionContext

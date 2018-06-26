@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.EventData.annotations
+    name: annotations
+    fullName: annotations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'annotations?: EventHubMessageAnnotations'
+      return:
+        type:
+          - azure-event-hubs.EventHubMessageAnnotations
+    module: EventData

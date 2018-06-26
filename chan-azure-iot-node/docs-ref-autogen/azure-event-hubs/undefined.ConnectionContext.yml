@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: undefined.ConnectionContext
+    name: ConnectionContext
+    summary: ''
+    langs:
+      - typeScript
+    type: module
+    children:
+      - azure-event-hubs.ConnectionContext.cbsSession
+      - azure-event-hubs.ConnectionContext.config
+      - azure-event-hubs.ConnectionContext.connection
+      - azure-event-hubs.ConnectionContext.connectionId
+      - azure-event-hubs.ConnectionContext.connectionLock
+      - azure-event-hubs.ConnectionContext.dataTransformer
+      - azure-event-hubs.ConnectionContext.managementSession
+      - azure-event-hubs.ConnectionContext.negotiateClaimLock
+      - azure-event-hubs.ConnectionContext.receivers
+      - azure-event-hubs.ConnectionContext.senders
+      - azure-event-hubs.ConnectionContext.tokenProvider
+      - azure-event-hubs.ConnectionContext.create
+  - uid: azure-event-hubs.ConnectionContext.create
+    name: create
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function create(config: ConnectionConfig, options?:
+        ConnectionContextOptions)
+      parameters:
+        - id: config
+          type:
+            - ConnectionConfig
+          description: ''
+        - id: options
+          type:
+            - azure-event-hubs.ConnectionContextOptions
+          description: ''
+          optional: true
+      return:
+        type:
+          - ConnectionContext
+    module: ConnectionContext
+references:
+  - uid: azure-event-hubs.ConnectionContext.cbsSession
+    name: cbsSession
+  - uid: azure-event-hubs.ConnectionContext.config
+    name: config
+  - uid: azure-event-hubs.ConnectionContext.connection
+    name: connection
+  - uid: azure-event-hubs.ConnectionContext.connectionId
+    name: connectionId
+  - uid: azure-event-hubs.ConnectionContext.connectionLock
+    name: connectionLock
+  - uid: azure-event-hubs.ConnectionContext.dataTransformer
+    name: dataTransformer
+  - uid: azure-event-hubs.ConnectionContext.managementSession
+    name: managementSession
+  - uid: azure-event-hubs.ConnectionContext.negotiateClaimLock
+    name: negotiateClaimLock
+  - uid: azure-event-hubs.ConnectionContext.receivers
+    name: receivers
+  - uid: azure-event-hubs.ConnectionContext.senders
+    name: senders
+  - uid: azure-event-hubs.ConnectionContext.tokenProvider
+    name: tokenProvider

@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.EventData.lastSequenceNumber
+    name: lastSequenceNumber
+    fullName: lastSequenceNumber
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'lastSequenceNumber?: number'
+      return:
+        type:
+          - number
+    module: EventData

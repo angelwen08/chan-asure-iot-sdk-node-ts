@@ -1,0 +1,16 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host.LeaseManager.leaseDuration
+    name: leaseDuration
+    fullName: leaseDuration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'leaseDuration: number'
+      return:
+        type:
+          - number
+    module: LeaseManager

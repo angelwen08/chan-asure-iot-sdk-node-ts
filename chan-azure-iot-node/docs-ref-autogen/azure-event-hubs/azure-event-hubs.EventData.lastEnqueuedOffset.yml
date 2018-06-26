@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.EventData.lastEnqueuedOffset
+    name: lastEnqueuedOffset
+    fullName: lastEnqueuedOffset
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'lastEnqueuedOffset?: string'
+      return:
+        type:
+          - string
+    module: EventData

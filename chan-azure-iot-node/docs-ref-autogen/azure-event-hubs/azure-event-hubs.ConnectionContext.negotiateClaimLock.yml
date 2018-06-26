@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.ConnectionContext.negotiateClaimLock
+    name: negotiateClaimLock
+    fullName: negotiateClaimLock
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'negotiateClaimLock: string'
+      return:
+        type:
+          - string
+    module: ConnectionContext
+references:
+  - uid: azure-event-hubs.DataTransformer
+    spec.typeScript:
+      - name: DataTransformer
+        fullName: DataTransformer
+        uid: azure-event-hubs.DataTransformer

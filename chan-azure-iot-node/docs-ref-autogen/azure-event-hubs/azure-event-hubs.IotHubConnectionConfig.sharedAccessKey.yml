@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.IotHubConnectionConfig.sharedAccessKey
+    name: sharedAccessKey
+    fullName: sharedAccessKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'sharedAccessKey: string'
+      return:
+        type:
+          - string
+    module: IotHubConnectionConfig
+references:
+  - uid: azure-event-hubs.EventPositionOptions
+    spec.typeScript:
+      - name: EventPositionOptions
+        fullName: EventPositionOptions
+        uid: azure-event-hubs.EventPositionOptions
+  - uid: azure-event-hubs.EventPosition
+    spec.typeScript:
+      - name: EventPosition
+        fullName: EventPosition
+        uid: azure-event-hubs.EventPosition

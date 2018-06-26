@@ -1,0 +1,16 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host.CheckpointInfo.epoch
+    name: epoch
+    fullName: epoch
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'epoch: number'
+      return:
+        type:
+          - number
+    module: CheckpointInfo

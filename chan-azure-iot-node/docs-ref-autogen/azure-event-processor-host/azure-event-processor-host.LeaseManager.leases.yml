@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host.LeaseManager.leases
+    name: leases
+    fullName: leases
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'leases: Dictionary<LeaseWithDuration>'
+      return:
+        type:
+          - Dictionary<azure-event-processor-host.LeaseWithDuration>
+    module: LeaseManager
+references:
+  - uid: Dictionary<azure-event-processor-host.LeaseWithDuration>
+    spec.typeScript:
+      - name: Dictionary<
+        fullName: Dictionary<
+      - name: LeaseWithDuration
+        fullName: LeaseWithDuration
+        uid: azure-event-processor-host.LeaseWithDuration
+      - name: '>'
+        fullName: '>'

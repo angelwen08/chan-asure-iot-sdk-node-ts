@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.EventData.applicationProperties
+    name: applicationProperties
+    fullName: applicationProperties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'applicationProperties?: Dictionary<any>'
+      return:
+        type:
+          - Dictionary<any>
+    module: EventData

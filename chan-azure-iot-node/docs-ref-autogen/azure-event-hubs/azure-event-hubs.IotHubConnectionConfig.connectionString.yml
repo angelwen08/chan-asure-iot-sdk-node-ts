@@ -1,0 +1,16 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.IotHubConnectionConfig.connectionString
+    name: connectionString
+    fullName: connectionString
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'connectionString: string'
+      return:
+        type:
+          - string
+    module: IotHubConnectionConfig

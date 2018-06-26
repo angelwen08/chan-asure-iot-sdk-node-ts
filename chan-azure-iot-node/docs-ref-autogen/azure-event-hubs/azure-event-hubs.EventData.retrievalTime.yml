@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.EventData.retrievalTime
+    name: retrievalTime
+    fullName: retrievalTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'retrievalTime?: Date'
+      return:
+        type:
+          - Date
+    module: EventData

@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.ConnectionContext.receivers
+    name: receivers
+    fullName: receivers
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'receivers: function'
+      return:
+        type:
+          - function
+    module: ConnectionContext
+references:
+  - uid: azure-event-hubs.ManagementClient
+    spec.typeScript:
+      - name: ManagementClient
+        fullName: ManagementClient
+        uid: azure-event-hubs.ManagementClient

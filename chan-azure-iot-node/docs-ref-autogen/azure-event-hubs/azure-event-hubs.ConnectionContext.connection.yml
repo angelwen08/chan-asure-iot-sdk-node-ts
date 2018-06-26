@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.ConnectionContext.connection
+    name: connection
+    fullName: connection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'connection?: any'
+      return:
+        type:
+          - any
+    module: ConnectionContext
+references:
+  - uid: azure-event-hubs.CbsClient
+    spec.typeScript:
+      - name: CbsClient
+        fullName: CbsClient
+        uid: azure-event-hubs.CbsClient

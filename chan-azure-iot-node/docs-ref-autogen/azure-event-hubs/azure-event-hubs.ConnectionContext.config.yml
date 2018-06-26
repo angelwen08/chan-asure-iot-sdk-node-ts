@@ -1,0 +1,16 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.ConnectionContext.config
+    name: config
+    fullName: config
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'config: ConnectionConfig'
+      return:
+        type:
+          - ConnectionConfig
+    module: ConnectionContext

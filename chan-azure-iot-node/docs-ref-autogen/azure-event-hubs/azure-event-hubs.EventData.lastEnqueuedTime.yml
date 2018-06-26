@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.EventData.lastEnqueuedTime
+    name: lastEnqueuedTime
+    fullName: lastEnqueuedTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'lastEnqueuedTime?: Date'
+      return:
+        type:
+          - Date
+    module: EventData

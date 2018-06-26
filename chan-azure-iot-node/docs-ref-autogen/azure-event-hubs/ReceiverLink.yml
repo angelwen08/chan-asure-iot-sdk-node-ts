@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.ReceiverLink
+    name: ReceiverLink
+    fullName: ReceiverLink
+    children:
+      - azure-event-hubs.ReceiverLink.receiver
+      - azure-event-hubs.ReceiverLink.session
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-event-hubs
+  - uid: azure-event-hubs.ReceiverLink.receiver
+    name: receiver
+    fullName: receiver
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'receiver: any'
+      return:
+        type:
+          - any
+  - uid: azure-event-hubs.ReceiverLink.session
+    name: session
+    fullName: session
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'session: any'
+      return:
+        type:
+          - any
+references:
+  - uid: azure-event-hubs.ClientEntity
+    spec.typeScript:
+      - name: ClientEntity
+        fullName: ClientEntity
+        uid: azure-event-hubs.ClientEntity
+  - uid: azure-event-hubs.ManagementClientOptions
+    spec.typeScript:
+      - name: ManagementClientOptions
+        fullName: ManagementClientOptions
+        uid: azure-event-hubs.ManagementClientOptions
+  - uid: Promise<azure-event-hubs.EventHubRuntimeInformation>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubRuntimeInformation
+        fullName: EventHubRuntimeInformation
+        uid: azure-event-hubs.EventHubRuntimeInformation
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-event-hubs.EventHubPartitionRuntimeInformation>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubPartitionRuntimeInformation
+        fullName: EventHubPartitionRuntimeInformation
+        uid: azure-event-hubs.EventHubPartitionRuntimeInformation
+      - name: '>'
+        fullName: '>'
