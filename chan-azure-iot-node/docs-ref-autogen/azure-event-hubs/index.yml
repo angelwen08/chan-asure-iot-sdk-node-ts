@@ -94,7 +94,16 @@ items:
       - azure-event-hubs.StorageConnectionStringModel
       - azure-event-hubs.Func
       - azure-event-hubs.ParsedOutput
+      - azure-event-hubs.ConnectionConfig.create
+      - azure-event-hubs.ConnectionConfig.validate
+      - azure-event-hubs.ConnectionContext.create
       - azure-event-hubs.translate
+      - azure-event-hubs.EventData.fromAmqpMessage
+      - azure-event-hubs.EventData.toAmqpMessage
+      - >-
+        azure-event-hubs.IotHubConnectionConfig.convertToEventHubConnectionConfig
+      - azure-event-hubs.IotHubConnectionConfig.create
+      - azure-event-hubs.IotHubConnectionConfig.validate
       - azure-event-hubs.retry
       - azure-event-hubs.closeConnection
       - azure-event-hubs.closeReceiver
@@ -121,6 +130,67 @@ items:
     type: package
     langs:
       - typeScript
+  - uid: azure-event-hubs.ConnectionConfig.create
+    name: create
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Creates the connection config.
+    syntax:
+      content: 'function create(connectionString: string, path?: string)'
+      parameters:
+        - id: connectionString
+          type:
+            - string
+          description: The event hub connection string
+        - id: path
+          type:
+            - string
+          description: ''
+          optional: true
+      return:
+        type:
+          - ConnectionConfig
+  - uid: azure-event-hubs.ConnectionConfig.validate
+    name: validate
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Validates the properties of connection config.
+    syntax:
+      content: 'function validate(config: ConnectionConfig)'
+      parameters:
+        - id: config
+          type:
+            - ConnectionConfig
+          description: |
+            The connection config to be validated.
+  - uid: azure-event-hubs.ConnectionContext.create
+    name: create
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function create(config: ConnectionConfig, options?:
+        ConnectionContextOptions)
+      parameters:
+        - id: config
+          type:
+            - ConnectionConfig
+          description: ''
+        - id: options
+          type:
+            - azure-event-hubs.ConnectionContextOptions
+          description: ''
+          optional: true
+      return:
+        type:
+          - ConnectionContext
   - uid: azure-event-hubs.translate
     name: translate
     children: []
@@ -140,6 +210,98 @@ items:
       return:
         type:
           - azure-event-hubs.EventHubsError
+  - uid: azure-event-hubs.EventData.fromAmqpMessage
+    name: fromAmqpMessage
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Converts the AMQP message to an EventData.
+    syntax:
+      content: 'function fromAmqpMessage(msg: Message)'
+      parameters:
+        - id: msg
+          type:
+            - Message
+          description: |
+            The AMQP message that needs to be converted to EventData.
+      return:
+        type:
+          - EventData
+  - uid: azure-event-hubs.EventData.toAmqpMessage
+    name: toAmqpMessage
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Converts an EventData object to an AMQP message.
+    syntax:
+      content: 'function toAmqpMessage(data: EventData)'
+      parameters:
+        - id: data
+          type:
+            - EventData
+          description: |
+            The EventData object that needs to be converted to an AMQP message.
+      return:
+        type:
+          - Message
+  - uid: azure-event-hubs.IotHubConnectionConfig.convertToEventHubConnectionConfig
+    name: convertToEventHubConnectionConfig
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function convertToEventHubConnectionConfig(iotHubConfig:
+        IotHubConnectionConfig)
+      parameters:
+        - id: iotHubConfig
+          type:
+            - IotHubConnectionConfig
+          description: ''
+      return:
+        type:
+          - ConnectionConfig
+  - uid: azure-event-hubs.IotHubConnectionConfig.create
+    name: create
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Creates the connection config.
+    syntax:
+      content: 'function create(connectionString: string, path?: string)'
+      parameters:
+        - id: connectionString
+          type:
+            - string
+          description: The event hub connection string
+        - id: path
+          type:
+            - string
+          description: ''
+          optional: true
+      return:
+        type:
+          - IotHubConnectionConfig
+  - uid: azure-event-hubs.IotHubConnectionConfig.validate
+    name: validate
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Validates the properties of connection config.
+    syntax:
+      content: 'function validate(config: IotHubConnectionConfig)'
+      parameters:
+        - id: config
+          type:
+            - IotHubConnectionConfig
+          description: |
+            The connection config to be validated.
   - uid: azure-event-hubs.retry
     name: retry
     children: []

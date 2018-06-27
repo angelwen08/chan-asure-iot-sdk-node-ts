@@ -13,4 +13,3 @@ items:
       return:
         type:
           - function
-    module: ConnectionContext

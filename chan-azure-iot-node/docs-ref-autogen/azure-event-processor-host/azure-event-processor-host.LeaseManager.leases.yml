@@ -13,7 +13,6 @@ items:
       return:
         type:
           - Dictionary<azure-event-processor-host.LeaseWithDuration>
-    module: LeaseManager
 references:
   - uid: Dictionary<azure-event-processor-host.LeaseWithDuration>
     spec.typeScript:

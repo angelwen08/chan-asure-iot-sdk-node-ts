@@ -14,7 +14,6 @@ items:
       return:
         type:
           - any
-    module: ConnectionContext
 references:
   - uid: azure-event-hubs.CbsClient
     spec.typeScript:

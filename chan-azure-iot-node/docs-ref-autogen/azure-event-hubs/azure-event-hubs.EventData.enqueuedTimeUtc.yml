@@ -14,7 +14,6 @@ items:
       return:
         type:
           - Date
-    module: EventData
 references:
   - uid: azure-event-hubs.EventHubsError
     spec.typeScript:

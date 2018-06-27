@@ -10,4 +10,3 @@ items:
     syntax:
       content: function reset()
       parameters: []
-    module: LeaseManager

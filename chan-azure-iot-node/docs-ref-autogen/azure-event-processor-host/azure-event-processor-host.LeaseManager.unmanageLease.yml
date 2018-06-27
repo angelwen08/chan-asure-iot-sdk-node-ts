@@ -18,7 +18,6 @@ items:
       return:
         type:
           - Promise<void>
-    module: LeaseManager
 references:
   - uid: azure-event-processor-host.Lease
     spec.typeScript:

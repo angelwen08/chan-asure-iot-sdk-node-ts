@@ -15,7 +15,6 @@ items:
             - azure-event-processor-host.Lease
           description: |
             The lease to be managed.
-    module: LeaseManager
 references:
   - uid: azure-event-processor-host.Lease
     spec.typeScript:

@@ -35,6 +35,8 @@ items:
       - azure-event-processor-host.StorageConnectionStringModel
       - azure-event-processor-host.Func
       - azure-event-processor-host.ParsedOutput
+      - azure-event-processor-host.CheckpointInfo.deserialize
+      - azure-event-processor-host.CheckpointInfo.serialize
       - azure-event-processor-host.delay
       - azure-event-processor-host.executePromisesSequentially
       - azure-event-processor-host.getNewAsyncLock
@@ -42,6 +44,48 @@ items:
     type: package
     langs:
       - typeScript
+  - uid: azure-event-processor-host.CheckpointInfo.deserialize
+    name: deserialize
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Deserializes the checkpoint data received from the blob. We take care of
+      deserializing the blob
+
+      content if someone ran a .net sdk EPH which stores the JSON keys in
+      PascalCase. When we
+
+      checkpoint, we will follow the standard convention of camelCasing the JSON
+      keys.
+    syntax:
+      content: 'function deserialize(response: string)'
+      parameters:
+        - id: response
+          type:
+            - string
+          description: The content received from the storage blob.
+      return:
+        type:
+          - CheckpointInfo | undefined
+  - uid: azure-event-processor-host.CheckpointInfo.serialize
+    name: serialize
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Serializes the checkpoint info before writing it to the blob.
+    syntax:
+      content: 'function serialize(data: CheckpointInfo)'
+      parameters:
+        - id: data
+          type:
+            - CheckpointInfo
+          description: The checkpoint data that needs to be serialized.
+      return:
+        type:
+          - string
   - uid: azure-event-processor-host.delay
     name: delay
     children: []

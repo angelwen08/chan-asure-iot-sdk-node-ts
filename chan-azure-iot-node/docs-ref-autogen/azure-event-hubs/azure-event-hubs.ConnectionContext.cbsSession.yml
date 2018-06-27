@@ -14,4 +14,3 @@ items:
       return:
         type:
           - azure-event-hubs.CbsClient
-    module: ConnectionContext

@@ -13,4 +13,3 @@ items:
       return:
         type:
           - ConnectionConfig
-    module: ConnectionContext

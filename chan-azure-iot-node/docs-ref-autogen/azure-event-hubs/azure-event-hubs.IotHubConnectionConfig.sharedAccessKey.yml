@@ -13,7 +13,6 @@ items:
       return:
         type:
           - string
-    module: IotHubConnectionConfig
 references:
   - uid: azure-event-hubs.EventPositionOptions
     spec.typeScript:

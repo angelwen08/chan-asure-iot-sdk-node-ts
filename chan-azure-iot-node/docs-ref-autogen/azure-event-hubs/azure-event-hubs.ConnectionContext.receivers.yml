@@ -13,7 +13,6 @@ items:
       return:
         type:
           - function
-    module: ConnectionContext
 references:
   - uid: azure-event-hubs.ManagementClient
     spec.typeScript:
