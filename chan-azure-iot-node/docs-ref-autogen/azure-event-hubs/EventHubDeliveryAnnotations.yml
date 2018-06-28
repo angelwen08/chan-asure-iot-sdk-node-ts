@@ -15,7 +15,7 @@ items:
     type: interface
     summary: Describes the delivery annotations.
     extends:
-      name: DeliveryAnnotations
+      name: any
     package: azure-event-hubs
   - uid: azure-event-hubs.EventHubDeliveryAnnotations.last_enqueued_offset
     name: last_enqueued_offset
@@ -74,18 +74,3 @@ items:
       return:
         type:
           - number
-references:
-  - uid: azure-event-hubs.SasTokenProvider
-    spec.typeScript:
-      - name: SasTokenProvider
-        fullName: SasTokenProvider
-        uid: azure-event-hubs.SasTokenProvider
-  - uid: Promise<azure-event-hubs.TokenInfo>
-    spec.typeScript:
-      - name: Promise<
-        fullName: Promise<
-      - name: TokenInfo
-        fullName: TokenInfo
-        uid: azure-event-hubs.TokenInfo
-      - name: '>'
-        fullName: '>'

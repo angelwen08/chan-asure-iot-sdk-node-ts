@@ -287,6 +287,11 @@ items:
         type:
           - azure-event-hubs.EventPosition
 references:
+  - uid: azure-event-hubs.EventPositionOptions
+    spec.typeScript:
+      - name: EventPositionOptions
+        fullName: EventPositionOptions
+        uid: azure-event-hubs.EventPositionOptions
   - uid: azure-event-hubs.EventPosition
     spec.typeScript:
       - name: EventPosition

@@ -13,7 +13,7 @@ items:
     type: interface
     summary: Map containing message attributes that will be held in the message header.
     extends:
-      name: MessageAnnotations
+      name: any
     package: azure-event-hubs
   - uid: azure-event-hubs.EventHubMessageAnnotations.x-opt-enqueued-time
     name: x-opt-enqueued-time
@@ -71,9 +71,3 @@ items:
       return:
         type:
           - number
-references:
-  - uid: azure-event-hubs.ConnectionContextOptions
-    spec.typeScript:
-      - name: ConnectionContextOptions
-        fullName: ConnectionContextOptions
-        uid: azure-event-hubs.ConnectionContextOptions

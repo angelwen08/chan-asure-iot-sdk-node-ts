@@ -30,7 +30,7 @@ items:
       parameters:
         - id: context
           type:
-            - ConnectionContext
+            - azure-event-hubs.ConnectionContext
           description: The connection context.
         - id: partitionId
           type:
@@ -82,7 +82,7 @@ items:
       parameters:
         - id: context
           type:
-            - ConnectionContext
+            - azure-event-hubs.ConnectionContext
           description: ''
         - id: partitionId
           type:
@@ -93,3 +93,34 @@ items:
             - azure-event-hubs.ReceiveOptions
           description: ''
           optional: true
+references:
+  - uid: azure-event-hubs.EventHubReceiver
+    spec.typeScript:
+      - name: EventHubReceiver
+        fullName: EventHubReceiver
+        uid: azure-event-hubs.EventHubReceiver
+  - uid: azure-event-hubs.ConnectionContext
+    spec.typeScript:
+      - name: ConnectionContext
+        fullName: ConnectionContext
+        uid: azure-event-hubs.ConnectionContext
+  - uid: azure-event-hubs.ReceiveOptions
+    spec.typeScript:
+      - name: ReceiveOptions
+        fullName: ReceiveOptions
+        uid: azure-event-hubs.ReceiveOptions
+  - uid: azure-event-hubs.OnMessage
+    spec.typeScript:
+      - name: OnMessage
+        fullName: OnMessage
+        uid: azure-event-hubs.OnMessage
+  - uid: azure-event-hubs.OnError
+    spec.typeScript:
+      - name: OnError
+        fullName: OnError
+        uid: azure-event-hubs.OnError
+  - uid: azure-event-hubs.StreamingReceiver
+    spec.typeScript:
+      - name: StreamingReceiver
+        fullName: StreamingReceiver
+        uid: azure-event-hubs.StreamingReceiver
