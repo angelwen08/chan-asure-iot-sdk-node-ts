@@ -13,6 +13,8 @@ items:
       - azure-event-hubs.CbsClient
       - azure-event-hubs.ClientEntity
       - azure-event-hubs.ClientEntityOptions
+      - azure-event-hubs.ConnectionConfig
+      - azure-event-hubs.ConnectionContext
       - azure-event-hubs.ConnectionContextOptions
       - azure-event-hubs.DefaultDataTransformer
       - azure-event-hubs.DataTransformer
@@ -20,6 +22,8 @@ items:
       - azure-event-hubs.ConditionStatusMapper
       - azure-event-hubs.ErrorNameConditionMapper
       - azure-event-hubs.EventHubsError
+      - azure-event-hubs.translate
+      - azure-event-hubs.EventData
       - azure-event-hubs.EventHubClient
       - azure-event-hubs.ClientOptions
       - azure-event-hubs.ClientOptionsBase
@@ -31,6 +35,7 @@ items:
       - azure-event-hubs.EventHubSender
       - azure-event-hubs.EventPosition
       - azure-event-hubs.EventPositionOptions
+      - azure-event-hubs.IotHubConnectionConfig
       - azure-event-hubs.IotSasTokenProvider
       - azure-event-hubs.IotHubClient
       - azure-event-hubs.EHConfig
@@ -39,27 +44,10 @@ items:
       - azure-event-hubs.EventHubPartitionRuntimeInformation
       - azure-event-hubs.EventHubRuntimeInformation
       - azure-event-hubs.ManagementClientOptions
+      - azure-event-hubs.retry
       - azure-event-hubs.AmqpResponseStatusCode
       - azure-event-hubs.EventHubDeliveryAnnotations
       - azure-event-hubs.EventHubMessageAnnotations
-      - azure-event-hubs.CreateConnectionPrameters
-      - azure-event-hubs.LinkOptions
-      - azure-event-hubs.ReceiverLink
-      - azure-event-hubs.ReceiverLinkOptions
-      - azure-event-hubs.RequestResponseLink
-      - azure-event-hubs.SenderLink
-      - azure-event-hubs.SenderLinkOptions
-      - azure-event-hubs.ReceiveHandler
-      - azure-event-hubs.StreamingReceiver
-      - azure-event-hubs.Timeout
-      - azure-event-hubs.AsyncLockOptions
-      - azure-event-hubs.EventHubConnectionStringModel
-      - azure-event-hubs.IotHubConnectionStringModel
-      - azure-event-hubs.StorageConnectionStringModel
-      - azure-event-hubs.Func
-      - azure-event-hubs.ParsedOutput
-      - azure-event-hubs.translate
-      - azure-event-hubs.retry
       - azure-event-hubs.closeConnection
       - azure-event-hubs.closeReceiver
       - azure-event-hubs.closeSender
@@ -70,6 +58,13 @@ items:
       - azure-event-hubs.createSender
       - azure-event-hubs.createSenderWithHandlers
       - azure-event-hubs.createSession
+      - azure-event-hubs.CreateConnectionPrameters
+      - azure-event-hubs.LinkOptions
+      - azure-event-hubs.ReceiverLink
+      - azure-event-hubs.ReceiverLinkOptions
+      - azure-event-hubs.RequestResponseLink
+      - azure-event-hubs.SenderLink
+      - azure-event-hubs.SenderLinkOptions
       - azure-event-hubs.createReceiverLink
       - azure-event-hubs.createReceiverLinkWithHandlers
       - azure-event-hubs.createRequestResponseLink
@@ -77,6 +72,15 @@ items:
       - azure-event-hubs.createSenderLinkWithHandlers
       - azure-event-hubs.open
       - azure-event-hubs.sendRequest
+      - azure-event-hubs.ReceiveHandler
+      - azure-event-hubs.StreamingReceiver
+      - azure-event-hubs.Timeout
+      - azure-event-hubs.AsyncLockOptions
+      - azure-event-hubs.EventHubConnectionStringModel
+      - azure-event-hubs.IotHubConnectionStringModel
+      - azure-event-hubs.StorageConnectionStringModel
+      - azure-event-hubs.Func
+      - azure-event-hubs.ParsedOutput
       - azure-event-hubs.delay
       - azure-event-hubs.executePromisesSequentially
       - azure-event-hubs.getNewAsyncLock
@@ -85,547 +89,6 @@ items:
     type: package
     langs:
       - typeScript
-  - uid: azure-event-hubs.translate
-    name: translate
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: >-
-      Translates the AQMP error received at the protocol layer or a generic
-      Error into an EventHubsError.
-    syntax:
-      content: 'function translate(err: AmqpError | Error)'
-      parameters:
-        - id: err
-          type:
-            - AmqpError | Error
-          description: The amqp error that was received.
-      return:
-        type:
-          - azure-event-hubs.EventHubsError
-  - uid: azure-event-hubs.retry
-    name: retry
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: >-
-      It will attempt to linearly retry an operation specified number of times
-      with a specified
-
-      delay in between each retry. The retries will only happen if the error is
-      retryable.
-    syntax:
-      content: >-
-        function retry<T>(operation: () => Promise<T>, times?: number,
-        delayInSeconds?: number)
-      parameters:
-        - id: operation
-          type:
-            - () => Promise<T>
-          description: The operation that needs to be retried.
-        - id: times
-          type:
-            - number
-          description: ''
-          optional: true
-        - id: delayInSeconds
-          type:
-            - number
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<T>
-  - uid: azure-event-hubs.closeConnection
-    name: closeConnection
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: Closes the amqp connection.
-    syntax:
-      content: 'function closeConnection(connection: Connection)'
-      parameters:
-        - id: connection
-          type:
-            - Connection
-          description: The amqp connection that needs to be closed.
-      return:
-        type:
-          - Promise<void>
-  - uid: azure-event-hubs.closeReceiver
-    name: closeReceiver
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: Closes the amqp receiver.
-    syntax:
-      content: 'function closeReceiver(receiver: Receiver)'
-      parameters:
-        - id: receiver
-          type:
-            - Receiver
-          description: The amqp receiver that needs to be closed.
-      return:
-        type:
-          - Promise<void>
-  - uid: azure-event-hubs.closeSender
-    name: closeSender
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: Closes the amqp sender.
-    syntax:
-      content: 'function closeSender(sender: Sender)'
-      parameters:
-        - id: sender
-          type:
-            - Sender
-          description: The amqp sender that needs to be closed.
-      return:
-        type:
-          - Promise<void>
-  - uid: azure-event-hubs.closeSession
-    name: closeSession
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: Closes the amqp session.
-    syntax:
-      content: 'function closeSession(session: Session)'
-      parameters:
-        - id: session
-          type:
-            - Session
-          description: The amqp session that needs to be closed.
-      return:
-        type:
-          - Promise<void>
-  - uid: azure-event-hubs.connect
-    name: connect
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: Establishes an amqp connection.
-    syntax:
-      content: 'function connect(options?: ConnectionOptions)'
-      parameters:
-        - id: options
-          type:
-            - ConnectionOptions
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<Connection>
-  - uid: azure-event-hubs.createReceiver
-    name: createReceiver
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: >-
-      Creates an amqp receiver on the provided amqp session. This method should
-      be used when you will be
-
-      sending a request and waiting for a response from the service. For
-      example: This method is useful
-
-      while creating request/response links for $management or $cbs endpoint.
-    syntax:
-      content: 'function createReceiver(session: Session, options?: ReceiverOptions)'
-      parameters:
-        - id: session
-          type:
-            - Session
-          description: >-
-            The amqp session object on which the receiver link needs to be
-            established.
-        - id: options
-          type:
-            - ReceiverOptions
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<Receiver>
-  - uid: azure-event-hubs.createReceiverWithHandlers
-    name: createReceiverWithHandlers
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: >-
-      Creates an amqp receiver with provided message and error event handlers on
-      the provided amqp session.
-
-      This method should be used when you want to ensure that no messages are
-      lost. For example: This method
-
-      is useful for creating EventHub Receivers where you want to start
-      receiving ASAP.
-    syntax:
-      content: >-
-        function createReceiverWithHandlers(session: Session, onMessage:
-        OnAmqpEvent, onError: OnAmqpEvent, options?: ReceiverOptions)
-      parameters:
-        - id: session
-          type:
-            - Session
-          description: >-
-            The amqp session object on which the receiver link needs to be
-            established.
-        - id: onMessage
-          type:
-            - OnAmqpEvent
-          description: The event handler for the "message" event for the receiver.
-        - id: onError
-          type:
-            - OnAmqpEvent
-          description: The event handler for the "error" event for the receiver.
-        - id: options
-          type:
-            - ReceiverOptions
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<Receiver>
-  - uid: azure-event-hubs.createSender
-    name: createSender
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: Creates an amqp sender on the provided amqp session.
-    syntax:
-      content: 'function createSender(session: Session, options?: SenderOptions)'
-      parameters:
-        - id: session
-          type:
-            - Session
-          description: >-
-            The amqp session object on which the sender link needs to be
-            established.
-        - id: options
-          type:
-            - SenderOptions
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<Sender>
-  - uid: azure-event-hubs.createSenderWithHandlers
-    name: createSenderWithHandlers
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: Creates an amqp sender on the provided amqp session.
-    syntax:
-      content: >-
-        function createSenderWithHandlers(session: Session, onError:
-        OnAmqpEvent, options?: SenderOptions)
-      parameters:
-        - id: session
-          type:
-            - Session
-          description: >-
-            The amqp session object on which the sender link needs to be
-            established.
-        - id: onError
-          type:
-            - OnAmqpEvent
-          description: The event handler for the "error" event for the sender.
-        - id: options
-          type:
-            - SenderOptions
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<Sender>
-  - uid: azure-event-hubs.createSession
-    name: createSession
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: Creates an amqp session on the provided amqp connection.
-    syntax:
-      content: 'function createSession(connection: Connection)'
-      parameters:
-        - id: connection
-          type:
-            - Connection
-          description: The amqp connection object
-      return:
-        type:
-          - Promise<Session>
-  - uid: azure-event-hubs.createReceiverLink
-    name: createReceiverLink
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: >-
-        function createReceiverLink(connection: any, receiverOptions:
-        ReceiverOptions)
-      parameters:
-        - id: connection
-          type:
-            - any
-          description: ''
-        - id: receiverOptions
-          type:
-            - ReceiverOptions
-          description: ''
-      return:
-        type:
-          - Promise<azure-event-hubs.ReceiverLink>
-  - uid: azure-event-hubs.createReceiverLinkWithHandlers
-    name: createReceiverLinkWithHandlers
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function createReceiverLinkWithHandlers(options: ReceiverLinkOptions)'
-      parameters:
-        - id: options
-          type:
-            - azure-event-hubs.ReceiverLinkOptions
-          description: ''
-      return:
-        type:
-          - Promise<azure-event-hubs.ReceiverLink>
-  - uid: azure-event-hubs.createRequestResponseLink
-    name: createRequestResponseLink
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: >-
-        function createRequestResponseLink(connection: any, senderOptions:
-        SenderOptions, receiverOptions: ReceiverOptions)
-      parameters:
-        - id: connection
-          type:
-            - any
-          description: ''
-        - id: senderOptions
-          type:
-            - SenderOptions
-          description: ''
-        - id: receiverOptions
-          type:
-            - ReceiverOptions
-          description: ''
-      return:
-        type:
-          - Promise<azure-event-hubs.RequestResponseLink>
-  - uid: azure-event-hubs.createSenderLink
-    name: createSenderLink
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function createSenderLink(connection: any, senderOptions: SenderOptions)'
-      parameters:
-        - id: connection
-          type:
-            - any
-          description: ''
-        - id: senderOptions
-          type:
-            - SenderOptions
-          description: ''
-      return:
-        type:
-          - Promise<azure-event-hubs.SenderLink>
-  - uid: azure-event-hubs.createSenderLinkWithHandlers
-    name: createSenderLinkWithHandlers
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function createSenderLinkWithHandlers(options: SenderLinkOptions)'
-      parameters:
-        - id: options
-          type:
-            - azure-event-hubs.SenderLinkOptions
-          description: ''
-      return:
-        type:
-          - Promise<azure-event-hubs.SenderLink>
-  - uid: azure-event-hubs.open
-    name: open
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: >-
-      Opens the AMQP connection to the Event Hub for this client, returning a
-      promise
-
-      that will be resolved when the connection is completed.
-    syntax:
-      content: 'function open(params: CreateConnectionPrameters)'
-      parameters:
-        - id: params
-          type:
-            - azure-event-hubs.CreateConnectionPrameters
-          description: ''
-      return:
-        type:
-          - Promise<Connection>
-  - uid: azure-event-hubs.sendRequest
-    name: sendRequest
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: >-
-        function sendRequest(connection: any, link: RequestResponseLink,
-        request: Message, timeoutInSeconds?: number)
-      parameters:
-        - id: connection
-          type:
-            - any
-          description: ''
-        - id: link
-          type:
-            - azure-event-hubs.RequestResponseLink
-          description: ''
-        - id: request
-          type:
-            - Message
-          description: ''
-        - id: timeoutInSeconds
-          type:
-            - number
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<any>
-  - uid: azure-event-hubs.delay
-    name: delay
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: A wrapper for setTimeout that resolves a promise after t milliseconds.
-    syntax:
-      content: 'function delay<T>(t: number, value?: T)'
-      parameters:
-        - id: t
-          type:
-            - number
-          description: The number of milliseconds to be delayed.
-        - id: value
-          type:
-            - T
-          description: The value to be resolved with after a timeout of t milliseconds.
-          optional: true
-      return:
-        type:
-          - Promise<T>
-  - uid: azure-event-hubs.executePromisesSequentially
-    name: executePromisesSequentially
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: >-
-        function executePromisesSequentially(promiseFactories: Array<any>,
-        kickstart?: any)
-      parameters:
-        - id: promiseFactories
-          type:
-            - Array<any>
-          description: ''
-        - id: kickstart
-          type:
-            - any
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<any>
-  - uid: azure-event-hubs.getNewAsyncLock
-    name: getNewAsyncLock
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: Gets a new instance of the async lock with desired settings.
-    syntax:
-      content: 'function getNewAsyncLock(options?: AsyncLockOptions)'
-      parameters:
-        - id: options
-          type:
-            - azure-event-hubs.AsyncLockOptions
-          description: ''
-          optional: true
-      return:
-        type:
-          - AsyncLock
-  - uid: azure-event-hubs.isIotHubConnectionString
-    name: isIotHubConnectionString
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: >-
-      Determines whether the given connection string is an iothub connection
-      string.
-    syntax:
-      content: 'function isIotHubConnectionString(connectionString: string)'
-      parameters:
-        - id: connectionString
-          type:
-            - string
-          description: The connection string.
-      return:
-        type:
-          - boolean
-  - uid: azure-event-hubs.parseConnectionString
-    name: parseConnectionString
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'function parseConnectionString<T>(connectionString: string)'
-      parameters:
-        - id: connectionString
-          type:
-            - string
-          description: ''
-      return:
-        type:
-          - azure-event-hubs.ParsedOutput<T>
 references:
   - uid: azure-event-hubs.AadTokenProvider
     name: AadTokenProvider
@@ -645,6 +108,10 @@ references:
     name: ClientEntity
   - uid: azure-event-hubs.ClientEntityOptions
     name: ClientEntityOptions
+  - uid: azure-event-hubs.ConnectionConfig
+    name: ConnectionConfig
+  - uid: azure-event-hubs.ConnectionContext
+    name: ConnectionContext
   - uid: azure-event-hubs.ConnectionContextOptions
     name: ConnectionContextOptions
   - uid: azure-event-hubs.DefaultDataTransformer
@@ -659,6 +126,10 @@ references:
     name: ErrorNameConditionMapper
   - uid: azure-event-hubs.EventHubsError
     name: EventHubsError
+  - uid: azure-event-hubs.translate
+    name: translate
+  - uid: azure-event-hubs.EventData
+    name: EventData
   - uid: azure-event-hubs.EventHubClient
     name: EventHubClient
   - uid: azure-event-hubs.ClientOptions
@@ -681,6 +152,8 @@ references:
     name: EventPosition
   - uid: azure-event-hubs.EventPositionOptions
     name: EventPositionOptions
+  - uid: azure-event-hubs.IotHubConnectionConfig
+    name: IotHubConnectionConfig
   - uid: azure-event-hubs.IotSasTokenProvider
     name: IotSasTokenProvider
   - uid: azure-event-hubs.IotHubClient
@@ -697,12 +170,34 @@ references:
     name: EventHubRuntimeInformation
   - uid: azure-event-hubs.ManagementClientOptions
     name: ManagementClientOptions
+  - uid: azure-event-hubs.retry
+    name: retry
   - uid: azure-event-hubs.AmqpResponseStatusCode
     name: AmqpResponseStatusCode
   - uid: azure-event-hubs.EventHubDeliveryAnnotations
     name: EventHubDeliveryAnnotations
   - uid: azure-event-hubs.EventHubMessageAnnotations
     name: EventHubMessageAnnotations
+  - uid: azure-event-hubs.closeConnection
+    name: closeConnection
+  - uid: azure-event-hubs.closeReceiver
+    name: closeReceiver
+  - uid: azure-event-hubs.closeSender
+    name: closeSender
+  - uid: azure-event-hubs.closeSession
+    name: closeSession
+  - uid: azure-event-hubs.connect
+    name: connect
+  - uid: azure-event-hubs.createReceiver
+    name: createReceiver
+  - uid: azure-event-hubs.createReceiverWithHandlers
+    name: createReceiverWithHandlers
+  - uid: azure-event-hubs.createSender
+    name: createSender
+  - uid: azure-event-hubs.createSenderWithHandlers
+    name: createSenderWithHandlers
+  - uid: azure-event-hubs.createSession
+    name: createSession
   - uid: azure-event-hubs.CreateConnectionPrameters
     name: CreateConnectionPrameters
   - uid: azure-event-hubs.LinkOptions
@@ -717,6 +212,20 @@ references:
     name: SenderLink
   - uid: azure-event-hubs.SenderLinkOptions
     name: SenderLinkOptions
+  - uid: azure-event-hubs.createReceiverLink
+    name: createReceiverLink
+  - uid: azure-event-hubs.createReceiverLinkWithHandlers
+    name: createReceiverLinkWithHandlers
+  - uid: azure-event-hubs.createRequestResponseLink
+    name: createRequestResponseLink
+  - uid: azure-event-hubs.createSenderLink
+    name: createSenderLink
+  - uid: azure-event-hubs.createSenderLinkWithHandlers
+    name: createSenderLinkWithHandlers
+  - uid: azure-event-hubs.open
+    name: open
+  - uid: azure-event-hubs.sendRequest
+    name: sendRequest
   - uid: azure-event-hubs.ReceiveHandler
     name: ReceiveHandler
   - uid: azure-event-hubs.StreamingReceiver
@@ -735,3 +244,13 @@ references:
     name: Func
   - uid: azure-event-hubs.ParsedOutput
     name: ParsedOutput
+  - uid: azure-event-hubs.delay
+    name: delay
+  - uid: azure-event-hubs.executePromisesSequentially
+    name: executePromisesSequentially
+  - uid: azure-event-hubs.getNewAsyncLock
+    name: getNewAsyncLock
+  - uid: azure-event-hubs.isIotHubConnectionString
+    name: isIotHubConnectionString
+  - uid: azure-event-hubs.parseConnectionString
+    name: parseConnectionString

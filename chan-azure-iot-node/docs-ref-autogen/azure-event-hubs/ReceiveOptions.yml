@@ -114,3 +114,9 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-event-hubs.EventPosition
+    spec.typeScript:
+      - name: EventPosition
+        fullName: EventPosition
+        uid: azure-event-hubs.EventPosition

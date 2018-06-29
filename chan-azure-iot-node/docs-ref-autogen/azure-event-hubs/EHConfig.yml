@@ -40,8 +40,8 @@ items:
         type:
           - string
 references:
-  - uid: azure-event-hubs.ClientOptions
+  - uid: azure-event-hubs.ParsedRedirectError
     spec.typeScript:
-      - name: ClientOptions
-        fullName: ClientOptions
-        uid: azure-event-hubs.ClientOptions
+      - name: ParsedRedirectError
+        fullName: ParsedRedirectError
+        uid: azure-event-hubs.ParsedRedirectError

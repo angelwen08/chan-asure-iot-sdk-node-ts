@@ -27,7 +27,7 @@ items:
       parameters:
         - id: context
           type:
-            - ConnectionContext
+            - azure-event-hubs.ConnectionContext
           description: ''
       return:
         type:
@@ -82,6 +82,11 @@ items:
             - string
           description: ''
 references:
+  - uid: azure-event-hubs.ConnectionContext
+    spec.typeScript:
+      - name: ConnectionContext
+        fullName: ConnectionContext
+        uid: azure-event-hubs.ConnectionContext
   - uid: azure-event-hubs.ConnectionContextOptions
     spec.typeScript:
       - name: ConnectionContextOptions

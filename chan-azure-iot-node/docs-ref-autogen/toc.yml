@@ -28,11 +28,32 @@
     - uid: azure-event-hubs.ClientOptionsBase
       name: ClientOptionsBase
       items: []
+    - uid: azure-event-hubs.closeConnection
+      name: closeConnection
+      items: []
+    - uid: azure-event-hubs.closeReceiver
+      name: closeReceiver
+      items: []
+    - uid: azure-event-hubs.closeSender
+      name: closeSender
+      items: []
+    - uid: azure-event-hubs.closeSession
+      name: closeSession
+      items: []
     - uid: azure-event-hubs.ConditionErrorNameMapper
       name: ConditionErrorNameMapper
       items: []
     - uid: azure-event-hubs.ConditionStatusMapper
       name: ConditionStatusMapper
+      items: []
+    - uid: azure-event-hubs.connect
+      name: connect
+      items: []
+    - uid: azure-event-hubs.ConnectionConfig
+      name: ConnectionConfig
+      items: []
+    - uid: azure-event-hubs.ConnectionContext
+      name: ConnectionContext
       items: []
     - uid: azure-event-hubs.ConnectionContextOptions
       name: ConnectionContextOptions
@@ -40,17 +61,53 @@
     - uid: azure-event-hubs.CreateConnectionPrameters
       name: CreateConnectionPrameters
       items: []
+    - uid: azure-event-hubs.createReceiver
+      name: createReceiver
+      items: []
+    - uid: azure-event-hubs.createReceiverLink
+      name: createReceiverLink
+      items: []
+    - uid: azure-event-hubs.createReceiverLinkWithHandlers
+      name: createReceiverLinkWithHandlers
+      items: []
+    - uid: azure-event-hubs.createReceiverWithHandlers
+      name: createReceiverWithHandlers
+      items: []
+    - uid: azure-event-hubs.createRequestResponseLink
+      name: createRequestResponseLink
+      items: []
+    - uid: azure-event-hubs.createSender
+      name: createSender
+      items: []
+    - uid: azure-event-hubs.createSenderLink
+      name: createSenderLink
+      items: []
+    - uid: azure-event-hubs.createSenderLinkWithHandlers
+      name: createSenderLinkWithHandlers
+      items: []
+    - uid: azure-event-hubs.createSenderWithHandlers
+      name: createSenderWithHandlers
+      items: []
+    - uid: azure-event-hubs.createSession
+      name: createSession
+      items: []
     - uid: azure-event-hubs.DataTransformer
       name: DataTransformer
       items: []
     - uid: azure-event-hubs.DefaultDataTransformer
       name: DefaultDataTransformer
       items: []
+    - uid: azure-event-hubs.delay
+      name: delay
+      items: []
     - uid: azure-event-hubs.EHConfig
       name: EHConfig
       items: []
     - uid: azure-event-hubs.ErrorNameConditionMapper
       name: ErrorNameConditionMapper
+      items: []
+    - uid: azure-event-hubs.EventData
+      name: EventData
       items: []
     - uid: azure-event-hubs.EventHubClient
       name: EventHubClient
@@ -85,17 +142,29 @@
     - uid: azure-event-hubs.EventPositionOptions
       name: EventPositionOptions
       items: []
+    - uid: azure-event-hubs.executePromisesSequentially
+      name: executePromisesSequentially
+      items: []
     - uid: azure-event-hubs.Func
       name: Func
       items: []
+    - uid: azure-event-hubs.getNewAsyncLock
+      name: getNewAsyncLock
+      items: []
     - uid: azure-event-hubs.IotHubClient
       name: IotHubClient
+      items: []
+    - uid: azure-event-hubs.IotHubConnectionConfig
+      name: IotHubConnectionConfig
       items: []
     - uid: azure-event-hubs.IotHubConnectionStringModel
       name: IotHubConnectionStringModel
       items: []
     - uid: azure-event-hubs.IotSasTokenProvider
       name: IotSasTokenProvider
+      items: []
+    - uid: azure-event-hubs.isIotHubConnectionString
+      name: isIotHubConnectionString
       items: []
     - uid: azure-event-hubs.LinkOptions
       name: LinkOptions
@@ -111,6 +180,12 @@
       items: []
     - uid: azure-event-hubs.OnMessage
       name: OnMessage
+      items: []
+    - uid: azure-event-hubs.open
+      name: open
+      items: []
+    - uid: azure-event-hubs.parseConnectionString
+      name: parseConnectionString
       items: []
     - uid: azure-event-hubs.ParsedOutput
       name: ParsedOutput
@@ -136,6 +211,9 @@
     - uid: azure-event-hubs.RequestResponseLink
       name: RequestResponseLink
       items: []
+    - uid: azure-event-hubs.retry
+      name: retry
+      items: []
     - uid: azure-event-hubs.SasTokenProvider
       name: SasTokenProvider
       items: []
@@ -144,6 +222,9 @@
       items: []
     - uid: azure-event-hubs.SenderLinkOptions
       name: SenderLinkOptions
+      items: []
+    - uid: azure-event-hubs.sendRequest
+      name: sendRequest
       items: []
     - uid: azure-event-hubs.StorageConnectionStringModel
       name: StorageConnectionStringModel
@@ -162,4 +243,7 @@
       items: []
     - uid: azure-event-hubs.TokenType
       name: TokenType
+      items: []
+    - uid: azure-event-hubs.translate
+      name: translate
       items: []

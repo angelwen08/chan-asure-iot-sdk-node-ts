@@ -74,9 +74,3 @@ items:
       return:
         type:
           - number
-references:
-  - uid: azure-event-hubs.EventHubsError
-    spec.typeScript:
-      - name: EventHubsError
-        fullName: EventHubsError
-        uid: azure-event-hubs.EventHubsError
