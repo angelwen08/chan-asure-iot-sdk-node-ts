@@ -28,7 +28,7 @@ items:
       parameters:
         - id: context
           type:
-            - azure-event-hubs.ConnectionContext
+            - ConnectionContext
           description: ''
   - uid: azure-event-hubs.CbsClient.cbsLock
     name: cbsLock
@@ -121,11 +121,6 @@ items:
         type:
           - string
 references:
-  - uid: azure-event-hubs.ConnectionContext
-    spec.typeScript:
-      - name: ConnectionContext
-        fullName: ConnectionContext
-        uid: azure-event-hubs.ConnectionContext
   - uid: azure-event-hubs.TokenInfo
     spec.typeScript:
       - name: TokenInfo

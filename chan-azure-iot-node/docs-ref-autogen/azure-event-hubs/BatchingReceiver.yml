@@ -32,7 +32,7 @@ items:
       parameters:
         - id: context
           type:
-            - azure-event-hubs.ConnectionContext
+            - ConnectionContext
           description: The connection context.
         - id: partitionId
           type:
@@ -57,7 +57,7 @@ items:
       parameters:
         - id: context
           type:
-            - azure-event-hubs.ConnectionContext
+            - ConnectionContext
           description: The connection context.
         - id: partitionId
           type:
@@ -97,32 +97,18 @@ items:
           optional: true
       return:
         type:
-          - 'Promise<azure-event-hubs.EventData[]>'
+          - 'Promise<EventData[]>'
 references:
   - uid: azure-event-hubs.EventHubReceiver
     spec.typeScript:
       - name: EventHubReceiver
         fullName: EventHubReceiver
         uid: azure-event-hubs.EventHubReceiver
-  - uid: azure-event-hubs.ConnectionContext
-    spec.typeScript:
-      - name: ConnectionContext
-        fullName: ConnectionContext
-        uid: azure-event-hubs.ConnectionContext
   - uid: azure-event-hubs.ReceiveOptions
     spec.typeScript:
       - name: ReceiveOptions
         fullName: ReceiveOptions
         uid: azure-event-hubs.ReceiveOptions
-  - uid: 'Promise<azure-event-hubs.EventData[]>'
-    spec.typeScript:
-      - name: Promise<
-        fullName: Promise<
-      - name: EventData
-        fullName: EventData
-        uid: azure-event-hubs.EventData
-      - name: '[]>'
-        fullName: '[]>'
   - uid: azure-event-hubs.BatchingReceiver
     spec.typeScript:
       - name: BatchingReceiver

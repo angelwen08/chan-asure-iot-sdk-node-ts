@@ -71,3 +71,9 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-event-hubs.EventHubMessageAnnotations
+    spec.typeScript:
+      - name: EventHubMessageAnnotations
+        fullName: EventHubMessageAnnotations
+        uid: azure-event-hubs.EventHubMessageAnnotations

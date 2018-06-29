@@ -76,7 +76,7 @@ items:
       parameters:
         - id: context
           type:
-            - azure-event-hubs.ConnectionContext
+            - ConnectionContext
           description: ''
         - id: partitionId
           type:
@@ -155,24 +155,3 @@ items:
       return:
         type:
           - azure-event-hubs.ReceiverRuntimeInfo
-references:
-  - uid: azure-event-hubs.ClientEntity
-    spec.typeScript:
-      - name: ClientEntity
-        fullName: ClientEntity
-        uid: azure-event-hubs.ClientEntity
-  - uid: azure-event-hubs.ConnectionContext
-    spec.typeScript:
-      - name: ConnectionContext
-        fullName: ConnectionContext
-        uid: azure-event-hubs.ConnectionContext
-  - uid: azure-event-hubs.ReceiveOptions
-    spec.typeScript:
-      - name: ReceiveOptions
-        fullName: ReceiveOptions
-        uid: azure-event-hubs.ReceiveOptions
-  - uid: azure-event-hubs.ReceiverRuntimeInfo
-    spec.typeScript:
-      - name: ReceiverRuntimeInfo
-        fullName: ReceiverRuntimeInfo
-        uid: azure-event-hubs.ReceiverRuntimeInfo

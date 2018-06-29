@@ -10,3 +10,9 @@ items:
     summary: |
       Describes the message handler signature.
     package: azure-event-hubs
+references:
+  - uid: azure-event-hubs.ManagementClient
+    spec.typeScript:
+      - name: ManagementClient
+        fullName: ManagementClient
+        uid: azure-event-hubs.ManagementClient

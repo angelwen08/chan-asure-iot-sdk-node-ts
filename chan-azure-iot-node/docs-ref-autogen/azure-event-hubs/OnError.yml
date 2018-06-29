@@ -10,3 +10,9 @@ items:
     summary: |
       Describes the error handler signature.
     package: azure-event-hubs
+references:
+  - uid: azure-event-hubs.DataTransformer
+    spec.typeScript:
+      - name: DataTransformer
+        fullName: DataTransformer
+        uid: azure-event-hubs.DataTransformer
