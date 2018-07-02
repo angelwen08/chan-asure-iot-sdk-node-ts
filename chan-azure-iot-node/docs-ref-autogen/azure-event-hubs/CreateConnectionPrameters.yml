@@ -24,7 +24,7 @@ items:
       content: 'config: ConnectionConfig'
       return:
         type:
-          - ConnectionConfig
+          - azure-event-hubs.ConnectionConfig
   - uid: azure-event-hubs.CreateConnectionPrameters.userAgent
     name: userAgent
     fullName: userAgent
@@ -53,8 +53,8 @@ items:
         type:
           - boolean
 references:
-  - uid: azure-event-hubs.ParsedRedirectError
+  - uid: azure-event-hubs.ConnectionConfig
     spec.typeScript:
-      - name: ParsedRedirectError
-        fullName: ParsedRedirectError
-        uid: azure-event-hubs.ParsedRedirectError
+      - name: ConnectionConfig
+        fullName: ConnectionConfig
+        uid: azure-event-hubs.ConnectionConfig
