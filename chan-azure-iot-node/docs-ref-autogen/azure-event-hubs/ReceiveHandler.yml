@@ -137,16 +137,3 @@ items:
       return:
         type:
           - Promise<void>
-references:
-  - uid: azure-event-hubs.EventHubReceiver
-    spec.typeScript:
-      - name: EventHubReceiver
-        fullName: EventHubReceiver
-        uid: azure-event-hubs.EventHubReceiver
-  - uid: azure-event-hubs.ReceiverRuntimeInfo | undefined
-    spec.typeScript:
-      - name: ReceiverRuntimeInfo
-        fullName: ReceiverRuntimeInfo
-        uid: azure-event-hubs.ReceiverRuntimeInfo
-      - name: ' | undefined'
-        fullName: ' | undefined'

@@ -47,3 +47,9 @@ items:
       return:
         type:
           - any
+references:
+  - uid: azure-event-hubs.TokenProvider
+    spec.typeScript:
+      - name: TokenProvider
+        fullName: TokenProvider
+        uid: azure-event-hubs.TokenProvider

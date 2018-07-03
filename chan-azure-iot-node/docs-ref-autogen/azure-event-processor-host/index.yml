@@ -7,10 +7,19 @@ items:
       - azure-event-processor-host.BlobLease
       - azure-event-processor-host.CreateContainerResult
       - azure-event-processor-host.Lease
-      - azure-event-processor-host.LeaseManager
+      - azure-event-processor-host.LeaseManager.leaseDuration
+      - azure-event-processor-host.LeaseManager.leases
+      - azure-event-processor-host.LeaseManager.manageLease
+      - azure-event-processor-host.LeaseManager.reset
+      - azure-event-processor-host.LeaseManager.unmanageLease
       - azure-event-processor-host.BlobLeaseManager
       - azure-event-processor-host.LeaseWithDuration
-      - azure-event-processor-host.CheckpointInfo
+      - azure-event-processor-host.CheckpointInfo.epoch
+      - azure-event-processor-host.CheckpointInfo.offset
+      - azure-event-processor-host.CheckpointInfo.owner
+      - azure-event-processor-host.CheckpointInfo.partitionId
+      - azure-event-processor-host.CheckpointInfo.sequenceNumber
+      - azure-event-processor-host.CheckpointInfo.token
       - azure-event-processor-host.EventProcessorHost
       - azure-event-processor-host.ConnectionStringBasedOptions
       - azure-event-processor-host.EventProcessorOptions
@@ -33,6 +42,87 @@ items:
     type: package
     langs:
       - typeScript
+  - uid: azure-event-processor-host.delay
+    name: delay
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: A wrapper for setTimeout that resolves a promise after t milliseconds.
+    syntax:
+      content: 'function delay<T>(t: number, value?: T)'
+      parameters:
+        - id: t
+          type:
+            - number
+          description: The number of milliseconds to be delayed.
+        - id: value
+          type:
+            - T
+          description: The value to be resolved with after a timeout of t milliseconds.
+          optional: true
+      return:
+        type:
+          - Promise<T>
+  - uid: azure-event-processor-host.executePromisesSequentially
+    name: executePromisesSequentially
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function executePromisesSequentially(promiseFactories: Array<any>,
+        kickstart?: any)
+      parameters:
+        - id: promiseFactories
+          type:
+            - Array<any>
+          description: ''
+        - id: kickstart
+          type:
+            - any
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<any>
+  - uid: azure-event-processor-host.getNewAsyncLock
+    name: getNewAsyncLock
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Gets a new instance of the async lock with desired settings.
+    syntax:
+      content: 'function getNewAsyncLock(options?: AsyncLockOptions)'
+      parameters:
+        - id: options
+          type:
+            - azure-event-processor-host.AsyncLockOptions
+          description: ''
+          optional: true
+      return:
+        type:
+          - AsyncLock
+  - uid: azure-event-processor-host.parseConnectionString
+    name: parseConnectionString
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function parseConnectionString<T>(connectionString: string)'
+      parameters:
+        - id: connectionString
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - azure-event-processor-host.ParsedOutput<T>
 references:
   - uid: azure-event-processor-host.BlobLease
     name: BlobLease
@@ -40,14 +130,32 @@ references:
     name: CreateContainerResult
   - uid: azure-event-processor-host.Lease
     name: Lease
-  - uid: azure-event-processor-host.LeaseManager
-    name: LeaseManager
+  - uid: azure-event-processor-host.LeaseManager.leaseDuration
+    name: leaseDuration
+  - uid: azure-event-processor-host.LeaseManager.leases
+    name: leases
+  - uid: azure-event-processor-host.LeaseManager.manageLease
+    name: manageLease
+  - uid: azure-event-processor-host.LeaseManager.reset
+    name: reset
+  - uid: azure-event-processor-host.LeaseManager.unmanageLease
+    name: unmanageLease
   - uid: azure-event-processor-host.BlobLeaseManager
     name: BlobLeaseManager
   - uid: azure-event-processor-host.LeaseWithDuration
     name: LeaseWithDuration
-  - uid: azure-event-processor-host.CheckpointInfo
-    name: CheckpointInfo
+  - uid: azure-event-processor-host.CheckpointInfo.epoch
+    name: epoch
+  - uid: azure-event-processor-host.CheckpointInfo.offset
+    name: offset
+  - uid: azure-event-processor-host.CheckpointInfo.owner
+    name: owner
+  - uid: azure-event-processor-host.CheckpointInfo.partitionId
+    name: partitionId
+  - uid: azure-event-processor-host.CheckpointInfo.sequenceNumber
+    name: sequenceNumber
+  - uid: azure-event-processor-host.CheckpointInfo.token
+    name: token
   - uid: azure-event-processor-host.EventProcessorHost
     name: EventProcessorHost
   - uid: azure-event-processor-host.ConnectionStringBasedOptions
@@ -78,11 +186,3 @@ references:
     name: Func
   - uid: azure-event-processor-host.ParsedOutput
     name: ParsedOutput
-  - uid: azure-event-processor-host.delay
-    name: delay
-  - uid: azure-event-processor-host.executePromisesSequentially
-    name: executePromisesSequentially
-  - uid: azure-event-processor-host.getNewAsyncLock
-    name: getNewAsyncLock
-  - uid: azure-event-processor-host.parseConnectionString
-    name: parseConnectionString

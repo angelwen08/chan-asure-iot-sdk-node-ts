@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host.CheckpointInfo.offset
+    name: offset
+    fullName: offset
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'offset?: string'
+      return:
+        type:
+          - string
+    module: CheckpointInfo

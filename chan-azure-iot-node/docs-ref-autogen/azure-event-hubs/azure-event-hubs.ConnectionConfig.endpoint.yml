@@ -1,0 +1,16 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.ConnectionConfig.endpoint
+    name: endpoint
+    fullName: endpoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'endpoint: string'
+      return:
+        type:
+          - string
+    module: ConnectionConfig

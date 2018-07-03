@@ -25,8 +25,8 @@ items:
         type:
           - azure-event-processor-host.PartitionFilter
 references:
-  - uid: azure-event-processor-host.PartitionFilter
+  - uid: azure-event-processor-host.EventProcessorOptions
     spec.typeScript:
-      - name: PartitionFilter
-        fullName: PartitionFilter
-        uid: azure-event-processor-host.PartitionFilter
+      - name: EventProcessorOptions
+        fullName: EventProcessorOptions
+        uid: azure-event-processor-host.EventProcessorOptions

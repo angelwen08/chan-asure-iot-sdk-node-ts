@@ -39,9 +39,3 @@ items:
       return:
         type:
           - string
-references:
-  - uid: azure-event-hubs.ParsedRedirectError
-    spec.typeScript:
-      - name: ParsedRedirectError
-        fullName: ParsedRedirectError
-        uid: azure-event-hubs.ParsedRedirectError

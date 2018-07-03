@@ -69,3 +69,9 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-event-processor-host.BlobLease
+    spec.typeScript:
+      - name: BlobLease
+        fullName: BlobLease
+        uid: azure-event-processor-host.BlobLease

@@ -1,0 +1,16 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs.ConnectionConfig.sharedAccessKey
+    name: sharedAccessKey
+    fullName: sharedAccessKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'sharedAccessKey: string'
+      return:
+        type:
+          - string
+    module: ConnectionConfig

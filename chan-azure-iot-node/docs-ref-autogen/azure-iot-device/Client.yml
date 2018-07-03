@@ -230,9 +230,3 @@ items:
       - type: ReferenceException
         description: |
           If blobName or stream or streamLength is falsy.
-references:
-  - uid: azure-iot-device.DeviceTransport
-    spec.typeScript:
-      - name: DeviceTransport
-        fullName: DeviceTransport
-        uid: azure-iot-device.DeviceTransport

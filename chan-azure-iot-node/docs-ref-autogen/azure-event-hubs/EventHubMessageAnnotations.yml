@@ -71,3 +71,9 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-event-hubs.ConnectionContextOptions
+    spec.typeScript:
+      - name: ConnectionContextOptions
+        fullName: ConnectionContextOptions
+        uid: azure-event-hubs.ConnectionContextOptions

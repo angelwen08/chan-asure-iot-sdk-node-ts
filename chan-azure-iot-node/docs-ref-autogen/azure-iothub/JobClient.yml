@@ -35,7 +35,7 @@ items:
       - typeScript
     summary: Cancels an existing job.
     syntax:
-      content: 'function cancelJob(jobId: string | number, done: JobClient.JobCallback)'
+      content: 'function cancelJob(jobId: string | number, done: JobCallback)'
       parameters:
         - id: jobId
           type:
@@ -139,7 +139,7 @@ items:
       - typeScript
     summary: Requests information about an existing job.
     syntax:
-      content: 'function getJob(jobId: string | number, done: JobClient.JobCallback)'
+      content: 'function getJob(jobId: string | number, done: JobCallback)'
       parameters:
         - id: jobId
           type:
@@ -175,8 +175,8 @@ items:
       content: >-
         function scheduleDeviceMethod(jobId: string | number, queryCondition:
         string, methodParams: DeviceMethodParams, jobStartTime?: Date |
-        JobClient.JobCallback, maxExecutionTimeInSeconds?: number |
-        JobClient.JobCallback, done?: JobClient.JobCallback)
+        JobCallback, maxExecutionTimeInSeconds?: number | JobCallback, done?:
+        JobCallback)
       parameters:
         - id: jobId
           type:
@@ -239,9 +239,8 @@ items:
     syntax:
       content: >-
         function scheduleTwinUpdate(jobId: string | number, queryCondition:
-        string, patch: any, jobStartTime?: Date | JobClient.JobCallback,
-        maxExecutionTimeInSeconds?: number | JobClient.JobCallback, done?:
-        JobClient.JobCallback)
+        string, patch: any, jobStartTime?: Date | JobCallback,
+        maxExecutionTimeInSeconds?: number | JobCallback, done?: JobCallback)
       parameters:
         - id: jobId
           type:
@@ -285,48 +284,3 @@ items:
       - type: TypeError
         description: |
           If the callback is not the last parameter
-references:
-  - uid: azure-iothub.JobClient.JobCallback
-    spec.typeScript:
-      - name: JobCallback
-        fullName: JobCallback
-        uid: azure-iothub.JobClient.JobCallback
-  - uid: azure-iothub.JobType
-    spec.typeScript:
-      - name: JobType
-        fullName: JobType
-        uid: azure-iothub.JobType
-  - uid: azure-iothub.JobStatus
-    spec.typeScript:
-      - name: JobStatus
-        fullName: JobStatus
-        uid: azure-iothub.JobStatus
-  - uid: azure-iothub.Query
-    spec.typeScript:
-      - name: Query
-        fullName: Query
-        uid: azure-iothub.Query
-  - uid: azure-iothub.DeviceMethodParams
-    spec.typeScript:
-      - name: DeviceMethodParams
-        fullName: DeviceMethodParams
-        uid: azure-iothub.DeviceMethodParams
-  - uid: Date | azure-iothub.JobClient.JobCallback
-    spec.typeScript:
-      - name: 'Date | '
-        fullName: 'Date | '
-      - name: JobCallback
-        fullName: JobCallback
-        uid: azure-iothub.JobClient.JobCallback
-  - uid: number | azure-iothub.JobClient.JobCallback
-    spec.typeScript:
-      - name: 'number | '
-        fullName: 'number | '
-      - name: JobCallback
-        fullName: JobCallback
-        uid: azure-iothub.JobClient.JobCallback
-  - uid: azure-iothub.JobClient
-    spec.typeScript:
-      - name: JobClient
-        fullName: JobClient
-        uid: azure-iothub.JobClient

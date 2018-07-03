@@ -341,3 +341,9 @@ items:
       operations.
     type: field
     numericValue: null
+references:
+  - uid: azure-event-hubs.ClientOptions
+    spec.typeScript:
+      - name: ClientOptions
+        fullName: ClientOptions
+        uid: azure-event-hubs.ClientOptions

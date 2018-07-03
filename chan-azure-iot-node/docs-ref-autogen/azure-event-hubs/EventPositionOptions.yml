@@ -84,3 +84,19 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-event-hubs.ClientEntity
+    spec.typeScript:
+      - name: ClientEntity
+        fullName: ClientEntity
+        uid: azure-event-hubs.ClientEntity
+  - uid: azure-event-hubs.ReceiveOptions
+    spec.typeScript:
+      - name: ReceiveOptions
+        fullName: ReceiveOptions
+        uid: azure-event-hubs.ReceiveOptions
+  - uid: azure-event-hubs.ReceiverRuntimeInfo
+    spec.typeScript:
+      - name: ReceiverRuntimeInfo
+        fullName: ReceiverRuntimeInfo
+        uid: azure-event-hubs.ReceiverRuntimeInfo

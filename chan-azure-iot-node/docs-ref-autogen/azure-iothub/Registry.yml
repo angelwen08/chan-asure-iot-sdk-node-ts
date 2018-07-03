@@ -69,7 +69,7 @@ items:
     syntax:
       content: >-
         function addConfiguration(configuration: Configuration, done:
-        Registry.ResponseCallback)
+        ResponseCallback)
       parameters:
         - id: configuration
           type:
@@ -103,7 +103,7 @@ items:
     syntax:
       content: >-
         function addDevices(devices: DeviceDescription[], done:
-        Registry.BulkDeviceIdentityCallback)
+        BulkDeviceIdentityCallback)
       parameters:
         - id: devices
           type:
@@ -130,7 +130,7 @@ items:
       - typeScript
     summary: Add the given module to the registry.
     syntax:
-      content: 'function addModule(module: Module, done: Registry.ResponseCallback)'
+      content: 'function addModule(module: Module, done: ResponseCallback)'
       parameters:
         - id: module
           type:
@@ -162,7 +162,7 @@ items:
     syntax:
       content: >-
         function applyConfigurationContentOnDevice(deviceId: string, content:
-        ConfigurationContent, done: Registry.ResponseCallback)
+        ConfigurationContent, done: ResponseCallback)
       parameters:
         - id: deviceId
           type:
@@ -216,7 +216,7 @@ items:
       - typeScript
     summary: Cancel a bulk import/export job.
     syntax:
-      content: 'function cancelJob(jobId: string, done: Registry.JobCallback)'
+      content: 'function cancelJob(jobId: string, done: JobCallback)'
       parameters:
         - id: jobId
           type:
@@ -239,9 +239,7 @@ items:
       - typeScript
     summary: Creates a new device identity on an IoT hub.
     syntax:
-      content: >-
-        function create(deviceInfo: DeviceDescription, done:
-        Registry.DeviceCallback)
+      content: 'function create(deviceInfo: DeviceDescription, done: DeviceCallback)'
       parameters:
         - id: deviceInfo
           type:
@@ -301,7 +299,7 @@ items:
       - typeScript
     summary: Removes an existing device identity from an IoT hub.
     syntax:
-      content: 'function delete(deviceId: string, done: Registry.ResponseCallback)'
+      content: 'function delete(deviceId: string, done: ResponseCallback)'
       parameters:
         - id: deviceId
           type:
@@ -338,7 +336,7 @@ items:
     syntax:
       content: >-
         function exportDevicesToBlob(outputBlobContainerUri: string,
-        excludeKeys: boolean, done: Registry.JobCallback)
+        excludeKeys: boolean, done: JobCallback)
       parameters:
         - id: outputBlobContainerUri
           type:
@@ -409,7 +407,7 @@ items:
       Requests information about an existing device identity
                          on an IoT hub.
     syntax:
-      content: 'function get(deviceId: string, done: Registry.DeviceCallback)'
+      content: 'function get(deviceId: string, done: DeviceCallback)'
       parameters:
         - id: deviceId
           type:
@@ -487,7 +485,7 @@ items:
       - typeScript
     summary: Get the status of a bulk import/export job.
     syntax:
-      content: 'function getJob(jobId: string, done: Registry.JobCallback)'
+      content: 'function getJob(jobId: string, done: JobCallback)'
       parameters:
         - id: jobId
           type:
@@ -613,7 +611,7 @@ items:
       - typeScript
     summary: Gets the Device Twin of the device with the specified device identifier.
     syntax:
-      content: 'function getTwin(deviceId: string, done: Registry.ResponseCallback)'
+      content: 'function getTwin(deviceId: string, done: ResponseCallback)'
       parameters:
         - id: deviceId
           type:
@@ -635,7 +633,7 @@ items:
     syntax:
       content: >-
         function importDevicesFromBlob(inputBlobContainerUri: string,
-        outputBlobContainerUri: string, done: Registry.JobCallback)
+        outputBlobContainerUri: string, done: JobCallback)
       parameters:
         - id: inputBlobContainerUri
           type:
@@ -726,7 +724,7 @@ items:
     syntax:
       content: >-
         function removeConfiguration(configurationId: string, done:
-        Registry.ResponseCallback)
+        ResponseCallback)
       parameters:
         - id: configurationId
           type:
@@ -756,7 +754,7 @@ items:
     syntax:
       content: >-
         function removeDevices(devices: DeviceDescription[], forceRemove:
-        boolean, done: Registry.BulkDeviceIdentityCallback)
+        boolean, done: BulkDeviceIdentityCallback)
       parameters:
         - id: devices
           type:
@@ -790,7 +788,7 @@ items:
       - typeScript
     summary: Remove the given module from the registry
     syntax:
-      content: 'function removeModule(module: Module, done: Registry.ResponseCallback)'
+      content: 'function removeModule(module: Module, done: ResponseCallback)'
       parameters:
         - id: module
           type:
@@ -820,7 +818,7 @@ items:
     syntax:
       content: >-
         function removeModule(deviceId: string, moduleId: string, done:
-        Registry.ResponseCallback)
+        ResponseCallback)
       parameters:
         - id: deviceId
           type:
@@ -858,9 +856,7 @@ items:
       Updates an existing device identity on an IoT hub with
                          the given device information.
     syntax:
-      content: >-
-        function update(deviceInfo: DeviceDescription, done:
-        Registry.DeviceCallback)
+      content: 'function update(deviceInfo: DeviceDescription, done: DeviceCallback)'
       parameters:
         - id: deviceInfo
           type:
@@ -890,7 +886,7 @@ items:
     syntax:
       content: >-
         function updateConfiguration(configuration: Configuration, done:
-        Registry.ResponseCallback)
+        ResponseCallback)
       parameters:
         - id: configuration
           type:
@@ -926,7 +922,7 @@ items:
     syntax:
       content: >-
         function updateConfiguration(configuration: Configuration, forceUpdate:
-        boolean, done: Registry.ResponseCallback)
+        boolean, done: ResponseCallback)
       parameters:
         - id: configuration
           type:
@@ -958,7 +954,7 @@ items:
     syntax:
       content: >-
         function updateDevices(devices: DeviceDescription[], forceUpdate:
-        boolean, done?: Registry.BulkDeviceIdentityCallback)
+        boolean, done?: BulkDeviceIdentityCallback)
       parameters:
         - id: devices
           type:
@@ -993,7 +989,7 @@ items:
       - typeScript
     summary: Update the given module object in the registry
     syntax:
-      content: 'function updateModule(module: Module, done: Registry.ResponseCallback)'
+      content: 'function updateModule(module: Module, done: ResponseCallback)'
       parameters:
         - id: module
           type:
@@ -1027,7 +1023,7 @@ items:
     syntax:
       content: >-
         function updateModule(module: Module, forceUpdate: boolean, done:
-        Registry.ResponseCallback)
+        ResponseCallback)
       parameters:
         - id: module
           type:
@@ -1059,7 +1055,7 @@ items:
     syntax:
       content: >-
         function updateModuleTwin(deviceId: string, moduleId: string, patch:
-        any, etag: string, done: Registry.ResponseCallback)
+        any, etag: string, done: ResponseCallback)
       parameters:
         - id: deviceId
           type:
@@ -1100,7 +1096,7 @@ items:
     syntax:
       content: >-
         function updateTwin(deviceId: string, patch: any, etag: string, done:
-        Registry.ResponseCallback)
+        ResponseCallback)
       parameters:
         - id: deviceId
           type:
@@ -1124,90 +1120,12 @@ items:
             The callback that will be called with either an Error object or
                                             the device twin instance.
 references:
-  - uid: 'azure-iothub.Registry.DeviceRegistryOperationError[]'
-    spec.typeScript:
-      - name: DeviceRegistryOperationError
-        fullName: DeviceRegistryOperationError
-        uid: azure-iothub.Registry.DeviceRegistryOperationError
-      - name: '[]'
-        fullName: '[]'
-  - uid: azure-iothub.Device.Capabilities
-    spec.typeScript:
-      - name: Capabilities
-        fullName: Capabilities
-        uid: azure-iothub.Device.Capabilities
-  - uid: azure-iothub.Configuration
-    spec.typeScript:
-      - name: Configuration
-        fullName: Configuration
-        uid: azure-iothub.Configuration
-  - uid: azure-iothub.Registry.ResponseCallback
-    spec.typeScript:
-      - name: ResponseCallback
-        fullName: ResponseCallback
-        uid: azure-iothub.Registry.ResponseCallback
-  - uid: 'azure-iothub.Registry.DeviceDescription[]'
-    spec.typeScript:
-      - name: DeviceDescription
-        fullName: DeviceDescription
-        uid: azure-iothub.Registry.DeviceDescription
-      - name: '[]'
-        fullName: '[]'
-  - uid: azure-iothub.Registry.BulkDeviceIdentityCallback
-    spec.typeScript:
-      - name: BulkDeviceIdentityCallback
-        fullName: BulkDeviceIdentityCallback
-        uid: azure-iothub.Registry.BulkDeviceIdentityCallback
-  - uid: azure-iothub.Module
-    spec.typeScript:
-      - name: Module
-        fullName: Module
-        uid: azure-iothub.Module
-  - uid: azure-iothub.ConfigurationContent
-    spec.typeScript:
-      - name: ConfigurationContent
-        fullName: ConfigurationContent
-        uid: azure-iothub.ConfigurationContent
-  - uid: azure-iothub.Registry.JobCallback
-    spec.typeScript:
-      - name: JobCallback
-        fullName: JobCallback
-        uid: azure-iothub.Registry.JobCallback
-  - uid: azure-iothub.Registry.DeviceDescription
-    spec.typeScript:
-      - name: DeviceDescription
-        fullName: DeviceDescription
-        uid: azure-iothub.Registry.DeviceDescription
-  - uid: azure-iothub.Registry.DeviceCallback
-    spec.typeScript:
-      - name: DeviceCallback
-        fullName: DeviceCallback
-        uid: azure-iothub.Registry.DeviceCallback
-  - uid: azure-iothub.Query
-    spec.typeScript:
-      - name: Query
-        fullName: Query
-        uid: azure-iothub.Query
-  - uid: Callback<azure-iothub.Registry.RegistryStatistics>
+  - uid: 'Callback<azure-iothub.Twin[]>'
     spec.typeScript:
       - name: Callback<
         fullName: Callback<
-      - name: RegistryStatistics
-        fullName: RegistryStatistics
-        uid: azure-iothub.Registry.RegistryStatistics
-      - name: '>'
-        fullName: '>'
-  - uid: 'Callback<azure-iothub.Device[]>'
-    spec.typeScript:
-      - name: Callback<
-        fullName: Callback<
-      - name: Device
-        fullName: Device
-        uid: azure-iothub.Device
+      - name: Twin
+        fullName: Twin
+        uid: azure-iothub.Twin
       - name: '[]>'
         fullName: '[]>'
-  - uid: azure-iothub.Registry
-    spec.typeScript:
-      - name: Registry
-        fullName: Registry
-        uid: azure-iothub.Registry

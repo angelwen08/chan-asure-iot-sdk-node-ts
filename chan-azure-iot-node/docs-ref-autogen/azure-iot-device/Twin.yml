@@ -106,8 +106,23 @@ items:
         type:
           - azure-iot-device.TwinProperties
 references:
-  - uid: azure-iot-device.TwinProperties
+  - uid: azure-iot-device.MethodParams
     spec.typeScript:
-      - name: TwinProperties
-        fullName: TwinProperties
-        uid: azure-iot-device.TwinProperties
+      - name: MethodParams
+        fullName: MethodParams
+        uid: azure-iot-device.MethodParams
+  - uid: azure-iot-device.MethodCallback
+    spec.typeScript:
+      - name: MethodCallback
+        fullName: MethodCallback
+        uid: azure-iot-device.MethodCallback
+  - uid: azure-iot-device.DeviceClientOptions
+    spec.typeScript:
+      - name: DeviceClientOptions
+        fullName: DeviceClientOptions
+        uid: azure-iot-device.DeviceClientOptions
+  - uid: azure-iot-device.ModuleClient
+    spec.typeScript:
+      - name: ModuleClient
+        fullName: ModuleClient
+        uid: azure-iot-device.ModuleClient

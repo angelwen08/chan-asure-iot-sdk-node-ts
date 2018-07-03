@@ -118,9 +118,3 @@ items:
       return:
         type:
           - string
-references:
-  - uid: azure-iot-common.SharedAccessSignature
-    spec.typeScript:
-      - name: SharedAccessSignature
-        fullName: SharedAccessSignature
-        uid: azure-iot-common.SharedAccessSignature

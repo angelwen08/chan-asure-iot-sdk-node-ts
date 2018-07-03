@@ -24,9 +24,3 @@ items:
       return:
         type:
           - azure-event-hubs.DataTransformer
-references:
-  - uid: azure-event-hubs.DataTransformer
-    spec.typeScript:
-      - name: DataTransformer
-        fullName: DataTransformer
-        uid: azure-event-hubs.DataTransformer

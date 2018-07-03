@@ -73,7 +73,7 @@ items:
       content: 'leaseManager?: LeaseManager'
       return:
         type:
-          - azure-event-processor-host.LeaseManager
+          - LeaseManager
   - uid: azure-event-processor-host.EventProcessorOptions.storageBlobPrefix
     name: storageBlobPrefix
     fullName: storageBlobPrefix
@@ -89,8 +89,23 @@ items:
         type:
           - string
 references:
-  - uid: azure-event-processor-host.LeaseManager
+  - uid: azure-event-processor-host.EventProcessorOptions
     spec.typeScript:
-      - name: LeaseManager
-        fullName: LeaseManager
-        uid: azure-event-processor-host.LeaseManager
+      - name: EventProcessorOptions
+        fullName: EventProcessorOptions
+        uid: azure-event-processor-host.EventProcessorOptions
+  - uid: azure-event-processor-host.StartEPHOptions
+    spec.typeScript:
+      - name: StartEPHOptions
+        fullName: StartEPHOptions
+        uid: azure-event-processor-host.StartEPHOptions
+  - uid: azure-event-processor-host.EventProcessorHost
+    spec.typeScript:
+      - name: EventProcessorHost
+        fullName: EventProcessorHost
+        uid: azure-event-processor-host.EventProcessorHost
+  - uid: azure-event-processor-host.ConnectionStringBasedOptions
+    spec.typeScript:
+      - name: ConnectionStringBasedOptions
+        fullName: ConnectionStringBasedOptions
+        uid: azure-event-processor-host.ConnectionStringBasedOptions

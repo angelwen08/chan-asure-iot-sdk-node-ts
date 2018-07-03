@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host.LeaseManager.manageLease
+    name: manageLease
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Manages the specified lease.
+    syntax:
+      content: 'function manageLease(lease: Lease)'
+      parameters:
+        - id: lease
+          type:
+            - azure-event-processor-host.Lease
+          description: |
+            The lease to be managed.
+    module: LeaseManager
+references:
+  - uid: azure-event-processor-host.Lease
+    spec.typeScript:
+      - name: Lease
+        fullName: Lease
+        uid: azure-event-processor-host.Lease

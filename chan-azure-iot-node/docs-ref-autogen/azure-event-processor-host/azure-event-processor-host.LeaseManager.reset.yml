@@ -1,0 +1,13 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host.LeaseManager.reset
+    name: reset
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Resets the dictionary of leases to an empty object.
+    syntax:
+      content: function reset()
+      parameters: []
+    module: LeaseManager

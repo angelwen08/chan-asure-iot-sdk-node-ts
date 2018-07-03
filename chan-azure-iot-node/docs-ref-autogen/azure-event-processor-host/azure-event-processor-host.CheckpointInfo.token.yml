@@ -1,0 +1,16 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host.CheckpointInfo.token
+    name: token
+    fullName: token
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'token: string'
+      return:
+        type:
+          - string
+    module: CheckpointInfo

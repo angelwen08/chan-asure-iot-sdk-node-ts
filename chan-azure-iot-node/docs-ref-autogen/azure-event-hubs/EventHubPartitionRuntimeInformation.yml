@@ -105,7 +105,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'type: "com.microsoft:partition"'
+      content: 'type: microsoft:partition"'
       return:
         type:
-          - '"com.microsoft:partition"'
+          - 'microsoft:partition"'

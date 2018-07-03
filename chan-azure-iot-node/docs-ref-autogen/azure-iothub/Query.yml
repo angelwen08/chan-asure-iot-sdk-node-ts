@@ -84,7 +84,7 @@ items:
       parameters:
         - id: continuationToken
           type:
-            - 'string | Callback<azure-iothub.Twin[]>'
+            - 'string | Twin!@[]>'
           description: Continuation Token used for paging through results (optional)
         - id: done
           type:
@@ -94,21 +94,13 @@ items:
                                                       the results of the query.
           optional: true
 references:
-  - uid: 'string | Callback<azure-iothub.Twin[]>'
+  - uid: azure-iothub.Device.Authentication
     spec.typeScript:
-      - name: string | Callback<
-        fullName: string | Callback<
-      - name: Twin
-        fullName: Twin
-        uid: azure-iothub.Twin
-      - name: '[]>'
-        fullName: '[]>'
-  - uid: 'Callback<azure-iothub.Twin[]>'
+      - name: Authentication
+        fullName: Authentication
+        uid: azure-iothub.Device.Authentication
+  - uid: azure-iothub.Device.ConnectionState
     spec.typeScript:
-      - name: Callback<
-        fullName: Callback<
-      - name: Twin
-        fullName: Twin
-        uid: azure-iothub.Twin
-      - name: '[]>'
-        fullName: '[]>'
+      - name: ConnectionState
+        fullName: ConnectionState
+        uid: azure-iothub.Device.ConnectionState

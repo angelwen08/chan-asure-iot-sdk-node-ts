@@ -10,3 +10,14 @@ items:
     summary: |
       Describes the message handler signature.
     package: azure-event-hubs
+references:
+  - uid: azure-event-hubs.ClientOptionsBase
+    spec.typeScript:
+      - name: ClientOptionsBase
+        fullName: ClientOptionsBase
+        uid: azure-event-hubs.ClientOptionsBase
+  - uid: azure-event-hubs.TokenProvider
+    spec.typeScript:
+      - name: TokenProvider
+        fullName: TokenProvider
+        uid: azure-event-hubs.TokenProvider

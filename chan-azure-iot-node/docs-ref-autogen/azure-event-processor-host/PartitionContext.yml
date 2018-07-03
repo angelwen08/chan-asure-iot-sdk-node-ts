@@ -42,7 +42,7 @@ items:
       parameters: []
       return:
         type:
-          - Promise<azure-event-processor-host.CheckpointInfo | void>
+          - Promise<CheckpointInfo | void>
   - uid: azure-event-processor-host.PartitionContext.lease
     name: lease
     fullName: lease
@@ -158,28 +158,4 @@ items:
       parameters: []
       return:
         type:
-          - Promise<azure-event-processor-host.CheckpointInfo>
-references:
-  - uid: azure-event-processor-host.BlobLease
-    spec.typeScript:
-      - name: BlobLease
-        fullName: BlobLease
-        uid: azure-event-processor-host.BlobLease
-  - uid: Promise<azure-event-processor-host.CheckpointInfo | void>
-    spec.typeScript:
-      - name: Promise<
-        fullName: Promise<
-      - name: CheckpointInfo
-        fullName: CheckpointInfo
-        uid: azure-event-processor-host.CheckpointInfo
-      - name: ' | void>'
-        fullName: ' | void>'
-  - uid: Promise<azure-event-processor-host.CheckpointInfo>
-    spec.typeScript:
-      - name: Promise<
-        fullName: Promise<
-      - name: CheckpointInfo
-        fullName: CheckpointInfo
-        uid: azure-event-processor-host.CheckpointInfo
-      - name: '>'
-        fullName: '>'
+          - Promise<CheckpointInfo>

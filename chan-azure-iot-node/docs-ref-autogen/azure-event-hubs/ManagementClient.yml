@@ -105,7 +105,7 @@ items:
       parameters:
         - id: context
           type:
-            - azure-event-hubs.ConnectionContext
+            - ConnectionContext
           description: The connection context.
         - id: options
           type:
@@ -138,37 +138,3 @@ items:
       return:
         type:
           - string
-references:
-  - uid: azure-event-hubs.ClientEntity
-    spec.typeScript:
-      - name: ClientEntity
-        fullName: ClientEntity
-        uid: azure-event-hubs.ClientEntity
-  - uid: azure-event-hubs.ConnectionContext
-    spec.typeScript:
-      - name: ConnectionContext
-        fullName: ConnectionContext
-        uid: azure-event-hubs.ConnectionContext
-  - uid: azure-event-hubs.ManagementClientOptions
-    spec.typeScript:
-      - name: ManagementClientOptions
-        fullName: ManagementClientOptions
-        uid: azure-event-hubs.ManagementClientOptions
-  - uid: Promise<azure-event-hubs.EventHubRuntimeInformation>
-    spec.typeScript:
-      - name: Promise<
-        fullName: Promise<
-      - name: EventHubRuntimeInformation
-        fullName: EventHubRuntimeInformation
-        uid: azure-event-hubs.EventHubRuntimeInformation
-      - name: '>'
-        fullName: '>'
-  - uid: Promise<azure-event-hubs.EventHubPartitionRuntimeInformation>
-    spec.typeScript:
-      - name: Promise<
-        fullName: Promise<
-      - name: EventHubPartitionRuntimeInformation
-        fullName: EventHubPartitionRuntimeInformation
-        uid: azure-event-hubs.EventHubPartitionRuntimeInformation
-      - name: '>'
-        fullName: '>'
