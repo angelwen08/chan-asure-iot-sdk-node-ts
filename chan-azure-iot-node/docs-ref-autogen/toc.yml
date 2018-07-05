@@ -1,15 +1,376 @@
-- uid: azure-iot-device
-  name: azure-iot-device
+- uid: azure-event-hubs
+  name: azure-event-hubs
   items:
+    - uid: azure-event-hubs.AadTokenProvider
+      name: AadTokenProvider
+      items: []
+    - uid: azure-event-hubs.AmqpResponseStatusCode
+      name: AmqpResponseStatusCode
+      items: []
+    - uid: azure-event-hubs.AsyncLockOptions
+      name: AsyncLockOptions
+      items: []
+    - uid: azure-event-hubs.BatchingReceiver
+      name: BatchingReceiver
+      items: []
+    - uid: azure-event-hubs.CbsClient
+      name: CbsClient
+      items: []
+    - uid: azure-event-hubs.ClientEntity
+      name: ClientEntity
+      items: []
+    - uid: azure-event-hubs.ClientEntityOptions
+      name: ClientEntityOptions
+      items: []
+    - uid: azure-event-hubs.ClientOptions
+      name: ClientOptions
+      items: []
+    - uid: azure-event-hubs.ClientOptionsBase
+      name: ClientOptionsBase
+      items: []
+    - uid: azure-event-hubs.ConditionErrorNameMapper
+      name: ConditionErrorNameMapper
+      items: []
+    - uid: azure-event-hubs.ConditionStatusMapper
+      name: ConditionStatusMapper
+      items: []
+    - uid: azure-event-hubs.ConnectionConfig
+      name: ConnectionConfig
+      items: []
+    - uid: azure-event-hubs.ConnectionContext
+      name: ConnectionContext
+      items: []
+    - uid: azure-event-hubs.ConnectionContextOptions
+      name: ConnectionContextOptions
+      items: []
+    - uid: azure-event-hubs.CreateConnectionPrameters
+      name: CreateConnectionPrameters
+      items: []
+    - uid: azure-event-hubs.DataTransformer
+      name: DataTransformer
+      items: []
+    - uid: azure-event-hubs.DefaultDataTransformer
+      name: DefaultDataTransformer
+      items: []
+    - uid: azure-event-hubs.EHConfig
+      name: EHConfig
+      items: []
+    - uid: azure-event-hubs.ErrorNameConditionMapper
+      name: ErrorNameConditionMapper
+      items: []
+    - uid: azure-event-hubs.EventData
+      name: EventData
+      items: []
+    - uid: azure-event-hubs.EventHubClient
+      name: EventHubClient
+      items: []
+    - uid: azure-event-hubs.EventHubConnectionStringModel
+      name: EventHubConnectionStringModel
+      items: []
+    - uid: azure-event-hubs.EventHubDeliveryAnnotations
+      name: EventHubDeliveryAnnotations
+      items: []
+    - uid: azure-event-hubs.EventHubMessageAnnotations
+      name: EventHubMessageAnnotations
+      items: []
+    - uid: azure-event-hubs.EventHubPartitionRuntimeInformation
+      name: EventHubPartitionRuntimeInformation
+      items: []
+    - uid: azure-event-hubs.EventHubReceiver
+      name: EventHubReceiver
+      items: []
+    - uid: azure-event-hubs.EventHubRuntimeInformation
+      name: EventHubRuntimeInformation
+      items: []
+    - uid: azure-event-hubs.EventHubSender
+      name: EventHubSender
+      items: []
+    - uid: azure-event-hubs.EventHubsError
+      name: EventHubsError
+      items: []
+    - uid: azure-event-hubs.EventPosition
+      name: EventPosition
+      items: []
+    - uid: azure-event-hubs.EventPositionOptions
+      name: EventPositionOptions
+      items: []
+    - uid: azure-event-hubs.IotHubClient
+      name: IotHubClient
+      items: []
+    - uid: azure-event-hubs.IotHubConnectionConfig
+      name: IotHubConnectionConfig
+      items: []
+    - uid: azure-event-hubs.IotHubConnectionStringModel
+      name: IotHubConnectionStringModel
+      items: []
+    - uid: azure-event-hubs.IotSasTokenProvider
+      name: IotSasTokenProvider
+      items: []
+    - uid: azure-event-hubs.LinkOptions
+      name: LinkOptions
+      items: []
+    - uid: azure-event-hubs.ManagementClient
+      name: ManagementClient
+      items: []
+    - uid: azure-event-hubs.ManagementClientOptions
+      name: ManagementClientOptions
+      items: []
+    - uid: azure-event-hubs.ParsedRedirectError
+      name: ParsedRedirectError
+      items: []
+    - uid: azure-event-hubs.ReceiveHandler
+      name: ReceiveHandler
+      items: []
+    - uid: azure-event-hubs.ReceiveOptions
+      name: ReceiveOptions
+      items: []
+    - uid: azure-event-hubs.ReceiverLink
+      name: ReceiverLink
+      items: []
+    - uid: azure-event-hubs.ReceiverLinkOptions
+      name: ReceiverLinkOptions
+      items: []
+    - uid: azure-event-hubs.ReceiverRuntimeInfo
+      name: ReceiverRuntimeInfo
+      items: []
+    - uid: azure-event-hubs.RequestResponseLink
+      name: RequestResponseLink
+      items: []
+    - uid: azure-event-hubs.SasTokenProvider
+      name: SasTokenProvider
+      items: []
+    - uid: azure-event-hubs.SenderLink
+      name: SenderLink
+      items: []
+    - uid: azure-event-hubs.SenderLinkOptions
+      name: SenderLinkOptions
+      items: []
+    - uid: azure-event-hubs.StorageConnectionStringModel
+      name: StorageConnectionStringModel
+      items: []
+    - uid: azure-event-hubs.StreamingReceiver
+      name: StreamingReceiver
+      items: []
+    - uid: azure-event-hubs.Timeout
+      name: Timeout
+      items: []
+    - uid: azure-event-hubs.TokenInfo
+      name: TokenInfo
+      items: []
+    - uid: azure-event-hubs.TokenProvider
+      name: TokenProvider
+      items: []
+    - uid: azure-event-hubs.TokenType
+      name: TokenType
+      items: []
+- uid: azure-event-processor-host
+  name: azure-event-processor-host
+  items:
+    - uid: azure-event-processor-host.AsyncLockOptions
+      name: AsyncLockOptions
+      items: []
+    - uid: azure-event-processor-host.BlobLease
+      name: BlobLease
+      items: []
+    - uid: azure-event-processor-host.BlobLeaseManager
+      name: BlobLeaseManager
+      items: []
+    - uid: azure-event-processor-host.CheckpointInfo
+      name: CheckpointInfo
+      items: []
+    - uid: azure-event-processor-host.ConnectionStringBasedOptions
+      name: ConnectionStringBasedOptions
+      items: []
+    - uid: azure-event-processor-host.CreateContainerResult
+      name: CreateContainerResult
+      items: []
+    - uid: azure-event-processor-host.EventHubConnectionStringModel
+      name: EventHubConnectionStringModel
+      items: []
+    - uid: azure-event-processor-host.EventProcessorHost
+      name: EventProcessorHost
+      items: []
+    - uid: azure-event-processor-host.EventProcessorOptions
+      name: EventProcessorOptions
+      items: []
+    - uid: azure-event-processor-host.Lease
+      name: Lease
+      items: []
+    - uid: azure-event-processor-host.LeaseManager
+      name: LeaseManager
+      items: []
+    - uid: azure-event-processor-host.LeaseWithDuration
+      name: LeaseWithDuration
+      items: []
+    - uid: azure-event-processor-host.PartitionContext
+      name: PartitionContext
+      items: []
+    - uid: azure-event-processor-host.StartEPHOptions
+      name: StartEPHOptions
+      items: []
+    - uid: azure-event-processor-host.StorageConnectionStringModel
+      name: StorageConnectionStringModel
+      items: []
+    - uid: azure-event-processor-host.Timeout
+      name: Timeout
+      items: []
+- uid: azure-iot-common
+  name: azure-iot-common
+  items:
+    - uid: azure-iot-common.ArgumentError
+      name: ArgumentError
+      items: []
+    - uid: azure-iot-common.ArgumentOutOfRangeError
+      name: ArgumentOutOfRangeError
+      items: []
+    - uid: azure-iot-common.AuthenticationProvider
+      name: AuthenticationProvider
+      items: []
+    - uid: azure-iot-common.AuthenticationType
+      name: AuthenticationType
+      items: []
+    - uid: azure-iot-common.BadDeviceResponseError
+      name: BadDeviceResponseError
+      items: []
+    - uid: azure-iot-common.CloudToDeviceDetachedError
+      name: CloudToDeviceDetachedError
+      items: []
+    - uid: azure-iot-common.ConnectionString
+      name: ConnectionString
+      items: []
+    - uid: azure-iot-common.DeviceAlreadyExistsError
+      name: DeviceAlreadyExistsError
+      items: []
+    - uid: azure-iot-common.DeviceMaximumQueueDepthExceededError
+      name: DeviceMaximumQueueDepthExceededError
+      items: []
+    - uid: azure-iot-common.DeviceMessageLockLostError
+      name: DeviceMessageLockLostError
+      items: []
+    - uid: azure-iot-common.DeviceMethodsDetachedError
+      name: DeviceMethodsDetachedError
+      items: []
+    - uid: azure-iot-common.DeviceNotFoundError
+      name: DeviceNotFoundError
+      items: []
+    - uid: azure-iot-common.DeviceRegistrationFailedError
+      name: DeviceRegistrationFailedError
+      items: []
+    - uid: azure-iot-common.DeviceTimeoutError
+      name: DeviceTimeoutError
+      items: []
+    - uid: azure-iot-common.Disconnected
+      name: Disconnected
+      items: []
+    - uid: azure-iot-common.ExponentialBackOffWithJitter
+      name: ExponentialBackOffWithJitter
+      items: []
+    - uid: azure-iot-common.ExponentialBackoffWithJitterParameters
+      name: ExponentialBackoffWithJitterParameters
+      items: []
+    - uid: azure-iot-common.FormatError
+      name: FormatError
+      items: []
+    - uid: azure-iot-common.GatewayTimeoutError
+      name: GatewayTimeoutError
+      items: []
+    - uid: azure-iot-common.InternalServerError
+      name: InternalServerError
+      items: []
+    - uid: azure-iot-common.InvalidEtagError
+      name: InvalidEtagError
+      items: []
+    - uid: azure-iot-common.InvalidOperationError
+      name: InvalidOperationError
+      items: []
+    - uid: azure-iot-common.IotHubNotFoundError
+      name: IotHubNotFoundError
+      items: []
+    - uid: azure-iot-common.IotHubQuotaExceededError
+      name: IotHubQuotaExceededError
+      items: []
+    - uid: azure-iot-common.IoTHubSuspendedError
+      name: IoTHubSuspendedError
+      items: []
+    - uid: azure-iot-common.JobNotFoundError
+      name: JobNotFoundError
+      items: []
+    - uid: azure-iot-common.Message
+      name: Message
+      items: []
+    - uid: azure-iot-common.MessageTooLargeError
+      name: MessageTooLargeError
+      items: []
+    - uid: azure-iot-common.NoRetry
+      name: NoRetry
+      items: []
+    - uid: azure-iot-common.NotConnectedError
+      name: NotConnectedError
+      items: []
+    - uid: azure-iot-common.NotImplementedError
+      name: NotImplementedError
+      items: []
+    - uid: azure-iot-common.OperationCancelledError
+      name: OperationCancelledError
+      items: []
+    - uid: azure-iot-common.PreconditionFailedError
+      name: PreconditionFailedError
+      items: []
+    - uid: azure-iot-common.Properties
+      name: Properties
+      items: []
+    - uid: azure-iot-common.RetryOperation
+      name: RetryOperation
+      items: []
+    - uid: azure-iot-common.RetryPolicy
+      name: RetryPolicy
+      items: []
+    - uid: azure-iot-common.SecurityDeviceError
+      name: SecurityDeviceError
+      items: []
+    - uid: azure-iot-common.ServiceUnavailableError
+      name: ServiceUnavailableError
+      items: []
+    - uid: azure-iot-common.SharedAccessSignature
+      name: SharedAccessSignature
+      items: []
+    - uid: azure-iot-common.SharedAccessSignatureUpdated
+      name: SharedAccessSignatureUpdated
+      items: []
+    - uid: azure-iot-common.ThrottlingError
+      name: ThrottlingError
+      items: []
+    - uid: azure-iot-common.TimeoutError
+      name: TimeoutError
+      items: []
+    - uid: azure-iot-common.TooManyDevicesError
+      name: TooManyDevicesError
+      items: []
+    - uid: azure-iot-common.TransportConfig
+      name: TransportConfig
+      items: []
+    - uid: azure-iot-common.TwinDetachedError
+      name: TwinDetachedError
+      items: []
+    - uid: azure-iot-common.TwinRequestError
+      name: TwinRequestError
+      items: []
+    - uid: azure-iot-common.UnauthorizedError
+      name: UnauthorizedError
+      items: []
+    - uid: azure-iot-common.X509
+      name: X509
+      items: []
+- uid: azure-iot-device-http
+  name: azure-iot-device-http
+  items: []
+- items:
+    - uid: azure-iot-device.BlobUpload
+      name: BlobUpload
+      items: []
     - uid: azure-iot-device.Client
       name: Client
-      items:
-        - uid: azure-iot-device.Client.BlobUpload
-          name: BlobUpload
-          items: []
-        - uid: azure-iot-device.Client.Transport
-          name: Transport
-          items: []
+      items: []
     - uid: azure-iot-device.DeviceClientOptions
       name: DeviceClientOptions
       items: []
@@ -19,11 +380,26 @@
     - uid: azure-iot-device.DeviceMethodResponse
       name: DeviceMethodResponse
       items: []
+    - uid: azure-iot-device.DeviceTransport
+      name: DeviceTransport
+      items: []
     - uid: azure-iot-device.HttpReceiverOptions
       name: HttpReceiverOptions
       items: []
     - uid: azure-iot-device.HttpTransportOptions
       name: HttpTransportOptions
+      items: []
+    - uid: azure-iot-device.IotEdgeAuthenticationProvider
+      name: IotEdgeAuthenticationProvider
+      items: []
+    - uid: azure-iot-device.MethodParams
+      name: MethodParams
+      items: []
+    - uid: azure-iot-device.MethodResult
+      name: MethodResult
+      items: []
+    - uid: azure-iot-device.ModuleClient
+      name: ModuleClient
       items: []
     - uid: azure-iot-device.MqttTransportOptions
       name: MqttTransportOptions
@@ -42,4 +418,181 @@
       items: []
     - uid: azure-iot-device.X509AuthenticationProvider
       name: X509AuthenticationProvider
+      items: []
+- uid: azure-iot-provisioning-device-amqp
+  name: azure-iot-provisioning-device-amqp
+  items: []
+- uid: azure-iot-provisioning-device-http
+  name: azure-iot-provisioning-device-http
+  items: []
+- uid: azure-iot-provisioning-device-mqtt
+  name: azure-iot-provisioning-device-mqtt
+  items: []
+- uid: azure-iot-provisioning-device
+  name: azure-iot-provisioning-device
+  items:
+    - uid: azure-iot-provisioning-device.DeviceRegistrationResult
+      name: DeviceRegistrationResult
+      items: []
+    - uid: azure-iot-provisioning-device.DeviceRegistrationState
+      name: DeviceRegistrationState
+      items: []
+    - uid: azure-iot-provisioning-device.ProvisioningDeviceClient
+      name: ProvisioningDeviceClient
+      items: []
+    - uid: azure-iot-provisioning-device.ProvisioningTransportOptions
+      name: ProvisioningTransportOptions
+      items: []
+    - uid: azure-iot-provisioning-device.RegistrationClient
+      name: RegistrationClient
+      items: []
+    - uid: azure-iot-provisioning-device.RegistrationRequest
+      name: RegistrationRequest
+      items: []
+    - uid: azure-iot-provisioning-device.X509Registration
+      name: X509Registration
+      items: []
+    - uid: azure-iot-provisioning-device.X509SecurityClient
+      name: X509SecurityClient
+      items: []
+- uid: azure-iot-provisioning-service
+  name: azure-iot-provisioning-service
+  items:
+    - uid: azure-iot-provisioning-service.AttestationMechanism
+      name: AttestationMechanism
+      items: []
+    - uid: azure-iot-provisioning-service.BulkEnrollmentOperation
+      name: BulkEnrollmentOperation
+      items: []
+    - uid: azure-iot-provisioning-service.BulkEnrollmentOperationError
+      name: BulkEnrollmentOperationError
+      items: []
+    - uid: azure-iot-provisioning-service.BulkEnrollmentOperationResult
+      name: BulkEnrollmentOperationResult
+      items: []
+    - uid: azure-iot-provisioning-service.DeviceCapabilities
+      name: DeviceCapabilities
+      items: []
+    - uid: azure-iot-provisioning-service.DeviceRegistrationState
+      name: DeviceRegistrationState
+      items: []
+    - uid: azure-iot-provisioning-service.EnrollmentGroup
+      name: EnrollmentGroup
+      items: []
+    - uid: azure-iot-provisioning-service.IndividualEnrollment
+      name: IndividualEnrollment
+      items: []
+    - uid: azure-iot-provisioning-service.InitialTwin
+      name: InitialTwin
+      items: []
+    - uid: azure-iot-provisioning-service.Metadata
+      name: Metadata
+      items: []
+    - uid: azure-iot-provisioning-service.ProvisioningServiceClient
+      name: ProvisioningServiceClient
+      items: []
+    - uid: azure-iot-provisioning-service.Query
+      name: Query
+      items: []
+    - uid: azure-iot-provisioning-service.QueryResult
+      name: QueryResult
+      items: []
+    - uid: azure-iot-provisioning-service.QuerySpecification
+      name: QuerySpecification
+      items: []
+    - uid: azure-iot-provisioning-service.TpmAttestation
+      name: TpmAttestation
+      items: []
+    - uid: azure-iot-provisioning-service.TwinCollection
+      name: TwinCollection
+      items: []
+    - uid: azure-iot-provisioning-service.X509Attestation
+      name: X509Attestation
+      items: []
+    - uid: azure-iot-provisioning-service.X509CAReferences
+      name: X509CAReferences
+      items: []
+    - uid: azure-iot-provisioning-service.X509CertificateInfo
+      name: X509CertificateInfo
+      items: []
+    - uid: azure-iot-provisioning-service.X509Certificates
+      name: X509Certificates
+      items: []
+    - uid: azure-iot-provisioning-service.X509CertificateWithInfo
+      name: X509CertificateWithInfo
+      items: []
+- uid: azure-iothub
+  name: azure-iothub
+  items:
+    - uid: azure-iothub.Client
+      name: Client
+      items:
+        - uid: azure-iothub.Client.ServiceReceiver
+          name: ServiceReceiver
+          items: []
+        - uid: azure-iothub.Client.Transport
+          name: Transport
+          items: []
+        - uid: azure-iothub.Client.TransportConfigOptions
+          name: TransportConfigOptions
+          items: []
+    - uid: azure-iothub.Configuration
+      name: Configuration
+      items: []
+    - uid: azure-iothub.ConfigurationContent
+      name: ConfigurationContent
+      items: []
+    - uid: azure-iothub.ConfigurationMetrics
+      name: ConfigurationMetrics
+      items: []
+    - uid: azure-iothub.Device
+      name: Device
+      items:
+        - uid: azure-iothub.Device.Authentication
+          name: Authentication
+          items: []
+        - uid: azure-iothub.Device.Capabilities
+          name: Capabilities
+          items: []
+        - uid: azure-iothub.Device.X509Thumbprints
+          name: X509Thumbprints
+          items: []
+    - uid: azure-iothub.DeviceMethodParams
+      name: DeviceMethodParams
+      items: []
+    - uid: azure-iothub.JobClient
+      name: JobClient
+      items: []
+    - uid: azure-iothub.Module
+      name: Module
+      items: []
+    - uid: azure-iothub.Query
+      name: Query
+      items: []
+    - uid: azure-iothub.Registry
+      name: Registry
+      items:
+        - uid: azure-iothub.Registry.BulkRegistryOperationResult
+          name: BulkRegistryOperationResult
+          items: []
+        - uid: azure-iothub.Registry.DeviceDescription
+          name: DeviceDescription
+          items: []
+        - uid: azure-iothub.Registry.DeviceRegistryOperationError
+          name: DeviceRegistryOperationError
+          items: []
+        - uid: azure-iothub.Registry.QueryDescription
+          name: QueryDescription
+          items: []
+        - uid: azure-iothub.Registry.RegistryStatistics
+          name: RegistryStatistics
+          items: []
+        - uid: azure-iothub.Registry.TransportConfig
+          name: TransportConfig
+          items: []
+    - uid: azure-iothub.ServiceReceiver
+      name: ServiceReceiver
+      items: []
+    - uid: azure-iothub.Twin
+      name: Twin
       items: []
