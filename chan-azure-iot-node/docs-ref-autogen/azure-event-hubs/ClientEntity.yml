@@ -57,7 +57,7 @@ items:
       parameters:
         - id: context
           type:
-            - ConnectionContext
+            - azure-event-hubs.ConnectionContext
           description: The connection context.
         - id: options
           type:
@@ -105,6 +105,11 @@ items:
         type:
           - string
 references:
+  - uid: azure-event-hubs.ConnectionContext
+    spec.typeScript:
+      - name: ConnectionContext
+        fullName: ConnectionContext
+        uid: azure-event-hubs.ConnectionContext
   - uid: azure-event-hubs.ClientEntityOptions
     spec.typeScript:
       - name: ClientEntityOptions

@@ -30,3 +30,18 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.TokenInfo>
+references:
+  - uid: azure-event-hubs.SasTokenProvider
+    spec.typeScript:
+      - name: SasTokenProvider
+        fullName: SasTokenProvider
+        uid: azure-event-hubs.SasTokenProvider
+  - uid: Promise<azure-event-hubs.TokenInfo>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: TokenInfo
+        fullName: TokenInfo
+        uid: azure-event-hubs.TokenInfo
+      - name: '>'
+        fullName: '>'

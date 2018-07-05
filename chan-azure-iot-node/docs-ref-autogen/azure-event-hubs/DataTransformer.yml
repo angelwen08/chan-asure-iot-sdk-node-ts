@@ -37,9 +37,3 @@ items:
       return:
         type:
           - '(body: any) => any'
-references:
-  - uid: azure-event-hubs.ConnectionContextOptions
-    spec.typeScript:
-      - name: ConnectionContextOptions
-        fullName: ConnectionContextOptions
-        uid: azure-event-hubs.ConnectionContextOptions

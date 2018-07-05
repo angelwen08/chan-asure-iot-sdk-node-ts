@@ -25,3 +25,9 @@ items:
       return:
         type:
           - SenderOptions
+references:
+  - uid: azure-event-hubs.LinkOptions
+    spec.typeScript:
+      - name: LinkOptions
+        fullName: LinkOptions
+        uid: azure-event-hubs.LinkOptions

@@ -45,3 +45,9 @@ items:
       return:
         type:
           - TokenProvider
+references:
+  - uid: azure-event-processor-host.EventProcessorOptions
+    spec.typeScript:
+      - name: EventProcessorOptions
+        fullName: EventProcessorOptions
+        uid: azure-event-processor-host.EventProcessorOptions
