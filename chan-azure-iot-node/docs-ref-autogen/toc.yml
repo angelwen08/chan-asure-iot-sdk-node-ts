@@ -1,249 +1,45 @@
-- uid: azure-event-hubs
-  name: azure-event-hubs
+- uid: azure-iot-device
+  name: azure-iot-device
   items:
-    - uid: azure-event-hubs.AadTokenProvider
-      name: AadTokenProvider
-      items: []
-    - uid: azure-event-hubs.AmqpResponseStatusCode
-      name: AmqpResponseStatusCode
-      items: []
-    - uid: azure-event-hubs.AsyncLockOptions
-      name: AsyncLockOptions
-      items: []
-    - uid: azure-event-hubs.BatchingReceiver
-      name: BatchingReceiver
-      items: []
-    - uid: azure-event-hubs.CbsClient
-      name: CbsClient
-      items: []
-    - uid: azure-event-hubs.ClientEntity
-      name: ClientEntity
-      items: []
-    - uid: azure-event-hubs.ClientEntityOptions
-      name: ClientEntityOptions
-      items: []
-    - uid: azure-event-hubs.ClientOptions
-      name: ClientOptions
-      items: []
-    - uid: azure-event-hubs.ClientOptionsBase
-      name: ClientOptionsBase
-      items: []
-    - uid: azure-event-hubs.closeConnection
-      name: closeConnection
-      items: []
-    - uid: azure-event-hubs.closeReceiver
-      name: closeReceiver
-      items: []
-    - uid: azure-event-hubs.closeSender
-      name: closeSender
-      items: []
-    - uid: azure-event-hubs.closeSession
-      name: closeSession
-      items: []
-    - uid: azure-event-hubs.ConditionErrorNameMapper
-      name: ConditionErrorNameMapper
-      items: []
-    - uid: azure-event-hubs.ConditionStatusMapper
-      name: ConditionStatusMapper
-      items: []
-    - uid: azure-event-hubs.connect
-      name: connect
-      items: []
-    - uid: azure-event-hubs.ConnectionConfig
-      name: ConnectionConfig
-      items: []
-    - uid: azure-event-hubs.ConnectionContext
-      name: ConnectionContext
-      items: []
-    - uid: azure-event-hubs.ConnectionContextOptions
-      name: ConnectionContextOptions
-      items: []
-    - uid: azure-event-hubs.CreateConnectionPrameters
-      name: CreateConnectionPrameters
-      items: []
-    - uid: azure-event-hubs.createReceiver
-      name: createReceiver
-      items: []
-    - uid: azure-event-hubs.createReceiverLink
-      name: createReceiverLink
-      items: []
-    - uid: azure-event-hubs.createReceiverLinkWithHandlers
-      name: createReceiverLinkWithHandlers
-      items: []
-    - uid: azure-event-hubs.createReceiverWithHandlers
-      name: createReceiverWithHandlers
-      items: []
-    - uid: azure-event-hubs.createRequestResponseLink
-      name: createRequestResponseLink
-      items: []
-    - uid: azure-event-hubs.createSender
-      name: createSender
-      items: []
-    - uid: azure-event-hubs.createSenderLink
-      name: createSenderLink
-      items: []
-    - uid: azure-event-hubs.createSenderLinkWithHandlers
-      name: createSenderLinkWithHandlers
-      items: []
-    - uid: azure-event-hubs.createSenderWithHandlers
-      name: createSenderWithHandlers
-      items: []
-    - uid: azure-event-hubs.createSession
-      name: createSession
-      items: []
-    - uid: azure-event-hubs.DataTransformer
-      name: DataTransformer
-      items: []
-    - uid: azure-event-hubs.DefaultDataTransformer
-      name: DefaultDataTransformer
-      items: []
-    - uid: azure-event-hubs.delay
-      name: delay
-      items: []
-    - uid: azure-event-hubs.EHConfig
-      name: EHConfig
-      items: []
-    - uid: azure-event-hubs.ErrorNameConditionMapper
-      name: ErrorNameConditionMapper
-      items: []
-    - uid: azure-event-hubs.EventData
-      name: EventData
-      items: []
-    - uid: azure-event-hubs.EventHubClient
-      name: EventHubClient
-      items: []
-    - uid: azure-event-hubs.EventHubConnectionStringModel
-      name: EventHubConnectionStringModel
-      items: []
-    - uid: azure-event-hubs.EventHubDeliveryAnnotations
-      name: EventHubDeliveryAnnotations
-      items: []
-    - uid: azure-event-hubs.EventHubMessageAnnotations
-      name: EventHubMessageAnnotations
-      items: []
-    - uid: azure-event-hubs.EventHubPartitionRuntimeInformation
-      name: EventHubPartitionRuntimeInformation
-      items: []
-    - uid: azure-event-hubs.EventHubReceiver
-      name: EventHubReceiver
-      items: []
-    - uid: azure-event-hubs.EventHubRuntimeInformation
-      name: EventHubRuntimeInformation
-      items: []
-    - uid: azure-event-hubs.EventHubSender
-      name: EventHubSender
-      items: []
-    - uid: azure-event-hubs.EventHubsError
-      name: EventHubsError
-      items: []
-    - uid: azure-event-hubs.EventPosition
-      name: EventPosition
-      items: []
-    - uid: azure-event-hubs.EventPositionOptions
-      name: EventPositionOptions
-      items: []
-    - uid: azure-event-hubs.executePromisesSequentially
-      name: executePromisesSequentially
-      items: []
-    - uid: azure-event-hubs.Func
-      name: Func
-      items: []
-    - uid: azure-event-hubs.getNewAsyncLock
-      name: getNewAsyncLock
-      items: []
-    - uid: azure-event-hubs.IotHubClient
-      name: IotHubClient
-      items: []
-    - uid: azure-event-hubs.IotHubConnectionConfig
-      name: IotHubConnectionConfig
-      items: []
-    - uid: azure-event-hubs.IotHubConnectionStringModel
-      name: IotHubConnectionStringModel
-      items: []
-    - uid: azure-event-hubs.IotSasTokenProvider
-      name: IotSasTokenProvider
-      items: []
-    - uid: azure-event-hubs.isIotHubConnectionString
-      name: isIotHubConnectionString
-      items: []
-    - uid: azure-event-hubs.LinkOptions
-      name: LinkOptions
-      items: []
-    - uid: azure-event-hubs.ManagementClient
-      name: ManagementClient
-      items: []
-    - uid: azure-event-hubs.ManagementClientOptions
-      name: ManagementClientOptions
-      items: []
-    - uid: azure-event-hubs.OnError
-      name: OnError
-      items: []
-    - uid: azure-event-hubs.OnMessage
-      name: OnMessage
-      items: []
-    - uid: azure-event-hubs.open
-      name: open
-      items: []
-    - uid: azure-event-hubs.parseConnectionString
-      name: parseConnectionString
-      items: []
-    - uid: azure-event-hubs.ParsedOutput
-      name: ParsedOutput
-      items: []
-    - uid: azure-event-hubs.ParsedRedirectError
-      name: ParsedRedirectError
-      items: []
-    - uid: azure-event-hubs.ReceiveHandler
-      name: ReceiveHandler
-      items: []
-    - uid: azure-event-hubs.ReceiveOptions
-      name: ReceiveOptions
-      items: []
-    - uid: azure-event-hubs.ReceiverLink
-      name: ReceiverLink
-      items: []
-    - uid: azure-event-hubs.ReceiverLinkOptions
-      name: ReceiverLinkOptions
-      items: []
-    - uid: azure-event-hubs.ReceiverRuntimeInfo
-      name: ReceiverRuntimeInfo
-      items: []
-    - uid: azure-event-hubs.RequestResponseLink
-      name: RequestResponseLink
-      items: []
-    - uid: azure-event-hubs.retry
-      name: retry
-      items: []
-    - uid: azure-event-hubs.SasTokenProvider
-      name: SasTokenProvider
-      items: []
-    - uid: azure-event-hubs.SenderLink
-      name: SenderLink
-      items: []
-    - uid: azure-event-hubs.SenderLinkOptions
-      name: SenderLinkOptions
-      items: []
-    - uid: azure-event-hubs.sendRequest
-      name: sendRequest
-      items: []
-    - uid: azure-event-hubs.StorageConnectionStringModel
-      name: StorageConnectionStringModel
-      items: []
-    - uid: azure-event-hubs.StreamingReceiver
-      name: StreamingReceiver
-      items: []
-    - uid: azure-event-hubs.Timeout
-      name: Timeout
-      items: []
-    - uid: azure-event-hubs.TokenInfo
-      name: TokenInfo
-      items: []
-    - uid: azure-event-hubs.TokenProvider
-      name: TokenProvider
-      items: []
-    - uid: azure-event-hubs.TokenType
-      name: TokenType
-      items: []
-    - uid: azure-event-hubs.translate
-      name: translate
+    - uid: azure-iot-device.Client
+      name: Client
+      items:
+        - uid: azure-iot-device.Client.BlobUpload
+          name: BlobUpload
+          items: []
+        - uid: azure-iot-device.Client.Transport
+          name: Transport
+          items: []
+    - uid: azure-iot-device.DeviceClientOptions
+      name: DeviceClientOptions
+      items: []
+    - uid: azure-iot-device.DeviceMethodRequest
+      name: DeviceMethodRequest
+      items: []
+    - uid: azure-iot-device.DeviceMethodResponse
+      name: DeviceMethodResponse
+      items: []
+    - uid: azure-iot-device.HttpReceiverOptions
+      name: HttpReceiverOptions
+      items: []
+    - uid: azure-iot-device.HttpTransportOptions
+      name: HttpTransportOptions
+      items: []
+    - uid: azure-iot-device.MqttTransportOptions
+      name: MqttTransportOptions
+      items: []
+    - uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
+      name: SharedAccessKeyAuthenticationProvider
+      items: []
+    - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider
+      name: SharedAccessSignatureAuthenticationProvider
+      items: []
+    - uid: azure-iot-device.Twin
+      name: Twin
+      items: []
+    - uid: azure-iot-device.TwinProperties
+      name: TwinProperties
+      items: []
+    - uid: azure-iot-device.X509AuthenticationProvider
+      name: X509AuthenticationProvider
       items: []
