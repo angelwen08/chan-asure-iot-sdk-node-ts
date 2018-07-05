@@ -364,9 +364,6 @@
 - uid: azure-iot-device-http
   name: azure-iot-device-http
   items: []
-- uid: azure-iot-device-mqtt
-  name: azure-iot-device-mqtt
-  items: []
 - items:
     - uid: azure-iot-device.BlobUpload
       name: BlobUpload
