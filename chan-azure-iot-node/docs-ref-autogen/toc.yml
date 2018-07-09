@@ -364,7 +364,9 @@
 - uid: azure-iot-device-http
   name: azure-iot-device-http
   items: []
-- items:
+- uid: azure-iot-device
+  name: azure-iot-device
+  items:
     - uid: azure-iot-device.BlobUpload
       name: BlobUpload
       items: []
