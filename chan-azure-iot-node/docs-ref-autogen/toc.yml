@@ -16,6 +16,9 @@
     - uid: azure-event-hubs.CbsClient
       name: CbsClient
       items: []
+    - uid: azure-event-hubs.CheckpointData
+      name: CheckpointData
+      items: []
     - uid: azure-event-hubs.ClientEntity
       name: ClientEntity
       items: []
@@ -34,8 +37,14 @@
     - uid: azure-event-hubs.ConditionStatusMapper
       name: ConditionStatusMapper
       items: []
+    - uid: azure-event-hubs.Connection
+      name: Connection
+      items: []
     - uid: azure-event-hubs.ConnectionConfig
       name: ConnectionConfig
+      items: []
+    - uid: azure-event-hubs.ConnectionConfigOptions
+      name: ConnectionConfigOptions
       items: []
     - uid: azure-event-hubs.ConnectionContext
       name: ConnectionContext
@@ -45,6 +54,12 @@
       items: []
     - uid: azure-event-hubs.CreateConnectionPrameters
       name: CreateConnectionPrameters
+      items: []
+    - uid: azure-event-hubs.CreateConnectionPrameters
+      name: CreateConnectionPrameters
+      items: []
+    - uid: azure-event-hubs.CreateReceiverOptions
+      name: CreateReceiverOptions
       items: []
     - uid: azure-event-hubs.DataTransformer
       name: DataTransformer
@@ -70,6 +85,12 @@
     - uid: azure-event-hubs.EventHubDeliveryAnnotations
       name: EventHubDeliveryAnnotations
       items: []
+    - uid: azure-event-hubs.EventHubDeliveryAnnotations
+      name: EventHubDeliveryAnnotations
+      items: []
+    - uid: azure-event-hubs.EventHubMessageAnnotations
+      name: EventHubMessageAnnotations
+      items: []
     - uid: azure-event-hubs.EventHubMessageAnnotations
       name: EventHubMessageAnnotations
       items: []
@@ -84,9 +105,6 @@
       items: []
     - uid: azure-event-hubs.EventHubSender
       name: EventHubSender
-      items: []
-    - uid: azure-event-hubs.EventHubsError
-      name: EventHubsError
       items: []
     - uid: azure-event-hubs.EventPosition
       name: EventPosition
@@ -106,14 +124,26 @@
     - uid: azure-event-hubs.IotSasTokenProvider
       name: IotSasTokenProvider
       items: []
-    - uid: azure-event-hubs.LinkOptions
-      name: LinkOptions
+    - uid: azure-event-hubs.LinkEntity
+      name: LinkEntity
+      items: []
+    - uid: azure-event-hubs.LinkEntityOptions
+      name: LinkEntityOptions
       items: []
     - uid: azure-event-hubs.ManagementClient
       name: ManagementClient
       items: []
     - uid: azure-event-hubs.ManagementClientOptions
       name: ManagementClientOptions
+      items: []
+    - uid: azure-event-hubs.MessageHeader
+      name: MessageHeader
+      items: []
+    - uid: azure-event-hubs.MessageProperties
+      name: MessageProperties
+      items: []
+    - uid: azure-event-hubs.MessagingError
+      name: MessagingError
       items: []
     - uid: azure-event-hubs.ParsedRedirectError
       name: ParsedRedirectError
@@ -124,14 +154,20 @@
     - uid: azure-event-hubs.ReceiveOptions
       name: ReceiveOptions
       items: []
-    - uid: azure-event-hubs.ReceiverLink
-      name: ReceiverLink
+    - uid: azure-event-hubs.Receiver
+      name: Receiver
       items: []
-    - uid: azure-event-hubs.ReceiverLinkOptions
-      name: ReceiverLinkOptions
+    - uid: azure-event-hubs.ReceiverOptions
+      name: ReceiverOptions
+      items: []
+    - uid: azure-event-hubs.ReceiverOptionsWithSession
+      name: ReceiverOptionsWithSession
       items: []
     - uid: azure-event-hubs.ReceiverRuntimeInfo
       name: ReceiverRuntimeInfo
+      items: []
+    - uid: azure-event-hubs.ReqResLink
+      name: ReqResLink
       items: []
     - uid: azure-event-hubs.RequestResponseLink
       name: RequestResponseLink
@@ -139,11 +175,32 @@
     - uid: azure-event-hubs.SasTokenProvider
       name: SasTokenProvider
       items: []
-    - uid: azure-event-hubs.SenderLink
-      name: SenderLink
+    - uid: azure-event-hubs.Sender
+      name: Sender
       items: []
-    - uid: azure-event-hubs.SenderLinkOptions
-      name: SenderLinkOptions
+    - uid: azure-event-hubs.SenderOptions
+      name: SenderOptions
+      items: []
+    - uid: azure-event-hubs.SenderOptionsWithSession
+      name: SenderOptionsWithSession
+      items: []
+    - uid: azure-event-hubs.ServiceBusConnectionStringModel
+      name: ServiceBusConnectionStringModel
+      items: []
+    - uid: azure-event-hubs.ServiceBusDeliveryAnnotations
+      name: ServiceBusDeliveryAnnotations
+      items: []
+    - uid: azure-event-hubs.ServiceBusDeliveryAnnotations
+      name: ServiceBusDeliveryAnnotations
+      items: []
+    - uid: azure-event-hubs.ServiceBusMessageAnnotations
+      name: ServiceBusMessageAnnotations
+      items: []
+    - uid: azure-event-hubs.ServiceBusMessageAnnotations
+      name: ServiceBusMessageAnnotations
+      items: []
+    - uid: azure-event-hubs.Session
+      name: Session
       items: []
     - uid: azure-event-hubs.StorageConnectionStringModel
       name: StorageConnectionStringModel

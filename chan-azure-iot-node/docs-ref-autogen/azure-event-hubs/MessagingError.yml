@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-event-hubs.EventHubsError
-    name: EventHubsError
-    fullName: EventHubsError
+  - uid: azure-event-hubs.MessagingError
+    name: MessagingError
+    fullName: MessagingError
     children:
-      - azure-event-hubs.EventHubsError.condition
-      - azure-event-hubs.EventHubsError.Error
-      - azure-event-hubs.EventHubsError.constructor
-      - azure-event-hubs.EventHubsError.info
-      - azure-event-hubs.EventHubsError.name
-      - azure-event-hubs.EventHubsError.retryable
-      - azure-event-hubs.EventHubsError.translated
+      - azure-event-hubs.MessagingError.condition
+      - azure-event-hubs.MessagingError.Error
+      - azure-event-hubs.MessagingError.info
+      - azure-event-hubs.MessagingError.constructor
+      - azure-event-hubs.MessagingError.name
+      - azure-event-hubs.MessagingError.retryable
+      - azure-event-hubs.MessagingError.translated
     langs:
       - typeScript
     type: class
-    summary: Describes the base class for an EventHub Error.
+    summary: Describes the base class for Messaging Error.
     extends:
       name: Error
     package: azure-event-hubs
-  - uid: azure-event-hubs.EventHubsError.condition
+  - uid: azure-event-hubs.MessagingError.condition
     name: condition
     fullName: condition
     children: []
@@ -33,7 +33,7 @@ items:
         type:
           - string
     package: azure-event-hubs
-  - uid: azure-event-hubs.EventHubsError.Error
+  - uid: azure-event-hubs.MessagingError.Error
     name: Error
     fullName: Error
     children: []
@@ -47,23 +47,7 @@ items:
         type:
           - ErrorConstructor
     package: azure-event-hubs
-  - uid: azure-event-hubs.EventHubsError.constructor
-    name: EventHubsError
-    children: []
-    type: constructor
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      content: 'new EventHubsError(message: string)'
-      parameters:
-        - id: message
-          type:
-            - string
-          description: |
-            The error message that provides more information about the error.
-    package: azure-event-hubs
-  - uid: azure-event-hubs.EventHubsError.info
+  - uid: azure-event-hubs.MessagingError.info
     name: info
     fullName: info
     children: []
@@ -78,7 +62,23 @@ items:
         type:
           - any
     package: azure-event-hubs
-  - uid: azure-event-hubs.EventHubsError.name
+  - uid: azure-event-hubs.MessagingError.constructor
+    name: MessagingError
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new MessagingError(message: string)'
+      parameters:
+        - id: message
+          type:
+            - string
+          description: |
+            The error message that provides more information about the error.
+    package: azure-event-hubs
+  - uid: azure-event-hubs.MessagingError.name
     name: name
     fullName: name
     children: []
@@ -92,7 +92,7 @@ items:
         type:
           - string
     package: azure-event-hubs
-  - uid: azure-event-hubs.EventHubsError.retryable
+  - uid: azure-event-hubs.MessagingError.retryable
     name: retryable
     fullName: retryable
     children: []
@@ -106,7 +106,7 @@ items:
         type:
           - boolean
     package: azure-event-hubs
-  - uid: azure-event-hubs.EventHubsError.translated
+  - uid: azure-event-hubs.MessagingError.translated
     name: translated
     fullName: translated
     children: []
