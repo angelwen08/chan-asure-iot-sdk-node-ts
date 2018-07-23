@@ -6,9 +6,11 @@ items:
     children:
       - azure-event-hubs.EventHubReceiver.close
       - azure-event-hubs.EventHubReceiver.consumerGroup
+      - azure-event-hubs.EventHubReceiver.detached
       - azure-event-hubs.EventHubReceiver.epoch
       - azure-event-hubs.EventHubReceiver.constructor
       - azure-event-hubs.EventHubReceiver.identifier
+      - azure-event-hubs.EventHubReceiver.isOpen
       - azure-event-hubs.EventHubReceiver.options
       - azure-event-hubs.EventHubReceiver.prefetchCount
       - azure-event-hubs.EventHubReceiver.receiverRuntimeMetricEnabled
@@ -18,7 +20,7 @@ items:
     type: class
     summary: Describes the EventHubReceiver that will receive event data from EventHub.
     extends:
-      name: azure-event-hubs.ClientEntity
+      name: azure-event-hubs.LinkEntity
     package: azure-event-hubs
   - uid: azure-event-hubs.EventHubReceiver.close
     name: close
@@ -33,6 +35,7 @@ items:
       return:
         type:
           - Promise<void>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubReceiver.consumerGroup
     name: consumerGroup
     fullName: consumerGroup
@@ -46,6 +49,26 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
+  - uid: azure-event-hubs.EventHubReceiver.detached
+    name: detached
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Will reconnect the receiver link if necessary.
+    syntax:
+      content: 'function detached(receiverError?: AmqpError | Error)'
+      parameters:
+        - id: receiverError
+          type:
+            - AmqpError | Error
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubReceiver.epoch
     name: epoch
     fullName: epoch
@@ -60,6 +83,7 @@ items:
       return:
         type:
           - number
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubReceiver.constructor
     name: EventHubReceiver
     children: []
@@ -76,7 +100,7 @@ items:
       parameters:
         - id: context
           type:
-            - ConnectionContext
+            - azure-event-hubs.ConnectionContext
           description: ''
         - id: partitionId
           type:
@@ -87,6 +111,7 @@ items:
             - azure-event-hubs.ReceiveOptions
           description: ''
           optional: true
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubReceiver.identifier
     name: identifier
     fullName: identifier
@@ -101,6 +126,23 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
+  - uid: azure-event-hubs.EventHubReceiver.isOpen
+    name: isOpen
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether the AMQP receiver link is open. If open then returns
+      true else returns false.
+    syntax:
+      content: function isOpen()
+      parameters: []
+      return:
+        type:
+          - boolean
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubReceiver.options
     name: options
     fullName: options
@@ -109,12 +151,12 @@ items:
       - typeScript
     type: property
     summary: ''
-    optional: true
     syntax:
-      content: 'options?: ReceiveOptions'
+      content: 'options: ReceiveOptions'
       return:
         type:
           - azure-event-hubs.ReceiveOptions
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubReceiver.prefetchCount
     name: prefetchCount
     fullName: prefetchCount
@@ -129,6 +171,7 @@ items:
       return:
         type:
           - number
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubReceiver.receiverRuntimeMetricEnabled
     name: receiverRuntimeMetricEnabled
     fullName: receiverRuntimeMetricEnabled
@@ -142,6 +185,7 @@ items:
       return:
         type:
           - boolean
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubReceiver.runtimeInfo
     name: runtimeInfo
     fullName: runtimeInfo
@@ -155,3 +199,25 @@ items:
       return:
         type:
           - azure-event-hubs.ReceiverRuntimeInfo
+    package: azure-event-hubs
+references:
+  - uid: azure-event-hubs.LinkEntity
+    spec.typeScript:
+      - name: LinkEntity
+        fullName: LinkEntity
+        uid: azure-event-hubs.LinkEntity
+  - uid: azure-event-hubs.ConnectionContext
+    spec.typeScript:
+      - name: ConnectionContext
+        fullName: ConnectionContext
+        uid: azure-event-hubs.ConnectionContext
+  - uid: azure-event-hubs.ReceiveOptions
+    spec.typeScript:
+      - name: ReceiveOptions
+        fullName: ReceiveOptions
+        uid: azure-event-hubs.ReceiveOptions
+  - uid: azure-event-hubs.ReceiverRuntimeInfo
+    spec.typeScript:
+      - name: ReceiverRuntimeInfo
+        fullName: ReceiverRuntimeInfo
+        uid: azure-event-hubs.ReceiverRuntimeInfo

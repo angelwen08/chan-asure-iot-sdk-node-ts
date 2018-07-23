@@ -4,6 +4,7 @@ items:
     name: EventProcessorOptions
     fullName: EventProcessorOptions
     children:
+      - azure-event-processor-host.EventProcessorOptions.autoCheckpoint
       - azure-event-processor-host.EventProcessorOptions.consumerGroup
       - azure-event-processor-host.EventProcessorOptions.initialOffset
       - azure-event-processor-host.EventProcessorOptions.leasecontainerName
@@ -17,6 +18,21 @@ items:
       EventProcessorHost.
     extends:
       name: ClientOptionsBase
+    package: azure-event-processor-host
+  - uid: azure-event-processor-host.EventProcessorOptions.autoCheckpoint
+    name: autoCheckpoint
+    fullName: autoCheckpoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'autoCheckpoint?: boolean'
+      return:
+        type:
+          - boolean
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorOptions.consumerGroup
     name: consumerGroup
@@ -32,6 +48,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorOptions.initialOffset
     name: initialOffset
     fullName: initialOffset
@@ -46,6 +63,7 @@ items:
       return:
         type:
           - EventPosition
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorOptions.leasecontainerName
     name: leasecontainerName
     fullName: leasecontainerName
@@ -60,6 +78,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorOptions.leaseManager
     name: leaseManager
     fullName: leaseManager
@@ -73,7 +92,8 @@ items:
       content: 'leaseManager?: LeaseManager'
       return:
         type:
-          - LeaseManager
+          - azure-event-processor-host.LeaseManager
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorOptions.storageBlobPrefix
     name: storageBlobPrefix
     fullName: storageBlobPrefix
@@ -88,24 +108,10 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
 references:
-  - uid: azure-event-processor-host.EventProcessorOptions
+  - uid: azure-event-processor-host.LeaseManager
     spec.typeScript:
-      - name: EventProcessorOptions
-        fullName: EventProcessorOptions
-        uid: azure-event-processor-host.EventProcessorOptions
-  - uid: azure-event-processor-host.StartEPHOptions
-    spec.typeScript:
-      - name: StartEPHOptions
-        fullName: StartEPHOptions
-        uid: azure-event-processor-host.StartEPHOptions
-  - uid: azure-event-processor-host.EventProcessorHost
-    spec.typeScript:
-      - name: EventProcessorHost
-        fullName: EventProcessorHost
-        uid: azure-event-processor-host.EventProcessorHost
-  - uid: azure-event-processor-host.ConnectionStringBasedOptions
-    spec.typeScript:
-      - name: ConnectionStringBasedOptions
-        fullName: ConnectionStringBasedOptions
-        uid: azure-event-processor-host.ConnectionStringBasedOptions
+      - name: LeaseManager
+        fullName: LeaseManager
+        uid: azure-event-processor-host.LeaseManager

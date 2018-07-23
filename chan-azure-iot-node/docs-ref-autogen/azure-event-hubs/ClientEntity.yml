@@ -10,6 +10,7 @@ items:
       - azure-event-hubs.ClientEntity.name
       - azure-event-hubs.ClientEntity.partitionId
       - azure-event-hubs.ClientEntity.type
+      - azure-event-hubs.ClientEntity.wasCloseCalled
     langs:
       - typeScript
     type: class
@@ -30,6 +31,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.ClientEntity.audience
     name: audience
     fullName: audience
@@ -43,6 +45,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.ClientEntity.constructor
     name: ClientEntity
     children: []
@@ -57,13 +60,14 @@ items:
       parameters:
         - id: context
           type:
-            - ConnectionContext
+            - azure-event-hubs.ConnectionContext
           description: The connection context.
         - id: options
           type:
             - azure-event-hubs.ClientEntityOptions
           description: ''
           optional: true
+    package: azure-event-hubs
   - uid: azure-event-hubs.ClientEntity.name
     name: name
     fullName: name
@@ -77,6 +81,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.ClientEntity.partitionId
     name: partitionId
     fullName: partitionId
@@ -91,6 +96,7 @@ items:
       return:
         type:
           - string | number
+    package: azure-event-hubs
   - uid: azure-event-hubs.ClientEntity.type
     name: type
     fullName: type
@@ -104,7 +110,27 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
+  - uid: azure-event-hubs.ClientEntity.wasCloseCalled
+    name: wasCloseCalled
+    fullName: wasCloseCalled
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'wasCloseCalled: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-event-hubs
 references:
+  - uid: azure-event-hubs.ConnectionContext
+    spec.typeScript:
+      - name: ConnectionContext
+        fullName: ConnectionContext
+        uid: azure-event-hubs.ConnectionContext
   - uid: azure-event-hubs.ClientEntityOptions
     spec.typeScript:
       - name: ClientEntityOptions

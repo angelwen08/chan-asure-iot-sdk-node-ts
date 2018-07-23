@@ -4,6 +4,7 @@ items:
     name: EventProcessorHost
     fullName: EventProcessorHost
     children:
+      - azure-event-processor-host.EventProcessorHost.autoCheckpoint
       - azure-event-processor-host.EventProcessorHost.closed
       - azure-event-processor-host.EventProcessorHost.consumerGroup
       - >-
@@ -27,6 +28,20 @@ items:
     extends:
       name: EventEmitter
     package: azure-event-processor-host
+  - uid: azure-event-processor-host.EventProcessorHost.autoCheckpoint
+    name: autoCheckpoint
+    fullName: autoCheckpoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'autoCheckpoint: boolean'
+      return:
+        type:
+          - boolean
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.closed
     name: closed
     fullName: closed
@@ -47,6 +62,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.consumerGroup
     name: consumerGroup
     fullName: consumerGroup
@@ -60,6 +76,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.EventProcessorHost.createFromAadTokenCredentials
     name: createFromAadTokenCredentials
@@ -127,6 +144,7 @@ items:
       return:
         type:
           - azure-event-processor-host.EventProcessorHost
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.createFromConnectionString
     name: createFromConnectionString
     children: []
@@ -179,6 +197,7 @@ items:
       return:
         type:
           - azure-event-processor-host.EventProcessorHost
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.createHostName
     name: createHostName
     children: []
@@ -197,6 +216,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.error
     name: error
     fullName: error
@@ -214,6 +234,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.constructor
     name: EventProcessorHost
     children: []
@@ -256,6 +277,7 @@ items:
             - azure-event-processor-host.EventProcessorOptions
           description: ''
           optional: true
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.getHubRuntimeInformation
     name: getHubRuntimeInformation
     children: []
@@ -269,6 +291,7 @@ items:
       return:
         type:
           - Promise<EventHubRuntimeInformation>
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.getPartitionIds
     name: getPartitionIds
     children: []
@@ -282,6 +305,7 @@ items:
       return:
         type:
           - 'Promise<string[]>'
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.getPartitionInformation
     name: getPartitionInformation
     children: []
@@ -300,6 +324,7 @@ items:
       return:
         type:
           - Promise<EventHubPartitionRuntimeInformation>
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.hostName
     name: hostName
     fullName: hostName
@@ -313,6 +338,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.message
     name: message
     fullName: message
@@ -330,6 +356,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.opened
     name: opened
     fullName: opened
@@ -347,6 +374,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.start
     name: start
     children: []
@@ -373,6 +401,7 @@ items:
       return:
         type:
           - Promise<void>
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.stop
     name: stop
     children: []
@@ -386,3 +415,25 @@ items:
       return:
         type:
           - Promise<void>
+    package: azure-event-processor-host
+references:
+  - uid: azure-event-processor-host.EventProcessorOptions
+    spec.typeScript:
+      - name: EventProcessorOptions
+        fullName: EventProcessorOptions
+        uid: azure-event-processor-host.EventProcessorOptions
+  - uid: azure-event-processor-host.StartEPHOptions
+    spec.typeScript:
+      - name: StartEPHOptions
+        fullName: StartEPHOptions
+        uid: azure-event-processor-host.StartEPHOptions
+  - uid: azure-event-processor-host.EventProcessorHost
+    spec.typeScript:
+      - name: EventProcessorHost
+        fullName: EventProcessorHost
+        uid: azure-event-processor-host.EventProcessorHost
+  - uid: azure-event-processor-host.ConnectionStringBasedOptions
+    spec.typeScript:
+      - name: ConnectionStringBasedOptions
+        fullName: ConnectionStringBasedOptions
+        uid: azure-event-processor-host.ConnectionStringBasedOptions

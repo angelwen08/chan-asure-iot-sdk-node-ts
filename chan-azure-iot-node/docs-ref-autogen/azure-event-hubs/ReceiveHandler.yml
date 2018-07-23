@@ -16,7 +16,11 @@ items:
     langs:
       - typeScript
     type: class
-    summary: ''
+    summary: >-
+      Describes the receive handler object that is returned from the receive()
+      method with handlers is
+
+      called. The ReceiveHandler is used to stop receiving more messages.
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiveHandler.address
     name: address
@@ -31,6 +35,7 @@ items:
       return:
         type:
           - string | undefined
+    package: azure-event-hubs
   - uid: azure-event-hubs.ReceiveHandler.consumerGroup
     name: consumerGroup
     fullName: consumerGroup
@@ -44,6 +49,7 @@ items:
       return:
         type:
           - string | undefined
+    package: azure-event-hubs
   - uid: azure-event-hubs.ReceiveHandler.epoch
     name: epoch
     fullName: epoch
@@ -57,6 +63,7 @@ items:
       return:
         type:
           - number | undefined
+    package: azure-event-hubs
   - uid: azure-event-hubs.ReceiveHandler.identifier
     name: identifier
     fullName: identifier
@@ -70,6 +77,7 @@ items:
       return:
         type:
           - string | undefined
+    package: azure-event-hubs
   - uid: azure-event-hubs.ReceiveHandler.name
     name: name
     fullName: name
@@ -83,6 +91,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.ReceiveHandler.partitionId
     name: partitionId
     fullName: partitionId
@@ -96,6 +105,7 @@ items:
       return:
         type:
           - string | number | undefined
+    package: azure-event-hubs
   - uid: azure-event-hubs.ReceiveHandler.constructor
     name: ReceiveHandler
     children: []
@@ -111,6 +121,7 @@ items:
             - azure-event-hubs.EventHubReceiver
           description: |
             The underlying EventHubReceiver.
+    package: azure-event-hubs
   - uid: azure-event-hubs.ReceiveHandler.runtimeInfo
     name: runtimeInfo
     fullName: runtimeInfo
@@ -124,6 +135,7 @@ items:
       return:
         type:
           - azure-event-hubs.ReceiverRuntimeInfo | undefined
+    package: azure-event-hubs
   - uid: azure-event-hubs.ReceiveHandler.stop
     name: stop
     children: []
@@ -137,3 +149,17 @@ items:
       return:
         type:
           - Promise<void>
+    package: azure-event-hubs
+references:
+  - uid: azure-event-hubs.EventHubReceiver
+    spec.typeScript:
+      - name: EventHubReceiver
+        fullName: EventHubReceiver
+        uid: azure-event-hubs.EventHubReceiver
+  - uid: azure-event-hubs.ReceiverRuntimeInfo | undefined
+    spec.typeScript:
+      - name: ReceiverRuntimeInfo
+        fullName: ReceiverRuntimeInfo
+        uid: azure-event-hubs.ReceiverRuntimeInfo
+      - name: ' | undefined'
+        fullName: ' | undefined'

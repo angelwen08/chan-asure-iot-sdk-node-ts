@@ -20,22 +20,36 @@ items:
       - >-
         azure-event-hubs.ConditionErrorNameMapper.amqp:link:transfer-limit-exceeded
       - 'azure-event-hubs.ConditionErrorNameMapper.amqp:not-allowed'
-      - 'azure-event-hubs.ConditionErrorNameMapper.amqp:connection:framing-error'
+      - 'azure-event-hubs.ConditionErrorNameMapper.amqp:not-found'
       - 'azure-event-hubs.ConditionErrorNameMapper.amqp:not-implemented'
       - 'azure-event-hubs.ConditionErrorNameMapper.amqp:precondition-failed'
       - 'azure-event-hubs.ConditionErrorNameMapper.amqp:resource-deleted'
-      - 'azure-event-hubs.ConditionErrorNameMapper.amqp:resource-limit-exceeded'
+      - 'azure-event-hubs.ConditionErrorNameMapper.amqp:connection:framing-error'
       - 'azure-event-hubs.ConditionErrorNameMapper.amqp:resource-locked'
       - 'azure-event-hubs.ConditionErrorNameMapper.amqp:session:errant-link'
       - 'azure-event-hubs.ConditionErrorNameMapper.amqp:session:handle-in-use'
       - 'azure-event-hubs.ConditionErrorNameMapper.amqp:session:unattached-handle'
       - 'azure-event-hubs.ConditionErrorNameMapper.amqp:session:window-violation'
       - 'azure-event-hubs.ConditionErrorNameMapper.amqp:unauthorized-access'
+      - >-
+        azure-event-hubs.ConditionErrorNameMapper.client.sender:not-enough-link-credit
       - 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:argument-error'
       - >-
         azure-event-hubs.ConditionErrorNameMapper.com.microsoft:argument-out-of-range
+      - 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:auth-failed'
+      - 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:entity-disabled'
+      - >-
+        azure-event-hubs.ConditionErrorNameMapper.com.microsoft:message-lock-lost
+      - >-
+        azure-event-hubs.ConditionErrorNameMapper.com.microsoft:operation-cancelled
+      - >-
+        azure-event-hubs.ConditionErrorNameMapper.com.microsoft:precondition-failed
       - 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:server-busy'
-      - 'azure-event-hubs.ConditionErrorNameMapper.amqp:not-found'
+      - >-
+        azure-event-hubs.ConditionErrorNameMapper.com.microsoft:session-cannot-be-locked
+      - >-
+        azure-event-hubs.ConditionErrorNameMapper.com.microsoft:session-lock-lost
+      - 'azure-event-hubs.ConditionErrorNameMapper.amqp:resource-limit-exceeded'
     langs:
       - typeScript
     type: enum
@@ -51,6 +65,7 @@ items:
       some reason.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:timeout'
     name: 'com.microsoft:timeout'
     children: []
@@ -61,6 +76,7 @@ items:
       retried.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:connection:redirect'
     name: 'amqp:connection:redirect'
     children: []
@@ -71,6 +87,7 @@ items:
       connection.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:decode-error'
     name: 'amqp:decode-error'
     children: []
@@ -79,6 +96,7 @@ items:
     summary: Error is thrown when data could not be decoded.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:frame-size-too-small'
     name: 'amqp:frame-size-too-small'
     children: []
@@ -94,6 +112,7 @@ items:
       a frame of the agreed maximum frame size.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:illegal-state'
     name: 'amqp:illegal-state'
     children: []
@@ -104,6 +123,7 @@ items:
       current state.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:internal-error'
     name: 'amqp:internal-error'
     children: []
@@ -114,6 +134,7 @@ items:
       a bug?
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:invalid-field'
     name: 'amqp:invalid-field'
     children: []
@@ -124,6 +145,7 @@ items:
       operation could not proceed.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:link:detach-forced'
     name: 'amqp:link:detach-forced'
     children: []
@@ -132,6 +154,7 @@ items:
     summary: Error is thrown when an operator intervened to detach for some reason.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:link:message-size-exceeded'
     name: 'amqp:link:message-size-exceeded'
     children: []
@@ -142,6 +165,7 @@ items:
       256Kb.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:link:redirect'
     name: 'amqp:link:redirect'
     children: []
@@ -152,6 +176,7 @@ items:
       at the current container.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:link:stolen'
     name: 'amqp:link:stolen'
     children: []
@@ -162,6 +187,7 @@ items:
       with different epoch values.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: >-
       azure-event-hubs.ConditionErrorNameMapper.amqp:link:transfer-limit-exceeded
     name: 'amqp:link:transfer-limit-exceeded'
@@ -173,6 +199,7 @@ items:
       allowed on the link.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:not-allowed'
     name: 'amqp:not-allowed'
     children: []
@@ -181,16 +208,18 @@ items:
     summary: Error is thrown when an operation is attempted but is not allowed.
     type: field
     numericValue: null
-  - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:connection:framing-error'
-    name: 'amqp:connection:framing-error'
+    package: azure-event-hubs
+  - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:not-found'
+    name: 'amqp:not-found'
     children: []
     langs:
       - typeScript
     summary: >-
-      Error is thrown when a valid frame header cannot be formed from the
-      incoming byte stream.
+      Error for signaling general communication errors related to messaging
+      operations.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:not-implemented'
     name: 'amqp:not-implemented'
     children: []
@@ -201,6 +230,7 @@ items:
       is present.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:precondition-failed'
     name: 'amqp:precondition-failed'
     children: []
@@ -211,6 +241,7 @@ items:
       execute an operation was not.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:resource-deleted'
     name: 'amqp:resource-deleted'
     children: []
@@ -221,25 +252,18 @@ items:
       deleted.
     type: field
     numericValue: null
-  - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:resource-limit-exceeded'
-    name: 'amqp:resource-limit-exceeded'
+    package: azure-event-hubs
+  - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:connection:framing-error'
+    name: 'amqp:connection:framing-error'
     children: []
     langs:
       - typeScript
     summary: >-
-      Error is thrown the the Azure Event Hub quota has been exceeded.
-
-      Quotas are reset periodically, this operation will have to wait until
-      then.
-
-      The messaging entity has reached its maximum allowable size.
-
-      This can happen if the maximum number of receivers (which is 5) has
-      already
-
-      been opened on a per-consumer group level.
+      Error is thrown when a valid frame header cannot be formed from the
+      incoming byte stream.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:resource-locked'
     name: 'amqp:resource-locked'
     children: []
@@ -252,6 +276,7 @@ items:
       has no access because another client is working with it.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:session:errant-link'
     name: 'amqp:session:errant-link'
     children: []
@@ -262,6 +287,7 @@ items:
       an error.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:session:handle-in-use'
     name: 'amqp:session:handle-in-use'
     children: []
@@ -272,6 +298,7 @@ items:
       in use for an attached link.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:session:unattached-handle'
     name: 'amqp:session:unattached-handle'
     children: []
@@ -284,6 +311,7 @@ items:
       currently in use of an attached link.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:session:window-violation'
     name: 'amqp:session:window-violation'
     children: []
@@ -292,6 +320,7 @@ items:
     summary: Error is thrown when the peer violated incoming window for the session.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:unauthorized-access'
     name: 'amqp:unauthorized-access'
     children: []
@@ -302,6 +331,19 @@ items:
       refused the connection.
     type: field
     numericValue: null
+    package: azure-event-hubs
+  - uid: >-
+      azure-event-hubs.ConditionErrorNameMapper.client.sender:not-enough-link-credit
+    name: 'client.sender:not-enough-link-credit'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      Error is thrown when the client sender does not have enough link credits
+      to send the message.
+    type: field
+    numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:argument-error'
     name: 'com.microsoft:argument-error'
     children: []
@@ -310,6 +352,7 @@ items:
     summary: Error is thrown when an incorrect argument was received.
     type: field
     numericValue: null
+    package: azure-event-hubs
   - uid: >-
       azure-event-hubs.ConditionErrorNameMapper.com.microsoft:argument-out-of-range
     name: 'com.microsoft:argument-out-of-range'
@@ -321,6 +364,62 @@ items:
       range.
     type: field
     numericValue: null
+    package: azure-event-hubs
+  - uid: 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:auth-failed'
+    name: 'com.microsoft:auth-failed'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      Error is thrown when the connection parameters are wrong and the server
+      refused the connection.
+    type: field
+    numericValue: null
+    package: azure-event-hubs
+  - uid: 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:entity-disabled'
+    name: 'com.microsoft:entity-disabled'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      Error is thrown when trying to access/connect to a disabled messaging
+      entity.
+    type: field
+    numericValue: null
+    package: azure-event-hubs
+  - uid: 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:message-lock-lost'
+    name: 'com.microsoft:message-lock-lost'
+    children: []
+    langs:
+      - typeScript
+    summary: Error is thrown when the lock on the message is lost.
+    type: field
+    numericValue: null
+    package: azure-event-hubs
+  - uid: >-
+      azure-event-hubs.ConditionErrorNameMapper.com.microsoft:operation-cancelled
+    name: 'com.microsoft:operation-cancelled'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      Error is thrown when server cancels the operation due to an internal
+      issue.
+    type: field
+    numericValue: null
+    package: azure-event-hubs
+  - uid: >-
+      azure-event-hubs.ConditionErrorNameMapper.com.microsoft:precondition-failed
+    name: 'com.microsoft:precondition-failed'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      Error is thrown when a condition that should have been met in order to
+      execute an operation was not.
+    type: field
+    numericValue: null
+    package: azure-event-hubs
   - uid: 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:server-busy'
     name: 'com.microsoft:server-busy'
     children: []
@@ -331,19 +430,43 @@ items:
       retry the operation.
     type: field
     numericValue: null
-  - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:not-found'
-    name: 'amqp:not-found'
+    package: azure-event-hubs
+  - uid: >-
+      azure-event-hubs.ConditionErrorNameMapper.com.microsoft:session-cannot-be-locked
+    name: 'com.microsoft:session-cannot-be-locked'
+    children: []
+    langs:
+      - typeScript
+    summary: Error is thrown when the Azure ServiceBus session cannot be locked.
+    type: field
+    numericValue: null
+    package: azure-event-hubs
+  - uid: 'azure-event-hubs.ConditionErrorNameMapper.com.microsoft:session-lock-lost'
+    name: 'com.microsoft:session-lock-lost'
+    children: []
+    langs:
+      - typeScript
+    summary: Error is thrown when the lock on the Azure ServiceBus session is lost.
+    type: field
+    numericValue: null
+    package: azure-event-hubs
+  - uid: 'azure-event-hubs.ConditionErrorNameMapper.amqp:resource-limit-exceeded'
+    name: 'amqp:resource-limit-exceeded'
     children: []
     langs:
       - typeScript
     summary: >-
-      Error for signaling general communication errors related to messaging
-      operations.
+      Error is thrown the the Azure EventHub/ServiceBus quota has been exceeded.
+
+      Quotas are reset periodically, this operation will have to wait until
+      then.
+
+      The messaging entity has reached its maximum allowable size.
+
+      This can happen if the maximum number of receivers (which is 5) has
+      already
+
+      been opened on a per-consumer group level.
     type: field
     numericValue: null
-references:
-  - uid: azure-event-hubs.ClientOptions
-    spec.typeScript:
-      - name: ClientOptions
-        fullName: ClientOptions
-        uid: azure-event-hubs.ClientOptions
+    package: azure-event-hubs

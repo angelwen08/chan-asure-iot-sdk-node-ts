@@ -6,7 +6,9 @@ items:
     children:
       - azure-event-hubs.EventHubSender.close
       - azure-event-hubs.EventHubSender.create
+      - azure-event-hubs.EventHubSender.detached
       - azure-event-hubs.EventHubSender.constructor
+      - azure-event-hubs.EventHubSender.isOpen
       - azure-event-hubs.EventHubSender.send
       - azure-event-hubs.EventHubSender.sendBatch
       - azure-event-hubs.EventHubSender.senderLock
@@ -15,7 +17,7 @@ items:
     type: class
     summary: Describes the EventHubSender that will send event data to EventHub.
     extends:
-      name: azure-event-hubs.ClientEntity
+      name: azure-event-hubs.LinkEntity
     package: azure-event-hubs
   - uid: azure-event-hubs.EventHubSender.close
     name: close
@@ -34,6 +36,7 @@ items:
       return:
         type:
           - Promise<void>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubSender.create
     name: create
     children: []
@@ -52,7 +55,7 @@ items:
       parameters:
         - id: context
           type:
-            - ConnectionContext
+            - azure-event-hubs.ConnectionContext
           description: ''
         - id: partitionId
           type:
@@ -62,6 +65,26 @@ items:
       return:
         type:
           - azure-event-hubs.EventHubSender
+    package: azure-event-hubs
+  - uid: azure-event-hubs.EventHubSender.detached
+    name: detached
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Will reconnect the sender link if necessary.
+    syntax:
+      content: 'function detached(senderError?: AmqpError | Error)'
+      parameters:
+        - id: senderError
+          type:
+            - AmqpError | Error
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubSender.constructor
     name: EventHubSender
     children: []
@@ -76,7 +99,7 @@ items:
       parameters:
         - id: context
           type:
-            - ConnectionContext
+            - azure-event-hubs.ConnectionContext
           description: The connection context.
         - id: partitionId
           type:
@@ -88,6 +111,23 @@ items:
             - string
           description: ''
           optional: true
+    package: azure-event-hubs
+  - uid: azure-event-hubs.EventHubSender.isOpen
+    name: isOpen
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether the AMQP sender link is open. If open then returns true
+      else returns false.
+    syntax:
+      content: function isOpen()
+      parameters: []
+      return:
+        type:
+          - boolean
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubSender.send
     name: send
     children: []
@@ -100,11 +140,12 @@ items:
       parameters:
         - id: data
           type:
-            - EventData
+            - azure-event-hubs.EventData
           description: Message to send.  Will be sent as UTF8-encoded JSON string.
       return:
         type:
           - Promise<Delivery>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubSender.sendBatch
     name: sendBatch
     children: []
@@ -123,11 +164,12 @@ items:
       parameters:
         - id: datas
           type:
-            - 'EventData[]'
+            - 'azure-event-hubs.EventData[]'
           description: An array of EventData objects to be sent in a Batch message.
       return:
         type:
           - Promise<Delivery>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubSender.senderLock
     name: senderLock
     fullName: senderLock
@@ -141,9 +183,32 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
 references:
-  - uid: azure-event-hubs.DataTransformer
+  - uid: azure-event-hubs.LinkEntity
     spec.typeScript:
-      - name: DataTransformer
-        fullName: DataTransformer
-        uid: azure-event-hubs.DataTransformer
+      - name: LinkEntity
+        fullName: LinkEntity
+        uid: azure-event-hubs.LinkEntity
+  - uid: azure-event-hubs.ConnectionContext
+    spec.typeScript:
+      - name: ConnectionContext
+        fullName: ConnectionContext
+        uid: azure-event-hubs.ConnectionContext
+  - uid: azure-event-hubs.EventData
+    spec.typeScript:
+      - name: EventData
+        fullName: EventData
+        uid: azure-event-hubs.EventData
+  - uid: 'azure-event-hubs.EventData[]'
+    spec.typeScript:
+      - name: EventData
+        fullName: EventData
+        uid: azure-event-hubs.EventData
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-event-hubs.EventHubSender
+    spec.typeScript:
+      - name: EventHubSender
+        fullName: EventHubSender
+        uid: azure-event-hubs.EventHubSender

@@ -36,7 +36,8 @@ items:
       parameters: []
       return:
         type:
-          - Promise<any>
+          - Promise<void>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.connectionId
     name: connectionId
     fullName: connectionId
@@ -51,6 +52,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.createFromAadTokenCredentials
     name: createFromAadTokenCredentials
     children: []
@@ -92,6 +94,7 @@ items:
       return:
         type:
           - azure-event-hubs.EventHubClient
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.createFromConnectionString
     name: createFromConnectionString
     children: []
@@ -123,6 +126,7 @@ items:
       return:
         type:
           - azure-event-hubs.EventHubClient
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.createFromIotHubConnectionString
     name: createFromIotHubConnectionString
     children: []
@@ -149,6 +153,7 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.EventHubClient>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.constructor
     name: EventHubClient
     children: []
@@ -163,13 +168,16 @@ items:
       parameters:
         - id: config
           type:
-            - ConnectionConfig
+            - azure-event-hubs.ConnectionConfig
           description: The connection configuration to create the EventHub Client.
         - id: options
           type:
             - azure-event-hubs.ClientOptions
-          description: ''
+          description: |
+            The optional parameters that can be provided to the EventHub
+            Client constructor.
           optional: true
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.getHubRuntimeInformation
     name: getHubRuntimeInformation
     children: []
@@ -183,6 +191,7 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.EventHubRuntimeInformation>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.getPartitionIds
     name: getPartitionIds
     children: []
@@ -196,6 +205,7 @@ items:
       return:
         type:
           - Promise<Array<string>>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.getPartitionInformation
     name: getPartitionInformation
     children: []
@@ -209,11 +219,11 @@ items:
         - id: partitionId
           type:
             - string | number
-          description: |
-            Partition ID for which partition information is required.
+          description: Partition ID for which partition information is required.
       return:
         type:
           - Promise<azure-event-hubs.EventHubPartitionRuntimeInformation>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.receive
     name: receive
     children: []
@@ -253,6 +263,7 @@ items:
       return:
         type:
           - azure-event-hubs.ReceiveHandler
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.receiveBatch
     name: receiveBatch
     children: []
@@ -290,7 +301,8 @@ items:
           optional: true
       return:
         type:
-          - 'Promise<EventData[]>'
+          - 'Promise<azure-event-hubs.EventData[]>'
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.send
     name: send
     children: []
@@ -303,7 +315,7 @@ items:
       parameters:
         - id: data
           type:
-            - EventData
+            - azure-event-hubs.EventData
           description: Message to send.  Will be sent as UTF8-encoded JSON string.
         - id: partitionId
           type:
@@ -313,6 +325,7 @@ items:
       return:
         type:
           - Promise<Delivery>
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventHubClient.sendBatch
     name: sendBatch
     children: []
@@ -329,7 +342,7 @@ items:
       parameters:
         - id: datas
           type:
-            - 'EventData[]'
+            - 'azure-event-hubs.EventData[]'
           description: An array of EventData objects to be sent in a Batch message.
         - id: partitionId
           type:
@@ -339,3 +352,93 @@ items:
       return:
         type:
           - Promise<Delivery>
+    package: azure-event-hubs
+references:
+  - uid: azure-event-hubs.ConnectionConfig
+    spec.typeScript:
+      - name: ConnectionConfig
+        fullName: ConnectionConfig
+        uid: azure-event-hubs.ConnectionConfig
+  - uid: azure-event-hubs.ClientOptions
+    spec.typeScript:
+      - name: ClientOptions
+        fullName: ClientOptions
+        uid: azure-event-hubs.ClientOptions
+  - uid: Promise<azure-event-hubs.EventHubRuntimeInformation>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubRuntimeInformation
+        fullName: EventHubRuntimeInformation
+        uid: azure-event-hubs.EventHubRuntimeInformation
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-event-hubs.EventHubPartitionRuntimeInformation>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubPartitionRuntimeInformation
+        fullName: EventHubPartitionRuntimeInformation
+        uid: azure-event-hubs.EventHubPartitionRuntimeInformation
+      - name: '>'
+        fullName: '>'
+  - uid: azure-event-hubs.OnMessage
+    spec.typeScript:
+      - name: OnMessage
+        fullName: OnMessage
+        uid: azure-event-hubs.OnMessage
+  - uid: azure-event-hubs.OnError
+    spec.typeScript:
+      - name: OnError
+        fullName: OnError
+        uid: azure-event-hubs.OnError
+  - uid: azure-event-hubs.ReceiveOptions
+    spec.typeScript:
+      - name: ReceiveOptions
+        fullName: ReceiveOptions
+        uid: azure-event-hubs.ReceiveOptions
+  - uid: azure-event-hubs.ReceiveHandler
+    spec.typeScript:
+      - name: ReceiveHandler
+        fullName: ReceiveHandler
+        uid: azure-event-hubs.ReceiveHandler
+  - uid: 'Promise<azure-event-hubs.EventData[]>'
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventData
+        fullName: EventData
+        uid: azure-event-hubs.EventData
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: azure-event-hubs.EventData
+    spec.typeScript:
+      - name: EventData
+        fullName: EventData
+        uid: azure-event-hubs.EventData
+  - uid: 'azure-event-hubs.EventData[]'
+    spec.typeScript:
+      - name: EventData
+        fullName: EventData
+        uid: azure-event-hubs.EventData
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-event-hubs.ClientOptionsBase
+    spec.typeScript:
+      - name: ClientOptionsBase
+        fullName: ClientOptionsBase
+        uid: azure-event-hubs.ClientOptionsBase
+  - uid: azure-event-hubs.EventHubClient
+    spec.typeScript:
+      - name: EventHubClient
+        fullName: EventHubClient
+        uid: azure-event-hubs.EventHubClient
+  - uid: Promise<azure-event-hubs.EventHubClient>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubClient
+        fullName: EventHubClient
+        uid: azure-event-hubs.EventHubClient
+      - name: '>'
+        fullName: '>'

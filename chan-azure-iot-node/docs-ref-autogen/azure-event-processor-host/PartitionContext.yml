@@ -42,7 +42,8 @@ items:
       parameters: []
       return:
         type:
-          - Promise<CheckpointInfo | void>
+          - Promise<azure-event-processor-host.CheckpointInfo | void>
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.lease
     name: lease
     fullName: lease
@@ -56,6 +57,7 @@ items:
       return:
         type:
           - azure-event-processor-host.BlobLease
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.constructor
     name: PartitionContext
     children: []
@@ -81,6 +83,7 @@ items:
             - azure-event-processor-host.BlobLease
           description: |
             The lease object.
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.partitionId
     name: partitionId
     fullName: partitionId
@@ -94,6 +97,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.setCheckpointInfo
     name: setCheckpointInfo
     children: []
@@ -127,6 +131,7 @@ items:
             - number
           description: |
             The sequnce number of the message in the event stream
+    package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.PartitionContext.updateCheckpointDataFromEventData
     name: updateCheckpointDataFromEventData
@@ -146,6 +151,7 @@ items:
             - EventData
           description: |
             The event data received from the EventHubReceiver.
+    package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.updateCheckpointInfoFromLease
     name: updateCheckpointInfoFromLease
     children: []
@@ -158,4 +164,29 @@ items:
       parameters: []
       return:
         type:
-          - Promise<CheckpointInfo>
+          - Promise<azure-event-processor-host.CheckpointInfo>
+    package: azure-event-processor-host
+references:
+  - uid: azure-event-processor-host.BlobLease
+    spec.typeScript:
+      - name: BlobLease
+        fullName: BlobLease
+        uid: azure-event-processor-host.BlobLease
+  - uid: Promise<azure-event-processor-host.CheckpointInfo | void>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: CheckpointInfo
+        fullName: CheckpointInfo
+        uid: azure-event-processor-host.CheckpointInfo
+      - name: ' | void>'
+        fullName: ' | void>'
+  - uid: Promise<azure-event-processor-host.CheckpointInfo>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: CheckpointInfo
+        fullName: CheckpointInfo
+        uid: azure-event-processor-host.CheckpointInfo
+      - name: '>'
+        fullName: '>'

@@ -28,6 +28,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventPositionOptions.enqueuedTime
     name: enqueuedTime
     fullName: enqueuedTime
@@ -42,6 +43,7 @@ items:
       return:
         type:
           - Date | number
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventPositionOptions.isInclusive
     name: isInclusive
     fullName: isInclusive
@@ -56,6 +58,7 @@ items:
       return:
         type:
           - boolean
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventPositionOptions.offset
     name: offset
     fullName: offset
@@ -70,6 +73,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.EventPositionOptions.sequenceNumber
     name: sequenceNumber
     fullName: sequenceNumber
@@ -84,19 +88,4 @@ items:
       return:
         type:
           - number
-references:
-  - uid: azure-event-hubs.ClientEntity
-    spec.typeScript:
-      - name: ClientEntity
-        fullName: ClientEntity
-        uid: azure-event-hubs.ClientEntity
-  - uid: azure-event-hubs.ReceiveOptions
-    spec.typeScript:
-      - name: ReceiveOptions
-        fullName: ReceiveOptions
-        uid: azure-event-hubs.ReceiveOptions
-  - uid: azure-event-hubs.ReceiverRuntimeInfo
-    spec.typeScript:
-      - name: ReceiverRuntimeInfo
-        fullName: ReceiverRuntimeInfo
-        uid: azure-event-hubs.ReceiverRuntimeInfo
+    package: azure-event-hubs

@@ -17,7 +17,7 @@ items:
     type: class
     summary: ''
     extends:
-      name: azure-event-hubs.ClientEntity
+      name: azure-event-hubs.LinkEntity
     package: azure-event-hubs
   - uid: azure-event-hubs.ManagementClient.close
     name: close
@@ -34,6 +34,7 @@ items:
       return:
         type:
           - Promise<void>
+    package: azure-event-hubs
   - uid: azure-event-hubs.ManagementClient.entityPath
     name: entityPath
     fullName: entityPath
@@ -47,6 +48,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.ManagementClient.getHubRuntimeInformation
     name: getHubRuntimeInformation
     children: []
@@ -60,6 +62,7 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.EventHubRuntimeInformation>
+    package: azure-event-hubs
   - uid: azure-event-hubs.ManagementClient.getPartitionIds
     name: getPartitionIds
     children: []
@@ -73,6 +76,7 @@ items:
       return:
         type:
           - Promise<Array<string>>
+    package: azure-event-hubs
   - uid: azure-event-hubs.ManagementClient.getPartitionInformation
     name: getPartitionInformation
     children: []
@@ -91,6 +95,7 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.EventHubPartitionRuntimeInformation>
+    package: azure-event-hubs
   - uid: azure-event-hubs.ManagementClient.constructor
     name: ManagementClient
     children: []
@@ -105,13 +110,14 @@ items:
       parameters:
         - id: context
           type:
-            - ConnectionContext
+            - azure-event-hubs.ConnectionContext
           description: The connection context.
         - id: options
           type:
             - azure-event-hubs.ManagementClientOptions
           description: ''
           optional: true
+    package: azure-event-hubs
   - uid: azure-event-hubs.ManagementClient.managementLock
     name: managementLock
     fullName: managementLock
@@ -125,6 +131,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.ManagementClient.replyTo
     name: replyTo
     fullName: replyTo
@@ -138,3 +145,38 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
+references:
+  - uid: azure-event-hubs.LinkEntity
+    spec.typeScript:
+      - name: LinkEntity
+        fullName: LinkEntity
+        uid: azure-event-hubs.LinkEntity
+  - uid: azure-event-hubs.ConnectionContext
+    spec.typeScript:
+      - name: ConnectionContext
+        fullName: ConnectionContext
+        uid: azure-event-hubs.ConnectionContext
+  - uid: azure-event-hubs.ManagementClientOptions
+    spec.typeScript:
+      - name: ManagementClientOptions
+        fullName: ManagementClientOptions
+        uid: azure-event-hubs.ManagementClientOptions
+  - uid: Promise<azure-event-hubs.EventHubRuntimeInformation>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubRuntimeInformation
+        fullName: EventHubRuntimeInformation
+        uid: azure-event-hubs.EventHubRuntimeInformation
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-event-hubs.EventHubPartitionRuntimeInformation>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubPartitionRuntimeInformation
+        fullName: EventHubPartitionRuntimeInformation
+        uid: azure-event-hubs.EventHubPartitionRuntimeInformation
+      - name: '>'
+        fullName: '>'

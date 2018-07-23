@@ -5,6 +5,7 @@ items:
     fullName: CreateConnectionPrameters
     children:
       - azure-event-hubs.CreateConnectionPrameters.config
+      - azure-event-hubs.CreateConnectionPrameters.packageVersion
       - azure-event-hubs.CreateConnectionPrameters.userAgent
       - azure-event-hubs.CreateConnectionPrameters.useSaslPlain
     langs:
@@ -24,7 +25,22 @@ items:
       content: 'config: ConnectionConfig'
       return:
         type:
-          - ConnectionConfig
+          - azure-event-hubs.ConnectionConfig
+    package: azure-event-hubs
+  - uid: azure-event-hubs.CreateConnectionPrameters.packageVersion
+    name: packageVersion
+    fullName: packageVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'packageVersion: string'
+      return:
+        type:
+          - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.CreateConnectionPrameters.userAgent
     name: userAgent
     fullName: userAgent
@@ -38,6 +54,7 @@ items:
       return:
         type:
           - string
+    package: azure-event-hubs
   - uid: azure-event-hubs.CreateConnectionPrameters.useSaslPlain
     name: useSaslPlain
     fullName: useSaslPlain
@@ -52,9 +69,10 @@ items:
       return:
         type:
           - boolean
+    package: azure-event-hubs
 references:
-  - uid: azure-event-hubs.ParsedRedirectError
+  - uid: azure-event-hubs.ConnectionConfig
     spec.typeScript:
-      - name: ParsedRedirectError
-        fullName: ParsedRedirectError
-        uid: azure-event-hubs.ParsedRedirectError
+      - name: ConnectionConfig
+        fullName: ConnectionConfig
+        uid: azure-event-hubs.ConnectionConfig
