@@ -220,186 +220,6 @@
     - uid: azure-event-hubs.TokenType
       name: TokenType
       items: []
-- uid: azure-iot-device-http
-  name: azure-iot-device-http
-  items: []
-- uid: azure-iot-provisioning-device
-  name: azure-iot-provisioning-device
-  items:
-    - uid: azure-iot-provisioning-device.DeviceRegistrationResult
-      name: DeviceRegistrationResult
-      items: []
-    - uid: azure-iot-provisioning-device.DeviceRegistrationState
-      name: DeviceRegistrationState
-      items: []
-    - uid: azure-iot-provisioning-device.ProvisioningDeviceClient
-      name: ProvisioningDeviceClient
-      items: []
-    - uid: azure-iot-provisioning-device.ProvisioningTransportOptions
-      name: ProvisioningTransportOptions
-      items: []
-    - uid: azure-iot-provisioning-device.RegistrationClient
-      name: RegistrationClient
-      items: []
-    - uid: azure-iot-provisioning-device.RegistrationRequest
-      name: RegistrationRequest
-      items: []
-    - uid: azure-iot-provisioning-device.X509Registration
-      name: X509Registration
-      items: []
-    - uid: azure-iot-provisioning-device.X509SecurityClient
-      name: X509SecurityClient
-      items: []
-- uid: azure-iot-provisioning-service
-  name: azure-iot-provisioning-service
-  items:
-    - uid: azure-iot-provisioning-service.AttestationMechanism
-      name: AttestationMechanism
-      items: []
-    - uid: azure-iot-provisioning-service.BulkEnrollmentOperation
-      name: BulkEnrollmentOperation
-      items: []
-    - uid: azure-iot-provisioning-service.BulkEnrollmentOperationError
-      name: BulkEnrollmentOperationError
-      items: []
-    - uid: azure-iot-provisioning-service.BulkEnrollmentOperationResult
-      name: BulkEnrollmentOperationResult
-      items: []
-    - uid: azure-iot-provisioning-service.DeviceCapabilities
-      name: DeviceCapabilities
-      items: []
-    - uid: azure-iot-provisioning-service.DeviceRegistrationState
-      name: DeviceRegistrationState
-      items: []
-    - uid: azure-iot-provisioning-service.EnrollmentGroup
-      name: EnrollmentGroup
-      items: []
-    - uid: azure-iot-provisioning-service.IndividualEnrollment
-      name: IndividualEnrollment
-      items: []
-    - uid: azure-iot-provisioning-service.InitialTwin
-      name: InitialTwin
-      items: []
-    - uid: azure-iot-provisioning-service.Metadata
-      name: Metadata
-      items: []
-    - uid: azure-iot-provisioning-service.ProvisioningServiceClient
-      name: ProvisioningServiceClient
-      items: []
-    - uid: azure-iot-provisioning-service.Query
-      name: Query
-      items: []
-    - uid: azure-iot-provisioning-service.QueryResult
-      name: QueryResult
-      items: []
-    - uid: azure-iot-provisioning-service.QuerySpecification
-      name: QuerySpecification
-      items: []
-    - uid: azure-iot-provisioning-service.TpmAttestation
-      name: TpmAttestation
-      items: []
-    - uid: azure-iot-provisioning-service.TwinCollection
-      name: TwinCollection
-      items: []
-    - uid: azure-iot-provisioning-service.X509Attestation
-      name: X509Attestation
-      items: []
-    - uid: azure-iot-provisioning-service.X509CAReferences
-      name: X509CAReferences
-      items: []
-    - uid: azure-iot-provisioning-service.X509CertificateInfo
-      name: X509CertificateInfo
-      items: []
-    - uid: azure-iot-provisioning-service.X509Certificates
-      name: X509Certificates
-      items: []
-    - uid: azure-iot-provisioning-service.X509CertificateWithInfo
-      name: X509CertificateWithInfo
-      items: []
-- uid: azure-iot-provisioning-device-amqp
-  name: azure-iot-provisioning-device-amqp
-  items: []
-- uid: azure-iot-provisioning-device-http
-  name: azure-iot-provisioning-device-http
-  items: []
-- uid: azure-iot-provisioning-device-mqtt
-  name: azure-iot-provisioning-device-mqtt
-  items: []
-- uid: azure-iothub
-  name: azure-iothub
-  items:
-    - uid: azure-iothub.Client
-      name: Client
-      items:
-        - uid: azure-iothub.Client.ServiceReceiver
-          name: ServiceReceiver
-          items: []
-        - uid: azure-iothub.Client.Transport
-          name: Transport
-          items: []
-        - uid: azure-iothub.Client.TransportConfigOptions
-          name: TransportConfigOptions
-          items: []
-    - uid: azure-iothub.Configuration
-      name: Configuration
-      items: []
-    - uid: azure-iothub.ConfigurationContent
-      name: ConfigurationContent
-      items: []
-    - uid: azure-iothub.ConfigurationMetrics
-      name: ConfigurationMetrics
-      items: []
-    - uid: azure-iothub.Device
-      name: Device
-      items:
-        - uid: azure-iothub.Device.Authentication
-          name: Authentication
-          items: []
-        - uid: azure-iothub.Device.Capabilities
-          name: Capabilities
-          items: []
-        - uid: azure-iothub.Device.X509Thumbprints
-          name: X509Thumbprints
-          items: []
-    - uid: azure-iothub.DeviceMethodParams
-      name: DeviceMethodParams
-      items: []
-    - uid: azure-iothub.JobClient
-      name: JobClient
-      items: []
-    - uid: azure-iothub.Module
-      name: Module
-      items: []
-    - uid: azure-iothub.Query
-      name: Query
-      items: []
-    - uid: azure-iothub.Registry
-      name: Registry
-      items:
-        - uid: azure-iothub.Registry.BulkRegistryOperationResult
-          name: BulkRegistryOperationResult
-          items: []
-        - uid: azure-iothub.Registry.DeviceDescription
-          name: DeviceDescription
-          items: []
-        - uid: azure-iothub.Registry.DeviceRegistryOperationError
-          name: DeviceRegistryOperationError
-          items: []
-        - uid: azure-iothub.Registry.QueryDescription
-          name: QueryDescription
-          items: []
-        - uid: azure-iothub.Registry.RegistryStatistics
-          name: RegistryStatistics
-          items: []
-        - uid: azure-iothub.Registry.TransportConfig
-          name: TransportConfig
-          items: []
-    - uid: azure-iothub.ServiceReceiver
-      name: ServiceReceiver
-      items: []
-    - uid: azure-iothub.Twin
-      name: Twin
-      items: []
 - uid: azure-event-processor-host
   name: azure-event-processor-host
   items:
@@ -654,4 +474,184 @@
       items: []
     - uid: azure-iot-device.X509AuthenticationProvider
       name: X509AuthenticationProvider
+      items: []
+- uid: azure-iot-device-http
+  name: azure-iot-device-http
+  items: []
+- uid: azure-iot-provisioning-device
+  name: azure-iot-provisioning-device
+  items:
+    - uid: azure-iot-provisioning-device.DeviceRegistrationResult
+      name: DeviceRegistrationResult
+      items: []
+    - uid: azure-iot-provisioning-device.DeviceRegistrationState
+      name: DeviceRegistrationState
+      items: []
+    - uid: azure-iot-provisioning-device.ProvisioningDeviceClient
+      name: ProvisioningDeviceClient
+      items: []
+    - uid: azure-iot-provisioning-device.ProvisioningTransportOptions
+      name: ProvisioningTransportOptions
+      items: []
+    - uid: azure-iot-provisioning-device.RegistrationClient
+      name: RegistrationClient
+      items: []
+    - uid: azure-iot-provisioning-device.RegistrationRequest
+      name: RegistrationRequest
+      items: []
+    - uid: azure-iot-provisioning-device.X509Registration
+      name: X509Registration
+      items: []
+    - uid: azure-iot-provisioning-device.X509SecurityClient
+      name: X509SecurityClient
+      items: []
+- uid: azure-iot-provisioning-device-amqp
+  name: azure-iot-provisioning-device-amqp
+  items: []
+- uid: azure-iot-provisioning-device-http
+  name: azure-iot-provisioning-device-http
+  items: []
+- uid: azure-iot-provisioning-device-mqtt
+  name: azure-iot-provisioning-device-mqtt
+  items: []
+- uid: azure-iot-provisioning-service
+  name: azure-iot-provisioning-service
+  items:
+    - uid: azure-iot-provisioning-service.AttestationMechanism
+      name: AttestationMechanism
+      items: []
+    - uid: azure-iot-provisioning-service.BulkEnrollmentOperation
+      name: BulkEnrollmentOperation
+      items: []
+    - uid: azure-iot-provisioning-service.BulkEnrollmentOperationError
+      name: BulkEnrollmentOperationError
+      items: []
+    - uid: azure-iot-provisioning-service.BulkEnrollmentOperationResult
+      name: BulkEnrollmentOperationResult
+      items: []
+    - uid: azure-iot-provisioning-service.DeviceCapabilities
+      name: DeviceCapabilities
+      items: []
+    - uid: azure-iot-provisioning-service.DeviceRegistrationState
+      name: DeviceRegistrationState
+      items: []
+    - uid: azure-iot-provisioning-service.EnrollmentGroup
+      name: EnrollmentGroup
+      items: []
+    - uid: azure-iot-provisioning-service.IndividualEnrollment
+      name: IndividualEnrollment
+      items: []
+    - uid: azure-iot-provisioning-service.InitialTwin
+      name: InitialTwin
+      items: []
+    - uid: azure-iot-provisioning-service.Metadata
+      name: Metadata
+      items: []
+    - uid: azure-iot-provisioning-service.ProvisioningServiceClient
+      name: ProvisioningServiceClient
+      items: []
+    - uid: azure-iot-provisioning-service.Query
+      name: Query
+      items: []
+    - uid: azure-iot-provisioning-service.QueryResult
+      name: QueryResult
+      items: []
+    - uid: azure-iot-provisioning-service.QuerySpecification
+      name: QuerySpecification
+      items: []
+    - uid: azure-iot-provisioning-service.TpmAttestation
+      name: TpmAttestation
+      items: []
+    - uid: azure-iot-provisioning-service.TwinCollection
+      name: TwinCollection
+      items: []
+    - uid: azure-iot-provisioning-service.X509Attestation
+      name: X509Attestation
+      items: []
+    - uid: azure-iot-provisioning-service.X509CAReferences
+      name: X509CAReferences
+      items: []
+    - uid: azure-iot-provisioning-service.X509CertificateInfo
+      name: X509CertificateInfo
+      items: []
+    - uid: azure-iot-provisioning-service.X509Certificates
+      name: X509Certificates
+      items: []
+    - uid: azure-iot-provisioning-service.X509CertificateWithInfo
+      name: X509CertificateWithInfo
+      items: []
+- uid: azure-iothub
+  name: azure-iothub
+  items:
+    - uid: azure-iothub.Client
+      name: Client
+      items:
+        - uid: azure-iothub.Client.ServiceReceiver
+          name: ServiceReceiver
+          items: []
+        - uid: azure-iothub.Client.Transport
+          name: Transport
+          items: []
+        - uid: azure-iothub.Client.TransportConfigOptions
+          name: TransportConfigOptions
+          items: []
+    - uid: azure-iothub.Configuration
+      name: Configuration
+      items: []
+    - uid: azure-iothub.ConfigurationContent
+      name: ConfigurationContent
+      items: []
+    - uid: azure-iothub.ConfigurationMetrics
+      name: ConfigurationMetrics
+      items: []
+    - uid: azure-iothub.Device
+      name: Device
+      items:
+        - uid: azure-iothub.Device.Authentication
+          name: Authentication
+          items: []
+        - uid: azure-iothub.Device.Capabilities
+          name: Capabilities
+          items: []
+        - uid: azure-iothub.Device.X509Thumbprints
+          name: X509Thumbprints
+          items: []
+    - uid: azure-iothub.DeviceMethodParams
+      name: DeviceMethodParams
+      items: []
+    - uid: azure-iothub.JobClient
+      name: JobClient
+      items: []
+    - uid: azure-iothub.Module
+      name: Module
+      items: []
+    - uid: azure-iothub.Query
+      name: Query
+      items: []
+    - uid: azure-iothub.Registry
+      name: Registry
+      items:
+        - uid: azure-iothub.Registry.BulkRegistryOperationResult
+          name: BulkRegistryOperationResult
+          items: []
+        - uid: azure-iothub.Registry.DeviceDescription
+          name: DeviceDescription
+          items: []
+        - uid: azure-iothub.Registry.DeviceRegistryOperationError
+          name: DeviceRegistryOperationError
+          items: []
+        - uid: azure-iothub.Registry.QueryDescription
+          name: QueryDescription
+          items: []
+        - uid: azure-iothub.Registry.RegistryStatistics
+          name: RegistryStatistics
+          items: []
+        - uid: azure-iothub.Registry.TransportConfig
+          name: TransportConfig
+          items: []
+    - uid: azure-iothub.ServiceReceiver
+      name: ServiceReceiver
+      items: []
+    - uid: azure-iothub.Twin
+      name: Twin
       items: []
