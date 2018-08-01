@@ -418,9 +418,6 @@
     - uid: azure-iot-common.X509
       name: X509
       items: []
-- uid: azure-iot-device-http
-  name: azure-iot-device-http
-  items: []
 - uid: azure-iot-device
   name: azure-iot-device
   items:
@@ -478,14 +475,8 @@
     - uid: azure-iot-device.X509AuthenticationProvider
       name: X509AuthenticationProvider
       items: []
-- uid: azure-iot-provisioning-device-amqp
-  name: azure-iot-provisioning-device-amqp
-  items: []
-- uid: azure-iot-provisioning-device-http
-  name: azure-iot-provisioning-device-http
-  items: []
-- uid: azure-iot-provisioning-device-mqtt
-  name: azure-iot-provisioning-device-mqtt
+- uid: azure-iot-device-http
+  name: azure-iot-device-http
   items: []
 - uid: azure-iot-provisioning-device
   name: azure-iot-provisioning-device
@@ -514,6 +505,15 @@
     - uid: azure-iot-provisioning-device.X509SecurityClient
       name: X509SecurityClient
       items: []
+- uid: azure-iot-provisioning-device-amqp
+  name: azure-iot-provisioning-device-amqp
+  items: []
+- uid: azure-iot-provisioning-device-http
+  name: azure-iot-provisioning-device-http
+  items: []
+- uid: azure-iot-provisioning-device-mqtt
+  name: azure-iot-provisioning-device-mqtt
+  items: []
 - uid: azure-iot-provisioning-service
   name: azure-iot-provisioning-service
   items:
