@@ -31,7 +31,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'address: string | undefined'
+      content: string | undefined address
       return:
         type:
           - string | undefined
@@ -45,7 +45,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'consumerGroup: string | undefined'
+      content: string | undefined consumerGroup
       return:
         type:
           - string | undefined
@@ -59,7 +59,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'epoch: number | undefined'
+      content: number | undefined epoch
       return:
         type:
           - number | undefined
@@ -73,7 +73,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'identifier: string | undefined'
+      content: string | undefined identifier
       return:
         type:
           - string | undefined
@@ -101,7 +101,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'partitionId: string | number | undefined'
+      content: string | number | undefined partitionId
       return:
         type:
           - string | number | undefined
@@ -131,7 +131,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'runtimeInfo: ReceiverRuntimeInfo | undefined'
+      content: ReceiverRuntimeInfo | undefined runtimeInfo
       return:
         type:
           - azure-event-hubs.ReceiverRuntimeInfo | undefined

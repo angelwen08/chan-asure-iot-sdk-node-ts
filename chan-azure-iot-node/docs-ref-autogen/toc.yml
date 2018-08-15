@@ -19,12 +19,6 @@
     - uid: azure-event-hubs.CheckpointData
       name: CheckpointData
       items: []
-    - uid: azure-event-hubs.ClientEntity
-      name: ClientEntity
-      items: []
-    - uid: azure-event-hubs.ClientEntityOptions
-      name: ClientEntityOptions
-      items: []
     - uid: azure-event-hubs.ClientOptions
       name: ClientOptions
       items: []
@@ -52,15 +46,6 @@
     - uid: azure-event-hubs.ConnectionContextOptions
       name: ConnectionContextOptions
       items: []
-    - uid: azure-event-hubs.CreateConnectionPrameters
-      name: CreateConnectionPrameters
-      items: []
-    - uid: azure-event-hubs.CreateConnectionPrameters
-      name: CreateConnectionPrameters
-      items: []
-    - uid: azure-event-hubs.CreateReceiverOptions
-      name: CreateReceiverOptions
-      items: []
     - uid: azure-event-hubs.DataTransformer
       name: DataTransformer
       items: []
@@ -84,12 +69,6 @@
       items: []
     - uid: azure-event-hubs.EventHubDeliveryAnnotations
       name: EventHubDeliveryAnnotations
-      items: []
-    - uid: azure-event-hubs.EventHubDeliveryAnnotations
-      name: EventHubDeliveryAnnotations
-      items: []
-    - uid: azure-event-hubs.EventHubMessageAnnotations
-      name: EventHubMessageAnnotations
       items: []
     - uid: azure-event-hubs.EventHubMessageAnnotations
       name: EventHubMessageAnnotations
@@ -172,6 +151,12 @@
     - uid: azure-event-hubs.RequestResponseLink
       name: RequestResponseLink
       items: []
+    - uid: azure-event-hubs.RetryConfig
+      name: RetryConfig
+      items: []
+    - uid: azure-event-hubs.RetryOperationType
+      name: RetryOperationType
+      items: []
     - uid: azure-event-hubs.SasTokenProvider
       name: SasTokenProvider
       items: []
@@ -184,17 +169,14 @@
     - uid: azure-event-hubs.SenderOptionsWithSession
       name: SenderOptionsWithSession
       items: []
+    - uid: azure-event-hubs.SendRequestOptions
+      name: SendRequestOptions
+      items: []
     - uid: azure-event-hubs.ServiceBusConnectionStringModel
       name: ServiceBusConnectionStringModel
       items: []
     - uid: azure-event-hubs.ServiceBusDeliveryAnnotations
       name: ServiceBusDeliveryAnnotations
-      items: []
-    - uid: azure-event-hubs.ServiceBusDeliveryAnnotations
-      name: ServiceBusDeliveryAnnotations
-      items: []
-    - uid: azure-event-hubs.ServiceBusMessageAnnotations
-      name: ServiceBusMessageAnnotations
       items: []
     - uid: azure-event-hubs.ServiceBusMessageAnnotations
       name: ServiceBusMessageAnnotations
@@ -207,6 +189,9 @@
       items: []
     - uid: azure-event-hubs.StreamingReceiver
       name: StreamingReceiver
+      items: []
+    - uid: azure-event-hubs.SystemErrorConditionMapper
+      name: SystemErrorConditionMapper
       items: []
     - uid: azure-event-hubs.Timeout
       name: Timeout

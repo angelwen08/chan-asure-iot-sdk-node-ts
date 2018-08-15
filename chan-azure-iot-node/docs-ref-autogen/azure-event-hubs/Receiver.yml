@@ -10,7 +10,11 @@ items:
       - azure-event-hubs.Receiver.connection
       - azure-event-hubs.Receiver.drain
       - azure-event-hubs.Receiver.error
+      - azure-event-hubs.Receiver.isClosed
+      - azure-event-hubs.Receiver.isItselfClosed
       - azure-event-hubs.Receiver.isOpen
+      - azure-event-hubs.Receiver.isSessionClosed
+      - azure-event-hubs.Receiver.isSessionItselfClosed
       - azure-event-hubs.Receiver.name
       - azure-event-hubs.Receiver.properties
       - azure-event-hubs.Receiver.constructor
@@ -53,7 +57,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'address: string'
+      content: string address
       return:
         type:
           - string
@@ -81,7 +85,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'connection: Connection'
+      content: Connection connection
       return:
         type:
           - azure-event-hubs.Connection
@@ -95,7 +99,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'drain: boolean'
+      content: boolean drain
       return:
         type:
           - boolean
@@ -109,10 +113,60 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'error: AmqpError | Error | undefined'
+      content: AmqpError | Error | undefined error
       return:
         type:
           - AmqpError | Error | undefined
+    package: azure-event-hubs
+  - uid: azure-event-hubs.Receiver.isClosed
+    name: isClosed
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether both local and remote endpoint for link or it's
+      underlying session
+
+      or it's underlying connection are closed.
+
+      Within the "receiver_close", "session_close" event handler, if this
+
+      method returns `false` it means that the local end is still open. It can
+      be useful to
+
+      determine whether the close was initiated locally under such
+      circumstances.
+    syntax:
+      content: function isClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+    package: azure-event-hubs
+  - uid: azure-event-hubs.Receiver.isItselfClosed
+    name: isItselfClosed
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether both local and remote endpoint for just the link itself
+      are closed.
+
+      Within the "receiver_close" event handler, if this method returns `false`
+      it
+
+      means that the local end is still open. It can be useful to determine
+      whether the close
+
+      was initiated locally under such circumstances.
+    syntax:
+      content: function isItselfClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isOpen
     name: isOpen
@@ -120,9 +174,59 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Determines whether the sender link is open.
+    summary: Determines whether the receiver link is open.
     syntax:
       content: function isOpen()
+      parameters: []
+      return:
+        type:
+          - boolean
+    package: azure-event-hubs
+  - uid: azure-event-hubs.Receiver.isSessionClosed
+    name: isSessionClosed
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >
+      Determines whether both local and remote endpoint for session or it's
+      underlying
+
+      connection are closed.
+
+      Within the "session_close" event handler, if this method returns `false`
+      it means that
+
+      the local end is still open. It can be useful to determine whether the
+      close
+
+      was initiated locally under such circumstances.
+    syntax:
+      content: function isSessionClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+    package: azure-event-hubs
+  - uid: azure-event-hubs.Receiver.isSessionItselfClosed
+    name: isSessionItselfClosed
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether both local and remote endpoint for just the session
+      itself are closed.
+
+      Within the "session_close" event handler, if this method returns `false`
+      it means that
+
+      the local end is still open. It can be useful to determine whether the
+      close
+
+      was initiated locally under such circumstances.
+    syntax:
+      content: function isSessionItselfClosed()
       parameters: []
       return:
         type:
@@ -137,7 +241,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'name: string'
+      content: string name
       return:
         type:
           - string
@@ -151,7 +255,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'properties: Dictionary<any>'
+      content: Dictionary<any> properties
       return:
         type:
           - Dictionary<any>
@@ -245,7 +349,7 @@ items:
     type: method
     langs:
       - typeScript
-    summary: ''
+    summary: Removes the receiver and it's underlying session from the internal map.
     syntax:
       content: function remove()
       parameters: []
@@ -299,7 +403,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'session: Session'
+      content: Session session
       return:
         type:
           - azure-event-hubs.Session
@@ -328,7 +432,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'source: Source'
+      content: Source source
       return:
         type:
           - Source
@@ -342,7 +446,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'target: TerminusOptions'
+      content: TerminusOptions target
       return:
         type:
           - TerminusOptions

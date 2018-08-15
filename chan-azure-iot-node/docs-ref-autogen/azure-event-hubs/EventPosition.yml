@@ -50,7 +50,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'static endOfStream: string'
+      content: 'static endOfStream: string = "@latest"'
       return:
         type:
           - string
@@ -227,7 +227,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'isInclusive: boolean'
+      content: 'isInclusive: boolean = false'
       return:
         type:
           - boolean
@@ -271,7 +271,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'static startOfStream: string'
+      content: 'static startOfStream: string = "-1"'
       return:
         type:
           - string

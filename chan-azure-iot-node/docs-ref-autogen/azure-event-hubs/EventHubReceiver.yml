@@ -167,7 +167,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'prefetchCount?: number'
+      content: 'prefetchCount?: number = Constants.defaultPrefetchCount'
       return:
         type:
           - number
@@ -181,7 +181,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'receiverRuntimeMetricEnabled: boolean'
+      content: 'receiverRuntimeMetricEnabled: boolean = false'
       return:
         type:
           - boolean

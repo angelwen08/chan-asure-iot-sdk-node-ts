@@ -87,7 +87,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'name: string'
+      content: 'name: string = "MessagingError"'
       return:
         type:
           - string
@@ -101,7 +101,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'retryable: boolean'
+      content: 'retryable: boolean = true'
       return:
         type:
           - boolean
@@ -115,7 +115,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'translated: boolean'
+      content: 'translated: boolean = true'
       return:
         type:
           - boolean

@@ -79,7 +79,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'tokenRenewalMarginInSeconds: number'
+      content: 'tokenRenewalMarginInSeconds: number = 270'
       return:
         type:
           - number
@@ -93,7 +93,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'tokenValidTimeInSeconds: number'
+      content: 'tokenValidTimeInSeconds: number = 3599'
       return:
         type:
           - number
