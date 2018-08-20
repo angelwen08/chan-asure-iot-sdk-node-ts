@@ -10,9 +10,6 @@
     - uid: azure-event-hubs.AsyncLockOptions
       name: AsyncLockOptions
       items: []
-    - uid: azure-event-hubs.BatchingReceiver
-      name: BatchingReceiver
-      items: []
     - uid: azure-event-hubs.CbsClient
       name: CbsClient
       items: []
@@ -40,9 +37,6 @@
     - uid: azure-event-hubs.ConnectionConfigOptions
       name: ConnectionConfigOptions
       items: []
-    - uid: azure-event-hubs.ConnectionContext
-      name: ConnectionContext
-      items: []
     - uid: azure-event-hubs.ConnectionContextOptions
       name: ConnectionContextOptions
       items: []
@@ -51,9 +45,6 @@
       items: []
     - uid: azure-event-hubs.DefaultDataTransformer
       name: DefaultDataTransformer
-      items: []
-    - uid: azure-event-hubs.EHConfig
-      name: EHConfig
       items: []
     - uid: azure-event-hubs.ErrorNameConditionMapper
       name: ErrorNameConditionMapper
@@ -76,41 +67,17 @@
     - uid: azure-event-hubs.EventHubPartitionRuntimeInformation
       name: EventHubPartitionRuntimeInformation
       items: []
-    - uid: azure-event-hubs.EventHubReceiver
-      name: EventHubReceiver
-      items: []
     - uid: azure-event-hubs.EventHubRuntimeInformation
       name: EventHubRuntimeInformation
-      items: []
-    - uid: azure-event-hubs.EventHubSender
-      name: EventHubSender
       items: []
     - uid: azure-event-hubs.EventPosition
       name: EventPosition
       items: []
-    - uid: azure-event-hubs.EventPositionOptions
-      name: EventPositionOptions
-      items: []
-    - uid: azure-event-hubs.IotHubClient
-      name: IotHubClient
-      items: []
-    - uid: azure-event-hubs.IotHubConnectionConfig
-      name: IotHubConnectionConfig
-      items: []
     - uid: azure-event-hubs.IotHubConnectionStringModel
       name: IotHubConnectionStringModel
       items: []
-    - uid: azure-event-hubs.IotSasTokenProvider
-      name: IotSasTokenProvider
-      items: []
-    - uid: azure-event-hubs.LinkEntity
-      name: LinkEntity
-      items: []
     - uid: azure-event-hubs.LinkEntityOptions
       name: LinkEntityOptions
-      items: []
-    - uid: azure-event-hubs.ManagementClient
-      name: ManagementClient
       items: []
     - uid: azure-event-hubs.ManagementClientOptions
       name: ManagementClientOptions
@@ -123,9 +90,6 @@
       items: []
     - uid: azure-event-hubs.MessagingError
       name: MessagingError
-      items: []
-    - uid: azure-event-hubs.ParsedRedirectError
-      name: ParsedRedirectError
       items: []
     - uid: azure-event-hubs.ReceiveHandler
       name: ReceiveHandler
@@ -186,9 +150,6 @@
       items: []
     - uid: azure-event-hubs.StorageConnectionStringModel
       name: StorageConnectionStringModel
-      items: []
-    - uid: azure-event-hubs.StreamingReceiver
-      name: StreamingReceiver
       items: []
     - uid: azure-event-hubs.SystemErrorConditionMapper
       name: SystemErrorConditionMapper
