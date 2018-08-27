@@ -73,6 +73,12 @@
     - uid: azure-event-hubs.EventPosition
       name: EventPosition
       items: []
+    - uid: azure-event-hubs.Func
+      name: Func
+      items: []
+    - uid: azure-event-hubs.Func
+      name: Func
+      items: []
     - uid: azure-event-hubs.IotHubConnectionStringModel
       name: IotHubConnectionStringModel
       items: []
@@ -90,6 +96,15 @@
       items: []
     - uid: azure-event-hubs.MessagingError
       name: MessagingError
+      items: []
+    - uid: azure-event-hubs.OnError
+      name: OnError
+      items: []
+    - uid: azure-event-hubs.OnMessage
+      name: OnMessage
+      items: []
+    - uid: azure-event-hubs.ParsedOutput
+      name: ParsedOutput
       items: []
     - uid: azure-event-hubs.ReceiveHandler
       name: ReceiveHandler
@@ -196,6 +211,9 @@
     - uid: azure-event-processor-host.EventProcessorOptions
       name: EventProcessorOptions
       items: []
+    - uid: azure-event-processor-host.Func
+      name: Func
+      items: []
     - uid: azure-event-processor-host.Lease
       name: Lease
       items: []
@@ -205,8 +223,23 @@
     - uid: azure-event-processor-host.LeaseWithDuration
       name: LeaseWithDuration
       items: []
+    - uid: azure-event-processor-host.OnEphClose
+      name: OnEphClose
+      items: []
+    - uid: azure-event-processor-host.OnEphMessage
+      name: OnEphMessage
+      items: []
+    - uid: azure-event-processor-host.OnEphOpen
+      name: OnEphOpen
+      items: []
+    - uid: azure-event-processor-host.ParsedOutput
+      name: ParsedOutput
+      items: []
     - uid: azure-event-processor-host.PartitionContext
       name: PartitionContext
+      items: []
+    - uid: azure-event-processor-host.PartitionFilter
+      name: PartitionFilter
       items: []
     - uid: azure-event-processor-host.StartEPHOptions
       name: StartEPHOptions
@@ -238,8 +271,14 @@
     - uid: azure-iot-common.CloudToDeviceDetachedError
       name: CloudToDeviceDetachedError
       items: []
+    - uid: azure-iot-common.Connected
+      name: Connected
+      items: []
     - uid: azure-iot-common.ConnectionString
       name: ConnectionString
+      items: []
+    - uid: azure-iot-common.createDictionary
+      name: createDictionary
       items: []
     - uid: azure-iot-common.DeviceAlreadyExistsError
       name: DeviceAlreadyExistsError
@@ -300,6 +339,21 @@
       items: []
     - uid: azure-iot-common.Message
       name: Message
+      items:
+        - uid: azure-iot-common.Message.BufferConvertible
+          name: BufferConvertible
+          items: []
+    - uid: azure-iot-common.MessageAbandoned
+      name: MessageAbandoned
+      items: []
+    - uid: azure-iot-common.MessageCompleted
+      name: MessageCompleted
+      items: []
+    - uid: azure-iot-common.MessageEnqueued
+      name: MessageEnqueued
+      items: []
+    - uid: azure-iot-common.MessageRejected
+      name: MessageRejected
       items: []
     - uid: azure-iot-common.MessageTooLargeError
       name: MessageTooLargeError
@@ -352,6 +406,9 @@
     - uid: azure-iot-common.TransportConfig
       name: TransportConfig
       items: []
+    - uid: azure-iot-common.TransportConfigured
+      name: TransportConfigured
+      items: []
     - uid: azure-iot-common.TwinDetachedError
       name: TwinDetachedError
       items: []
@@ -366,10 +423,16 @@
       items: []
 - uid: azure-iot-device-http
   name: azure-iot-device-http
-  items: []
+  items:
+    - uid: azure-iot-device-http.Http
+      name: Http
+      items: []
 - uid: azure-iot-device
   name: azure-iot-device
   items:
+    - uid: azure-iot-device.AmqpTransportOptions
+      name: AmqpTransportOptions
+      items: []
     - uid: azure-iot-device.BlobUpload
       name: BlobUpload
       items: []
@@ -397,6 +460,9 @@
     - uid: azure-iot-device.IotEdgeAuthenticationProvider
       name: IotEdgeAuthenticationProvider
       items: []
+    - uid: azure-iot-device.MethodCallback
+      name: MethodCallback
+      items: []
     - uid: azure-iot-device.MethodParams
       name: MethodParams
       items: []
@@ -415,6 +481,9 @@
     - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider
       name: SharedAccessSignatureAuthenticationProvider
       items: []
+    - uid: azure-iot-device.TransportCtor
+      name: TransportCtor
+      items: []
     - uid: azure-iot-device.Twin
       name: Twin
       items: []
@@ -426,13 +495,28 @@
       items: []
 - uid: azure-iot-provisioning-device-amqp
   name: azure-iot-provisioning-device-amqp
-  items: []
+  items:
+    - uid: azure-iot-provisioning-device-amqp.Amqp
+      name: Amqp
+      items: []
+    - uid: azure-iot-provisioning-device-amqp.AmqpWs
+      name: AmqpWs
+      items: []
 - uid: azure-iot-provisioning-device-http
   name: azure-iot-provisioning-device-http
-  items: []
+  items:
+    - uid: azure-iot-provisioning-device-http.Http
+      name: Http
+      items: []
 - uid: azure-iot-provisioning-device-mqtt
   name: azure-iot-provisioning-device-mqtt
-  items: []
+  items:
+    - uid: azure-iot-provisioning-device-mqtt.Mqtt
+      name: Mqtt
+      items: []
+    - uid: azure-iot-provisioning-device-mqtt.MqttWs
+      name: MqttWs
+      items: []
 - uid: azure-iot-provisioning-device
   name: azure-iot-provisioning-device
   items:
@@ -454,6 +538,12 @@
     - uid: azure-iot-provisioning-device.RegistrationRequest
       name: RegistrationRequest
       items: []
+    - uid: azure-iot-provisioning-device.RegistrationResult
+      name: RegistrationResult
+      items: []
+    - uid: azure-iot-provisioning-device.RegistrationStatus
+      name: RegistrationStatus
+      items: []
     - uid: azure-iot-provisioning-device.X509Registration
       name: X509Registration
       items: []
@@ -466,6 +556,9 @@
     - uid: azure-iot-provisioning-service.AttestationMechanism
       name: AttestationMechanism
       items: []
+    - uid: azure-iot-provisioning-service.AttestationTypes
+      name: AttestationTypes
+      items: []
     - uid: azure-iot-provisioning-service.BulkEnrollmentOperation
       name: BulkEnrollmentOperation
       items: []
@@ -474,6 +567,12 @@
       items: []
     - uid: azure-iot-provisioning-service.BulkEnrollmentOperationResult
       name: BulkEnrollmentOperationResult
+      items: []
+    - uid: azure-iot-provisioning-service.BulkOperationMode
+      name: BulkOperationMode
+      items: []
+    - uid: azure-iot-provisioning-service.DeleteCallback
+      name: DeleteCallback
       items: []
     - uid: azure-iot-provisioning-service.DeviceCapabilities
       name: DeviceCapabilities
@@ -496,14 +595,23 @@
     - uid: azure-iot-provisioning-service.ProvisioningServiceClient
       name: ProvisioningServiceClient
       items: []
+    - uid: azure-iot-provisioning-service.ProvisioningStatus
+      name: ProvisioningStatus
+      items: []
     - uid: azure-iot-provisioning-service.Query
       name: Query
+      items: []
+    - uid: azure-iot-provisioning-service.QueryCallback
+      name: QueryCallback
       items: []
     - uid: azure-iot-provisioning-service.QueryResult
       name: QueryResult
       items: []
     - uid: azure-iot-provisioning-service.QuerySpecification
       name: QuerySpecification
+      items: []
+    - uid: azure-iot-provisioning-service.RegistrationStatus
+      name: RegistrationStatus
       items: []
     - uid: azure-iot-provisioning-service.TpmAttestation
       name: TpmAttestation
@@ -529,9 +637,18 @@
 - uid: azure-iothub
   name: azure-iothub
   items:
+    - uid: azure-iothub.Amqp
+      name: Amqp
+      items: []
+    - uid: azure-iothub.AmqpWs
+      name: AmqpWs
+      items: []
     - uid: azure-iothub.Client
       name: Client
       items:
+        - uid: azure-iothub.Client.Callback
+          name: Callback
+          items: []
         - uid: azure-iothub.Client.ServiceReceiver
           name: ServiceReceiver
           items: []
@@ -540,6 +657,9 @@
           items: []
         - uid: azure-iothub.Client.TransportConfigOptions
           name: TransportConfigOptions
+          items: []
+        - uid: azure-iothub.Client.TransportCtor
+          name: TransportCtor
           items: []
     - uid: azure-iothub.Configuration
       name: Configuration
@@ -559,6 +679,12 @@
         - uid: azure-iothub.Device.Capabilities
           name: Capabilities
           items: []
+        - uid: azure-iothub.Device.ConnectionState
+          name: ConnectionState
+          items: []
+        - uid: azure-iothub.Device.DeviceStatus
+          name: DeviceStatus
+          items: []
         - uid: azure-iothub.Device.X509Thumbprints
           name: X509Thumbprints
           items: []
@@ -567,6 +693,15 @@
       items: []
     - uid: azure-iothub.JobClient
       name: JobClient
+      items:
+        - uid: azure-iothub.JobClient.JobCallback
+          name: JobCallback
+          items: []
+    - uid: azure-iothub.JobStatus
+      name: JobStatus
+      items: []
+    - uid: azure-iothub.JobType
+      name: JobType
       items: []
     - uid: azure-iothub.Module
       name: Module
@@ -577,8 +712,17 @@
     - uid: azure-iothub.Registry
       name: Registry
       items:
+        - uid: azure-iothub.Registry.BulkDeviceIdentityCallback
+          name: BulkDeviceIdentityCallback
+          items: []
         - uid: azure-iothub.Registry.BulkRegistryOperationResult
           name: BulkRegistryOperationResult
+          items: []
+        - uid: azure-iothub.Registry.BulkRegistryOperationType
+          name: BulkRegistryOperationType
+          items: []
+        - uid: azure-iothub.Registry.DeviceCallback
+          name: DeviceCallback
           items: []
         - uid: azure-iothub.Registry.DeviceDescription
           name: DeviceDescription
@@ -586,11 +730,20 @@
         - uid: azure-iothub.Registry.DeviceRegistryOperationError
           name: DeviceRegistryOperationError
           items: []
+        - uid: azure-iothub.Registry.JobCallback
+          name: JobCallback
+          items: []
+        - uid: azure-iothub.Registry.JobStatus
+          name: JobStatus
+          items: []
         - uid: azure-iothub.Registry.QueryDescription
           name: QueryDescription
           items: []
         - uid: azure-iothub.Registry.RegistryStatistics
           name: RegistryStatistics
+          items: []
+        - uid: azure-iothub.Registry.ResponseCallback
+          name: ResponseCallback
           items: []
         - uid: azure-iothub.Registry.TransportConfig
           name: TransportConfig
