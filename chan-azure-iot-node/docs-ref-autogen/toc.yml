@@ -283,6 +283,9 @@
     - uid: azure-iot-common.BadDeviceResponseError
       name: BadDeviceResponseError
       items: []
+    - uid: azure-iot-common.Callback
+      name: Callback
+      items: []
     - uid: azure-iot-common.CloudToDeviceDetachedError
       name: CloudToDeviceDetachedError
       items: []
@@ -319,6 +322,12 @@
     - uid: azure-iot-common.Disconnected
       name: Disconnected
       items: []
+    - uid: azure-iot-common.DoubleValueCallback
+      name: DoubleValueCallback
+      items: []
+    - uid: azure-iot-common.ErrorCallback
+      name: ErrorCallback
+      items: []
     - uid: azure-iot-common.ExponentialBackOffWithJitter
       name: ExponentialBackOffWithJitter
       items: []
@@ -330,6 +339,9 @@
       items: []
     - uid: azure-iot-common.GatewayTimeoutError
       name: GatewayTimeoutError
+      items: []
+    - uid: azure-iot-common.HttpResponseCallback
+      name: HttpResponseCallback
       items: []
     - uid: azure-iot-common.InternalServerError
       name: InternalServerError
@@ -373,6 +385,9 @@
     - uid: azure-iot-common.MessageTooLargeError
       name: MessageTooLargeError
       items: []
+    - uid: azure-iot-common.NoErrorCallback
+      name: NoErrorCallback
+      items: []
     - uid: azure-iot-common.NoRetry
       name: NoRetry
       items: []
@@ -390,6 +405,9 @@
       items: []
     - uid: azure-iot-common.Properties
       name: Properties
+      items: []
+    - uid: azure-iot-common.ResultWithHttpResponse
+      name: ResultWithHttpResponse
       items: []
     - uid: azure-iot-common.RetryOperation
       name: RetryOperation
@@ -424,6 +442,9 @@
     - uid: azure-iot-common.TransportConfigured
       name: TransportConfigured
       items: []
+    - uid: azure-iot-common.TripleValueCallback
+      name: TripleValueCallback
+      items: []
     - uid: azure-iot-common.TwinDetachedError
       name: TwinDetachedError
       items: []
@@ -456,6 +477,9 @@
       items: []
     - uid: azure-iot-device.DeviceClientOptions
       name: DeviceClientOptions
+      items: []
+    - uid: azure-iot-device.DeviceMethodExchange
+      name: DeviceMethodExchange
       items: []
     - uid: azure-iot-device.DeviceMethodRequest
       name: DeviceMethodRequest
@@ -586,9 +610,6 @@
     - uid: azure-iot-provisioning-service.BulkOperationMode
       name: BulkOperationMode
       items: []
-    - uid: azure-iot-provisioning-service.DeleteCallback
-      name: DeleteCallback
-      items: []
     - uid: azure-iot-provisioning-service.DeviceCapabilities
       name: DeviceCapabilities
       items: []
@@ -706,6 +727,9 @@
     - uid: azure-iothub.DeviceMethodParams
       name: DeviceMethodParams
       items: []
+    - uid: azure-iothub.IncomingMessageCallback
+      name: IncomingMessageCallback
+      items: []
     - uid: azure-iothub.JobClient
       name: JobClient
       items:
@@ -714,6 +738,9 @@
           items: []
     - uid: azure-iothub.JobStatus
       name: JobStatus
+      items: []
+    - uid: azure-iothub.JobStatusResponse
+      name: JobStatusResponse
       items: []
     - uid: azure-iothub.JobType
       name: JobType
@@ -727,17 +754,11 @@
     - uid: azure-iothub.Registry
       name: Registry
       items:
-        - uid: azure-iothub.Registry.BulkDeviceIdentityCallback
-          name: BulkDeviceIdentityCallback
-          items: []
         - uid: azure-iothub.Registry.BulkRegistryOperationResult
           name: BulkRegistryOperationResult
           items: []
         - uid: azure-iothub.Registry.BulkRegistryOperationType
           name: BulkRegistryOperationType
-          items: []
-        - uid: azure-iothub.Registry.DeviceCallback
-          name: DeviceCallback
           items: []
         - uid: azure-iothub.Registry.DeviceDescription
           name: DeviceDescription
@@ -763,6 +784,9 @@
         - uid: azure-iothub.Registry.TransportConfig
           name: TransportConfig
           items: []
+    - uid: azure-iothub.ResultWithIncomingMessage
+      name: ResultWithIncomingMessage
+      items: []
     - uid: azure-iothub.ServiceReceiver
       name: ServiceReceiver
       items: []
