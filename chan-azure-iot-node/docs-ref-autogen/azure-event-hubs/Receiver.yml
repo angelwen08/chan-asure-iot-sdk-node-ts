@@ -34,7 +34,7 @@ items:
     summary: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.addCredit
-    name: addCredit
+    name: addCredit(number)
     children: []
     type: method
     langs:
@@ -63,7 +63,7 @@ items:
           - string
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.close
-    name: close
+    name: close()
     children: []
     type: method
     langs:
@@ -119,7 +119,7 @@ items:
           - AmqpError | Error | undefined
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isClosed
-    name: isClosed
+    name: isClosed()
     children: []
     type: method
     langs:
@@ -145,7 +145,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isItselfClosed
-    name: isItselfClosed
+    name: isItselfClosed()
     children: []
     type: method
     langs:
@@ -169,7 +169,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isOpen
-    name: isOpen
+    name: isOpen()
     children: []
     type: method
     langs:
@@ -183,7 +183,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isSessionClosed
-    name: isSessionClosed
+    name: isSessionClosed()
     children: []
     type: method
     langs:
@@ -209,7 +209,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isSessionItselfClosed
-    name: isSessionItselfClosed
+    name: isSessionItselfClosed()
     children: []
     type: method
     langs:
@@ -261,7 +261,7 @@ items:
           - Dictionary<any>
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.constructor
-    name: Receiver
+    name: 'Receiver(Session, Receiver, ReceiverOptions)'
     children: []
     type: constructor
     langs:
@@ -302,7 +302,7 @@ items:
           - azure-event-hubs.ReceiverOptions
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.registerHandler
-    name: registerHandler
+    name: 'registerHandler(ReceiverEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -323,7 +323,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.registerSessionHandler
-    name: registerSessionHandler
+    name: 'registerSessionHandler(SessionEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -344,7 +344,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.remove
-    name: remove
+    name: remove()
     children: []
     type: method
     langs:
@@ -355,7 +355,7 @@ items:
       parameters: []
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.removeHandler
-    name: removeHandler
+    name: 'removeHandler(ReceiverEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -374,7 +374,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.removeSessionHandler
-    name: removeSessionHandler
+    name: 'removeSessionHandler(SessionEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -409,7 +409,7 @@ items:
           - azure-event-hubs.Session
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.setCreditWindow
-    name: setCreditWindow
+    name: setCreditWindow(number)
     children: []
     type: method
     langs:

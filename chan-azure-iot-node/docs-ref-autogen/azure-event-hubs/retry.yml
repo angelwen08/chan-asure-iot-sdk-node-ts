@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: azure-event-hubs.retry
-    name: retry
+    name: retry(RetryConfig<T>)
     children: []
     type: function
     langs:

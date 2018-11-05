@@ -23,7 +23,7 @@ items:
     summary: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.close
-    name: close
+    name: close()
     children: []
     type: method
     langs:
@@ -37,7 +37,7 @@ items:
           - Promise<void>
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.constructor
-    name: Connection
+    name: Connection(ConnectionOptions)
     children: []
     type: constructor
     langs:
@@ -53,7 +53,7 @@ items:
           optional: true
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.createReceiver
-    name: createReceiver
+    name: createReceiver(ReceiverOptionsWithSession)
     children: []
     type: method
     langs:
@@ -74,7 +74,7 @@ items:
           - Promise<azure-event-hubs.Receiver>
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.createRequestResponseLink
-    name: createRequestResponseLink
+    name: 'createRequestResponseLink(SenderOptions, ReceiverOptions, Session)'
     children: []
     type: method
     langs:
@@ -111,7 +111,7 @@ items:
           - Promise<azure-event-hubs.ReqResLink>
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.createSender
-    name: createSender
+    name: createSender(SenderOptionsWithSession)
     children: []
     type: method
     langs:
@@ -132,7 +132,7 @@ items:
           - Promise<azure-event-hubs.Sender>
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.createSession
-    name: createSession
+    name: createSession()
     children: []
     type: method
     langs:
@@ -160,7 +160,7 @@ items:
           - string
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.isOpen
-    name: isOpen
+    name: isOpen()
     children: []
     type: method
     langs:
@@ -174,7 +174,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.open
-    name: open
+    name: open()
     children: []
     type: method
     langs:
@@ -203,7 +203,7 @@ items:
           - ConnectionOptions
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.registerHandler
-    name: registerHandler
+    name: 'registerHandler(ConnectionEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -224,7 +224,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.removeHandler
-    name: removeHandler
+    name: 'removeHandler(ConnectionEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -245,7 +245,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.wasCloseInitiated
-    name: wasCloseInitiated
+    name: wasCloseInitiated()
     children: []
     type: method
     langs:

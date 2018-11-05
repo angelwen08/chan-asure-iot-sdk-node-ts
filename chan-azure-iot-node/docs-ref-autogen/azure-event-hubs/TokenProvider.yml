@@ -13,7 +13,7 @@ items:
     summary: Describes the base token provider.
     package: azure-event-hubs
   - uid: azure-event-hubs.TokenProvider.getToken
-    name: getToken
+    name: getToken(string)
     children: []
     type: method
     langs:

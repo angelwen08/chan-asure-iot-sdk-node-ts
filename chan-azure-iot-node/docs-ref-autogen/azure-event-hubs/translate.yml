@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: azure-event-hubs.translate
-    name: translate
+    name: translate(AmqpError | Error)
     children: []
     type: function
     langs:

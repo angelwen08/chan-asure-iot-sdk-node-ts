@@ -16,7 +16,7 @@ items:
     summary: Describes the checkoint information.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CheckpointInfo.create
-    name: create
+    name: 'create(string, string, number)'
     children: []
     type: function
     langs:
@@ -46,7 +46,7 @@ items:
           - azure-event-processor-host.CheckpointInfo
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CheckpointInfo.createFromEventData
-    name: createFromEventData
+    name: 'createFromEventData(string, EventData)'
     children: []
     type: function
     langs:
@@ -68,7 +68,7 @@ items:
           - azure-event-processor-host.CheckpointInfo
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CheckpointInfo.createFromLease
-    name: createFromLease
+    name: createFromLease(LeaseInfo)
     children: []
     type: function
     langs:

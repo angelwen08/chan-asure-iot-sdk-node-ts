@@ -72,7 +72,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.MessageHeader.fromAmqpMessageProperties
-    name: fromAmqpMessageProperties
+    name: fromAmqpMessageProperties(AmqpMessageHeader)
     children: []
     type: function
     langs:
@@ -109,7 +109,7 @@ items:
           - number
     package: azure-event-hubs
   - uid: azure-event-hubs.MessageHeader.toAmqpMessageHeader
-    name: toAmqpMessageHeader
+    name: toAmqpMessageHeader(MessageHeader)
     children: []
     type: function
     langs:

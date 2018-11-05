@@ -109,9 +109,9 @@ references:
   - uid: azure-event-hubs.MessagingError
     name: MessagingError
   - uid: azure-event-hubs.isSystemError
-    name: isSystemError
+    name: isSystemError(any)
   - uid: azure-event-hubs.translate
-    name: translate
+    name: translate(AmqpError | Error)
   - uid: azure-event-hubs.MessageHeader
     name: MessageHeader
   - uid: azure-event-hubs.MessageProperties
@@ -125,7 +125,7 @@ references:
   - uid: azure-event-hubs.RetryConfig
     name: RetryConfig
   - uid: azure-event-hubs.retry
-    name: retry
+    name: retry(RetryConfig<T>)
   - uid: azure-event-hubs.Timeout
     name: Timeout
   - uid: azure-event-hubs.AsyncLockOptions
@@ -151,17 +151,17 @@ references:
   - uid: azure-event-hubs.ParsedOutput
     name: ParsedOutput
   - uid: azure-event-hubs.delay
-    name: delay
+    name: 'delay(number, T)'
   - uid: azure-event-hubs.executePromisesSequentially
-    name: executePromisesSequentially
+    name: 'executePromisesSequentially(Array<any>, any)'
   - uid: azure-event-hubs.getNewAsyncLock
-    name: getNewAsyncLock
+    name: getNewAsyncLock(AsyncLockOptions)
   - uid: azure-event-hubs.isIotHubConnectionString
-    name: isIotHubConnectionString
+    name: isIotHubConnectionString(string)
   - uid: azure-event-hubs.parseConnectionString
-    name: parseConnectionString
+    name: parseConnectionString(string)
   - uid: azure-event-hubs.randomNumberFromInterval
-    name: randomNumberFromInterval
+    name: 'randomNumberFromInterval(number, number)'
   - uid: azure-event-hubs.ConnectionContextOptions
     name: ConnectionContextOptions
   - uid: azure-event-hubs.EventData
@@ -205,7 +205,7 @@ references:
   - uid: azure-event-hubs.Func
     name: Func
   - uid: azure-event-hubs.isAmqpError
-    name: isAmqpError
+    name: isAmqpError(any)
   - uid: azure-event-hubs.Receiver
     name: Receiver
   - uid: azure-event-hubs.ReceiverOptions

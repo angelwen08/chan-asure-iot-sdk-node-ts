@@ -25,7 +25,7 @@ items:
     summary: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.begin
-    name: begin
+    name: begin()
     children: []
     type: method
     langs:
@@ -36,7 +36,7 @@ items:
       parameters: []
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.close
-    name: close
+    name: close()
     children: []
     type: method
     langs:
@@ -64,7 +64,7 @@ items:
           - azure-event-hubs.Connection
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.createReceiver
-    name: createReceiver
+    name: createReceiver(ReceiverOptions)
     children: []
     type: method
     langs:
@@ -83,7 +83,7 @@ items:
           - Promise<azure-event-hubs.Receiver>
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.createSender
-    name: createSender
+    name: createSender(SenderOptions)
     children: []
     type: method
     langs:
@@ -102,7 +102,7 @@ items:
           - Promise<azure-event-hubs.Sender>
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.isClosed
-    name: isClosed
+    name: isClosed()
     children: []
     type: method
     langs:
@@ -118,7 +118,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.isItselfClosed
-    name: isItselfClosed
+    name: isItselfClosed()
     children: []
     type: method
     langs:
@@ -142,7 +142,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.isOpen
-    name: isOpen
+    name: isOpen()
     children: []
     type: method
     langs:
@@ -170,7 +170,7 @@ items:
           - any
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.registerConnectionHandler
-    name: registerConnectionHandler
+    name: 'registerConnectionHandler(ConnectionEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -191,7 +191,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.registerHandler
-    name: registerHandler
+    name: 'registerHandler(SessionEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -212,7 +212,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.remove
-    name: remove
+    name: remove()
     children: []
     type: method
     langs:
@@ -223,7 +223,7 @@ items:
       parameters: []
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.removeConnectionHandler
-    name: removeConnectionHandler
+    name: 'removeConnectionHandler(ConnectionEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -244,7 +244,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.removeHandler
-    name: removeHandler
+    name: 'removeHandler(SessionEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -263,7 +263,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.constructor
-    name: Session
+    name: 'Session(Connection, Session)'
     children: []
     type: constructor
     langs:

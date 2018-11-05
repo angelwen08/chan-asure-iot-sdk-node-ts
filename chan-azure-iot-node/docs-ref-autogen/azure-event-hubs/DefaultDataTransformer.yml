@@ -12,7 +12,7 @@ items:
     summary: The default data transformer that will be used by the Azure SDK.
     package: azure-event-hubs
   - uid: azure-event-hubs.DefaultDataTransformer.decode
-    name: decode
+    name: decode(any)
     children: []
     type: method
     langs:
@@ -39,7 +39,7 @@ items:
           - any
     package: azure-event-hubs
   - uid: azure-event-hubs.DefaultDataTransformer.encode
-    name: encode
+    name: encode(any)
     children: []
     type: method
     langs:

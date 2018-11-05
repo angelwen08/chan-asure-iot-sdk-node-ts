@@ -15,7 +15,7 @@ items:
     summary: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.Timeout.clear
-    name: clear
+    name: clear()
     children: []
     type: method
     langs:
@@ -26,7 +26,7 @@ items:
       parameters: []
     package: azure-event-processor-host
   - uid: azure-event-processor-host.Timeout.set
-    name: set
+    name: 'set(number, T)'
     children: []
     type: method
     langs:
@@ -49,7 +49,7 @@ items:
           - Promise<T>
     package: azure-event-processor-host
   - uid: azure-event-processor-host.Timeout.set
-    name: set
+    name: 'set(number, T)'
     children: []
     type: method
     langs:
@@ -72,7 +72,7 @@ items:
           - Promise<T>
     package: azure-event-processor-host
   - uid: azure-event-processor-host.Timeout.wrap
-    name: wrap
+    name: 'wrap(Promise<T>, number, T)'
     children: []
     type: method
     langs:
@@ -99,7 +99,7 @@ items:
           - Promise<T>
     package: azure-event-processor-host
   - uid: azure-event-processor-host.Timeout.wrap
-    name: wrap
+    name: 'wrap(Promise<T>, number, T)'
     children: []
     type: method
     langs:

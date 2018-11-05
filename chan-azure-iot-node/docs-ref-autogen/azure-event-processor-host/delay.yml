@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: azure-event-processor-host.delay
-    name: delay
+    name: 'delay(number, T)'
     children: []
     type: function
     langs:

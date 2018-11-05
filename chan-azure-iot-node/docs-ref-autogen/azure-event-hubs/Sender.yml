@@ -50,7 +50,7 @@ items:
           - string
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.close
-    name: close
+    name: close()
     children: []
     type: method
     langs:
@@ -106,7 +106,7 @@ items:
           - AmqpError | Error | undefined
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.getMaxListeners
-    name: getMaxListeners
+    name: getMaxListeners()
     children: []
     type: method
     langs:
@@ -120,7 +120,7 @@ items:
           - number
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.isClosed
-    name: isClosed
+    name: isClosed()
     children: []
     type: method
     langs:
@@ -146,7 +146,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.isItselfClosed
-    name: isItselfClosed
+    name: isItselfClosed()
     children: []
     type: method
     langs:
@@ -169,7 +169,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.isOpen
-    name: isOpen
+    name: isOpen()
     children: []
     type: method
     langs:
@@ -183,7 +183,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.isSessionClosed
-    name: isSessionClosed
+    name: isSessionClosed()
     children: []
     type: method
     langs:
@@ -209,7 +209,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.isSessionItselfClosed
-    name: isSessionItselfClosed
+    name: isSessionItselfClosed()
     children: []
     type: method
     langs:
@@ -261,7 +261,7 @@ items:
           - Dictionary<any>
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.registerHandler
-    name: registerHandler
+    name: 'registerHandler(SenderEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -280,7 +280,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.registerSessionHandler
-    name: registerSessionHandler
+    name: 'registerSessionHandler(SessionEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -301,7 +301,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.remove
-    name: remove
+    name: remove()
     children: []
     type: method
     langs:
@@ -312,7 +312,7 @@ items:
       parameters: []
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.removeHandler
-    name: removeHandler
+    name: 'removeHandler(SenderEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -331,7 +331,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.removeSessionHandler
-    name: removeSessionHandler
+    name: 'removeSessionHandler(SessionEvents, rhea.OnAmqpEvent)'
     children: []
     type: method
     langs:
@@ -352,7 +352,7 @@ items:
           description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.send
-    name: send
+    name: 'send(Message | Buffer, Buffer | string, number)'
     children: []
     type: method
     langs:
@@ -382,7 +382,7 @@ items:
           - Delivery
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.sendable
-    name: sendable
+    name: sendable()
     children: []
     type: method
     langs:
@@ -396,7 +396,7 @@ items:
           - boolean
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.constructor
-    name: Sender
+    name: 'Sender(Session, Sender, SenderOptions)'
     children: []
     type: constructor
     langs:
@@ -449,7 +449,7 @@ items:
           - azure-event-hubs.Session
     package: azure-event-hubs
   - uid: azure-event-hubs.Sender.setMaxListeners
-    name: setMaxListeners
+    name: setMaxListeners(number)
     children: []
     type: method
     langs:

@@ -19,7 +19,7 @@ items:
     summary: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.constructor
-    name: CbsClient
+    name: 'CbsClient(Connection, string)'
     children: []
     type: constructor
     langs:
@@ -58,7 +58,7 @@ items:
           - string
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.close
-    name: close
+    name: close()
     children: []
     type: method
     langs:
@@ -121,7 +121,7 @@ items:
           - string
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.init
-    name: init
+    name: init()
     children: []
     type: method
     langs:
@@ -139,7 +139,7 @@ items:
           - Promise<void>
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.negotiateClaim
-    name: negotiateClaim
+    name: 'negotiateClaim(string, TokenInfo)'
     children: []
     type: method
     langs:

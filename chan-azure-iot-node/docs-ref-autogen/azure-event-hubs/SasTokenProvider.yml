@@ -18,7 +18,7 @@ items:
     summary: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SasTokenProvider.fromConnectionString
-    name: fromConnectionString
+    name: fromConnectionString(string)
     children: []
     type: method
     langs:
@@ -37,7 +37,7 @@ items:
           - azure-event-hubs.SasTokenProvider
     package: azure-event-hubs
   - uid: azure-event-hubs.SasTokenProvider.getToken
-    name: getToken
+    name: getToken(string)
     children: []
     type: method
     langs:
@@ -100,7 +100,7 @@ items:
           - string
     package: azure-event-hubs
   - uid: azure-event-hubs.SasTokenProvider.constructor
-    name: SasTokenProvider
+    name: 'SasTokenProvider(string, string, string, number, number)'
     children: []
     type: constructor
     langs:

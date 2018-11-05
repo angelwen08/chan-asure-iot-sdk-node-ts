@@ -95,12 +95,14 @@ references:
   - uid: azure-event-processor-host.ParsedOutput
     name: ParsedOutput
   - uid: azure-event-processor-host.delay
-    name: delay
+    name: 'delay(number, T)'
   - uid: azure-event-processor-host.executePromisesSequentially
-    name: executePromisesSequentially
+    name: 'executePromisesSequentially(Array<any>, any)'
   - uid: azure-event-processor-host.parseConnectionString
-    name: parseConnectionString
+    name: parseConnectionString(string)
   - uid: azure-event-processor-host.randomNumberFromInterval
-    name: randomNumberFromInterval
+    name: 'randomNumberFromInterval(number, number)'
   - uid: azure-event-processor-host.validateType
-    name: validateType
+    name: >-
+      validateType(string, any, boolean, "string" | "number" | "boolean" |
+      "Array" | "object" | "Date" | "function")

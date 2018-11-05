@@ -33,7 +33,7 @@ items:
           - string
     package: azure-event-hubs
   - uid: azure-event-hubs.ConnectionConfig.create
-    name: create
+    name: 'create(string, string)'
     children: []
     type: function
     langs:
@@ -133,7 +133,7 @@ items:
           - string
     package: azure-event-hubs
   - uid: azure-event-hubs.ConnectionConfig.validate
-    name: validate
+    name: 'validate(ConnectionConfig, ConnectionConfigOptions)'
     children: []
     type: function
     langs:

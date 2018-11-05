@@ -79,7 +79,7 @@ items:
           - Date | number
     package: azure-event-hubs
   - uid: azure-event-hubs.EventPosition.constructor
-    name: EventPosition
+    name: EventPosition(EventPositionOptions)
     children: []
     type: constructor
     langs:
@@ -95,7 +95,7 @@ items:
           optional: true
     package: azure-event-hubs
   - uid: azure-event-hubs.EventPosition.fromEnd
-    name: fromEnd
+    name: fromEnd()
     children: []
     type: method
     langs:
@@ -114,7 +114,7 @@ items:
           - azure-event-hubs.EventPosition
     package: azure-event-hubs
   - uid: azure-event-hubs.EventPosition.fromEnqueuedTime
-    name: fromEnqueuedTime
+    name: fromEnqueuedTime(Date | number)
     children: []
     type: method
     langs:
@@ -134,7 +134,7 @@ items:
           - azure-event-hubs.EventPosition
     package: azure-event-hubs
   - uid: azure-event-hubs.EventPosition.fromOffset
-    name: fromOffset
+    name: 'fromOffset(string, boolean)'
     children: []
     type: method
     langs:
@@ -166,7 +166,7 @@ items:
           - azure-event-hubs.EventPosition
     package: azure-event-hubs
   - uid: azure-event-hubs.EventPosition.fromSequenceNumber
-    name: fromSequenceNumber
+    name: 'fromSequenceNumber(number, boolean)'
     children: []
     type: method
     langs:
@@ -195,7 +195,7 @@ items:
           - azure-event-hubs.EventPosition
     package: azure-event-hubs
   - uid: azure-event-hubs.EventPosition.fromStart
-    name: fromStart
+    name: fromStart()
     children: []
     type: method
     langs:
@@ -213,7 +213,7 @@ items:
           - azure-event-hubs.EventPosition
     package: azure-event-hubs
   - uid: azure-event-hubs.EventPosition.getExpression
-    name: getExpression
+    name: getExpression()
     children: []
     type: method
     langs:
@@ -301,7 +301,7 @@ items:
           - string
     package: azure-event-hubs
   - uid: azure-event-hubs.EventPosition.withCustomFilter
-    name: withCustomFilter
+    name: withCustomFilter(string)
     children: []
     type: method
     langs:

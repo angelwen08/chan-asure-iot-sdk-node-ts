@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: azure-event-hubs.parseConnectionString
-    name: parseConnectionString
+    name: parseConnectionString(string)
     children: []
     type: function
     langs:

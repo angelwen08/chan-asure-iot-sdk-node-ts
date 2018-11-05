@@ -15,7 +15,9 @@ items:
     summary: Defines the AAD (Azure ActiveDirectory) TokenProvider.
     package: azure-event-hubs
   - uid: azure-event-hubs.AadTokenProvider.constructor
-    name: AadTokenProvider
+    name: >-
+      AadTokenProvider(ApplicationTokenCredentials | UserTokenCredentials |
+      DeviceTokenCredentials | MSITokenCredentials)
     children: []
     type: constructor
     langs:
@@ -55,7 +57,7 @@ items:
             DeviceTokenCredentials | MSITokenCredentials
     package: azure-event-hubs
   - uid: azure-event-hubs.AadTokenProvider.getToken
-    name: getToken
+    name: getToken(string)
     children: []
     type: method
     langs:

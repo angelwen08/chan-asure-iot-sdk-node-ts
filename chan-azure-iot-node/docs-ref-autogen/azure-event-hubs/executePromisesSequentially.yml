@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: azure-event-hubs.executePromisesSequentially
-    name: executePromisesSequentially
+    name: 'executePromisesSequentially(Array<any>, any)'
     children: []
     type: function
     langs:

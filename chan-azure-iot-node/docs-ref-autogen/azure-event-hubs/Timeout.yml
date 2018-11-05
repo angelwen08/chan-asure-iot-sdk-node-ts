@@ -19,7 +19,7 @@ items:
       the promise with the given value.
     package: azure-event-hubs
   - uid: azure-event-hubs.Timeout.clear
-    name: clear
+    name: clear()
     children: []
     type: method
     langs:
@@ -30,7 +30,7 @@ items:
       parameters: []
     package: azure-event-hubs
   - uid: azure-event-hubs.Timeout.set
-    name: set
+    name: 'set(number, T)'
     children: []
     type: method
     langs:
@@ -53,7 +53,7 @@ items:
           - Promise<T>
     package: azure-event-hubs
   - uid: azure-event-hubs.Timeout.set
-    name: set
+    name: 'set(number, T)'
     children: []
     type: method
     langs:
@@ -76,7 +76,7 @@ items:
           - Promise<T>
     package: azure-event-hubs
   - uid: azure-event-hubs.Timeout.wrap
-    name: wrap
+    name: 'wrap(Promise<T>, number, T)'
     children: []
     type: method
     langs:
@@ -103,7 +103,7 @@ items:
           - Promise<T>
     package: azure-event-hubs
   - uid: azure-event-hubs.Timeout.wrap
-    name: wrap
+    name: 'wrap(Promise<T>, number, T)'
     children: []
     type: method
     langs:
