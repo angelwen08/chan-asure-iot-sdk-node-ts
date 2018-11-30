@@ -682,9 +682,6 @@
     - uid: azure-iothub.Client
       name: Client
       items:
-        - uid: azure-iothub.Client.Callback
-          name: Callback
-          items: []
         - uid: azure-iothub.Client.ServiceReceiver
           name: ServiceReceiver
           items: []
