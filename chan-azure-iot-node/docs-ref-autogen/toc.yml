@@ -559,6 +559,9 @@
 - uid: azure-iot-provisioning-device
   name: azure-iot-provisioning-device
   items:
+    - uid: azure-iot-provisioning-device.DeviceRegistration
+      name: DeviceRegistration
+      items: []
     - uid: azure-iot-provisioning-device.DeviceRegistrationResult
       name: DeviceRegistrationResult
       items: []
@@ -583,6 +586,12 @@
     - uid: azure-iot-provisioning-device.RegistrationStatus
       name: RegistrationStatus
       items: []
+    - uid: azure-iot-provisioning-device.SymmetricKeyRegistration
+      name: SymmetricKeyRegistration
+      items: []
+    - uid: azure-iot-provisioning-device.TpmAttestation
+      name: TpmAttestation
+      items: []
     - uid: azure-iot-provisioning-device.X509Registration
       name: X509Registration
       items: []
@@ -592,6 +601,9 @@
 - uid: azure-iot-provisioning-service
   name: azure-iot-provisioning-service
   items:
+    - uid: azure-iot-provisioning-service.AllocationPolicyType
+      name: AllocationPolicyType
+      items: []
     - uid: azure-iot-provisioning-service.AttestationMechanism
       name: AttestationMechanism
       items: []
@@ -609,6 +621,9 @@
       items: []
     - uid: azure-iot-provisioning-service.BulkOperationMode
       name: BulkOperationMode
+      items: []
+    - uid: azure-iot-provisioning-service.CustomAllocationDefinition
+      name: CustomAllocationDefinition
       items: []
     - uid: azure-iot-provisioning-service.DeviceCapabilities
       name: DeviceCapabilities
@@ -648,6 +663,15 @@
       items: []
     - uid: azure-iot-provisioning-service.RegistrationStatus
       name: RegistrationStatus
+      items: []
+    - uid: azure-iot-provisioning-service.RegistrationSubstatus
+      name: RegistrationSubstatus
+      items: []
+    - uid: azure-iot-provisioning-service.ReprovisionPolicy
+      name: ReprovisionPolicy
+      items: []
+    - uid: azure-iot-provisioning-service.SymmetricKeyAttestation
+      name: SymmetricKeyAttestation
       items: []
     - uid: azure-iot-provisioning-service.TpmAttestation
       name: TpmAttestation

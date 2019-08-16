@@ -9,5 +9,5 @@ items:
     type: type alias
     summary: ''
     syntax:
-      content: type ParsedOutput = Object
+      content: type ParsedOutput<T> = Object
     package: azure-event-processor-host
