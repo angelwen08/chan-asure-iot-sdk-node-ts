@@ -472,6 +472,9 @@
     - uid: azure-iot-device.BlobUpload
       name: BlobUpload
       items: []
+    - uid: azure-iot-device.BlobUploadCommonResponseStub
+      name: BlobUploadCommonResponseStub
+      items: []
     - uid: azure-iot-device.Client
       name: Client
       items: []
@@ -513,6 +516,9 @@
       items: []
     - uid: azure-iot-device.MqttTransportOptions
       name: MqttTransportOptions
+      items: []
+    - uid: azure-iot-device.RestErrorStub
+      name: RestErrorStub
       items: []
     - uid: azure-iot-device.SharedAccessKeyAuthenticationProvider
       name: SharedAccessKeyAuthenticationProvider
