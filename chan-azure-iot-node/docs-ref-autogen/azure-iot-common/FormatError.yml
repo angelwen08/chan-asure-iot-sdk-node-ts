@@ -31,6 +31,7 @@ items:
       return:
         type:
           - ErrorConstructor
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.FormatError.constructor
     name: FormatError(string)
@@ -61,6 +62,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.FormatError.name
     name: name
@@ -75,6 +77,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.FormatError.stack
     name: stack
@@ -90,4 +93,5 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common

@@ -31,6 +31,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ConnectionConfig.create
     name: 'create(string, string)'
@@ -56,6 +57,7 @@ items:
       return:
         type:
           - azure-event-hubs.ConnectionConfig
+        description: ConnectionConfig
     package: azure-event-hubs
   - uid: azure-event-hubs.ConnectionConfig.endpoint
     name: endpoint
@@ -72,6 +74,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ConnectionConfig.entityPath
     name: entityPath
@@ -89,6 +92,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ConnectionConfig.host
     name: host
@@ -103,6 +107,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ConnectionConfig.sharedAccessKey
     name: sharedAccessKey
@@ -117,6 +122,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ConnectionConfig.sharedAccessKeyName
     name: sharedAccessKeyName
@@ -131,6 +137,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ConnectionConfig.validate
     name: 'validate(ConnectionConfig, ConnectionConfigOptions)'

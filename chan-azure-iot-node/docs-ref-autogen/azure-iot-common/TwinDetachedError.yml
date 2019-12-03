@@ -32,6 +32,7 @@ items:
       return:
         type:
           - ErrorConstructor
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.TwinDetachedError.innerError
     name: innerError
@@ -46,6 +47,7 @@ items:
       return:
         type:
           - Error
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.TwinDetachedError.message
     name: message
@@ -60,6 +62,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.TwinDetachedError.name
     name: name
@@ -74,6 +77,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.TwinDetachedError.stack
     name: stack
@@ -89,6 +93,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.TwinDetachedError.constructor
     name: TwinDetachedError(string)

@@ -55,6 +55,7 @@ items:
           - >-
             ApplicationTokenCredentials | UserTokenCredentials |
             DeviceTokenCredentials | MSITokenCredentials
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.AadTokenProvider.getToken
     name: getToken(string)
@@ -74,6 +75,7 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.TokenInfo>
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.AadTokenProvider.tokenRenewalMarginInSeconds
     name: tokenRenewalMarginInSeconds
@@ -95,6 +97,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.AadTokenProvider.tokenValidTimeInSeconds
     name: tokenValidTimeInSeconds
@@ -115,6 +118,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
 references:
   - uid: Promise<azure-event-hubs.TokenInfo>

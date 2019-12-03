@@ -47,6 +47,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.desired_capabilities
     name: desired_capabilities
@@ -64,6 +65,7 @@ items:
       return:
         type:
           - 'string | string[]'
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.max_message_size
     name: max_message_size
@@ -81,6 +83,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.name
     name: name
@@ -99,6 +102,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.offered_capabilities
     name: offered_capabilities
@@ -116,6 +120,7 @@ items:
       return:
         type:
           - 'string | string[]'
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.onAccepted
     name: onAccepted
@@ -131,6 +136,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.onClose
     name: onClose
@@ -146,6 +152,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.onError
     name: onError
@@ -161,6 +168,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.onModified
     name: onModified
@@ -176,6 +184,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.onRejected
     name: onRejected
@@ -191,6 +200,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.onReleased
     name: onReleased
@@ -206,6 +216,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.onSessionClose
     name: onSessionClose
@@ -221,6 +232,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.onSessionError
     name: onSessionError
@@ -236,6 +248,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.properties
     name: properties
@@ -255,6 +268,7 @@ items:
       return:
         type:
           - '[key: string]: any'
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.rcv_settle_mode
     name: rcv_settle_mode
@@ -280,6 +294,7 @@ items:
       return:
         type:
           - 0 | 1
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.snd_settle_mode
     name: snd_settle_mode
@@ -306,6 +321,7 @@ items:
       return:
         type:
           - 0 | 1 | 2
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.source
     name: source
@@ -321,6 +337,7 @@ items:
       return:
         type:
           - Source | string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SenderOptions.target
     name: target
@@ -349,4 +366,5 @@ items:
       return:
         type:
           - TargetTerminusOptions | string
+        description: ''
     package: azure-event-hubs

@@ -55,6 +55,7 @@ items:
       return:
         type:
           - AzureBlob
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.createFromPartitionId
     name: 'createFromPartitionId(string, AzureBlob)'
@@ -77,6 +78,7 @@ items:
       return:
         type:
           - azure-event-processor-host.AzureBlobLease
+        description: Lease.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.epoch
     name: epoch
@@ -95,6 +97,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.getInfo
     name: getInfo()
@@ -109,6 +112,7 @@ items:
       return:
         type:
           - azure-event-processor-host.LeaseInfo
+        description: LeaseInfo.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.incrementEpoch
     name: incrementEpoch()
@@ -123,6 +127,7 @@ items:
       return:
         type:
           - number
+        description: The incremented value of the epoch.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.isOwned
     name: isOwned
@@ -141,6 +146,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.isOwnedBy
     name: isOwnedBy(string)
@@ -159,6 +165,9 @@ items:
       return:
         type:
           - boolean
+        description: >-
+          boolean - true if possibleOwner is the same as this.owner, false
+          otherwise.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.offset
     name: offset
@@ -174,6 +183,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.owner
     name: owner
@@ -188,6 +198,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.partitionId
     name: partitionId
@@ -204,6 +215,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.sequenceNumber
     name: sequenceNumber
@@ -218,6 +230,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.serialize
     name: serialize()
@@ -232,6 +245,7 @@ items:
       return:
         type:
           - string
+        description: string The serialized lease info.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLease.token
     name: token
@@ -250,6 +264,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.CompleteLease

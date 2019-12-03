@@ -49,6 +49,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.defaultMaxListeners
     name: defaultMaxListeners
@@ -63,6 +64,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.emit
     name: 'emit(string | symbol, any[])'
@@ -85,6 +87,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.eventNames
     name: eventNames()
@@ -99,6 +102,7 @@ items:
       return:
         type:
           - Array<string | symbol>
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.getMaxListeners
     name: getMaxListeners()
@@ -113,6 +117,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.listenerCount
     name: 'listenerCount(EventEmitter, string | symbol)'
@@ -137,6 +142,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.listenerCount
     name: listenerCount(string | symbol)
@@ -155,6 +161,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.listeners
     name: listeners(string | symbol)
@@ -173,6 +180,7 @@ items:
       return:
         type:
           - 'Function[]'
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.on
     name: 'on(string | symbol, (args: any[]) => void)'
@@ -195,6 +203,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.once
     name: 'once(string | symbol, (args: any[]) => void)'
@@ -217,6 +226,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.prependListener
     name: 'prependListener(string | symbol, (args: any[]) => void)'
@@ -241,6 +251,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.prependOnceListener
     name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
@@ -265,6 +276,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.removeAllListeners
     name: removeAllListeners(string | symbol)
@@ -284,6 +296,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.removeListener
     name: 'removeListener(string | symbol, (args: any[]) => void)'
@@ -308,6 +321,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-provisioning-device-amqp
   - uid: azure-iot-provisioning-device-amqp.AmqpWs.setMaxListeners
     name: setMaxListeners(number)
@@ -326,6 +340,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-provisioning-device-amqp
 references:
   - uid: azure-iot-provisioning-device-amqp.Amqp

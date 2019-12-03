@@ -44,6 +44,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromTokenProviderOptions.dataTransformer
     name: dataTransformer
@@ -69,6 +70,7 @@ items:
       return:
         type:
           - DataTransformer
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromTokenProviderOptions.fastScanInterval
     name: fastScanInterval
@@ -94,6 +96,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromTokenProviderOptions.initialOffset
     name: initialOffset
@@ -117,6 +120,7 @@ items:
       return:
         type:
           - EventPosition
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromTokenProviderOptions.leaseDuration
     name: leaseDuration
@@ -138,6 +142,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromTokenProviderOptions.leaseRenewInterval
     name: leaseRenewInterval
@@ -170,6 +175,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromTokenProviderOptions.onEphError
     name: onEphError
@@ -199,6 +205,7 @@ items:
       return:
         type:
           - azure-event-processor-host.OnEphError
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromTokenProviderOptions.slowScanInterval
     name: slowScanInterval
@@ -221,6 +228,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromTokenProviderOptions.startupScanDelay
     name: startupScanDelay
@@ -249,6 +257,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromTokenProviderOptions.storageBlobPrefix
     name: storageBlobPrefix
@@ -268,6 +277,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromTokenProviderOptions.userAgent
     name: userAgent
@@ -287,6 +297,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.OnEphError

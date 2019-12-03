@@ -48,6 +48,15 @@ items:
       return:
         type:
           - Promise<void>
+        description: >-
+          Promise<void>
+
+          - **Resolves** the promise when rhea emits the "session_close" event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "session_error" event while trying
+
+          to close an amqp session.
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.connection
     name: connection
@@ -62,6 +71,7 @@ items:
       return:
         type:
           - azure-event-hubs.Connection
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.createReceiver
     name: createReceiver(ReceiverOptions)
@@ -81,6 +91,16 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.Receiver>
+        description: >-
+          Promise<Receiver>
+
+          - **Resolves** the promise with the Receiver object when rhea emits
+          the "receiver_open" event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "receiver_close" event while trying
+
+          to create an amqp receiver.
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.createSender
     name: createSender(SenderOptions)
@@ -100,6 +120,16 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.Sender>
+        description: >-
+          Promise<Sender>
+
+          - **Resolves** the promise with the Sender object when rhea emits the
+          "sender_open" event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "sender_close" event while trying
+
+          to create an amqp sender.
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.isClosed
     name: isClosed()
@@ -116,6 +146,7 @@ items:
       return:
         type:
           - boolean
+        description: '`true` if close was locally initiated, `false` otherwise.'
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.isItselfClosed
     name: isItselfClosed()
@@ -140,6 +171,7 @@ items:
       return:
         type:
           - boolean
+        description: '`true` - closed, `false` otherwise.'
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.isOpen
     name: isOpen()
@@ -154,6 +186,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.outgoing
     name: outgoing
@@ -168,6 +201,7 @@ items:
       return:
         type:
           - any
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Session.registerConnectionHandler
     name: 'registerConnectionHandler(ConnectionEvents, rhea.OnAmqpEvent)'

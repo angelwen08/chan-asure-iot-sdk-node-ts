@@ -31,6 +31,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CompleteLeaseInfo.owner
     name: owner
@@ -45,6 +46,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CompleteLeaseInfo.partitionId
     name: partitionId
@@ -61,6 +63,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.BaseLeaseInfo

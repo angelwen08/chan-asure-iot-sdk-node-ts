@@ -25,6 +25,7 @@ items:
       return:
         type:
           - azure-event-hubs.Receiver
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReqResLink.sender
     name: sender
@@ -39,6 +40,7 @@ items:
       return:
         type:
           - azure-event-hubs.Sender
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReqResLink.session
     name: session
@@ -53,6 +55,7 @@ items:
       return:
         type:
           - azure-event-hubs.Session
+        description: ''
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.Receiver

@@ -97,6 +97,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.complete
     name: 'complete(Message, (err?: Error, result?: MessageCompleted) => void)'
@@ -147,6 +148,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.disableC2D
     name: 'disableC2D((err?: Error) => void)'
@@ -246,6 +248,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.enableC2D
     name: 'enableC2D((err?: Error) => void)'
@@ -322,6 +325,7 @@ items:
       return:
         type:
           - Array<string | symbol>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.getMaxListeners
     name: getMaxListeners()
@@ -336,6 +340,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.getTwin
     name: 'getTwin((err?: Error, twin?: TwinProperties) => void)'
@@ -375,6 +380,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.listenerCount
     name: listenerCount(string | symbol)
@@ -393,6 +399,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.listeners
     name: listeners(string | symbol)
@@ -411,6 +418,7 @@ items:
       return:
         type:
           - 'Function[]'
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.on_1
     name: 'on("disconnect", (err?: Error) => void)'
@@ -433,6 +441,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.on
     name: 'on("error", (err: Error) => void)'
@@ -455,6 +464,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.on_4
     name: 'on("inputMessage", (inputName: string, msg: Message) => void)'
@@ -479,6 +489,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.on_2
     name: 'on("message", (msg: Message) => void)'
@@ -501,6 +512,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.on_3
     name: 'on("twinDesiredPropertiesUpdate", (desiredProps: any) => void)'
@@ -525,6 +537,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.once
     name: 'once(string | symbol, (args: any[]) => void)'
@@ -547,6 +560,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.onDeviceMethod
     name: >-
@@ -594,6 +608,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.prependOnceListener
     name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
@@ -618,6 +633,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.reject
     name: 'reject(Message, (err?: Error, results?: MessageRejected) => void)'
@@ -658,6 +674,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.removeListener
     name: 'removeListener(string | symbol, (args: any[]) => void)'
@@ -682,6 +699,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.sendEvent
     name: 'sendEvent(Message, (err?: Error, result?: MessageEnqueued) => void)'
@@ -820,6 +838,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.DeviceTransport.setOptions
     name: >-

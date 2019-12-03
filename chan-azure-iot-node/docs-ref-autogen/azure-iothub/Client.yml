@@ -86,6 +86,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.close_1
     name: close()
@@ -100,6 +101,7 @@ items:
       return:
         type:
           - Promise<azure-iothub.ResultWithIncomingMessage<Disconnected>>
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.close
     name: close(IncomingMessageCallback<Disconnected>)
@@ -129,6 +131,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.emit
     name: 'emit(string | symbol, any[])'
@@ -151,6 +154,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.eventNames
     name: eventNames()
@@ -165,6 +169,7 @@ items:
       return:
         type:
           - Array<string | symbol>
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.fromConnectionString
     name: 'fromConnectionString(string, Client.TransportCtor)'
@@ -195,6 +200,7 @@ items:
       return:
         type:
           - azure-iothub.Client
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.fromSharedAccessSignature
     name: 'fromSharedAccessSignature(string, Client.TransportCtor)'
@@ -225,6 +231,7 @@ items:
       return:
         type:
           - azure-iothub.Client
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.getFeedbackReceiver_1
     name: getFeedbackReceiver()
@@ -242,6 +249,7 @@ items:
         type:
           - >-
             Promise<azure-iothub.ResultWithIncomingMessage<azure-iothub.Client.ServiceReceiver>>
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.getFeedbackReceiver
     name: getFeedbackReceiver(IncomingMessageCallback<ServiceReceiver>)
@@ -279,6 +287,7 @@ items:
         type:
           - >-
             Promise<azure-iothub.ResultWithIncomingMessage<azure-iothub.Client.ServiceReceiver>>
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.getFileNotificationReceiver
     name: getFileNotificationReceiver(IncomingMessageCallback<ServiceReceiver>)
@@ -313,6 +322,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.invokeDeviceMethod_2
     name: 'invokeDeviceMethod(string, DeviceMethodParams)'
@@ -337,6 +347,7 @@ items:
       return:
         type:
           - Promise<azure-iothub.ResultWithIncomingMessage<any>>
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.invokeDeviceMethod
     name: >-
@@ -392,6 +403,7 @@ items:
       return:
         type:
           - Promise<azure-iothub.ResultWithIncomingMessage<any>>
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.invokeDeviceMethod_1
     name: >-
@@ -447,6 +459,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.listenerCount
     name: listenerCount(string | symbol)
@@ -465,6 +478,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.listeners
     name: listeners(string | symbol)
@@ -483,6 +497,7 @@ items:
       return:
         type:
           - 'Function[]'
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.on
     name: 'on(string | symbol, (args: any[]) => void)'
@@ -505,6 +520,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.once
     name: 'once(string | symbol, (args: any[]) => void)'
@@ -527,6 +543,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.open_1
     name: open()
@@ -541,6 +558,7 @@ items:
       return:
         type:
           - Promise<azure-iothub.ResultWithIncomingMessage<Connected>>
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.open
     name: open(IncomingMessageCallback<Connected>)
@@ -580,6 +598,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.prependOnceListener
     name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
@@ -604,6 +623,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.removeAllListeners
     name: removeAllListeners(string | symbol)
@@ -623,6 +643,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.removeListener
     name: 'removeListener(string | symbol, (args: any[]) => void)'
@@ -647,6 +668,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.send_1
     name: 'send(string, Message | Message.BufferConvertible)'
@@ -671,6 +693,7 @@ items:
       return:
         type:
           - Promise<azure-iothub.ResultWithIncomingMessage<MessageEnqueued>>
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.send
     name: >-
@@ -721,6 +744,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.setRetryPolicy
     name: setRetryPolicy(RetryPolicy)

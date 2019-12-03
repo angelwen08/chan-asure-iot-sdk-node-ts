@@ -24,6 +24,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.BaseLeaseInfo.partitionId
     name: partitionId
@@ -40,4 +41,5 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host

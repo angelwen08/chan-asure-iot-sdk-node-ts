@@ -29,6 +29,7 @@ items:
       return:
         type:
           - ErrorConstructor
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.OperationCancelledError.message
     name: message
@@ -43,6 +44,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.OperationCancelledError.name
     name: name
@@ -57,6 +59,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.OperationCancelledError.constructor
     name: OperationCancelledError(string)
@@ -88,4 +91,5 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common

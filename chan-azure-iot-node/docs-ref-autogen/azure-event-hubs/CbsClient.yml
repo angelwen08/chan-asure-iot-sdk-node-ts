@@ -56,6 +56,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.close
     name: close()
@@ -72,6 +73,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.connection
     name: connection
@@ -86,6 +88,7 @@ items:
       return:
         type:
           - azure-event-hubs.Connection
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.connectionLock
     name: connectionLock
@@ -105,6 +108,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.endpoint
     name: endpoint
@@ -119,6 +123,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.init
     name: init()
@@ -137,6 +142,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: Promise<void>.
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.negotiateClaim
     name: 'negotiateClaim(string, TokenInfo)'
@@ -159,6 +165,9 @@ items:
       return:
         type:
           - Promise<any>
+        description: |-
+          Returns a Promise that resolves when $cbs authentication is successful
+          and rejects when an error occurs during $cbs authentication.
     package: azure-event-hubs
   - uid: azure-event-hubs.CbsClient.replyTo
     name: replyTo
@@ -175,6 +184,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.Connection

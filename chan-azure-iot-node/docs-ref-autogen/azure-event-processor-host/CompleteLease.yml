@@ -52,6 +52,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CompleteLease.getInfo
     name: getInfo()
@@ -66,6 +67,7 @@ items:
       return:
         type:
           - azure-event-processor-host.CompleteLeaseInfo
+        description: CompleteLeaseInfo.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CompleteLease.incrementEpoch
     name: incrementEpoch()
@@ -80,6 +82,7 @@ items:
       return:
         type:
           - number
+        description: The incremented value of the epoch.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CompleteLease.isOwned
     name: isOwned
@@ -98,6 +101,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CompleteLease.isOwnedBy
     name: isOwnedBy(string)
@@ -116,6 +120,9 @@ items:
       return:
         type:
           - boolean
+        description: >-
+          boolean - true if possibleOwner is the same as this.owner, false
+          otherwise.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CompleteLease.owner
     name: owner
@@ -130,6 +137,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CompleteLease.partitionId
     name: partitionId
@@ -146,6 +154,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.BaseLease

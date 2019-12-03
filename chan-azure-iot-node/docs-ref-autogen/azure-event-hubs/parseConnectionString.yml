@@ -17,6 +17,7 @@ items:
       return:
         type:
           - azure-event-hubs.ParsedOutput<T>
+        description: ParsedOutput<T>.
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.ParsedOutput<T>

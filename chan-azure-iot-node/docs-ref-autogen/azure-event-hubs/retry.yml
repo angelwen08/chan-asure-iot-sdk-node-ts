@@ -23,6 +23,7 @@ items:
       return:
         type:
           - Promise<T>
+        description: Promise<T>.
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.RetryConfig<T>

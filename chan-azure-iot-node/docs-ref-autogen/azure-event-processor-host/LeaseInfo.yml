@@ -34,6 +34,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseInfo.offset
     name: offset
@@ -49,6 +50,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseInfo.owner
     name: owner
@@ -63,6 +65,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseInfo.partitionId
     name: partitionId
@@ -79,6 +82,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseInfo.sequenceNumber
     name: sequenceNumber
@@ -93,6 +97,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseInfo.token
     name: token
@@ -111,6 +116,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.CompleteLeaseInfo

@@ -57,6 +57,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.defaultMaxListeners
     name: defaultMaxListeners
@@ -71,6 +72,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.emit
     name: 'emit(string | symbol, any[])'
@@ -93,6 +95,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.eventNames
     name: eventNames()
@@ -107,6 +110,7 @@ items:
       return:
         type:
           - Array<string | symbol>
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.getMaxListeners
     name: getMaxListeners()
@@ -121,6 +125,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.listenerCount
     name: 'listenerCount(EventEmitter, string | symbol)'
@@ -145,6 +150,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.listenerCount
     name: listenerCount(string | symbol)
@@ -163,6 +169,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.listeners
     name: listeners(string | symbol)
@@ -181,6 +188,7 @@ items:
       return:
         type:
           - 'Function[]'
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.on
     name: 'on(string | symbol, (args: any[]) => void)'
@@ -203,6 +211,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.once
     name: 'once(string | symbol, (args: any[]) => void)'
@@ -225,6 +234,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.prependListener
     name: 'prependListener(string | symbol, (args: any[]) => void)'
@@ -249,6 +259,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.prependOnceListener
     name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
@@ -273,6 +284,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.removeAllListeners
     name: removeAllListeners(string | symbol)
@@ -292,6 +304,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.removeListener
     name: 'removeListener(string | symbol, (args: any[]) => void)'
@@ -316,6 +329,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.setMaxListeners
     name: setMaxListeners(number)
@@ -334,6 +348,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
 references:
   - uid: azure-iothub.Amqp

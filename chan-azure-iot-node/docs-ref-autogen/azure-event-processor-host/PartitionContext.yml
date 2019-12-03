@@ -40,6 +40,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.checkpointFromEventData
     name: checkpointFromEventData(EventData)
@@ -67,6 +68,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.consumerGroup
     name: consumerGroup
@@ -81,6 +83,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.eventhubPath
     name: eventhubPath
@@ -95,6 +98,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.lease
     name: lease
@@ -109,6 +113,7 @@ items:
       return:
         type:
           - azure-event-processor-host.CompleteLease
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.owner
     name: owner
@@ -123,6 +128,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.constructor
     name: >-
@@ -165,6 +171,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.PartitionContext.setOffsetAndSequenceNumber
     name: setOffsetAndSequenceNumber(EventData)

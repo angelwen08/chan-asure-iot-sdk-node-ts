@@ -74,6 +74,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.complete
     name: 'complete(Message, Callback<MessageCompleted>)'
@@ -108,6 +109,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.emit
     name: 'emit(string | symbol, any[])'
@@ -130,6 +132,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.eventNames
     name: eventNames()
@@ -144,6 +147,7 @@ items:
       return:
         type:
           - Array<string | symbol>
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.getMaxListeners
     name: getMaxListeners()
@@ -158,6 +162,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.listenerCount
     name: 'listenerCount(EventEmitter, string | symbol)'
@@ -182,6 +187,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.listenerCount
     name: listenerCount(string | symbol)
@@ -200,6 +206,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.listeners
     name: listeners(string | symbol)
@@ -218,6 +225,7 @@ items:
       return:
         type:
           - 'Function[]'
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.on_1
     name: 'on("errorReceived", (err: Error) => void)'
@@ -240,6 +248,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.on
     name: 'on("message", (msg: Message) => void)'
@@ -262,6 +271,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.on_2
     name: 'on(string, Function)'
@@ -284,6 +294,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.once
     name: 'once(string | symbol, (args: any[]) => void)'
@@ -306,6 +317,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.prependListener
     name: 'prependListener(string | symbol, (args: any[]) => void)'
@@ -330,6 +342,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.prependOnceListener
     name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
@@ -354,6 +367,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.reject
     name: 'reject(Message, Callback<MessageRejected>)'
@@ -393,6 +407,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.removeListener
     name: 'removeListener(string | symbol, (args: any[]) => void)'
@@ -417,6 +432,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.setMaxListeners
     name: setMaxListeners(number)
@@ -435,6 +451,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iothub
 references:
   - uid: Callback<azure-iothub.Client.ServiceReceiver>

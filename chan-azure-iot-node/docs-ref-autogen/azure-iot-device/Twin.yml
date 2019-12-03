@@ -74,6 +74,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.defaultMaxListeners
     name: defaultMaxListeners
@@ -88,6 +89,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.desiredPath
     name: desiredPath
@@ -102,6 +104,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.desiredPropertiesUpdatesEnabled
     name: desiredPropertiesUpdatesEnabled
@@ -116,6 +119,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.emit
     name: 'emit(string | symbol, any[])'
@@ -138,6 +142,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.errorEvent
     name: errorEvent
@@ -152,6 +157,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.eventNames
     name: eventNames()
@@ -166,6 +172,7 @@ items:
       return:
         type:
           - Array<string | symbol>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.get_1
     name: get()
@@ -180,6 +187,7 @@ items:
       return:
         type:
           - Promise<azure-iot-device.Twin>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.get
     name: get(Callback<Twin>)
@@ -209,6 +217,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.listenerCount
     name: 'listenerCount(EventEmitter, string | symbol)'
@@ -233,6 +242,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.listenerCount
     name: listenerCount(string | symbol)
@@ -251,6 +261,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.listeners
     name: listeners(string | symbol)
@@ -269,6 +280,7 @@ items:
       return:
         type:
           - 'Function[]'
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.on
     name: 'on(string | symbol, (args: any[]) => void)'
@@ -291,6 +303,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.once
     name: 'once(string | symbol, (args: any[]) => void)'
@@ -313,6 +326,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.prependListener
     name: 'prependListener(string | symbol, (args: any[]) => void)'
@@ -337,6 +351,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.prependOnceListener
     name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
@@ -361,6 +376,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.properties
     name: properties
@@ -377,6 +393,7 @@ items:
       return:
         type:
           - azure-iot-device.TwinProperties
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.removeAllListeners
     name: removeAllListeners(string | symbol)
@@ -396,6 +413,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.removeListener
     name: 'removeListener(string | symbol, (args: any[]) => void)'
@@ -420,6 +438,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Twin.setMaxListeners
     name: setMaxListeners(number)
@@ -438,6 +457,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
 references:
   - uid: azure-iot-device.TwinProperties

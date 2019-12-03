@@ -29,6 +29,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.AsyncLockOptions.maxPending
     name: maxPending
@@ -44,6 +45,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.AsyncLockOptions.Promise
     name: Promise
@@ -61,6 +63,7 @@ items:
       return:
         type:
           - any
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.AsyncLockOptions.timeout
     name: timeout
@@ -76,4 +79,5 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs

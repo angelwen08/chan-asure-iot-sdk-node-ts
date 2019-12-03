@@ -50,6 +50,7 @@ items:
       return:
         type:
           - azure-event-processor-host.CheckpointManager
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.consumerGroup
     name: consumerGroup
@@ -69,6 +70,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.dataTransformer
     name: dataTransformer
@@ -94,6 +96,7 @@ items:
       return:
         type:
           - DataTransformer
+        description: ''
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.EventProcessorHostOptions.eventHubConnectionString
@@ -117,6 +120,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.eventHubPath
     name: eventHubPath
@@ -136,6 +140,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.fastScanInterval
     name: fastScanInterval
@@ -161,6 +166,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.initialOffset
     name: initialOffset
@@ -184,6 +190,7 @@ items:
       return:
         type:
           - EventPosition
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.leaseDuration
     name: leaseDuration
@@ -205,6 +212,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.leaseManager
     name: leaseManager
@@ -222,6 +230,7 @@ items:
       return:
         type:
           - azure-event-processor-host.LeaseManager
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.leaseRenewInterval
     name: leaseRenewInterval
@@ -254,6 +263,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.onEphError
     name: onEphError
@@ -283,6 +293,7 @@ items:
       return:
         type:
           - azure-event-processor-host.OnEphError
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.slowScanInterval
     name: slowScanInterval
@@ -305,6 +316,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.startupScanDelay
     name: startupScanDelay
@@ -333,6 +345,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.storageBlobPrefix
     name: storageBlobPrefix
@@ -352,6 +365,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.EventProcessorHostOptions.storageConnectionString
@@ -375,6 +389,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.storageContainerName
     name: storageContainerName
@@ -394,6 +409,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.tokenProvider
     name: tokenProvider
@@ -414,6 +430,7 @@ items:
       return:
         type:
           - TokenProvider
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHostOptions.userAgent
     name: userAgent
@@ -433,6 +450,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.FromConnectionStringOptions

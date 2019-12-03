@@ -31,6 +31,7 @@ items:
       return:
         type:
           - ErrorConstructor
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.ServiceUnavailableError.message
     name: message
@@ -45,6 +46,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.ServiceUnavailableError.name
     name: name
@@ -59,6 +61,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.ServiceUnavailableError.constructor
     name: ServiceUnavailableError(string)
@@ -90,4 +93,5 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common

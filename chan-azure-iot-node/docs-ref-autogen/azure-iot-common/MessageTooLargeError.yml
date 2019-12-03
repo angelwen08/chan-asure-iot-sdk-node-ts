@@ -31,6 +31,7 @@ items:
       return:
         type:
           - ErrorConstructor
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.MessageTooLargeError.message
     name: message
@@ -45,6 +46,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.MessageTooLargeError.constructor
     name: MessageTooLargeError(string)
@@ -75,6 +77,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.MessageTooLargeError.stack
     name: stack
@@ -90,4 +93,5 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common

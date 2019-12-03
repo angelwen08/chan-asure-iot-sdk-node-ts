@@ -19,6 +19,7 @@ items:
       return:
         type:
           - azure-event-hubs.MessagingError
+        description: MessagingError object.
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.MessagingError

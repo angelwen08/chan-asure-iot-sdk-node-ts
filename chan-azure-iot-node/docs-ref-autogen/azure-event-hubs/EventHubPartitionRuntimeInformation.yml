@@ -33,6 +33,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.EventHubPartitionRuntimeInformation.hubPath
     name: hubPath
@@ -47,6 +48,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.EventHubPartitionRuntimeInformation.lastEnqueuedOffset
     name: lastEnqueuedOffset
@@ -63,6 +65,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.EventHubPartitionRuntimeInformation.lastEnqueuedTimeUtc
     name: lastEnqueuedTimeUtc
@@ -79,6 +82,7 @@ items:
       return:
         type:
           - Date
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.EventHubPartitionRuntimeInformation.lastSequenceNumber
     name: lastSequenceNumber
@@ -95,6 +99,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.EventHubPartitionRuntimeInformation.partitionId
     name: partitionId
@@ -109,6 +114,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.EventHubPartitionRuntimeInformation.type
     name: type
@@ -123,4 +129,5 @@ items:
       return:
         type:
           - '"com.microsoft:partition"'
+        description: ''
     package: azure-event-hubs

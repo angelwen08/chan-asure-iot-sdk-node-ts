@@ -49,6 +49,7 @@ items:
       return:
         type:
           - azure-iot-common.SharedAccessSignature
+        description: A shared access signature token.
     package: azure-iot-common
   - uid: azure-iot-common.SharedAccessSignature.extend
     name: extend(number)
@@ -69,6 +70,7 @@ items:
       return:
         type:
           - string
+        description: The string form of the shared access signature.
     package: azure-iot-common
   - uid: azure-iot-common.SharedAccessSignature.parse
     name: 'parse(string, string[])'
@@ -95,6 +97,7 @@ items:
       return:
         type:
           - azure-iot-common.SharedAccessSignature
+        description: A shared access signature token.
     package: azure-iot-common
   - uid: azure-iot-common.SharedAccessSignature.toString
     name: toString()
@@ -109,6 +112,7 @@ items:
       return:
         type:
           - string
+        description: A properly formatted shared access signature token.
     package: azure-iot-common
 references:
   - uid: azure-iot-common.SharedAccessSignature

@@ -40,6 +40,7 @@ items:
       return:
         type:
           - azure-event-hubs.DataTransformer
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ClientOptions.tokenProvider
     name: tokenProvider
@@ -59,6 +60,7 @@ items:
       return:
         type:
           - azure-event-hubs.TokenProvider
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ClientOptions.userAgent
     name: userAgent
@@ -78,6 +80,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.ClientOptionsBase

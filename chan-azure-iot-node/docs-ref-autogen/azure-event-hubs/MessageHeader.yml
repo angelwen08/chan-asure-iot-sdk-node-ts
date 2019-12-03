@@ -33,6 +33,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.MessageHeader.durable
     name: durable
@@ -48,6 +49,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.MessageHeader.firstAcquirer
     name: firstAcquirer
@@ -70,6 +72,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.MessageHeader.fromAmqpMessageProperties
     name: fromAmqpMessageProperties(AmqpMessageHeader)
@@ -88,6 +91,7 @@ items:
       return:
         type:
           - azure-event-hubs.MessageHeader
+        description: MessageHeader.
     package: azure-event-hubs
   - uid: azure-event-hubs.MessageHeader.priority
     name: priority
@@ -107,6 +111,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.MessageHeader.toAmqpMessageHeader
     name: toAmqpMessageHeader(MessageHeader)
@@ -125,6 +130,7 @@ items:
       return:
         type:
           - AmqpMessageHeader
+        description: AmqpMessageHeader
     package: azure-event-hubs
   - uid: azure-event-hubs.MessageHeader.ttl
     name: ttl
@@ -140,6 +146,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.MessageHeader

@@ -65,6 +65,7 @@ items:
       return:
         type:
           - azure-event-processor-host.Dictionary<AzureBlob>
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.blobService
     name: blobService
@@ -80,6 +81,7 @@ items:
       return:
         type:
           - BlobService
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.checkpointManager
     name: checkpointManager
@@ -94,6 +96,7 @@ items:
       return:
         type:
           - azure-event-processor-host.CheckpointManager
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.composedBlobPrefix
     name: composedBlobPrefix
@@ -108,6 +111,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.connectionConfig
     name: connectionConfig
@@ -122,6 +126,7 @@ items:
       return:
         type:
           - ConnectionConfig
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.consumerGroup
     name: consumerGroup
@@ -136,6 +141,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.HostContextWithPumpManager.eventHubConnectionString
@@ -151,6 +157,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.eventHubPath
     name: eventHubPath
@@ -165,6 +172,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.fastScanInterval
     name: fastScanInterval
@@ -180,6 +188,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.getEventHubClient
     name: getEventHubClient()
@@ -194,6 +203,7 @@ items:
       return:
         type:
           - EventHubClient
+        description: ''
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.HostContextWithPumpManager.getHubRuntimeInformation
@@ -209,6 +219,7 @@ items:
       return:
         type:
           - Promise<EventHubRuntimeInformation>
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.getPartitionIds
     name: getPartitionIds()
@@ -223,6 +234,7 @@ items:
       return:
         type:
           - 'Promise<string[]>'
+        description: ''
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.HostContextWithPumpManager.getPartitionInformation
@@ -242,6 +254,7 @@ items:
       return:
         type:
           - Promise<EventHubPartitionRuntimeInformation>
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.hostName
     name: hostName
@@ -256,6 +269,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.initialOffset
     name: initialOffset
@@ -271,6 +285,7 @@ items:
       return:
         type:
           - EventPosition
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.leaseDuration
     name: leaseDuration
@@ -285,6 +300,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.leaseManager
     name: leaseManager
@@ -299,6 +315,7 @@ items:
       return:
         type:
           - azure-event-processor-host.LeaseManager
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.leaseRenewInterval
     name: leaseRenewInterval
@@ -313,6 +330,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.onEphError
     name: onEphError
@@ -327,6 +345,7 @@ items:
       return:
         type:
           - azure-event-processor-host.OnEphError
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.onError
     name: onError
@@ -342,6 +361,7 @@ items:
       return:
         type:
           - azure-event-processor-host.OnReceivedError
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.onMessage
     name: onMessage
@@ -357,6 +377,7 @@ items:
       return:
         type:
           - azure-event-processor-host.OnReceivedMessage
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.partitionIds
     name: partitionIds
@@ -371,6 +392,7 @@ items:
       return:
         type:
           - 'string[]'
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.pumpManager
     name: pumpManager
@@ -385,6 +407,7 @@ items:
       return:
         type:
           - PumpManager
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.pumps
     name: pumps
@@ -399,6 +422,7 @@ items:
       return:
         type:
           - 'Map<string, PartitionPump>'
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.slowScanInterval
     name: slowScanInterval
@@ -414,6 +438,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.startupScanDelay
     name: startupScanDelay
@@ -429,6 +454,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.storageBlobPrefix
     name: storageBlobPrefix
@@ -444,6 +470,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.HostContextWithPumpManager.storageConnectionString
@@ -460,6 +487,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.storageContainerName
     name: storageContainerName
@@ -475,6 +503,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.tokenProvider
     name: tokenProvider
@@ -490,6 +519,7 @@ items:
       return:
         type:
           - TokenProvider
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.userAgent
     name: userAgent
@@ -504,6 +534,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.withHost
     name: withHost(string)
@@ -522,6 +553,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.HostContextWithPumpManager.withHostAndPartition
     name: 'withHostAndPartition(string | Object, string)'
@@ -544,6 +576,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.Dictionary<AzureBlob>

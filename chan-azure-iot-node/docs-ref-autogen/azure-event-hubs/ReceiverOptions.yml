@@ -46,6 +46,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.autosettle
     name: autosettle
@@ -65,6 +66,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.credit_window
     name: credit_window
@@ -87,6 +89,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.desired_capabilities
     name: desired_capabilities
@@ -104,6 +107,7 @@ items:
       return:
         type:
           - 'string | string[]'
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.max_message_size
     name: max_message_size
@@ -121,6 +125,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.name
     name: name
@@ -139,6 +144,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.offered_capabilities
     name: offered_capabilities
@@ -156,6 +162,7 @@ items:
       return:
         type:
           - 'string | string[]'
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.onClose
     name: onClose
@@ -171,6 +178,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.onError
     name: onError
@@ -186,6 +194,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.onMessage
     name: onMessage
@@ -201,6 +210,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.onSessionClose
     name: onSessionClose
@@ -216,6 +226,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.onSessionError
     name: onSessionError
@@ -231,6 +242,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.properties
     name: properties
@@ -250,6 +262,7 @@ items:
       return:
         type:
           - '[key: string]: any'
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.rcv_settle_mode
     name: rcv_settle_mode
@@ -275,6 +288,7 @@ items:
       return:
         type:
           - 0 | 1
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.snd_settle_mode
     name: snd_settle_mode
@@ -301,6 +315,7 @@ items:
       return:
         type:
           - 0 | 1 | 2
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.source
     name: source
@@ -316,6 +331,7 @@ items:
       return:
         type:
           - Source | string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptions.target
     name: target
@@ -331,4 +347,5 @@ items:
       return:
         type:
           - TargetTerminusOptions | string
+        description: ''
     package: azure-event-hubs

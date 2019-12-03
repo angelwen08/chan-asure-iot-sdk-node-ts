@@ -47,6 +47,7 @@ items:
       return:
         type:
           - Promise<T>
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.Timeout.set
     name: 'set(number, T)'
@@ -70,6 +71,7 @@ items:
       return:
         type:
           - Promise<T>
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.Timeout.wrap
     name: 'wrap(Promise<T>, number, T)'
@@ -97,6 +99,7 @@ items:
       return:
         type:
           - Promise<T>
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.Timeout.wrap
     name: 'wrap(Promise<T>, number, T)'
@@ -124,4 +127,5 @@ items:
       return:
         type:
           - Promise<T>
+        description: ''
     package: azure-event-processor-host

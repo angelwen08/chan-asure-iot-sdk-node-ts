@@ -83,6 +83,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessSignatureAuthenticationProvider.defaultMaxListeners
@@ -98,6 +99,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.emit
     name: 'emit(string | symbol, any[])'
@@ -120,6 +122,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.eventNames
     name: eventNames()
@@ -134,6 +137,7 @@ items:
       return:
         type:
           - Array<string | symbol>
+        description: ''
     package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessSignatureAuthenticationProvider.fromSharedAccessSignature
@@ -157,6 +161,7 @@ items:
       return:
         type:
           - azure-iot-device.SharedAccessSignatureAuthenticationProvider
+        description: ''
     package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessSignatureAuthenticationProvider.getDeviceCredentials_1
@@ -174,6 +179,7 @@ items:
       return:
         type:
           - Promise<TransportConfig>
+        description: ''
     package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessSignatureAuthenticationProvider.getDeviceCredentials
@@ -207,6 +213,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.listenerCount
     name: 'listenerCount(EventEmitter, string | symbol)'
@@ -231,6 +238,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.listenerCount
     name: listenerCount(string | symbol)
@@ -249,6 +257,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.listeners
     name: listeners(string | symbol)
@@ -267,6 +276,7 @@ items:
       return:
         type:
           - 'Function[]'
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.on
     name: 'on(string | symbol, (args: any[]) => void)'
@@ -289,6 +299,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.once
     name: 'once(string | symbol, (args: any[]) => void)'
@@ -311,6 +322,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessSignatureAuthenticationProvider.prependListener
@@ -336,6 +348,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessSignatureAuthenticationProvider.prependOnceListener
@@ -361,6 +374,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessSignatureAuthenticationProvider.removeAllListeners
@@ -381,6 +395,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessSignatureAuthenticationProvider.removeListener
@@ -406,6 +421,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessSignatureAuthenticationProvider.setMaxListeners
@@ -425,6 +441,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.SharedAccessSignatureAuthenticationProvider.stop
     name: stop()
@@ -452,6 +469,7 @@ items:
       return:
         type:
           - AuthenticationType
+        description: ''
     package: azure-iot-device
   - uid: >-
       azure-iot-device.SharedAccessSignatureAuthenticationProvider.updateSharedAccessSignature

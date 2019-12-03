@@ -31,6 +31,7 @@ items:
       return:
         type:
           - AzureBlob
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLeaseInfo.epoch
     name: epoch
@@ -49,6 +50,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLeaseInfo.offset
     name: offset
@@ -64,6 +66,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLeaseInfo.owner
     name: owner
@@ -78,6 +81,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLeaseInfo.partitionId
     name: partitionId
@@ -94,6 +98,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLeaseInfo.sequenceNumber
     name: sequenceNumber
@@ -108,6 +113,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.AzureBlobLeaseInfo.token
     name: token
@@ -126,6 +132,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.LeaseInfo

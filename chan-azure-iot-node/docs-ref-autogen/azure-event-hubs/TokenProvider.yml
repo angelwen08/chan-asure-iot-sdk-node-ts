@@ -30,6 +30,7 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.TokenInfo>
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.TokenProvider.tokenRenewalMarginInSeconds
     name: tokenRenewalMarginInSeconds
@@ -46,6 +47,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.TokenProvider.tokenValidTimeInSeconds
     name: tokenValidTimeInSeconds
@@ -62,6 +64,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
 references:
   - uid: Promise<azure-event-hubs.TokenInfo>

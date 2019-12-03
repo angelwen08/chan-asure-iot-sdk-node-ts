@@ -47,6 +47,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.autosettle
     name: autosettle
@@ -66,6 +67,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.credit_window
     name: credit_window
@@ -88,6 +90,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.desired_capabilities
     name: desired_capabilities
@@ -105,6 +108,7 @@ items:
       return:
         type:
           - 'string | string[]'
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.max_message_size
     name: max_message_size
@@ -122,6 +126,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.name
     name: name
@@ -140,6 +145,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.offered_capabilities
     name: offered_capabilities
@@ -157,6 +163,7 @@ items:
       return:
         type:
           - 'string | string[]'
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.onClose
     name: onClose
@@ -172,6 +179,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.onError
     name: onError
@@ -187,6 +195,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.onMessage
     name: onMessage
@@ -202,6 +211,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.onSessionClose
     name: onSessionClose
@@ -217,6 +227,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.onSessionError
     name: onSessionError
@@ -232,6 +243,7 @@ items:
       return:
         type:
           - rhea.OnAmqpEvent
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.properties
     name: properties
@@ -251,6 +263,7 @@ items:
       return:
         type:
           - '[key: string]: any'
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.rcv_settle_mode
     name: rcv_settle_mode
@@ -276,6 +289,7 @@ items:
       return:
         type:
           - 0 | 1
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.session
     name: session
@@ -291,6 +305,7 @@ items:
       return:
         type:
           - azure-event-hubs.Session
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.snd_settle_mode
     name: snd_settle_mode
@@ -317,6 +332,7 @@ items:
       return:
         type:
           - 0 | 1 | 2
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.source
     name: source
@@ -332,6 +348,7 @@ items:
       return:
         type:
           - Source | string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.ReceiverOptionsWithSession.target
     name: target
@@ -347,6 +364,7 @@ items:
       return:
         type:
           - TargetTerminusOptions | string
+        description: ''
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.ReceiverOptions

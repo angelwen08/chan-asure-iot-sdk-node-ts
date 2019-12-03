@@ -33,6 +33,7 @@ items:
       return:
         type:
           - ErrorConstructor
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.ThrottlingError.message
     name: message
@@ -47,6 +48,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.ThrottlingError.name
     name: name
@@ -61,6 +63,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.ThrottlingError.stack
     name: stack
@@ -76,6 +79,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-iot-common
   - uid: azure-iot-common.ThrottlingError.constructor
     name: ThrottlingError(string)

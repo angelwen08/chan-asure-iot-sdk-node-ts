@@ -27,6 +27,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.IotHubConnectionStringModel.HostName
     name: HostName
@@ -41,6 +42,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.IotHubConnectionStringModel.SharedAccessKey
     name: SharedAccessKey
@@ -55,6 +57,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.IotHubConnectionStringModel.SharedAccessKeyName
     name: SharedAccessKeyName
@@ -69,4 +72,5 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs

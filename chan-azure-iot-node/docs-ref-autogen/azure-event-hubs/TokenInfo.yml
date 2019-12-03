@@ -25,6 +25,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.TokenInfo.token
     name: token
@@ -39,6 +40,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.TokenInfo.tokenType
     name: tokenType
@@ -55,6 +57,7 @@ items:
       return:
         type:
           - azure-event-hubs.TokenType
+        description: ''
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.TokenType

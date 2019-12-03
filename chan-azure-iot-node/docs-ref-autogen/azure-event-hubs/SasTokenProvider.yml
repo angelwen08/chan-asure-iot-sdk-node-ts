@@ -35,6 +35,7 @@ items:
       return:
         type:
           - azure-event-hubs.SasTokenProvider
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SasTokenProvider.getToken
     name: getToken(string)
@@ -54,6 +55,7 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.TokenInfo>
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SasTokenProvider.key
     name: key
@@ -70,6 +72,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SasTokenProvider.keyName
     name: keyName
@@ -84,6 +87,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SasTokenProvider.namespace
     name: namespace
@@ -98,6 +102,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SasTokenProvider.constructor
     name: 'SasTokenProvider(string, string, string, number, number)'
@@ -152,6 +157,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.SasTokenProvider.tokenValidTimeInSeconds
     name: tokenValidTimeInSeconds
@@ -170,6 +176,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-hubs
 references:
   - uid: Promise<azure-event-hubs.TokenInfo>

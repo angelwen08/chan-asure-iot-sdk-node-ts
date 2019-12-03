@@ -27,6 +27,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.StorageConnectionStringModel.AccountName
     name: AccountName
@@ -41,6 +42,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.StorageConnectionStringModel.DefaultEndpointsProtocol
@@ -56,6 +58,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.StorageConnectionStringModel.EndpointSuffix
     name: EndpointSuffix
@@ -70,4 +73,5 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host

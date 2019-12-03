@@ -35,6 +35,16 @@ items:
       return:
         type:
           - Promise<void>
+        description: >-
+          Promise<void>
+
+          - **Resolves** the promise when rhea emits the "connection_close"
+          event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "connection_error" event while trying
+
+          to close an amqp connection.
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.constructor
     name: Connection(ConnectionOptions)
@@ -72,6 +82,7 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.Receiver>
+        description: Promise<Receiver>.
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.createRequestResponseLink
     name: 'createRequestResponseLink(SenderOptions, ReceiverOptions, Session)'
@@ -109,6 +120,7 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.ReqResLink>
+        description: Promise<ReqResLink>
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.createSender
     name: createSender(SenderOptionsWithSession)
@@ -130,6 +142,7 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.Sender>
+        description: Promise<Sender>.
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.createSession
     name: createSession()
@@ -144,6 +157,16 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.Session>
+        description: >-
+          Promise<Session>
+
+          - **Resolves** the promise with the Session object when rhea emits the
+          "session_open" event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "session_close" event while trying
+
+          to create an amqp session.
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.id
     name: id
@@ -158,6 +181,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.isOpen
     name: isOpen()
@@ -172,6 +196,7 @@ items:
       return:
         type:
           - boolean
+        description: true if open false otherwise.
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.open
     name: open()
@@ -186,6 +211,16 @@ items:
       return:
         type:
           - Promise<azure-event-hubs.Connection>
+        description: >-
+          Promise<Connection>
+
+          - **Resolves** the promise with the Connection object when rhea emits
+          the "connection_open" event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "connection_close" event while trying
+
+          to establish an amqp connection.
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.options
     name: options
@@ -201,6 +236,7 @@ items:
       return:
         type:
           - ConnectionOptions
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Connection.registerHandler
     name: 'registerHandler(ConnectionEvents, rhea.OnAmqpEvent)'
@@ -261,6 +297,7 @@ items:
       return:
         type:
           - boolean
+        description: '`true` if close was locally initiated, `false` otherwise.'
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.ReceiverOptionsWithSession

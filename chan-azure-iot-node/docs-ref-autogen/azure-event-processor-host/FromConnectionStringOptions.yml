@@ -46,6 +46,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.dataTransformer
     name: dataTransformer
@@ -71,6 +72,7 @@ items:
       return:
         type:
           - DataTransformer
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.eventHubPath
     name: eventHubPath
@@ -90,6 +92,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.fastScanInterval
     name: fastScanInterval
@@ -115,6 +118,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.initialOffset
     name: initialOffset
@@ -138,6 +142,7 @@ items:
       return:
         type:
           - EventPosition
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.leaseDuration
     name: leaseDuration
@@ -159,6 +164,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.leaseRenewInterval
     name: leaseRenewInterval
@@ -191,6 +197,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.onEphError
     name: onEphError
@@ -220,6 +227,7 @@ items:
       return:
         type:
           - azure-event-processor-host.OnEphError
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.slowScanInterval
     name: slowScanInterval
@@ -242,6 +250,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.startupScanDelay
     name: startupScanDelay
@@ -270,6 +279,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.storageBlobPrefix
     name: storageBlobPrefix
@@ -289,6 +299,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.FromConnectionStringOptions.userAgent
     name: userAgent
@@ -308,6 +319,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.FromTokenProviderOptions

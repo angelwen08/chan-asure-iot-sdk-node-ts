@@ -34,6 +34,7 @@ items:
       return:
         type:
           - Promise<void> | void
+        description: 'Promise if no callback function was passed, void otherwise.'
     package: azure-iot-provisioning-device
   - uid: azure-iot-provisioning-device.SymmetricKeyRegistration.register
     name: register(Callback<RegistrationResult>)
@@ -53,6 +54,7 @@ items:
       return:
         type:
           - Promise<azure-iot-provisioning-device.RegistrationResult> | void
+        description: 'Promise if no callback function was passed, void otherwise.'
     package: azure-iot-provisioning-device
   - uid: >-
       azure-iot-provisioning-device.SymmetricKeyRegistration.setProvisioningPayload

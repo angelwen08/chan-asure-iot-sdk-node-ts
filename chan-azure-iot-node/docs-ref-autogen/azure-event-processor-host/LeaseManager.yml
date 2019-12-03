@@ -67,6 +67,7 @@ items:
       return:
         type:
           - Promise<boolean>
+        description: Promise<boolean> `true` if acquired successfully; `false` otherwise.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.createAllLeasesIfNotExists
     name: 'createAllLeasesIfNotExists(string[])'
@@ -89,6 +90,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: 'Promise<void> undefined on success, rejects on error.'
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.createLeaseStoreIfNotExists
     name: createLeaseStoreIfNotExists()
@@ -103,6 +105,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: Promise<void>  resolves with `undefined`; rejects with an `Error`.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.deleteLease
     name: deleteLease(CompleteLease)
@@ -127,6 +130,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: Promise<void> resolves with `undefined`; rejects with an `Error`.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.deleteLeaseStore
     name: deleteLeaseStore()
@@ -141,6 +145,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: Promise<void> resolves with `undefined`; rejects with an `Error`.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.getAllLeases
     name: getAllLeases()
@@ -166,6 +171,7 @@ items:
       return:
         type:
           - 'Promise<azure-event-processor-host.BaseLease[]>'
+        description: 'Promise<BaseLease[]>'
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.getLease
     name: getLease(string)
@@ -188,6 +194,7 @@ items:
       return:
         type:
           - Promise<azure-event-processor-host.CompleteLease | undefined>
+        description: Promise<Lease | undefined>
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.leaseDuration
     name: leaseDuration
@@ -206,6 +213,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.leaseRenewInterval
     name: leaseRenewInterval
@@ -235,6 +243,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.leaseStoreExists
     name: leaseStoreExists()
@@ -249,6 +258,7 @@ items:
       return:
         type:
           - Promise<boolean>
+        description: 'Promise<boolean> `true` if it exists, `false` if it does not exist.'
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.releaseLease
     name: releaseLease(CompleteLease)
@@ -275,6 +285,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: Promise<void> resolves with `undefined`; rejects with an `Error`.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.renewLease
     name: renewLease(CompleteLease)
@@ -308,6 +319,7 @@ items:
       return:
         type:
           - Promise<boolean>
+        description: Promise<boolean> `true` if renewed successfully; `false` otherwise.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.LeaseManager.updateLease
     name: updateLease(CompleteLease)
@@ -336,6 +348,7 @@ items:
       return:
         type:
           - Promise<boolean>
+        description: Promise<boolean> `true` if updated successfully; `false` otherwise.
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.CompleteLease

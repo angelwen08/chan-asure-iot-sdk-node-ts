@@ -34,6 +34,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EPHDiagnosticInfo.error
     name: error
@@ -48,6 +49,7 @@ items:
       return:
         type:
           - any
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EPHDiagnosticInfo.hostName
     name: hostName
@@ -64,6 +66,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EPHDiagnosticInfo.partitionId
     name: partitionId
@@ -80,4 +83,5 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host

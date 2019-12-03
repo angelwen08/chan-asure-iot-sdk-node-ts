@@ -31,6 +31,7 @@ items:
       return:
         type:
           - Promise<boolean>
+        description: 'Promise<boolean> `true` if it exists, `false` if it does not exist.'
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.CheckpointManager.createAllCheckpointsIfNotExists
@@ -71,6 +72,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: Promise<void> resolves with `undefined`; rejects with an `Error`.
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.CheckpointManager.createCheckpointStoreIfNotExists
@@ -88,6 +90,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: Promise<void> resolves with `undefined`; rejects with an `Error`.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CheckpointManager.deleteCheckpoint
     name: deleteCheckpoint(string)
@@ -114,6 +117,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: Promise<void> resolves with `undefined`; rejects with an `Error`.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CheckpointManager.deleteCheckpointStore
     name: deleteCheckpointStore()
@@ -128,6 +132,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: Promise<void> resolves with `undefined`; rejects with an `Error`.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CheckpointManager.getCheckpoint
     name: getCheckpoint(string)
@@ -150,6 +155,11 @@ items:
       return:
         type:
           - Promise<azure-event-processor-host.CheckpointInfo | undefined>
+        description: >-
+          Promise<CheckpointInfo | undefined> Checkpoint
+
+          info for the given partition, or undefined if none has been previously
+          stored.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.CheckpointManager.updateCheckpoint
     name: 'updateCheckpoint(CompleteLease, CheckpointInfo)'
@@ -176,6 +186,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: Promise<void> resolves with `undefined`; rejects with an `Error`.
     package: azure-event-processor-host
 references:
   - uid: Promise<azure-event-processor-host.CheckpointInfo | undefined>

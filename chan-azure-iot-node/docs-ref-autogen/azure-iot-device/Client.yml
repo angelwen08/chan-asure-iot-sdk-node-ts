@@ -86,6 +86,7 @@ items:
       return:
         type:
           - Promise<MessageAbandoned>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.abandon
     name: 'abandon(Message, Callback<MessageAbandoned>)'
@@ -131,6 +132,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.constructor
     name: 'Client(DeviceTransport, string, BlobUploadClient, FileUploadInterface)'
@@ -188,6 +190,7 @@ items:
       return:
         type:
           - Promise<Disconnected>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.close
     name: close(Callback<Disconnected>)
@@ -223,6 +226,7 @@ items:
       return:
         type:
           - Promise<MessageCompleted>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.complete
     name: 'complete(Message, Callback<MessageCompleted>)'
@@ -258,6 +262,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.emit
     name: 'emit(string | symbol, any[])'
@@ -280,6 +285,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.eventNames
     name: eventNames()
@@ -294,6 +300,7 @@ items:
       return:
         type:
           - Array<string | symbol>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.fromAuthenticationProvider
     name: 'fromAuthenticationProvider(AuthenticationProvider, any)'
@@ -321,6 +328,7 @@ items:
       return:
         type:
           - azure-iot-device.Client
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.fromConnectionString
     name: 'fromConnectionString(string, any)'
@@ -350,6 +358,7 @@ items:
       return:
         type:
           - azure-iot-device.Client
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.fromSharedAccessSignature
     name: 'fromSharedAccessSignature(string, any)'
@@ -378,6 +387,7 @@ items:
       return:
         type:
           - azure-iot-device.Client
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.getBlobSharedAccessSignature_1
     name: getBlobSharedAccessSignature(string)
@@ -398,6 +408,7 @@ items:
       return:
         type:
           - Promise<UploadParams>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.getBlobSharedAccessSignature
     name: 'getBlobSharedAccessSignature(string, Callback<UploadParams>)'
@@ -437,6 +448,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.getTwin_1
     name: getTwin()
@@ -451,6 +463,7 @@ items:
       return:
         type:
           - Promise<azure-iot-device.Twin>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.getTwin
     name: getTwin(Callback<Twin>)
@@ -490,6 +503,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.listenerCount
     name: listenerCount(string | symbol)
@@ -508,6 +522,7 @@ items:
       return:
         type:
           - number
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.listeners
     name: listeners(string | symbol)
@@ -526,6 +541,7 @@ items:
       return:
         type:
           - 'Function[]'
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.notifyBlobUploadStatus_1
     name: 'notifyBlobUploadStatus(string, boolean, number, string)'
@@ -560,6 +576,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.notifyBlobUploadStatus
     name: 'notifyBlobUploadStatus(string, boolean, number, string, ErrorCallback)'
@@ -622,6 +639,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.once
     name: 'once(string | symbol, (args: any[]) => void)'
@@ -644,6 +662,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.onDeviceMethod
     name: >-
@@ -685,6 +704,7 @@ items:
       return:
         type:
           - Promise<Connected>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.open
     name: open(Callback<Connected>)
@@ -724,6 +744,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.prependOnceListener
     name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
@@ -748,6 +769,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.reject_1
     name: reject(Message)
@@ -766,6 +788,7 @@ items:
       return:
         type:
           - Promise<MessageRejected>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.reject
     name: 'reject(Message, Callback<MessageRejected>)'
@@ -806,6 +829,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.removeListener
     name: 'removeListener(string | symbol, (args: any[]) => void)'
@@ -830,6 +854,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.sendEvent_1
     name: sendEvent(Message)
@@ -848,6 +873,7 @@ items:
       return:
         type:
           - Promise<MessageEnqueued>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.sendEvent
     name: 'sendEvent(Message, Callback<MessageEnqueued>)'
@@ -887,6 +913,7 @@ items:
       return:
         type:
           - Promise<MessageEnqueued>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.sendEventBatch
     name: 'sendEventBatch(Message[], Callback<MessageEnqueued>)'
@@ -926,6 +953,7 @@ items:
       return:
         type:
           - this
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.setOptions_1
     name: setOptions(DeviceClientOptions)
@@ -944,6 +972,7 @@ items:
       return:
         type:
           - Promise<TransportConfigured>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.setOptions
     name: 'setOptions(DeviceClientOptions, Callback<TransportConfigured>)'
@@ -1001,6 +1030,7 @@ items:
       return:
         type:
           - Promise<TransportConfigured>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.setTransportOptions
     name: 'setTransportOptions(any, Callback<TransportConfigured>)'
@@ -1074,6 +1104,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-iot-device
   - uid: azure-iot-device.Client.uploadToBlob
     name: 'uploadToBlob(string, Stream, number, ErrorCallback)'

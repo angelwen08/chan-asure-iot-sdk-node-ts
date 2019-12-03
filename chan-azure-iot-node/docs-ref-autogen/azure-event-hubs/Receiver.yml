@@ -61,6 +61,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.close
     name: close()
@@ -75,6 +76,11 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          Promise<void>
+          - **Resolves** the promise when rhea emits the "receiver_close" event.
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "receiver_error" event while trying to close an amqp receiver.
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.connection
     name: connection
@@ -89,6 +95,7 @@ items:
       return:
         type:
           - azure-event-hubs.Connection
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.drain
     name: drain
@@ -103,6 +110,7 @@ items:
       return:
         type:
           - boolean
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.error
     name: error
@@ -117,6 +125,7 @@ items:
       return:
         type:
           - AmqpError | Error | undefined
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isClosed
     name: isClosed()
@@ -143,6 +152,7 @@ items:
       return:
         type:
           - boolean
+        description: '`true` if closed, `false` otherwise.'
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isItselfClosed
     name: isItselfClosed()
@@ -167,6 +177,7 @@ items:
       return:
         type:
           - boolean
+        description: '`true` - closed, `false` otherwise.'
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isOpen
     name: isOpen()
@@ -181,6 +192,7 @@ items:
       return:
         type:
           - boolean
+        description: '`true` open. `false` closed.'
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isSessionClosed
     name: isSessionClosed()
@@ -207,6 +219,7 @@ items:
       return:
         type:
           - boolean
+        description: '`true` - closed, `false` otherwise.'
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.isSessionItselfClosed
     name: isSessionItselfClosed()
@@ -231,6 +244,7 @@ items:
       return:
         type:
           - boolean
+        description: '`true` - closed, `false` otherwise.'
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.name
     name: name
@@ -245,6 +259,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.properties
     name: properties
@@ -259,6 +274,7 @@ items:
       return:
         type:
           - Dictionary<any>
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.constructor
     name: 'Receiver(Session, Receiver, ReceiverOptions)'
@@ -300,6 +316,7 @@ items:
       return:
         type:
           - azure-event-hubs.ReceiverOptions
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.registerHandler
     name: 'registerHandler(ReceiverEvents, rhea.OnAmqpEvent)'
@@ -407,6 +424,7 @@ items:
       return:
         type:
           - azure-event-hubs.Session
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.setCreditWindow
     name: setCreditWindow(number)
@@ -436,6 +454,7 @@ items:
       return:
         type:
           - Source
+        description: ''
     package: azure-event-hubs
   - uid: azure-event-hubs.Receiver.target
     name: target
@@ -450,6 +469,7 @@ items:
       return:
         type:
           - TerminusOptions
+        description: ''
     package: azure-event-hubs
 references:
   - uid: azure-event-hubs.Session

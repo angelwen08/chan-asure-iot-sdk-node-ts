@@ -109,6 +109,7 @@ items:
       return:
         type:
           - azure-iot-provisioning-service.Query
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.createEnrollmentGroupQuery
@@ -138,6 +139,7 @@ items:
       return:
         type:
           - azure-iot-provisioning-service.Query
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.createIndividualEnrollmentQuery
@@ -165,6 +167,7 @@ items:
       return:
         type:
           - azure-iot-provisioning-service.Query
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.createOrUpdateEnrollmentGroup_1
@@ -185,6 +188,7 @@ items:
         type:
           - >-
             Promise<ResultWithHttpResponse<azure-iot-provisioning-service.EnrollmentGroup>>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.createOrUpdateEnrollmentGroup
@@ -232,6 +236,7 @@ items:
         type:
           - >-
             Promise<ResultWithHttpResponse<azure-iot-provisioning-service.IndividualEnrollment>>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.createOrUpdateIndividualEnrollment
@@ -279,6 +284,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.deleteDeviceRegistrationState_1
@@ -328,6 +334,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.deleteDeviceRegistrationState
@@ -379,6 +386,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.deleteEnrollmentGroup_1
@@ -426,6 +434,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.deleteEnrollmentGroup
@@ -475,6 +484,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.deleteIndividualEnrollment_1
@@ -522,6 +532,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.deleteIndividualEnrollment
@@ -577,6 +588,7 @@ items:
       return:
         type:
           - azure-iot-provisioning-service.ProvisioningServiceClient
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.getDeviceRegistrationState_1
@@ -597,6 +609,7 @@ items:
         type:
           - >-
             Promise<ResultWithHttpResponse<azure-iot-provisioning-service.DeviceRegistrationState>>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.getDeviceRegistrationState
@@ -642,6 +655,7 @@ items:
         type:
           - >-
             Promise<ResultWithHttpResponse<azure-iot-provisioning-service.EnrollmentGroup>>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.getEnrollmentGroup
@@ -687,6 +701,7 @@ items:
         type:
           - >-
             Promise<ResultWithHttpResponse<azure-iot-provisioning-service.AttestationMechanism>>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.getEnrollmentGroupAttestationMechanism
@@ -734,6 +749,7 @@ items:
         type:
           - >-
             Promise<ResultWithHttpResponse<azure-iot-provisioning-service.IndividualEnrollment>>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.getIndividualEnrollment
@@ -781,6 +797,7 @@ items:
         type:
           - >-
             Promise<ResultWithHttpResponse<azure-iot-provisioning-service.AttestationMechanism>>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.getIndividualEnrollmentAttestationMechanism
@@ -852,6 +869,7 @@ items:
         type:
           - >-
             Promise<ResultWithHttpResponse<azure-iot-provisioning-service.BulkEnrollmentOperationResult>>
+        description: ''
     package: azure-iot-provisioning-service
   - uid: >-
       azure-iot-provisioning-service.ProvisioningServiceClient.runBulkEnrollmentOperation

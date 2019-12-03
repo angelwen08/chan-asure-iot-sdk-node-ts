@@ -46,6 +46,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.EventProcessorHost.createFromAadTokenCredentials
@@ -124,6 +125,7 @@ items:
       return:
         type:
           - azure-event-processor-host.EventProcessorHost
+        description: EventProcessorHost
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.EventProcessorHost.createFromAadTokenCredentialsWithCustomCheckpointAndLeaseManager
@@ -200,6 +202,7 @@ items:
       return:
         type:
           - azure-event-processor-host.EventProcessorHost
+        description: EventProcessorHost
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.createFromConnectionString
     name: >-
@@ -263,6 +266,7 @@ items:
       return:
         type:
           - azure-event-processor-host.EventProcessorHost
+        description: EventProcessorHost
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.EventProcessorHost.createFromConnectionStringWithCustomCheckpointAndLeaseManager
@@ -323,6 +327,7 @@ items:
       return:
         type:
           - azure-event-processor-host.EventProcessorHost
+        description: EventProcessorHost
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.EventProcessorHost.createFromIotHubConnectionString
@@ -384,6 +389,7 @@ items:
       return:
         type:
           - Promise<azure-event-processor-host.EventProcessorHost>
+        description: EventProcessorHost
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.EventProcessorHost.createFromIotHubConnectionStringWithCustomCheckpointAndLeaseManager
@@ -443,6 +449,7 @@ items:
       return:
         type:
           - Promise<azure-event-processor-host.EventProcessorHost>
+        description: EventProcessorHost
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.createFromTokenProvider
     name: >-
@@ -509,6 +516,7 @@ items:
       return:
         type:
           - azure-event-processor-host.EventProcessorHost
+        description: EventProcessorHost
     package: azure-event-processor-host
   - uid: >-
       azure-event-processor-host.EventProcessorHost.createFromTokenProviderWithCustomCheckpointAndLeaseManager
@@ -574,6 +582,7 @@ items:
       return:
         type:
           - azure-event-processor-host.EventProcessorHost
+        description: EventProcessorHost
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.createHostName
     name: createHostName(string)
@@ -593,6 +602,7 @@ items:
       return:
         type:
           - string
+        description: A unique host name
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.constructor
     name: 'EventProcessorHost(string, EventProcessorHostOptions)'
@@ -636,6 +646,7 @@ items:
       return:
         type:
           - Promise<EventHubRuntimeInformation>
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.getPartitionIds
     name: getPartitionIds()
@@ -650,6 +661,7 @@ items:
       return:
         type:
           - 'Promise<string[]>'
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.getPartitionInformation
     name: getPartitionInformation(string | number)
@@ -669,6 +681,7 @@ items:
       return:
         type:
           - Promise<EventHubPartitionRuntimeInformation>
+        description: EventHubPartitionRuntimeInformation
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.hostName
     name: hostName
@@ -683,6 +696,7 @@ items:
       return:
         type:
           - string
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.receivingFromPartitions
     name: receivingFromPartitions
@@ -713,6 +727,9 @@ items:
       return:
         type:
           - 'string[]'
+        description: |-
+          Array<string> List of partitions that this EPH instance is currently
+          receiving messages from.
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.start
     name: 'start(OnReceivedMessage, OnReceivedError)'
@@ -742,6 +759,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-event-processor-host
   - uid: azure-event-processor-host.EventProcessorHost.stop
     name: stop()
@@ -756,6 +774,7 @@ items:
       return:
         type:
           - Promise<void>
+        description: ''
     package: azure-event-processor-host
 references:
   - uid: azure-event-processor-host.EventProcessorHostOptions
