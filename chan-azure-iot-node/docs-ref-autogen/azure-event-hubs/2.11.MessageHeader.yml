@@ -1,0 +1,171 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.MessageHeader
+    name: MessageHeader
+    fullName: MessageHeader
+    children:
+      - azure-event-hubs - v0.2.11.MessageHeader.deliveryCount
+      - azure-event-hubs - v0.2.11.MessageHeader.durable
+      - azure-event-hubs - v0.2.11.MessageHeader.firstAcquirer
+      - azure-event-hubs - v0.2.11.MessageHeader.fromAmqpMessageProperties
+      - azure-event-hubs - v0.2.11.MessageHeader.priority
+      - azure-event-hubs - v0.2.11.MessageHeader.toAmqpMessageHeader
+      - azure-event-hubs - v0.2.11.MessageHeader.ttl
+    langs:
+      - typeScript
+    type: module
+    summary: Describes the operations that can be performed on the message header.
+    package: azure-event-hubs - v0
+    module: MessageHeader
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.deliveryCount
+    name: deliveryCount
+    fullName: deliveryCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {number} [deliveryCount] The number of prior unsuccessful delivery
+      attempts.
+    optional: true
+    syntax:
+      content: 'deliveryCount?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.durable
+    name: durable
+    fullName: durable
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{boolean} [durable] Specifies durability requirements.'
+    optional: true
+    syntax:
+      content: 'durable?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.firstAcquirer
+    name: firstAcquirer
+    fullName: firstAcquirer
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {boolean} [firstAcquirer] If this value is true, then this message has not
+      been
+
+      acquired by any other link. Ifthis value is false, then this message MAY
+      have previously
+
+      been acquired by another link or links.
+    optional: true
+    syntax:
+      content: 'firstAcquirer?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.fromAmqpMessageProperties
+    name: fromAmqpMessageProperties(AmqpMessageHeader)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Converts AmqpMessageHeader to MessageHeader.
+    syntax:
+      content: 'function fromAmqpMessageProperties(props: AmqpMessageHeader)'
+      parameters:
+        - id: props
+          type:
+            - AmqpMessageHeader
+          description: Amqp Message Header
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.MessageHeader
+        description: MessageHeader.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.priority
+    name: priority
+    fullName: priority
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {number} [priority] The relative message priority. Higher numbers indicate
+      higher
+
+      priority messages.
+    optional: true
+    syntax:
+      content: 'priority?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.toAmqpMessageHeader
+    name: toAmqpMessageHeader(MessageHeader)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Converts MessageHeader to AmqpMessageHeader.
+    syntax:
+      content: 'function toAmqpMessageHeader(props: MessageHeader)'
+      parameters:
+        - id: props
+          type:
+            - azure-event-hubs - v0.2.11.MessageHeader
+          description: Message header.
+      return:
+        type:
+          - AmqpMessageHeader
+        description: AmqpMessageHeader
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.ttl
+    name: ttl
+    fullName: ttl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{number} [ttl] time to live in ms.'
+    optional: true
+    syntax:
+      content: 'ttl?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.MessageHeader
+    name: MessageHeader
+    spec.typeScript:
+      - name: MessageHeader
+        fullName: MessageHeader
+        uid: azure-event-hubs - v0.2.11.MessageHeader
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.deliveryCount
+    name: deliveryCount
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.durable
+    name: durable
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.firstAcquirer
+    name: firstAcquirer
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.fromAmqpMessageProperties
+    name: fromAmqpMessageProperties
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.priority
+    name: priority
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.toAmqpMessageHeader
+    name: toAmqpMessageHeader
+  - uid: azure-event-hubs - v0.2.11.MessageHeader.ttl
+    name: ttl

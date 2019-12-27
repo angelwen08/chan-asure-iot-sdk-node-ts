@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.ServiceBusConnectionStringModel
+    name: ServiceBusConnectionStringModel
+    fullName: ServiceBusConnectionStringModel
+    children:
+      - azure-event-hubs - v0.2.11.ServiceBusConnectionStringModel.Endpoint
+      - azure-event-hubs - v0.2.11.ServiceBusConnectionStringModel.EntityPath
+      - >-
+        azure-event-hubs -
+        v0.2.11.ServiceBusConnectionStringModel.SharedAccessKey
+      - >-
+        azure-event-hubs -
+        v0.2.11.ServiceBusConnectionStringModel.SharedAccessKeyName
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes the servicebus connection string model.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ServiceBusConnectionStringModel.Endpoint
+    name: Endpoint
+    fullName: Endpoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'Endpoint: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ServiceBusConnectionStringModel.EntityPath
+    name: EntityPath
+    fullName: EntityPath
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'EntityPath?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ServiceBusConnectionStringModel.SharedAccessKey
+    name: SharedAccessKey
+    fullName: SharedAccessKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'SharedAccessKey: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ServiceBusConnectionStringModel.SharedAccessKeyName
+    name: SharedAccessKeyName
+    fullName: SharedAccessKeyName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'SharedAccessKeyName: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0

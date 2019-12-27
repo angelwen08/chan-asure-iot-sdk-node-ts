@@ -1,0 +1,143 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.ConnectionContextOptions
+    name: ConnectionContextOptions
+    fullName: ConnectionContextOptions
+    children:
+      - azure-event-hubs - v0.2.11.ConnectionContextOptions.dataTransformer
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConnectionContextOptions.managementSessionAddress
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConnectionContextOptions.managementSessionAudience
+      - azure-event-hubs - v0.2.11.ConnectionContextOptions.tokenProvider
+      - azure-event-hubs - v0.2.11.ConnectionContextOptions.userAgent
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: azure-event-hubs - v0.2.11.ClientOptions
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ConnectionContextOptions.dataTransformer
+    name: dataTransformer
+    fullName: dataTransformer
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {DataTransformer} [dataTransformer] The data transformer that will be used
+      to encode
+
+      and decode the sent and received messages respectively. If not provided
+      then we will use the
+
+      DefaultDataTransformer. The default transformer should handle majority of
+      the cases. This
+
+      option needs to be used only for specialized scenarios.
+    optional: true
+    syntax:
+      content: 'dataTransformer?: DataTransformer'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.DataTransformer
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConnectionContextOptions.managementSessionAddress
+    name: managementSessionAddress
+    fullName: managementSessionAddress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'managementSessionAddress?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConnectionContextOptions.managementSessionAudience
+    name: managementSessionAudience
+    fullName: managementSessionAudience
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'managementSessionAudience?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ConnectionContextOptions.tokenProvider
+    name: tokenProvider
+    fullName: tokenProvider
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {TokenProvider} [tokenProvider] - The token provider that provides the
+      token for authentication.
+
+      Default value: SasTokenProvider.
+    optional: true
+    syntax:
+      content: 'tokenProvider?: TokenProvider'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.TokenProvider
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ConnectionContextOptions.userAgent
+    name: userAgent
+    fullName: userAgent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string} [userAgent] The user agent that needs to be appended to the built
+      in
+
+      user agent string.
+    optional: true
+    syntax:
+      content: 'userAgent?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.ClientOptions
+    name: ClientOptions
+    spec.typeScript:
+      - name: ClientOptions
+        fullName: ClientOptions
+        uid: azure-event-hubs - v0.2.11.ClientOptions
+  - uid: azure-event-hubs - v0.2.11.DataTransformer
+    name: DataTransformer
+    spec.typeScript:
+      - name: DataTransformer
+        fullName: DataTransformer
+        uid: azure-event-hubs - v0.2.11.DataTransformer
+  - uid: azure-event-hubs - v0.2.11.TokenProvider
+    name: TokenProvider
+    spec.typeScript:
+      - name: TokenProvider
+        fullName: TokenProvider
+        uid: azure-event-hubs - v0.2.11.TokenProvider

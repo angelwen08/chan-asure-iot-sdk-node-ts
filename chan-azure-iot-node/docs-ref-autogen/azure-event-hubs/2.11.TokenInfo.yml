@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.TokenInfo
+    name: TokenInfo
+    fullName: TokenInfo
+    children:
+      - azure-event-hubs - v0.2.11.TokenInfo.expiry
+      - azure-event-hubs - v0.2.11.TokenInfo.token
+      - azure-event-hubs - v0.2.11.TokenInfo.tokenType
+    langs:
+      - typeScript
+    type: interface
+    summary: Provides information about the token.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.TokenInfo.expiry
+    name: expiry
+    fullName: expiry
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{number} expiry - The token expiration time in seconds.'
+    syntax:
+      content: 'expiry: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.TokenInfo.token
+    name: token
+    fullName: token
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{string} token - The access token.'
+    syntax:
+      content: 'token: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.TokenInfo.tokenType
+    name: tokenType
+    fullName: tokenType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string} tokenType - The type of token - "jwt" or
+      "servicebus.windows.net:sastoken".
+    syntax:
+      content: 'tokenType: TokenType'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.TokenType
+        description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.TokenType
+    name: TokenType
+    spec.typeScript:
+      - name: TokenType
+        fullName: TokenType
+        uid: azure-event-hubs - v0.2.11.TokenType

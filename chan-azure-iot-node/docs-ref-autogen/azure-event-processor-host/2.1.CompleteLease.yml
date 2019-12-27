@@ -1,0 +1,171 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease
+    name: CompleteLease
+    fullName: CompleteLease
+    children:
+      - azure-event-processor-host - v0.2.1.CompleteLease.constructor
+      - azure-event-processor-host - v0.2.1.CompleteLease.epoch
+      - azure-event-processor-host - v0.2.1.CompleteLease.getInfo
+      - azure-event-processor-host - v0.2.1.CompleteLease.incrementEpoch
+      - azure-event-processor-host - v0.2.1.CompleteLease.isOwned
+      - azure-event-processor-host - v0.2.1.CompleteLease.isOwnedBy
+      - azure-event-processor-host - v0.2.1.CompleteLease.owner
+      - azure-event-processor-host - v0.2.1.CompleteLease.partitionId
+    langs:
+      - typeScript
+    type: class
+    summary: Describes a Complete Lease.
+    extends:
+      name: azure-event-processor-host - v0.2.1.BaseLease
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease.constructor
+    name: CompleteLease(CompleteLeaseInfo)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Creates an instance of the Lease.
+    syntax:
+      content: 'new CompleteLease(info: CompleteLeaseInfo)'
+      parameters:
+        - id: info
+          type:
+            - azure-event-processor-host - v0.2.1.CompleteLeaseInfo
+          description: |
+            The Lease info.
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease.epoch
+    name: epoch
+    fullName: epoch
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {number} epoch The epoch(time) of the lease, which is a value you can use
+      to
+
+      determine the most recent owner of a partition between competing nodes.
+    syntax:
+      content: 'epoch: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease.getInfo
+    name: getInfo()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the lease information.
+    syntax:
+      content: function getInfo()
+      parameters: []
+      return:
+        type:
+          - azure-event-processor-host - v0.2.1.CompleteLeaseInfo
+        description: CompleteLeaseInfo.
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease.incrementEpoch
+    name: incrementEpoch()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Increments the value of epoch by 1.
+    syntax:
+      content: function incrementEpoch()
+      parameters: []
+      return:
+        type:
+          - number
+        description: The incremented value of the epoch.
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease.isOwned
+    name: isOwned
+    fullName: isOwned
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {boolean} isOwned Indicates wether the lease is owned. `true` if it is
+      owned by
+
+      someone; `false` otherwise.
+    syntax:
+      content: 'isOwned: boolean = false'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease.isOwnedBy
+    name: isOwnedBy(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Compares possibleOwner against this.owner
+    syntax:
+      content: 'function isOwnedBy(possibleOwner: string)'
+      parameters:
+        - id: possibleOwner
+          type:
+            - string
+          description: The owner name to check.
+      return:
+        type:
+          - boolean
+        description: >-
+          boolean - true if possibleOwner is the same as this.owner, false
+          otherwise.
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease.owner
+    name: owner
+    fullName: owner
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{string} owner The host owner for the partition.'
+    syntax:
+      content: 'owner: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease.partitionId
+    name: partitionId
+    fullName: partitionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string} partitionId The associated partitionId for which the lease is
+      held.
+    syntax:
+      content: 'partitionId: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+references:
+  - uid: azure-event-processor-host - v0.2.1.BaseLease
+    name: BaseLease
+    spec.typeScript:
+      - name: BaseLease
+        fullName: BaseLease
+        uid: azure-event-processor-host - v0.2.1.BaseLease
+  - uid: azure-event-processor-host - v0.2.1.CompleteLeaseInfo
+    name: CompleteLeaseInfo
+    spec.typeScript:
+      - name: CompleteLeaseInfo
+        fullName: CompleteLeaseInfo
+        uid: azure-event-processor-host - v0.2.1.CompleteLeaseInfo

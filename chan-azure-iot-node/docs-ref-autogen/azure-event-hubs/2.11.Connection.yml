@@ -1,0 +1,382 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.Connection
+    name: Connection
+    fullName: Connection
+    children:
+      - azure-event-hubs - v0.2.11.Connection.close
+      - azure-event-hubs - v0.2.11.Connection.constructor
+      - azure-event-hubs - v0.2.11.Connection.createReceiver
+      - azure-event-hubs - v0.2.11.Connection.createRequestResponseLink
+      - azure-event-hubs - v0.2.11.Connection.createSender
+      - azure-event-hubs - v0.2.11.Connection.createSession
+      - azure-event-hubs - v0.2.11.Connection.id
+      - azure-event-hubs - v0.2.11.Connection.isOpen
+      - azure-event-hubs - v0.2.11.Connection.open
+      - azure-event-hubs - v0.2.11.Connection.options
+      - azure-event-hubs - v0.2.11.Connection.registerHandler
+      - azure-event-hubs - v0.2.11.Connection.removeHandler
+      - azure-event-hubs - v0.2.11.Connection.wasCloseInitiated
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.close
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Closes the amqp connection.
+    syntax:
+      content: function close()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+        description: >-
+          Promise<void>
+
+          - **Resolves** the promise when rhea emits the "connection_close"
+          event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "connection_error" event while trying
+
+          to close an amqp connection.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.constructor
+    name: Connection(ConnectionOptions)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new Connection(options?: ConnectionOptions)'
+      parameters:
+        - id: options
+          type:
+            - ConnectionOptions
+          description: ''
+          optional: true
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.createReceiver
+    name: createReceiver(ReceiverOptionsWithSession)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates an amqp receiver link. It either uses the provided session or
+      creates a new one.
+    syntax:
+      content: 'function createReceiver(options?: ReceiverOptionsWithSession)'
+      parameters:
+        - id: options
+          type:
+            - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession
+          description: Optional parameters to create a receiver link.
+          optional: true
+      return:
+        type:
+          - Promise<azure-event-hubs - v0.2.11.Receiver>
+        description: Promise<Receiver>.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.createRequestResponseLink
+    name: 'createRequestResponseLink(SenderOptions, ReceiverOptions, Session)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates an amqp sender-receiver link. It either uses the provided session
+      or creates a new one.
+
+      This method creates a sender-receiver link on the same session. It is
+      useful for management
+
+      style operations where one may want to send a request and await for
+      response.
+    syntax:
+      content: >-
+        function createRequestResponseLink(senderOptions: SenderOptions,
+        receiverOptions: ReceiverOptions, providedSession?: Session)
+      parameters:
+        - id: senderOptions
+          type:
+            - azure-event-hubs - v0.2.11.SenderOptions
+          description: Parameters to create a sender.
+        - id: receiverOptions
+          type:
+            - azure-event-hubs - v0.2.11.ReceiverOptions
+          description: Parameters to create a receiver.
+        - id: providedSession
+          type:
+            - azure-event-hubs - v0.2.11.Session
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-event-hubs - v0.2.11.ReqResLink>
+        description: Promise<ReqResLink>
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.createSender
+    name: createSender(SenderOptionsWithSession)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates an amqp sender link. It either uses the provided session or
+      creates a new one.
+    syntax:
+      content: 'function createSender(options?: SenderOptionsWithSession)'
+      parameters:
+        - id: options
+          type:
+            - azure-event-hubs - v0.2.11.SenderOptionsWithSession
+          description: Optional parameters to create a sender link.
+          optional: true
+      return:
+        type:
+          - Promise<azure-event-hubs - v0.2.11.Sender>
+        description: Promise<Sender>.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.createSession
+    name: createSession()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates an amqp session on the provided amqp connection.
+    syntax:
+      content: function createSession()
+      parameters: []
+      return:
+        type:
+          - Promise<azure-event-hubs - v0.2.11.Session>
+        description: >-
+          Promise<Session>
+
+          - **Resolves** the promise with the Session object when rhea emits the
+          "session_open" event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "session_close" event while trying
+
+          to create an amqp session.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string id
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.isOpen
+    name: isOpen()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Determines whether the connection is open.
+    syntax:
+      content: function isOpen()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: true if open false otherwise.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.open
+    name: open()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates a new amqp connection.
+    syntax:
+      content: function open()
+      parameters: []
+      return:
+        type:
+          - Promise<azure-event-hubs - v0.2.11.Connection>
+        description: >-
+          Promise<Connection>
+
+          - **Resolves** the promise with the Connection object when rhea emits
+          the "connection_open" event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "connection_close" event while trying
+
+          to establish an amqp connection.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.options
+    name: options
+    fullName: options
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'options?: ConnectionOptions'
+      return:
+        type:
+          - ConnectionOptions
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.registerHandler
+    name: 'registerHandler(ConnectionEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function registerHandler(event: ConnectionEvents, handler:
+        rhea.OnAmqpEvent)
+      parameters:
+        - id: event
+          type:
+            - ConnectionEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.removeHandler
+    name: 'removeHandler(ConnectionEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function removeHandler(event: ConnectionEvents, handler:
+        rhea.OnAmqpEvent)
+      parameters:
+        - id: event
+          type:
+            - ConnectionEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Connection.wasCloseInitiated
+    name: wasCloseInitiated()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether the close from the peer is a response to a locally
+      initiated close request
+
+      for the connection.
+    syntax:
+      content: function wasCloseInitiated()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` if close was locally initiated, `false` otherwise.'
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession
+    name: ReceiverOptionsWithSession
+    spec.typeScript:
+      - name: ReceiverOptionsWithSession
+        fullName: ReceiverOptionsWithSession
+        uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession
+  - uid: Promise<azure-event-hubs - v0.2.11.Receiver>
+    name: Receiver>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Receiver
+        fullName: Receiver
+        uid: azure-event-hubs - v0.2.11.Receiver
+      - name: '>'
+        fullName: '>'
+  - uid: azure-event-hubs - v0.2.11.SenderOptions
+    name: SenderOptions
+    spec.typeScript:
+      - name: SenderOptions
+        fullName: SenderOptions
+        uid: azure-event-hubs - v0.2.11.SenderOptions
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptions
+    name: ReceiverOptions
+    spec.typeScript:
+      - name: ReceiverOptions
+        fullName: ReceiverOptions
+        uid: azure-event-hubs - v0.2.11.ReceiverOptions
+  - uid: azure-event-hubs - v0.2.11.Session
+    name: Session
+    spec.typeScript:
+      - name: Session
+        fullName: Session
+        uid: azure-event-hubs - v0.2.11.Session
+  - uid: Promise<azure-event-hubs - v0.2.11.ReqResLink>
+    name: ReqResLink>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ReqResLink
+        fullName: ReqResLink
+        uid: azure-event-hubs - v0.2.11.ReqResLink
+      - name: '>'
+        fullName: '>'
+  - uid: azure-event-hubs - v0.2.11.SenderOptionsWithSession
+    name: SenderOptionsWithSession
+    spec.typeScript:
+      - name: SenderOptionsWithSession
+        fullName: SenderOptionsWithSession
+        uid: azure-event-hubs - v0.2.11.SenderOptionsWithSession
+  - uid: Promise<azure-event-hubs - v0.2.11.Sender>
+    name: Sender>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Sender
+        fullName: Sender
+        uid: azure-event-hubs - v0.2.11.Sender
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-event-hubs - v0.2.11.Session>
+    name: Session>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Session
+        fullName: Session
+        uid: azure-event-hubs - v0.2.11.Session
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-event-hubs - v0.2.11.Connection>
+    name: Connection>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Connection
+        fullName: Connection
+        uid: azure-event-hubs - v0.2.11.Connection
+      - name: '>'
+        fullName: '>'

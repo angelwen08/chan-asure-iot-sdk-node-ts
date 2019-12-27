@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.ManagementClientOptions
+    name: ManagementClientOptions
+    fullName: ManagementClientOptions
+    children:
+      - azure-event-hubs - v0.2.11.ManagementClientOptions.address
+      - azure-event-hubs - v0.2.11.ManagementClientOptions.audience
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ManagementClientOptions.address
+    name: address
+    fullName: address
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'address?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ManagementClientOptions.audience
+    name: audience
+    fullName: audience
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'audience?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0

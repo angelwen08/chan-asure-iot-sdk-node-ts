@@ -1,0 +1,492 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.Receiver
+    name: Receiver
+    fullName: Receiver
+    children:
+      - azure-event-hubs - v0.2.11.Receiver.addCredit
+      - azure-event-hubs - v0.2.11.Receiver.address
+      - azure-event-hubs - v0.2.11.Receiver.close
+      - azure-event-hubs - v0.2.11.Receiver.connection
+      - azure-event-hubs - v0.2.11.Receiver.drain
+      - azure-event-hubs - v0.2.11.Receiver.error
+      - azure-event-hubs - v0.2.11.Receiver.isClosed
+      - azure-event-hubs - v0.2.11.Receiver.isItselfClosed
+      - azure-event-hubs - v0.2.11.Receiver.isOpen
+      - azure-event-hubs - v0.2.11.Receiver.isSessionClosed
+      - azure-event-hubs - v0.2.11.Receiver.isSessionItselfClosed
+      - azure-event-hubs - v0.2.11.Receiver.name
+      - azure-event-hubs - v0.2.11.Receiver.properties
+      - azure-event-hubs - v0.2.11.Receiver.constructor
+      - azure-event-hubs - v0.2.11.Receiver.receiverOptions
+      - azure-event-hubs - v0.2.11.Receiver.registerHandler
+      - azure-event-hubs - v0.2.11.Receiver.registerSessionHandler
+      - azure-event-hubs - v0.2.11.Receiver.remove
+      - azure-event-hubs - v0.2.11.Receiver.removeHandler
+      - azure-event-hubs - v0.2.11.Receiver.removeSessionHandler
+      - azure-event-hubs - v0.2.11.Receiver.session
+      - azure-event-hubs - v0.2.11.Receiver.setCreditWindow
+      - azure-event-hubs - v0.2.11.Receiver.source
+      - azure-event-hubs - v0.2.11.Receiver.target
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.addCredit
+    name: addCredit(number)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function addCredit(credit: number)'
+      parameters:
+        - id: credit
+          type:
+            - number
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.address
+    name: address
+    fullName: address
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string address
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.close
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Closes the amqp receiver.
+    syntax:
+      content: function close()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          Promise<void>
+          - **Resolves** the promise when rhea emits the "receiver_close" event.
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "receiver_error" event while trying to close an amqp receiver.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.connection
+    name: connection
+    fullName: connection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Connection connection
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Connection
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.drain
+    name: drain
+    fullName: drain
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: boolean drain
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.error
+    name: error
+    fullName: error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: AmqpError | Error | undefined error
+      return:
+        type:
+          - AmqpError | Error | undefined
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.isClosed
+    name: isClosed()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether both local and remote endpoint for link or it's
+      underlying session
+
+      or it's underlying connection are closed.
+
+      Within the "receiver_close", "session_close" event handler, if this
+
+      method returns `false` it means that the local end is still open. It can
+      be useful to
+
+      determine whether the close was initiated locally under such
+      circumstances.
+    syntax:
+      content: function isClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` if closed, `false` otherwise.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.isItselfClosed
+    name: isItselfClosed()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether both local and remote endpoint for just the link itself
+      are closed.
+
+      Within the "receiver_close" event handler, if this method returns `false`
+      it
+
+      means that the local end is still open. It can be useful to determine
+      whether the close
+
+      was initiated locally under such circumstances.
+    syntax:
+      content: function isItselfClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` - closed, `false` otherwise.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.isOpen
+    name: isOpen()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Determines whether the receiver link is open.
+    syntax:
+      content: function isOpen()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` open. `false` closed.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.isSessionClosed
+    name: isSessionClosed()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >
+      Determines whether both local and remote endpoint for session or it's
+      underlying
+
+      connection are closed.
+
+      Within the "session_close" event handler, if this method returns `false`
+      it means that
+
+      the local end is still open. It can be useful to determine whether the
+      close
+
+      was initiated locally under such circumstances.
+    syntax:
+      content: function isSessionClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` - closed, `false` otherwise.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.isSessionItselfClosed
+    name: isSessionItselfClosed()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether both local and remote endpoint for just the session
+      itself are closed.
+
+      Within the "session_close" event handler, if this method returns `false`
+      it means that
+
+      the local end is still open. It can be useful to determine whether the
+      close
+
+      was initiated locally under such circumstances.
+    syntax:
+      content: function isSessionItselfClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` - closed, `false` otherwise.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string name
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.properties
+    name: properties
+    fullName: properties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Dictionary<any> properties
+      return:
+        type:
+          - Dictionary<any>
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.constructor
+    name: 'Receiver(Session, Receiver, ReceiverOptions)'
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        new Receiver(session: Session, receiver: Receiver, options?:
+        ReceiverOptions)
+      parameters:
+        - id: session
+          type:
+            - azure-event-hubs - v0.2.11.Session
+          description: ''
+        - id: receiver
+          type:
+            - Receiver
+          description: ''
+        - id: options
+          type:
+            - azure-event-hubs - v0.2.11.ReceiverOptions
+          description: ''
+          optional: true
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.receiverOptions
+    name: receiverOptions
+    fullName: receiverOptions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'receiverOptions?: ReceiverOptions'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.ReceiverOptions
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.registerHandler
+    name: 'registerHandler(ReceiverEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function registerHandler(event: ReceiverEvents, handler:
+        rhea.OnAmqpEvent)
+      parameters:
+        - id: event
+          type:
+            - ReceiverEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.registerSessionHandler
+    name: 'registerSessionHandler(SessionEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function registerSessionHandler(event: SessionEvents, handler:
+        rhea.OnAmqpEvent)
+      parameters:
+        - id: event
+          type:
+            - SessionEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.remove
+    name: remove()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Removes the receiver and it's underlying session from the internal map.
+    syntax:
+      content: function remove()
+      parameters: []
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.removeHandler
+    name: 'removeHandler(ReceiverEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function removeHandler(event: ReceiverEvents, handler: rhea.OnAmqpEvent)'
+      parameters:
+        - id: event
+          type:
+            - ReceiverEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.removeSessionHandler
+    name: 'removeSessionHandler(SessionEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function removeSessionHandler(event: SessionEvents, handler:
+        rhea.OnAmqpEvent)
+      parameters:
+        - id: event
+          type:
+            - SessionEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.session
+    name: session
+    fullName: session
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Session session
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Session
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.setCreditWindow
+    name: setCreditWindow(number)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function setCreditWindow(creditWindow: number)'
+      parameters:
+        - id: creditWindow
+          type:
+            - number
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.source
+    name: source
+    fullName: source
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Source source
+      return:
+        type:
+          - Source
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Receiver.target
+    name: target
+    fullName: target
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: TerminusOptions target
+      return:
+        type:
+          - TerminusOptions
+        description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.Session
+    name: Session
+    spec.typeScript:
+      - name: Session
+        fullName: Session
+        uid: azure-event-hubs - v0.2.11.Session
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptions
+    name: ReceiverOptions
+    spec.typeScript:
+      - name: ReceiverOptions
+        fullName: ReceiverOptions
+        uid: azure-event-hubs - v0.2.11.ReceiverOptions
+  - uid: azure-event-hubs - v0.2.11.Connection
+    name: Connection
+    spec.typeScript:
+      - name: Connection
+        fullName: Connection
+        uid: azure-event-hubs - v0.2.11.Connection

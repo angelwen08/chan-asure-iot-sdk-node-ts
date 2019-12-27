@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.ReqResLink
+    name: ReqResLink
+    fullName: ReqResLink
+    children:
+      - azure-event-hubs - v0.2.11.ReqResLink.receiver
+      - azure-event-hubs - v0.2.11.ReqResLink.sender
+      - azure-event-hubs - v0.2.11.ReqResLink.session
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReqResLink.receiver
+    name: receiver
+    fullName: receiver
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'receiver: Receiver'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Receiver
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReqResLink.sender
+    name: sender
+    fullName: sender
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'sender: Sender'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Sender
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReqResLink.session
+    name: session
+    fullName: session
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'session: Session'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Session
+        description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.Receiver
+    name: Receiver
+    spec.typeScript:
+      - name: Receiver
+        fullName: Receiver
+        uid: azure-event-hubs - v0.2.11.Receiver
+  - uid: azure-event-hubs - v0.2.11.Sender
+    name: Sender
+    spec.typeScript:
+      - name: Sender
+        fullName: Sender
+        uid: azure-event-hubs - v0.2.11.Sender
+  - uid: azure-event-hubs - v0.2.11.Session
+    name: Session
+    spec.typeScript:
+      - name: Session
+        fullName: Session
+        uid: azure-event-hubs - v0.2.11.Session

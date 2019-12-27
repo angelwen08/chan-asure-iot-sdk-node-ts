@@ -1,0 +1,256 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.RequestResponseLink
+    name: RequestResponseLink
+    fullName: RequestResponseLink
+    children:
+      - azure-event-hubs - v0.2.11.RequestResponseLink.close
+      - azure-event-hubs - v0.2.11.RequestResponseLink.connection
+      - azure-event-hubs - v0.2.11.RequestResponseLink.create
+      - azure-event-hubs - v0.2.11.RequestResponseLink.isOpen
+      - azure-event-hubs - v0.2.11.RequestResponseLink.receiver
+      - azure-event-hubs - v0.2.11.RequestResponseLink.constructor
+      - azure-event-hubs - v0.2.11.RequestResponseLink.sender
+      - azure-event-hubs - v0.2.11.RequestResponseLink.sendRequest
+      - azure-event-hubs - v0.2.11.RequestResponseLink.session
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+      Describes an amqp request(sender)-response(receiver) link that is created
+      over an amqp session.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RequestResponseLink.close
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 'Closes the sender, receiver link and the underlying session.'
+    syntax:
+      content: function close()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+        description: Promise<void>
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RequestResponseLink.connection
+    name: connection
+    fullName: connection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Provides the underlying amqp connection object.
+    syntax:
+      content: Connection connection
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Connection
+        description: Connection.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RequestResponseLink.create
+    name: 'create(Connection, SenderOptions, ReceiverOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates an amqp request/response link.
+    syntax:
+      content: >-
+        static function create(connection: Connection, senderOptions:
+        SenderOptions, receiverOptions: ReceiverOptions)
+      parameters:
+        - id: connection
+          type:
+            - azure-event-hubs - v0.2.11.Connection
+          description: The amqp connection.
+        - id: senderOptions
+          type:
+            - azure-event-hubs - v0.2.11.SenderOptions
+          description: Options that must be provided to create the sender link.
+        - id: receiverOptions
+          type:
+            - azure-event-hubs - v0.2.11.ReceiverOptions
+          description: Options that must be provided to create the receiver link.
+      return:
+        type:
+          - Promise<azure-event-hubs - v0.2.11.RequestResponseLink>
+        description: Promise<RequestResponseLink>
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RequestResponseLink.isOpen
+    name: isOpen()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Indicates whether the session and the sender and receiver links are all
+      open or closed.
+    syntax:
+      content: function isOpen()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: 'boolean - `true` - `open`, `false` - `closed`.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RequestResponseLink.receiver
+    name: receiver
+    fullName: receiver
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The amqp receiver link.
+    syntax:
+      content: 'public receiver: Receiver'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Receiver
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RequestResponseLink.constructor
+    name: 'RequestResponseLink(Session, Sender, Receiver)'
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        new RequestResponseLink(session: Session, sender: Sender, receiver:
+        Receiver)
+      parameters:
+        - id: session
+          type:
+            - azure-event-hubs - v0.2.11.Session
+          description: The amqp session.
+        - id: sender
+          type:
+            - azure-event-hubs - v0.2.11.Sender
+          description: The amqp sender link.
+        - id: receiver
+          type:
+            - azure-event-hubs - v0.2.11.Receiver
+          description: |
+            The amqp receiver link.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RequestResponseLink.sender
+    name: sender
+    fullName: sender
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The amqp sender link.
+    syntax:
+      content: 'public sender: Sender'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Sender
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RequestResponseLink.sendRequest
+    name: 'sendRequest(Message, SendRequestOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Sends the given request message and returns the received response. If the
+      operation is not
+
+      completed in the provided timeout in seconds `default: 10`, then the
+      request will be retried
+
+      linearly for the provided number of times `default: 3` with the provided
+      delay in seconds
+
+      `default: 15` between each attempt.
+    syntax:
+      content: 'function sendRequest<T>(request: Message, options?: SendRequestOptions)'
+      parameters:
+        - id: request
+          type:
+            - Message
+          description: The AMQP message.
+        - id: options
+          type:
+            - azure-event-hubs - v0.2.11.SendRequestOptions
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<T>
+        description: Promise<T>
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RequestResponseLink.session
+    name: session
+    fullName: session
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The amqp session.
+    syntax:
+      content: 'public session: Session'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Session
+        description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.Session
+    name: Session
+    spec.typeScript:
+      - name: Session
+        fullName: Session
+        uid: azure-event-hubs - v0.2.11.Session
+  - uid: azure-event-hubs - v0.2.11.Sender
+    name: Sender
+    spec.typeScript:
+      - name: Sender
+        fullName: Sender
+        uid: azure-event-hubs - v0.2.11.Sender
+  - uid: azure-event-hubs - v0.2.11.Receiver
+    name: Receiver
+    spec.typeScript:
+      - name: Receiver
+        fullName: Receiver
+        uid: azure-event-hubs - v0.2.11.Receiver
+  - uid: azure-event-hubs - v0.2.11.Connection
+    name: Connection
+    spec.typeScript:
+      - name: Connection
+        fullName: Connection
+        uid: azure-event-hubs - v0.2.11.Connection
+  - uid: azure-event-hubs - v0.2.11.SendRequestOptions
+    name: SendRequestOptions
+    spec.typeScript:
+      - name: SendRequestOptions
+        fullName: SendRequestOptions
+        uid: azure-event-hubs - v0.2.11.SendRequestOptions
+  - uid: azure-event-hubs - v0.2.11.SenderOptions
+    name: SenderOptions
+    spec.typeScript:
+      - name: SenderOptions
+        fullName: SenderOptions
+        uid: azure-event-hubs - v0.2.11.SenderOptions
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptions
+    name: ReceiverOptions
+    spec.typeScript:
+      - name: ReceiverOptions
+        fullName: ReceiverOptions
+        uid: azure-event-hubs - v0.2.11.ReceiverOptions
+  - uid: Promise<azure-event-hubs - v0.2.11.RequestResponseLink>
+    name: RequestResponseLink>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: RequestResponseLink
+        fullName: RequestResponseLink
+        uid: azure-event-hubs - v0.2.11.RequestResponseLink
+      - name: '>'
+        fullName: '>'

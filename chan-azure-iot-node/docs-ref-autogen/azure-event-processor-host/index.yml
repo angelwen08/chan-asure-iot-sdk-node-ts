@@ -1,108 +1,108 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-event-processor-host
-    name: azure-event-processor-host
+  - uid: azure-event-processor-host - v0
+    name: azure-event-processor-host - v0
     summary: ''
     children:
-      - azure-event-processor-host.AzureBlobLease
-      - azure-event-processor-host.AzureBlobLeaseInfo
-      - azure-event-processor-host.LeaseInfo
-      - azure-event-processor-host.BaseLease
-      - azure-event-processor-host.BaseLeaseInfo
-      - azure-event-processor-host.CheckpointInfo
-      - azure-event-processor-host.CheckpointManager
-      - azure-event-processor-host.CompleteLease
-      - azure-event-processor-host.CompleteLeaseInfo
-      - azure-event-processor-host.EventProcessorHost
-      - azure-event-processor-host.HostContextWithPumpManager
-      - azure-event-processor-host.LeaseManager
-      - azure-event-processor-host.EPHDiagnosticInfo
-      - azure-event-processor-host.EventProcessorHostOptions
-      - azure-event-processor-host.FromConnectionStringOptions
-      - azure-event-processor-host.FromTokenProviderOptions
-      - azure-event-processor-host.FromIotHubConnectionStringOptions
-      - azure-event-processor-host.OnEphError
-      - azure-event-processor-host.OnReceivedError
-      - azure-event-processor-host.OnReceivedMessage
-      - azure-event-processor-host.PartitionContext
-      - azure-event-processor-host.Timeout
-      - azure-event-processor-host.Dictionary
-      - azure-event-processor-host.EventHubConnectionStringModel
-      - azure-event-processor-host.StorageConnectionStringModel
-      - azure-event-processor-host.Func
-      - azure-event-processor-host.ParsedOutput
-      - azure-event-processor-host.delay
-      - azure-event-processor-host.executePromisesSequentially
-      - azure-event-processor-host.parseConnectionString
-      - azure-event-processor-host.randomNumberFromInterval
-      - azure-event-processor-host.validateType
+      - azure-event-processor-host - v0.2.1.AzureBlobLease
+      - azure-event-processor-host - v0.2.1.AzureBlobLeaseInfo
+      - azure-event-processor-host - v0.2.1.LeaseInfo
+      - azure-event-processor-host - v0.2.1.BaseLease
+      - azure-event-processor-host - v0.2.1.BaseLeaseInfo
+      - azure-event-processor-host - v0.2.1.CheckpointInfo
+      - azure-event-processor-host - v0.2.1.CheckpointManager
+      - azure-event-processor-host - v0.2.1.CompleteLease
+      - azure-event-processor-host - v0.2.1.CompleteLeaseInfo
+      - azure-event-processor-host - v0.2.1.EventProcessorHost
+      - azure-event-processor-host - v0.2.1.HostContextWithPumpManager
+      - azure-event-processor-host - v0.2.1.LeaseManager
+      - azure-event-processor-host - v0.2.1.EPHDiagnosticInfo
+      - azure-event-processor-host - v0.2.1.EventProcessorHostOptions
+      - azure-event-processor-host - v0.2.1.FromConnectionStringOptions
+      - azure-event-processor-host - v0.2.1.FromTokenProviderOptions
+      - azure-event-processor-host - v0.2.1.FromIotHubConnectionStringOptions
+      - azure-event-processor-host - v0.2.1.OnEphError
+      - azure-event-processor-host - v0.2.1.OnReceivedError
+      - azure-event-processor-host - v0.2.1.OnReceivedMessage
+      - azure-event-processor-host - v0.2.1.PartitionContext
+      - azure-event-processor-host - v0.2.1.Timeout
+      - azure-event-processor-host - v0.2.1.Dictionary
+      - azure-event-processor-host - v0.2.1.EventHubConnectionStringModel
+      - azure-event-processor-host - v0.2.1.StorageConnectionStringModel
+      - azure-event-processor-host - v0.2.1.Func
+      - azure-event-processor-host - v0.2.1.ParsedOutput
+      - azure-event-processor-host - v0.2.1.delay
+      - azure-event-processor-host - v0.2.1.executePromisesSequentially
+      - azure-event-processor-host - v0.2.1.parseConnectionString
+      - azure-event-processor-host - v0.2.1.randomNumberFromInterval
+      - azure-event-processor-host - v0.2.1.validateType
     type: package
     langs:
       - typeScript
 references:
-  - uid: azure-event-processor-host.AzureBlobLease
+  - uid: azure-event-processor-host - v0.2.1.AzureBlobLease
     name: AzureBlobLease
-  - uid: azure-event-processor-host.AzureBlobLeaseInfo
+  - uid: azure-event-processor-host - v0.2.1.AzureBlobLeaseInfo
     name: AzureBlobLeaseInfo
-  - uid: azure-event-processor-host.LeaseInfo
+  - uid: azure-event-processor-host - v0.2.1.LeaseInfo
     name: LeaseInfo
-  - uid: azure-event-processor-host.BaseLease
+  - uid: azure-event-processor-host - v0.2.1.BaseLease
     name: BaseLease
-  - uid: azure-event-processor-host.BaseLeaseInfo
+  - uid: azure-event-processor-host - v0.2.1.BaseLeaseInfo
     name: BaseLeaseInfo
-  - uid: azure-event-processor-host.CheckpointInfo
+  - uid: azure-event-processor-host - v0.2.1.CheckpointInfo
     name: CheckpointInfo
-  - uid: azure-event-processor-host.CheckpointManager
+  - uid: azure-event-processor-host - v0.2.1.CheckpointManager
     name: CheckpointManager
-  - uid: azure-event-processor-host.CompleteLease
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease
     name: CompleteLease
-  - uid: azure-event-processor-host.CompleteLeaseInfo
+  - uid: azure-event-processor-host - v0.2.1.CompleteLeaseInfo
     name: CompleteLeaseInfo
-  - uid: azure-event-processor-host.EventProcessorHost
+  - uid: azure-event-processor-host - v0.2.1.EventProcessorHost
     name: EventProcessorHost
-  - uid: azure-event-processor-host.HostContextWithPumpManager
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager
     name: HostContextWithPumpManager
-  - uid: azure-event-processor-host.LeaseManager
+  - uid: azure-event-processor-host - v0.2.1.LeaseManager
     name: LeaseManager
-  - uid: azure-event-processor-host.EPHDiagnosticInfo
+  - uid: azure-event-processor-host - v0.2.1.EPHDiagnosticInfo
     name: EPHDiagnosticInfo
-  - uid: azure-event-processor-host.EventProcessorHostOptions
+  - uid: azure-event-processor-host - v0.2.1.EventProcessorHostOptions
     name: EventProcessorHostOptions
-  - uid: azure-event-processor-host.FromConnectionStringOptions
+  - uid: azure-event-processor-host - v0.2.1.FromConnectionStringOptions
     name: FromConnectionStringOptions
-  - uid: azure-event-processor-host.FromTokenProviderOptions
+  - uid: azure-event-processor-host - v0.2.1.FromTokenProviderOptions
     name: FromTokenProviderOptions
-  - uid: azure-event-processor-host.FromIotHubConnectionStringOptions
+  - uid: azure-event-processor-host - v0.2.1.FromIotHubConnectionStringOptions
     name: FromIotHubConnectionStringOptions
-  - uid: azure-event-processor-host.OnEphError
+  - uid: azure-event-processor-host - v0.2.1.OnEphError
     name: OnEphError
-  - uid: azure-event-processor-host.OnReceivedError
+  - uid: azure-event-processor-host - v0.2.1.OnReceivedError
     name: OnReceivedError
-  - uid: azure-event-processor-host.OnReceivedMessage
+  - uid: azure-event-processor-host - v0.2.1.OnReceivedMessage
     name: OnReceivedMessage
-  - uid: azure-event-processor-host.PartitionContext
+  - uid: azure-event-processor-host - v0.2.1.PartitionContext
     name: PartitionContext
-  - uid: azure-event-processor-host.Timeout
+  - uid: azure-event-processor-host - v0.2.1.Timeout
     name: Timeout
-  - uid: azure-event-processor-host.Dictionary
+  - uid: azure-event-processor-host - v0.2.1.Dictionary
     name: Dictionary
-  - uid: azure-event-processor-host.EventHubConnectionStringModel
+  - uid: azure-event-processor-host - v0.2.1.EventHubConnectionStringModel
     name: EventHubConnectionStringModel
-  - uid: azure-event-processor-host.StorageConnectionStringModel
+  - uid: azure-event-processor-host - v0.2.1.StorageConnectionStringModel
     name: StorageConnectionStringModel
-  - uid: azure-event-processor-host.Func
+  - uid: azure-event-processor-host - v0.2.1.Func
     name: Func
-  - uid: azure-event-processor-host.ParsedOutput
+  - uid: azure-event-processor-host - v0.2.1.ParsedOutput
     name: ParsedOutput
-  - uid: azure-event-processor-host.delay
+  - uid: azure-event-processor-host - v0.2.1.delay
     name: 'delay(number, T)'
-  - uid: azure-event-processor-host.executePromisesSequentially
+  - uid: azure-event-processor-host - v0.2.1.executePromisesSequentially
     name: 'executePromisesSequentially(Array<any>, any)'
-  - uid: azure-event-processor-host.parseConnectionString
+  - uid: azure-event-processor-host - v0.2.1.parseConnectionString
     name: parseConnectionString(string)
-  - uid: azure-event-processor-host.randomNumberFromInterval
+  - uid: azure-event-processor-host - v0.2.1.randomNumberFromInterval
     name: 'randomNumberFromInterval(number, number)'
-  - uid: azure-event-processor-host.validateType
+  - uid: azure-event-processor-host - v0.2.1.validateType
     name: >-
       validateType(string, any, boolean, "string" | "number" | "boolean" |
       "Array" | "object" | "Date" | "function")

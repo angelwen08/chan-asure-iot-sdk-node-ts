@@ -1,0 +1,356 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.Session
+    name: Session
+    fullName: Session
+    children:
+      - azure-event-hubs - v0.2.11.Session.begin
+      - azure-event-hubs - v0.2.11.Session.close
+      - azure-event-hubs - v0.2.11.Session.connection
+      - azure-event-hubs - v0.2.11.Session.createReceiver
+      - azure-event-hubs - v0.2.11.Session.createSender
+      - azure-event-hubs - v0.2.11.Session.isClosed
+      - azure-event-hubs - v0.2.11.Session.isItselfClosed
+      - azure-event-hubs - v0.2.11.Session.isOpen
+      - azure-event-hubs - v0.2.11.Session.outgoing
+      - azure-event-hubs - v0.2.11.Session.registerConnectionHandler
+      - azure-event-hubs - v0.2.11.Session.registerHandler
+      - azure-event-hubs - v0.2.11.Session.remove
+      - azure-event-hubs - v0.2.11.Session.removeConnectionHandler
+      - azure-event-hubs - v0.2.11.Session.removeHandler
+      - azure-event-hubs - v0.2.11.Session.constructor
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.begin
+    name: begin()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function begin()
+      parameters: []
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.close
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Closes the amqp session.
+    syntax:
+      content: function close()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+        description: >-
+          Promise<void>
+
+          - **Resolves** the promise when rhea emits the "session_close" event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "session_error" event while trying
+
+          to close an amqp session.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.connection
+    name: connection
+    fullName: connection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Connection connection
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Connection
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.createReceiver
+    name: createReceiver(ReceiverOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates an amqp receiver on this session.
+    syntax:
+      content: 'function createReceiver(options?: ReceiverOptions)'
+      parameters:
+        - id: options
+          type:
+            - azure-event-hubs - v0.2.11.ReceiverOptions
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-event-hubs - v0.2.11.Receiver>
+        description: >-
+          Promise<Receiver>
+
+          - **Resolves** the promise with the Receiver object when rhea emits
+          the "receiver_open" event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "receiver_close" event while trying
+
+          to create an amqp receiver.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.createSender
+    name: createSender(SenderOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates an amqp sender on this session.
+    syntax:
+      content: 'function createSender(options?: SenderOptions)'
+      parameters:
+        - id: options
+          type:
+            - azure-event-hubs - v0.2.11.SenderOptions
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-event-hubs - v0.2.11.Sender>
+        description: >-
+          Promise<Sender>
+
+          - **Resolves** the promise with the Sender object when rhea emits the
+          "sender_open" event.
+
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "sender_close" event while trying
+
+          to create an amqp sender.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.isClosed
+    name: isClosed()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether the close from the peer is a response to a locally
+      initiated close request.
+    syntax:
+      content: function isClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` if close was locally initiated, `false` otherwise.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.isItselfClosed
+    name: isItselfClosed()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether both local and remote endpoint for just the session
+      itself are closed.
+
+      Within the "session_close" event handler, if this method returns `false`
+      it means that
+
+      the local end is still open. It can be useful to determine whether the
+      close
+
+      was initiated locally under such circumstances.
+    syntax:
+      content: function isItselfClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` - closed, `false` otherwise.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.isOpen
+    name: isOpen()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function isOpen()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.outgoing
+    name: outgoing
+    fullName: outgoing
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: any outgoing
+      return:
+        type:
+          - any
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.registerConnectionHandler
+    name: 'registerConnectionHandler(ConnectionEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function registerConnectionHandler(event: ConnectionEvents, handler:
+        rhea.OnAmqpEvent)
+      parameters:
+        - id: event
+          type:
+            - ConnectionEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.registerHandler
+    name: 'registerHandler(SessionEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function registerHandler(event: SessionEvents, handler:
+        rhea.OnAmqpEvent)
+      parameters:
+        - id: event
+          type:
+            - SessionEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.remove
+    name: remove()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function remove()
+      parameters: []
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.removeConnectionHandler
+    name: 'removeConnectionHandler(ConnectionEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function removeConnectionHandler(event: ConnectionEvents, handler:
+        rhea.OnAmqpEvent)
+      parameters:
+        - id: event
+          type:
+            - ConnectionEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.removeHandler
+    name: 'removeHandler(SessionEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function removeHandler(event: SessionEvents, handler: rhea.OnAmqpEvent)'
+      parameters:
+        - id: event
+          type:
+            - SessionEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Session.constructor
+    name: 'Session(Connection, Session)'
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new Session(connection: Connection, session: Session)'
+      parameters:
+        - id: connection
+          type:
+            - azure-event-hubs - v0.2.11.Connection
+          description: ''
+        - id: session
+          type:
+            - Session
+          description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.Connection
+    name: Connection
+    spec.typeScript:
+      - name: Connection
+        fullName: Connection
+        uid: azure-event-hubs - v0.2.11.Connection
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptions
+    name: ReceiverOptions
+    spec.typeScript:
+      - name: ReceiverOptions
+        fullName: ReceiverOptions
+        uid: azure-event-hubs - v0.2.11.ReceiverOptions
+  - uid: Promise<azure-event-hubs - v0.2.11.Receiver>
+    name: Receiver>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Receiver
+        fullName: Receiver
+        uid: azure-event-hubs - v0.2.11.Receiver
+      - name: '>'
+        fullName: '>'
+  - uid: azure-event-hubs - v0.2.11.SenderOptions
+    name: SenderOptions
+    spec.typeScript:
+      - name: SenderOptions
+        fullName: SenderOptions
+        uid: azure-event-hubs - v0.2.11.SenderOptions
+  - uid: Promise<azure-event-hubs - v0.2.11.Sender>
+    name: Sender>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Sender
+        fullName: Sender
+        uid: azure-event-hubs - v0.2.11.Sender
+      - name: '>'
+        fullName: '>'

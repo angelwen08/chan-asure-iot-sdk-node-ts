@@ -1,0 +1,208 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host - v0.2.1.PartitionContext
+    name: PartitionContext
+    fullName: PartitionContext
+    children:
+      - azure-event-processor-host - v0.2.1.PartitionContext.checkpoint
+      - >-
+        azure-event-processor-host -
+        v0.2.1.PartitionContext.checkpointFromEventData
+      - azure-event-processor-host - v0.2.1.PartitionContext.consumerGroup
+      - azure-event-processor-host - v0.2.1.PartitionContext.eventhubPath
+      - azure-event-processor-host - v0.2.1.PartitionContext.lease
+      - azure-event-processor-host - v0.2.1.PartitionContext.owner
+      - azure-event-processor-host - v0.2.1.PartitionContext.constructor
+      - azure-event-processor-host - v0.2.1.PartitionContext.partitionId
+      - >-
+        azure-event-processor-host -
+        v0.2.1.PartitionContext.setOffsetAndSequenceNumber
+    langs:
+      - typeScript
+    type: class
+    summary: Describes the Partition Context.
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.PartitionContext.checkpoint
+    name: checkpoint()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >
+      Writes the current offset and sequenceNumber to the checkpoint store via
+      the checkpoint manager.
+
+      The checkpoint data is structured as a JSON payload (example):
+
+      `{
+      "partitionId":"0","owner":"ephtest","token":"48e209e3-55f0-41b8-a8dd-d9c09ff6c35a",
+
+      "epoch":1,"offset":"","SequenceNumber":0 }`.
+    syntax:
+      content: function checkpoint()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.PartitionContext.checkpointFromEventData
+    name: checkpointFromEventData(EventData)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >
+      Writes the current offset and sequenceNumber to the checkpoint store via
+      the checkpoint manager.
+
+      The checkpoint data is structured as a JSON payload (example):
+
+      `{
+      "partitionId":"0","owner":"ephtest","token":"48e209e3-55f0-41b8-a8dd-d9c09ff6c35a",
+
+      "epoch":1,"offset":"","SequenceNumber":0 }`.
+    syntax:
+      content: 'function checkpointFromEventData(eventData: EventData)'
+      parameters:
+        - id: eventData
+          type:
+            - EventData
+          description: The event data received from the EventHubReceiver.
+      return:
+        type:
+          - Promise<void>
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.PartitionContext.consumerGroup
+    name: consumerGroup
+    fullName: consumerGroup
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{string} consumerGroup The name of the consumer group.'
+    syntax:
+      content: string consumerGroup
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.PartitionContext.eventhubPath
+    name: eventhubPath
+    fullName: eventhubPath
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{string} eventhubPath The path of the eventhub'
+    syntax:
+      content: string eventhubPath
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.PartitionContext.lease
+    name: lease
+    fullName: lease
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{Lease} lease The most recdent checkpointed lease with the partitionId.'
+    syntax:
+      content: 'lease: CompleteLease'
+      return:
+        type:
+          - azure-event-processor-host - v0.2.1.CompleteLease
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.PartitionContext.owner
+    name: owner
+    fullName: owner
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{string} owner The host/owner of the partition.'
+    syntax:
+      content: string owner
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.PartitionContext.constructor
+    name: >-
+      PartitionContext(HostContextWithCheckpointLeaseManager, string,
+      CompleteLease)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Creates a new PartitionContext.
+    syntax:
+      content: >-
+        new PartitionContext(context: HostContextWithCheckpointLeaseManager,
+        partitionId: string, lease: CompleteLease)
+      parameters:
+        - id: context
+          type:
+            - HostContextWithCheckpointLeaseManager
+          description: ''
+        - id: partitionId
+          type:
+            - string
+          description: The eventhub partition id.
+        - id: lease
+          type:
+            - azure-event-processor-host - v0.2.1.CompleteLease
+          description: |
+            The lease object.
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.PartitionContext.partitionId
+    name: partitionId
+    fullName: partitionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{string} partitionId The eventhub partition id.'
+    syntax:
+      content: 'partitionId: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.PartitionContext.setOffsetAndSequenceNumber
+    name: setOffsetAndSequenceNumber(EventData)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Sets the offset and sequence number of the partition context from the
+      provided EventData.
+    syntax:
+      content: 'function setOffsetAndSequenceNumber(eventData: EventData)'
+      parameters:
+        - id: eventData
+          type:
+            - EventData
+          description: |
+            The event data `received` from the EventHubReceiver.
+    package: azure-event-processor-host - v0
+references:
+  - uid: azure-event-processor-host - v0.2.1.CompleteLease
+    name: CompleteLease
+    spec.typeScript:
+      - name: CompleteLease
+        fullName: CompleteLease
+        uid: azure-event-processor-host - v0.2.1.CompleteLease

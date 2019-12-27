@@ -1,0 +1,267 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.ConditionStatusMapper
+    name: ConditionStatusMapper
+    fullName: ConditionStatusMapper
+    children:
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.amqp:link:message-size-exceeded
+      - 'azure-event-hubs - v0.2.11.ConditionStatusMapper.com.microsoft:timeout'
+      - 'azure-event-hubs - v0.2.11.ConditionStatusMapper.amqp:not-allowed'
+      - 'azure-event-hubs - v0.2.11.ConditionStatusMapper.amqp:not-found'
+      - 'azure-event-hubs - v0.2.11.ConditionStatusMapper.amqp:not-implemented'
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.amqp:resource-limit-exceeded
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.amqp:unauthorized-access
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:argument-error
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:argument-out-of-range
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:entity-already-exists
+      - 'azure-event-hubs - v0.2.11.ConditionStatusMapper.amqp:link:stolen'
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:message-lock-lost
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:no-matching-subscription
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:partition-not-owned
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:publisher-revoked
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:server-busy
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:session-cannot-be-locked
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:session-lock-lost
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:store-lock-lost
+      - >-
+        azure-event-hubs -
+        v0.2.11.ConditionStatusMapper.com.microsoft:entity-disabled
+    langs:
+      - typeScript
+    type: enum
+    summary: Maps the conditions to the numeric AMQP Response status codes.
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.amqp:link:message-size-exceeded
+    name: 'amqp:link:message-size-exceeded'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: 'azure-event-hubs - v0.2.11.ConditionStatusMapper.com.microsoft:timeout'
+    name: 'com.microsoft:timeout'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: 'azure-event-hubs - v0.2.11.ConditionStatusMapper.amqp:not-allowed'
+    name: 'amqp:not-allowed'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: 'azure-event-hubs - v0.2.11.ConditionStatusMapper.amqp:not-found'
+    name: 'amqp:not-found'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: 'azure-event-hubs - v0.2.11.ConditionStatusMapper.amqp:not-implemented'
+    name: 'amqp:not-implemented'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.amqp:resource-limit-exceeded
+    name: 'amqp:resource-limit-exceeded'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: 'azure-event-hubs - v0.2.11.ConditionStatusMapper.amqp:unauthorized-access'
+    name: 'amqp:unauthorized-access'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:argument-error
+    name: 'com.microsoft:argument-error'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:argument-out-of-range
+    name: 'com.microsoft:argument-out-of-range'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:entity-already-exists
+    name: 'com.microsoft:entity-already-exists'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: 'azure-event-hubs - v0.2.11.ConditionStatusMapper.amqp:link:stolen'
+    name: 'amqp:link:stolen'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:message-lock-lost
+    name: 'com.microsoft:message-lock-lost'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:no-matching-subscription
+    name: 'com.microsoft:no-matching-subscription'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:partition-not-owned
+    name: 'com.microsoft:partition-not-owned'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:publisher-revoked
+    name: 'com.microsoft:publisher-revoked'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: 'azure-event-hubs - v0.2.11.ConditionStatusMapper.com.microsoft:server-busy'
+    name: 'com.microsoft:server-busy'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:session-cannot-be-locked
+    name: 'com.microsoft:session-cannot-be-locked'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:session-lock-lost
+    name: 'com.microsoft:session-lock-lost'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:store-lock-lost
+    name: 'com.microsoft:store-lock-lost'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: >-
+      azure-event-hubs -
+      v0.2.11.ConditionStatusMapper.com.microsoft:entity-disabled
+    name: 'com.microsoft:entity-disabled'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0

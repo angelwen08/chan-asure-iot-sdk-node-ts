@@ -1,0 +1,709 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager
+    name: HostContextWithPumpManager
+    fullName: HostContextWithPumpManager
+    children:
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.blobReferenceByPartition
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.blobService
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.checkpointManager
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.composedBlobPrefix
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.connectionConfig
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.consumerGroup
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.eventHubConnectionString
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.eventHubPath
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.fastScanInterval
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.getEventHubClient
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.getHubRuntimeInformation
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.getPartitionIds
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.getPartitionInformation
+      - azure-event-processor-host - v0.2.1.HostContextWithPumpManager.hostName
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.initialOffset
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.leaseDuration
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.leaseManager
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.leaseRenewInterval
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.onEphError
+      - azure-event-processor-host - v0.2.1.HostContextWithPumpManager.onError
+      - azure-event-processor-host - v0.2.1.HostContextWithPumpManager.onMessage
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.partitionIds
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.pumpManager
+      - azure-event-processor-host - v0.2.1.HostContextWithPumpManager.pumps
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.slowScanInterval
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.startupScanDelay
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.storageBlobPrefix
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.storageConnectionString
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.storageContainerName
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.tokenProvider
+      - azure-event-processor-host - v0.2.1.HostContextWithPumpManager.userAgent
+      - azure-event-processor-host - v0.2.1.HostContextWithPumpManager.withHost
+      - >-
+        azure-event-processor-host -
+        v0.2.1.HostContextWithPumpManager.withHostAndPartition
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: HostContextWithCheckpointLeaseManager
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.blobReferenceByPartition
+    name: blobReferenceByPartition
+    fullName: blobReferenceByPartition
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'blobReferenceByPartition: Dictionary<AzureBlob>'
+      return:
+        type:
+          - azure-event-processor-host - v0.2.1.Dictionary<AzureBlob>
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager.blobService
+    name: blobService
+    fullName: blobService
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'blobService?: BlobService'
+      return:
+        type:
+          - BlobService
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.checkpointManager
+    name: checkpointManager
+    fullName: checkpointManager
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'checkpointManager: CheckpointManager'
+      return:
+        type:
+          - azure-event-processor-host - v0.2.1.CheckpointManager
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.composedBlobPrefix
+    name: composedBlobPrefix
+    fullName: composedBlobPrefix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'composedBlobPrefix: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.connectionConfig
+    name: connectionConfig
+    fullName: connectionConfig
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'connectionConfig: ConnectionConfig'
+      return:
+        type:
+          - ConnectionConfig
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.consumerGroup
+    name: consumerGroup
+    fullName: consumerGroup
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'consumerGroup: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.eventHubConnectionString
+    name: eventHubConnectionString
+    fullName: eventHubConnectionString
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'eventHubConnectionString: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.eventHubPath
+    name: eventHubPath
+    fullName: eventHubPath
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'eventHubPath: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.fastScanInterval
+    name: fastScanInterval
+    fullName: fastScanInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'fastScanInterval?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.getEventHubClient
+    name: getEventHubClient()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function getEventHubClient()
+      parameters: []
+      return:
+        type:
+          - EventHubClient
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.getHubRuntimeInformation
+    name: getHubRuntimeInformation()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function getHubRuntimeInformation()
+      parameters: []
+      return:
+        type:
+          - Promise<EventHubRuntimeInformation>
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.getPartitionIds
+    name: getPartitionIds()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function getPartitionIds()
+      parameters: []
+      return:
+        type:
+          - 'Promise<string[]>'
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.getPartitionInformation
+    name: getPartitionInformation(string | number)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getPartitionInformation(partitionId: string | number)'
+      parameters:
+        - id: partitionId
+          type:
+            - string | number
+          description: ''
+      return:
+        type:
+          - Promise<EventHubPartitionRuntimeInformation>
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager.hostName
+    name: hostName
+    fullName: hostName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'hostName: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.initialOffset
+    name: initialOffset
+    fullName: initialOffset
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'initialOffset?: EventPosition'
+      return:
+        type:
+          - EventPosition
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.leaseDuration
+    name: leaseDuration
+    fullName: leaseDuration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'leaseDuration: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.leaseManager
+    name: leaseManager
+    fullName: leaseManager
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'leaseManager: LeaseManager'
+      return:
+        type:
+          - azure-event-processor-host - v0.2.1.LeaseManager
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.leaseRenewInterval
+    name: leaseRenewInterval
+    fullName: leaseRenewInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'leaseRenewInterval: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager.onEphError
+    name: onEphError
+    fullName: onEphError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'onEphError: OnEphError'
+      return:
+        type:
+          - azure-event-processor-host - v0.2.1.OnEphError
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager.onError
+    name: onError
+    fullName: onError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'onError?: OnReceivedError'
+      return:
+        type:
+          - azure-event-processor-host - v0.2.1.OnReceivedError
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager.onMessage
+    name: onMessage
+    fullName: onMessage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'onMessage?: OnReceivedMessage'
+      return:
+        type:
+          - azure-event-processor-host - v0.2.1.OnReceivedMessage
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.partitionIds
+    name: partitionIds
+    fullName: partitionIds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'partitionIds: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager.pumpManager
+    name: pumpManager
+    fullName: pumpManager
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'pumpManager: PumpManager'
+      return:
+        type:
+          - PumpManager
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager.pumps
+    name: pumps
+    fullName: pumps
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'pumps: Map<string, PartitionPump>'
+      return:
+        type:
+          - 'Map<string, PartitionPump>'
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.slowScanInterval
+    name: slowScanInterval
+    fullName: slowScanInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'slowScanInterval?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.startupScanDelay
+    name: startupScanDelay
+    fullName: startupScanDelay
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'startupScanDelay?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.storageBlobPrefix
+    name: storageBlobPrefix
+    fullName: storageBlobPrefix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'storageBlobPrefix?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.storageConnectionString
+    name: storageConnectionString
+    fullName: storageConnectionString
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'storageConnectionString?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.storageContainerName
+    name: storageContainerName
+    fullName: storageContainerName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'storageContainerName?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.tokenProvider
+    name: tokenProvider
+    fullName: tokenProvider
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'tokenProvider?: TokenProvider'
+      return:
+        type:
+          - TokenProvider
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager.userAgent
+    name: userAgent
+    fullName: userAgent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'userAgent: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.HostContextWithPumpManager.withHost
+    name: withHost(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function withHost(msg: string)'
+      parameters:
+        - id: msg
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.HostContextWithPumpManager.withHostAndPartition
+    name: 'withHostAndPartition(string | Object, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function withHostAndPartition(partition: string | Object, msg: string)'
+      parameters:
+        - id: partition
+          type:
+            - string | Object
+          description: ''
+        - id: msg
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+references:
+  - uid: azure-event-processor-host - v0.2.1.Dictionary<AzureBlob>
+    name: Dictionary<AzureBlob>
+    spec.typeScript:
+      - name: Dictionary
+        fullName: Dictionary
+        uid: azure-event-processor-host - v0.2.1.Dictionary
+      - name: <AzureBlob>
+        fullName: <AzureBlob>
+  - uid: azure-event-processor-host - v0.2.1.CheckpointManager
+    name: CheckpointManager
+    spec.typeScript:
+      - name: CheckpointManager
+        fullName: CheckpointManager
+        uid: azure-event-processor-host - v0.2.1.CheckpointManager
+  - uid: azure-event-processor-host - v0.2.1.LeaseManager
+    name: LeaseManager
+    spec.typeScript:
+      - name: LeaseManager
+        fullName: LeaseManager
+        uid: azure-event-processor-host - v0.2.1.LeaseManager
+  - uid: azure-event-processor-host - v0.2.1.OnEphError
+    name: OnEphError
+    spec.typeScript:
+      - name: OnEphError
+        fullName: OnEphError
+        uid: azure-event-processor-host - v0.2.1.OnEphError
+  - uid: azure-event-processor-host - v0.2.1.OnReceivedError
+    name: OnReceivedError
+    spec.typeScript:
+      - name: OnReceivedError
+        fullName: OnReceivedError
+        uid: azure-event-processor-host - v0.2.1.OnReceivedError
+  - uid: azure-event-processor-host - v0.2.1.OnReceivedMessage
+    name: OnReceivedMessage
+    spec.typeScript:
+      - name: OnReceivedMessage
+        fullName: OnReceivedMessage
+        uid: azure-event-processor-host - v0.2.1.OnReceivedMessage

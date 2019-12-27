@@ -1,0 +1,111 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper
+    name: SystemErrorConditionMapper
+    fullName: SystemErrorConditionMapper
+    children:
+      - azure-event-hubs - v0.2.11.SystemErrorConditionMapper.EBUSY
+      - azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ECONNREFUSED
+      - azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ECONNRESET
+      - azure-event-hubs - v0.2.11.SystemErrorConditionMapper.EHOSTDOWN
+      - azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ENETDOWN
+      - azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ENETRESET
+      - azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ENETUNREACH
+      - azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ENONET
+      - azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ENOTFOUND
+      - azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ETIMEDOUT
+    langs:
+      - typeScript
+    type: enum
+    summary: Maps some SytemErrors to amqp error conditions
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper.EBUSY
+    name: EBUSY
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ECONNREFUSED
+    name: ECONNREFUSED
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ECONNRESET
+    name: ECONNRESET
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper.EHOSTDOWN
+    name: EHOSTDOWN
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ENETDOWN
+    name: ENETDOWN
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ENETRESET
+    name: ENETRESET
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ENETUNREACH
+    name: ENETUNREACH
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ENONET
+    name: ENONET
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ENOTFOUND
+    name: ENOTFOUND
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SystemErrorConditionMapper.ETIMEDOUT
+    name: ETIMEDOUT
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0

@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host - v0.2.1.parseConnectionString
+    name: parseConnectionString(string)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function parseConnectionString<T>(connectionString: string)'
+      parameters:
+        - id: connectionString
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - azure-event-processor-host - v0.2.1.ParsedOutput<T>
+        description: ''
+    package: azure-event-processor-host - v0
+references:
+  - uid: azure-event-processor-host - v0.2.1.ParsedOutput<T>
+    name: ParsedOutput<T>
+    spec.typeScript:
+      - name: ParsedOutput
+        fullName: ParsedOutput
+        uid: azure-event-processor-host - v0.2.1.ParsedOutput
+      - name: <T>
+        fullName: <T>

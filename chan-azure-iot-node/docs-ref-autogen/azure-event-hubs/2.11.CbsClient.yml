@@ -1,0 +1,201 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.CbsClient
+    name: CbsClient
+    fullName: CbsClient
+    children:
+      - azure-event-hubs - v0.2.11.CbsClient.constructor
+      - azure-event-hubs - v0.2.11.CbsClient.cbsLock
+      - azure-event-hubs - v0.2.11.CbsClient.close
+      - azure-event-hubs - v0.2.11.CbsClient.connection
+      - azure-event-hubs - v0.2.11.CbsClient.connectionLock
+      - azure-event-hubs - v0.2.11.CbsClient.endpoint
+      - azure-event-hubs - v0.2.11.CbsClient.init
+      - azure-event-hubs - v0.2.11.CbsClient.negotiateClaim
+      - azure-event-hubs - v0.2.11.CbsClient.replyTo
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.CbsClient.constructor
+    name: 'CbsClient(Connection, string)'
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new CbsClient(connection: Connection, connectionLock: string)'
+      parameters:
+        - id: connection
+          type:
+            - azure-event-hubs - v0.2.11.Connection
+          description: The AMQP conection.
+        - id: connectionLock
+          type:
+            - string
+          description: |
+            A unique string (usually a guid) per connection.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.CbsClient.cbsLock
+    name: cbsLock
+    fullName: cbsLock
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string} cbsLock The unqiue lock name per $cbs session per connection that
+      is used to
+
+      acquire the lock for establishing a cbs session if one does not exist for
+      an aqmp connection.
+    syntax:
+      content: 'cbsLock: string = `${Constants.negotiateCbsKey}-${uuid()}`'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.CbsClient.close
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Closes the AMQP cbs session to the EventHub/ServiceBus for this client,
+      returning a promise that will be resolved when disconnection is completed.
+    syntax:
+      content: function close()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.CbsClient.connection
+    name: connection
+    fullName: connection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{Connection} connection The AMQP connection.'
+    syntax:
+      content: 'connection: Connection'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Connection
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.CbsClient.connectionLock
+    name: connectionLock
+    fullName: connectionLock
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string} connectionLock The unqiue lock name per connection that is used
+      to
+
+      acquire the lock for establishing an amqp connection if one does not
+      exist.
+    syntax:
+      content: 'connectionLock: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.CbsClient.endpoint
+    name: endpoint
+    fullName: endpoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{string} endpoint CBS endpoint - "$cbs"'
+    syntax:
+      content: 'endpoint: string = Constants.cbsEndpoint'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.CbsClient.init
+    name: init()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a singleton instance of the CBS session if it hasn't been
+      initialized previously on
+
+      the given connection.
+    syntax:
+      content: function init()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+        description: Promise<void>.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.CbsClient.negotiateClaim
+    name: 'negotiateClaim(string, TokenInfo)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Negotiates the CBS claim with the EventHub/ServiceBus Service.
+    syntax:
+      content: 'function negotiateClaim(audience: string, tokenObject: TokenInfo)'
+      parameters:
+        - id: audience
+          type:
+            - string
+          description: The audience for which the token is requested.
+        - id: tokenObject
+          type:
+            - azure-event-hubs - v0.2.11.TokenInfo
+          description: The token object that needs to be sent in the put-token request.
+      return:
+        type:
+          - Promise<any>
+        description: |-
+          Returns a Promise that resolves when $cbs authentication is successful
+          and rejects when an error occurs during $cbs authentication.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.CbsClient.replyTo
+    name: replyTo
+    fullName: replyTo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string} replyTo CBS replyTo - The reciever link name that the service
+      should reply to.
+    syntax:
+      content: 'replyTo: string = `${Constants.cbsReplyTo}-${uuid()}`'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.Connection
+    name: Connection
+    spec.typeScript:
+      - name: Connection
+        fullName: Connection
+        uid: azure-event-hubs - v0.2.11.Connection
+  - uid: azure-event-hubs - v0.2.11.TokenInfo
+    name: TokenInfo
+    spec.typeScript:
+      - name: TokenInfo
+        fullName: TokenInfo
+        uid: azure-event-hubs - v0.2.11.TokenInfo

@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.LinkEntityOptions
+    name: LinkEntityOptions
+    fullName: LinkEntityOptions
+    children:
+      - azure-event-hubs - v0.2.11.LinkEntityOptions.address
+      - azure-event-hubs - v0.2.11.LinkEntityOptions.audience
+      - azure-event-hubs - v0.2.11.LinkEntityOptions.name
+      - azure-event-hubs - v0.2.11.LinkEntityOptions.partitionId
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.LinkEntityOptions.address
+    name: address
+    fullName: address
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{string} address The link entity address in one of the following forms:'
+    optional: true
+    syntax:
+      content: 'address?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.LinkEntityOptions.audience
+    name: audience
+    fullName: audience
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string} audience The link entity token audience in one of the following
+      forms:
+    optional: true
+    syntax:
+      content: 'audience?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.LinkEntityOptions.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string} [name] The unique name for the entity. If not provided then a
+      guid will be
+
+      assigned.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.LinkEntityOptions.partitionId
+    name: partitionId
+    fullName: partitionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string | number} [partitionId] The partitionId associated with the link
+      entity.
+    optional: true
+    syntax:
+      content: 'partitionId?: string | number'
+      return:
+        type:
+          - string | number
+        description: ''
+    package: azure-event-hubs - v0

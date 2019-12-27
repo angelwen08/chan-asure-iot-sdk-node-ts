@@ -1,0 +1,535 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.Sender
+    name: Sender
+    fullName: Sender
+    children:
+      - azure-event-hubs - v0.2.11.Sender.address
+      - azure-event-hubs - v0.2.11.Sender.close
+      - azure-event-hubs - v0.2.11.Sender.connection
+      - azure-event-hubs - v0.2.11.Sender.credit
+      - azure-event-hubs - v0.2.11.Sender.error
+      - azure-event-hubs - v0.2.11.Sender.getMaxListeners
+      - azure-event-hubs - v0.2.11.Sender.isClosed
+      - azure-event-hubs - v0.2.11.Sender.isItselfClosed
+      - azure-event-hubs - v0.2.11.Sender.isOpen
+      - azure-event-hubs - v0.2.11.Sender.isSessionClosed
+      - azure-event-hubs - v0.2.11.Sender.isSessionItselfClosed
+      - azure-event-hubs - v0.2.11.Sender.name
+      - azure-event-hubs - v0.2.11.Sender.properties
+      - azure-event-hubs - v0.2.11.Sender.registerHandler
+      - azure-event-hubs - v0.2.11.Sender.registerSessionHandler
+      - azure-event-hubs - v0.2.11.Sender.remove
+      - azure-event-hubs - v0.2.11.Sender.removeHandler
+      - azure-event-hubs - v0.2.11.Sender.removeSessionHandler
+      - azure-event-hubs - v0.2.11.Sender.send
+      - azure-event-hubs - v0.2.11.Sender.sendable
+      - azure-event-hubs - v0.2.11.Sender.constructor
+      - azure-event-hubs - v0.2.11.Sender.senderOptions
+      - azure-event-hubs - v0.2.11.Sender.session
+      - azure-event-hubs - v0.2.11.Sender.setMaxListeners
+      - azure-event-hubs - v0.2.11.Sender.source
+      - azure-event-hubs - v0.2.11.Sender.target
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.address
+    name: address
+    fullName: address
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string address
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.close
+    name: close()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Closes the amqp sender.
+    syntax:
+      content: function close()
+      parameters: []
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          Promise<void>
+          - **Resolves** the promise when rhea emits the "sender_close" event.
+          - **Rejects** the promise with an AmqpError when rhea emits the
+          "sender_error" event while trying to close an amqp sender.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.connection
+    name: connection
+    fullName: connection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Connection connection
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Connection
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.credit
+    name: credit
+    fullName: credit
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: number credit
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.error
+    name: error
+    fullName: error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: AmqpError | Error | undefined error
+      return:
+        type:
+          - AmqpError | Error | undefined
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.getMaxListeners
+    name: getMaxListeners()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function getMaxListeners()
+      parameters: []
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.isClosed
+    name: isClosed()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether both local and remote endpoint for link or it's
+      underlying session
+
+      or it's underlying connection are closed.
+
+      Within the "sender_close", "session_close" event handler, if this
+
+      method returns `false` it means that the local end is still open. It can
+      be useful to
+
+      determine whether the close was initiated locally under such
+      circumstances.
+    syntax:
+      content: function isClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` if closed, `false` otherwise.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.isItselfClosed
+    name: isItselfClosed()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether both local and remote endpoint for just the link itself
+      are closed.
+
+      Within the "sender_close" event handler, if this method returns `false` it
+
+      means that the local end is still open. It can be useful to determine
+      whether the close
+
+      was initiated locally under such circumstances.
+    syntax:
+      content: function isItselfClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` - closed, `false` otherwise.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.isOpen
+    name: isOpen()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Determines whether the sender link is open.
+    syntax:
+      content: function isOpen()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` open. `false` closed.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.isSessionClosed
+    name: isSessionClosed()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >
+      Determines whether both local and remote endpoint for session or it's
+      underlying
+
+      connection are closed.
+
+      Within the "session_close" event handler, if this method returns `false`
+      it means that
+
+      the local end is still open. It can be useful to determine whether the
+      close
+
+      was initiated locally under such circumstances.
+    syntax:
+      content: function isSessionClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` - closed, `false` otherwise.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.isSessionItselfClosed
+    name: isSessionItselfClosed()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Determines whether both local and remote endpoint for just the session
+      itself are closed.
+
+      Within the "session_close" event handler, if this method returns `false`
+      it means that
+
+      the local end is still open. It can be useful to determine whether the
+      close
+
+      was initiated locally under such circumstances.
+    syntax:
+      content: function isSessionItselfClosed()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` - closed, `false` otherwise.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string name
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.properties
+    name: properties
+    fullName: properties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Dictionary<any> properties
+      return:
+        type:
+          - Dictionary<any>
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.registerHandler
+    name: 'registerHandler(SenderEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function registerHandler(event: SenderEvents, handler: rhea.OnAmqpEvent)'
+      parameters:
+        - id: event
+          type:
+            - SenderEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.registerSessionHandler
+    name: 'registerSessionHandler(SessionEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function registerSessionHandler(event: SessionEvents, handler:
+        rhea.OnAmqpEvent)
+      parameters:
+        - id: event
+          type:
+            - SessionEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.remove
+    name: remove()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Removes the sender and it's underlying session from the internal map.
+    syntax:
+      content: function remove()
+      parameters: []
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.removeHandler
+    name: 'removeHandler(SenderEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function removeHandler(event: SenderEvents, handler: rhea.OnAmqpEvent)'
+      parameters:
+        - id: event
+          type:
+            - SenderEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.removeSessionHandler
+    name: 'removeSessionHandler(SessionEvents, rhea.OnAmqpEvent)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function removeSessionHandler(event: SessionEvents, handler:
+        rhea.OnAmqpEvent)
+      parameters:
+        - id: event
+          type:
+            - SessionEvents
+          description: ''
+        - id: handler
+          type:
+            - rhea.OnAmqpEvent
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.send
+    name: 'send(Message | Buffer, Buffer | string, number)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function send(msg: Message | Buffer, tag?: Buffer | string, format?:
+        number)
+      parameters:
+        - id: msg
+          type:
+            - Message | Buffer
+          description: ''
+        - id: tag
+          type:
+            - Buffer | string
+          description: ''
+          optional: true
+        - id: format
+          type:
+            - number
+          description: ''
+          optional: true
+      return:
+        type:
+          - Delivery
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.sendable
+    name: sendable()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Determines whether the message is sendable.
+    syntax:
+      content: function sendable()
+      parameters: []
+      return:
+        type:
+          - boolean
+        description: '`true` Sendable. `false` Not Sendable.'
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.constructor
+    name: 'Sender(Session, Sender, SenderOptions)'
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new Sender(session: Session, sender: Sender, options?: SenderOptions)'
+      parameters:
+        - id: session
+          type:
+            - azure-event-hubs - v0.2.11.Session
+          description: ''
+        - id: sender
+          type:
+            - Sender
+          description: ''
+        - id: options
+          type:
+            - azure-event-hubs - v0.2.11.SenderOptions
+          description: ''
+          optional: true
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.senderOptions
+    name: senderOptions
+    fullName: senderOptions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'senderOptions?: SenderOptions'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.SenderOptions
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.session
+    name: session
+    fullName: session
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Session session
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Session
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.setMaxListeners
+    name: setMaxListeners(number)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function setMaxListeners(count: number)'
+      parameters:
+        - id: count
+          type:
+            - number
+          description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.source
+    name: source
+    fullName: source
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Source source
+      return:
+        type:
+          - Source
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.Sender.target
+    name: target
+    fullName: target
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: TerminusOptions target
+      return:
+        type:
+          - TerminusOptions
+        description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.Session
+    name: Session
+    spec.typeScript:
+      - name: Session
+        fullName: Session
+        uid: azure-event-hubs - v0.2.11.Session
+  - uid: azure-event-hubs - v0.2.11.SenderOptions
+    name: SenderOptions
+    spec.typeScript:
+      - name: SenderOptions
+        fullName: SenderOptions
+        uid: azure-event-hubs - v0.2.11.SenderOptions
+  - uid: azure-event-hubs - v0.2.11.Connection
+    name: Connection
+    spec.typeScript:
+      - name: Connection
+        fullName: Connection
+        uid: azure-event-hubs - v0.2.11.Connection

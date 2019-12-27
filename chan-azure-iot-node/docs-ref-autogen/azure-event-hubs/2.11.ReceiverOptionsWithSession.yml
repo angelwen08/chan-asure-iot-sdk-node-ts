@@ -1,0 +1,385 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession
+    name: ReceiverOptionsWithSession
+    fullName: ReceiverOptionsWithSession
+    children:
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.autoaccept
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.autosettle
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.credit_window
+      - >-
+        azure-event-hubs -
+        v0.2.11.ReceiverOptionsWithSession.desired_capabilities
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.max_message_size
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.name
+      - >-
+        azure-event-hubs -
+        v0.2.11.ReceiverOptionsWithSession.offered_capabilities
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.onClose
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.onError
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.onMessage
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.onSessionClose
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.onSessionError
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.properties
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.rcv_settle_mode
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.session
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.snd_settle_mode
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.source
+      - azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.target
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: azure-event-hubs - v0.2.11.ReceiverOptions
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.autoaccept
+    name: autoaccept
+    fullName: autoaccept
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {boolean} [autoaccept] Whether received messages should be automatically
+      accepted.
+
+      Defaults to `true`.
+    optional: true
+    syntax:
+      content: 'autoaccept?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.autosettle
+    name: autosettle
+    fullName: autosettle
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {boolean} [autosettle] Whether received messages should be automatically
+      settled
+
+      once the remote settles them. Defaults to `true`.
+    optional: true
+    syntax:
+      content: 'autosettle?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.credit_window
+    name: credit_window
+    fullName: credit_window
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {object} [credit_window]  A "prefetch" window controlling the flow of
+      messages over
+
+      this receiver. Defaults to `1000` if not specified. A value of `0` can be
+      used to
+
+      turn off automatic flow control and manage it directly.
+    optional: true
+    syntax:
+      content: 'credit_window?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.desired_capabilities
+    name: desired_capabilities
+    fullName: desired_capabilities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string | string[]} [desired_capabilities] Extension capabilities the
+      sender can use if the receiver supports them.
+    optional: true
+    syntax:
+      content: 'desired_capabilities?: string | string[]'
+      return:
+        type:
+          - 'string | string[]'
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.max_message_size
+    name: max_message_size
+    fullName: max_message_size
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {number} [max_message_size] The maximum message size supported by the link
+      endpoint.
+    optional: true
+    syntax:
+      content: 'max_message_size?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      {string} [name] The name of the link.
+      This should be unique for the container.
+      If not specified a unqiue name is generated.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.offered_capabilities
+    name: offered_capabilities
+    fullName: offered_capabilities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string | string[]} [offered_capabilities] Extension capabilities the
+      sender supports.
+    optional: true
+    syntax:
+      content: 'offered_capabilities?: string | string[]'
+      return:
+        type:
+          - 'string | string[]'
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.onClose
+    name: onClose
+    fullName: onClose
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'onClose?: rhea.OnAmqpEvent'
+      return:
+        type:
+          - rhea.OnAmqpEvent
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.onError
+    name: onError
+    fullName: onError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'onError?: rhea.OnAmqpEvent'
+      return:
+        type:
+          - rhea.OnAmqpEvent
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.onMessage
+    name: onMessage
+    fullName: onMessage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'onMessage?: rhea.OnAmqpEvent'
+      return:
+        type:
+          - rhea.OnAmqpEvent
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.onSessionClose
+    name: onSessionClose
+    fullName: onSessionClose
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'onSessionClose?: rhea.OnAmqpEvent'
+      return:
+        type:
+          - rhea.OnAmqpEvent
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.onSessionError
+    name: onSessionError
+    fullName: onSessionError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'onSessionError?: rhea.OnAmqpEvent'
+      return:
+        type:
+          - rhea.OnAmqpEvent
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.properties
+    name: properties
+    fullName: properties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {object} [properties] Properties of the entity (connection, session, link)
+      contain a set of fields
+
+      intended to provide more information about the entity.
+    optional: true
+    syntax:
+      content: 'properties?: [key: string]: any'
+      return:
+        type:
+          - '[key: string]: any'
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.rcv_settle_mode
+    name: rcv_settle_mode
+    fullName: rcv_settle_mode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {number} [rcv_settle_mode] it specifies the receiver settle mode with
+      following possibile values:
+
+      - 0 - "first" - The receiver will spontaneously settle all incoming
+      transfers.
+
+      - 1 - "second" - The receiver will only settle after sending the
+      disposition to the sender and receiving a
+
+      disposition indicating settlement of the delivery from the sender.
+    optional: true
+    syntax:
+      content: 'rcv_settle_mode?: 0 | 1'
+      return:
+        type:
+          - 0 | 1
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.session
+    name: session
+    fullName: session
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'session?: Session'
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.Session
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.snd_settle_mode
+    name: snd_settle_mode
+    fullName: snd_settle_mode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {number} [snd_settle_mode] it specifies the sender settle mode with
+      following possibile values:
+
+      - 0 - "unsettled" - The sender will send all deliveries initially
+      unsettled to the receiver.
+
+      - 1 - "settled" - The sender will send all deliveries settled to the
+      receiver.
+
+      - 2 - "mixed" - (default) The sender MAY send a mixture of settled and
+      unsettled deliveries to the receiver.
+    optional: true
+    syntax:
+      content: 'snd_settle_mode?: 0 | 1 | 2'
+      return:
+        type:
+          - 0 | 1 | 2
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.source
+    name: source
+    fullName: source
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{object} source  The source from which messages are received.'
+    optional: true
+    syntax:
+      content: 'source?: Source | string'
+      return:
+        type:
+          - Source | string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptionsWithSession.target
+    name: target
+    fullName: target
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{object} [target]  The target of a receiving link is the local identifier'
+    optional: true
+    syntax:
+      content: 'target?: TargetTerminusOptions | string'
+      return:
+        type:
+          - TargetTerminusOptions | string
+        description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: azure-event-hubs - v0.2.11.ReceiverOptions
+    name: ReceiverOptions
+    spec.typeScript:
+      - name: ReceiverOptions
+        fullName: ReceiverOptions
+        uid: azure-event-hubs - v0.2.11.ReceiverOptions
+  - uid: azure-event-hubs - v0.2.11.Session
+    name: Session
+    spec.typeScript:
+      - name: Session
+        fullName: Session
+        uid: azure-event-hubs - v0.2.11.Session

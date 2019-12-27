@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.ConnectionConfigOptions
+    name: ConnectionConfigOptions
+    fullName: ConnectionConfigOptions
+    children:
+      - azure-event-hubs - v0.2.11.ConnectionConfigOptions.isEntityPathRequired
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Describes the options that can be provided while creating a connection
+      config.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.ConnectionConfigOptions.isEntityPathRequired
+    name: isEntityPathRequired
+    fullName: isEntityPathRequired
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {boolean} [isEntityPathRequired] Indicates whether the entity path is
+      required in the
+
+      connection config.
+    optional: true
+    syntax:
+      content: 'isEntityPathRequired?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-event-hubs - v0

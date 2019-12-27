@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.TokenType
+    name: TokenType
+    fullName: TokenType
+    children:
+      - azure-event-hubs - v0.2.11.TokenType.CbsTokenTypeJwt
+      - azure-event-hubs - v0.2.11.TokenType.CbsTokenTypeSas
+    langs:
+      - typeScript
+    type: enum
+    summary: Describes the type of supported tokens.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.TokenType.CbsTokenTypeJwt
+    name: CbsTokenTypeJwt
+    children: []
+    langs:
+      - typeScript
+    summary: The "jwt" token type. Used with AADTokenProvider.
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.TokenType.CbsTokenTypeSas
+    name: CbsTokenTypeSas
+    children: []
+    langs:
+      - typeScript
+    summary: The sas token type. Used with SasTokenProvider.
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0

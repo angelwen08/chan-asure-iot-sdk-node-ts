@@ -1,0 +1,197 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.SasTokenProvider
+    name: SasTokenProvider
+    fullName: SasTokenProvider
+    children:
+      - azure-event-hubs - v0.2.11.SasTokenProvider.fromConnectionString
+      - azure-event-hubs - v0.2.11.SasTokenProvider.getToken
+      - azure-event-hubs - v0.2.11.SasTokenProvider.key
+      - azure-event-hubs - v0.2.11.SasTokenProvider.keyName
+      - azure-event-hubs - v0.2.11.SasTokenProvider.namespace
+      - azure-event-hubs - v0.2.11.SasTokenProvider.constructor
+      - azure-event-hubs - v0.2.11.SasTokenProvider.tokenRenewalMarginInSeconds
+      - azure-event-hubs - v0.2.11.SasTokenProvider.tokenValidTimeInSeconds
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SasTokenProvider.fromConnectionString
+    name: fromConnectionString(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates a token provider from the EventHub/ServiceBus connection string;
+    syntax:
+      content: 'static function fromConnectionString(connectionString: string)'
+      parameters:
+        - id: connectionString
+          type:
+            - string
+          description: |
+            The EventHub/ServiceBus connection string
+      return:
+        type:
+          - azure-event-hubs - v0.2.11.SasTokenProvider
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SasTokenProvider.getToken
+    name: getToken(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the sas token for the specified audience
+    syntax:
+      content: 'function getToken(audience?: string)'
+      parameters:
+        - id: audience
+          type:
+            - string
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-event-hubs - v0.2.11.TokenInfo>
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SasTokenProvider.key
+    name: key
+    fullName: key
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {string} key - The secret value associated with the above
+      EventHub/ServiceBus key.
+    syntax:
+      content: 'key: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SasTokenProvider.keyName
+    name: keyName
+    fullName: keyName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{string} keyName - The name of the EventHub/ServiceBus key.'
+    syntax:
+      content: 'keyName: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SasTokenProvider.namespace
+    name: namespace
+    fullName: namespace
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: '{string} namespace - The namespace of the EventHub/ServiceBus instance.'
+    syntax:
+      content: 'namespace: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SasTokenProvider.constructor
+    name: 'SasTokenProvider(string, string, string, number, number)'
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Initializes a new isntance of SasTokenProvider
+    syntax:
+      content: >-
+        new SasTokenProvider(namespace: string, keyName: string, key: string,
+        tokenValidTimeInSeconds?: number, tokenRenewalMarginInSeconds?: number)
+      parameters:
+        - id: namespace
+          type:
+            - string
+          description: The namespace of the EventHub/ServiceBus instance.
+        - id: keyName
+          type:
+            - string
+          description: The name of the EventHub/ServiceBus key.
+        - id: key
+          type:
+            - string
+          description: |
+            The secret value associated with the above EventHub/ServiceBus key
+        - id: tokenValidTimeInSeconds
+          type:
+            - number
+          description: ''
+          optional: true
+        - id: tokenRenewalMarginInSeconds
+          type:
+            - number
+          description: ''
+          optional: true
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SasTokenProvider.tokenRenewalMarginInSeconds
+    name: tokenRenewalMarginInSeconds
+    fullName: tokenRenewalMarginInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {number} tokenRenewalMarginInSeconds - The number of seconds within which
+      it
+
+      is good to renew the token. Default = 900 seconds (15 minutes).
+    syntax:
+      content: 'tokenRenewalMarginInSeconds: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.SasTokenProvider.tokenValidTimeInSeconds
+    name: tokenValidTimeInSeconds
+    fullName: tokenValidTimeInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      {number} tokenValidTimeInSeconds - The number of seconds for which the
+      token
+
+      is valid. Default = 3600 seconds (1 hour).
+    syntax:
+      content: 'tokenValidTimeInSeconds: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-event-hubs - v0
+references:
+  - uid: Promise<azure-event-hubs - v0.2.11.TokenInfo>
+    name: TokenInfo>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: TokenInfo
+        fullName: TokenInfo
+        uid: azure-event-hubs - v0.2.11.TokenInfo
+      - name: '>'
+        fullName: '>'
+  - uid: azure-event-hubs - v0.2.11.SasTokenProvider
+    name: SasTokenProvider
+    spec.typeScript:
+      - name: SasTokenProvider
+        fullName: SasTokenProvider
+        uid: azure-event-hubs - v0.2.11.SasTokenProvider

@@ -1,0 +1,131 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host - v0.2.1.Timeout
+    name: Timeout
+    fullName: Timeout
+    children:
+      - azure-event-processor-host - v0.2.1.Timeout.clear
+      - azure-event-processor-host - v0.2.1.Timeout.set
+      - azure-event-processor-host - v0.2.1.Timeout.set
+      - azure-event-processor-host - v0.2.1.Timeout.wrap
+      - azure-event-processor-host - v0.2.1.Timeout.wrap
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.Timeout.clear
+    name: clear()
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function clear()
+      parameters: []
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.Timeout.set
+    name: 'set(number, T)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function set<T>(t: number, value?: T)'
+      parameters:
+        - id: t
+          type:
+            - number
+          description: ''
+        - id: value
+          type:
+            - T
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<T>
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.Timeout.set
+    name: 'set(number, T)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'static function set<T>(t: number, value?: T)'
+      parameters:
+        - id: t
+          type:
+            - number
+          description: ''
+        - id: value
+          type:
+            - T
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<T>
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.Timeout.wrap
+    name: 'wrap(Promise<T>, number, T)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function wrap<T>(promise: Promise<T>, t: number, value?: T)'
+      parameters:
+        - id: promise
+          type:
+            - Promise<T>
+          description: ''
+        - id: t
+          type:
+            - number
+          description: ''
+        - id: value
+          type:
+            - T
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<T>
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: azure-event-processor-host - v0.2.1.Timeout.wrap
+    name: 'wrap(Promise<T>, number, T)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'static function wrap<T>(promise: Promise<T>, t: number, value?: T)'
+      parameters:
+        - id: promise
+          type:
+            - Promise<T>
+          description: ''
+        - id: t
+          type:
+            - number
+          description: ''
+        - id: value
+          type:
+            - T
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<T>
+        description: ''
+    package: azure-event-processor-host - v0

@@ -1,0 +1,81 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-hubs - v0.2.11.RetryOperationType
+    name: RetryOperationType
+    fullName: RetryOperationType
+    children:
+      - azure-event-hubs - v0.2.11.RetryOperationType.cbsAuth
+      - azure-event-hubs - v0.2.11.RetryOperationType.connection
+      - azure-event-hubs - v0.2.11.RetryOperationType.management
+      - azure-event-hubs - v0.2.11.RetryOperationType.receiverLink
+      - azure-event-hubs - v0.2.11.RetryOperationType.sendMessage
+      - azure-event-hubs - v0.2.11.RetryOperationType.senderLink
+      - azure-event-hubs - v0.2.11.RetryOperationType.session
+    langs:
+      - typeScript
+    type: enum
+    summary: Describes the retry operation type.
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RetryOperationType.cbsAuth
+    name: cbsAuth
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RetryOperationType.connection
+    name: connection
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RetryOperationType.management
+    name: management
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RetryOperationType.receiverLink
+    name: receiverLink
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RetryOperationType.sendMessage
+    name: sendMessage
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RetryOperationType.senderLink
+    name: senderLink
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0
+  - uid: azure-event-hubs - v0.2.11.RetryOperationType.session
+    name: session
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: null
+    package: azure-event-hubs - v0

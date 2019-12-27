@@ -1,0 +1,91 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-event-processor-host - v0.2.1.StorageConnectionStringModel
+    name: StorageConnectionStringModel
+    fullName: StorageConnectionStringModel
+    children:
+      - >-
+        azure-event-processor-host -
+        v0.2.1.StorageConnectionStringModel.AccountKey
+      - >-
+        azure-event-processor-host -
+        v0.2.1.StorageConnectionStringModel.AccountName
+      - >-
+        azure-event-processor-host -
+        v0.2.1.StorageConnectionStringModel.DefaultEndpointsProtocol
+      - >-
+        azure-event-processor-host -
+        v0.2.1.StorageConnectionStringModel.EndpointSuffix
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.StorageConnectionStringModel.AccountKey
+    name: AccountKey
+    fullName: AccountKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'AccountKey: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.StorageConnectionStringModel.AccountName
+    name: AccountName
+    fullName: AccountName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'AccountName: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.StorageConnectionStringModel.DefaultEndpointsProtocol
+    name: DefaultEndpointsProtocol
+    fullName: DefaultEndpointsProtocol
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'DefaultEndpointsProtocol: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
+  - uid: >-
+      azure-event-processor-host -
+      v0.2.1.StorageConnectionStringModel.EndpointSuffix
+    name: EndpointSuffix
+    fullName: EndpointSuffix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'EndpointSuffix: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-event-processor-host - v0
